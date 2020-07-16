@@ -1,0 +1,420 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 4 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is rates and approximations.
+
+3
+00:00:11,000 --> 00:00:21,000
+Let’s begin with problem 1, which talks about the approximate value of √24.9.
+
+4
+00:00:21,000 --> 00:00:26,000
+The problem is to find an approximate value using a linear approximation.
+
+5
+00:00:26,000 --> 00:00:31,000
+The relevant function over here is √<i>x</i>, and you want to work at <i>x</i> = 25
+
+6
+00:00:31,000 --> 00:00:38,000
+because that’s very close to 24.9. We first find the derivative of the square root function
+
+7
+00:00:38,000 --> 00:00:46,000
+at that value of <i>x</i>, and then we work out the actual approximation by doing the value at 25
+
+8
+00:00:46,000 --> 00:00:54,000
+plus the derivative times the difference between 24.9 and 25, and you get back the answer of 4.99.
+
+9
+00:00:54,000 --> 00:01:03,000
+If you check, the difference between the exact and approximate values is of the order of −5.
+
+10
+00:01:03,000 --> 00:01:10,000
+Here’s a graph of both the function and the approximation, and you can see
+
+11
+00:01:10,000 --> 00:01:15,000
+it’s quite a nice approximation close to 25.
+
+12
+00:01:16,000 --> 00:01:25,000
+Okay. Number 2 asks to approximate the value of −Cot[29º]. The first step is
+
+13
+00:01:25,000 --> 00:01:31,000
+we decide to work at 30º, which is π/6 radians. That’s close enough to 29.
+
+14
+00:01:31,000 --> 00:01:40,000
+Then we of course convert the 29º into radians. We work at the slope at 30 at π/6.
+
+15
+00:01:40,000 --> 00:01:51,000
+That turns out to be 4. Plug that 4 into the linear approximation formula. You have value at 30º
+
+16
+00:01:51,000 --> 00:02:00,000
+plus slope times the difference, and you get back the approximate value, and the approximation is
+
+17
+00:02:00,000 --> 00:02:08,000
+of the order of −3. It’s a good approximation. Here is a plot of the graph at the approximation.
+
+18
+00:02:12,000 --> 00:02:19,000
+Okay. Problem 3 asks you to find the approximate value of 1.001^50.
+
+19
+00:02:19,000 --> 00:02:31,000
+We think of this as being related to the function (1 + <i>x</i>)^50 around <i>x</I> = 0. First we find
+
+20
+00:02:31,000 --> 00:02:40,000
+the derivative at 0 for that function. Plug in the derivative into the approximation formula.
+
+21
+00:02:40,000 --> 00:02:46,000
+Get back the approximation value and check that the approximation is quite good.
+
+22
+00:02:46,000 --> 00:02:56,000
+Once again, here is a plot of both the function and the tangent line of the approximation at 0.
+
+23
+00:02:57,000 --> 00:03:06,000
+Okay. On to the next problem, number 4, which asks you to work with a spherical ball
+
+24
+00:03:06,000 --> 00:03:15,000
+whose radius is 5 cm. You know that the error in the radius is 0.01 cm, and you want to find
+
+25
+00:03:15,000 --> 00:03:24,000
+the error in the surface area. The surface area of a sphere is 4π<i>r</i>^2, so you want to find the error.
+
+26
+00:03:24,000 --> 00:03:31,000
+You work with differentials, and the differential in this case is 8π<i>rdr</i>—
+
+27
+00:03:31,000 --> 00:03:38,000
+that’s 8π<i>r</i> from the derivative, and <i>dr</i> is for the differential. You plug in the values—
+
+28
+00:03:38,000 --> 00:03:44,000
+<i>r</i> equal to 5, <i>dr</i> equal to 0.01—and you get back that the estimated error
+
+29
+00:03:44,000 --> 00:03:50,000
+is about 1.26 cm^2 for the surface area.
+
+30
+00:03:52,000 --> 00:04:00,000
+For number 5, we’re given a cone whose height is 5 cm and the radius is 9 cm.
+
+31
+00:04:00,000 --> 00:04:08,000
+Now it is known that the height has an error of plus or minus 0.02 cm, and the question is
+
+32
+00:04:08,000 --> 00:04:18,000
+to find the error in the volume. That’s the formula for the volume of a cone. It’s 1/3π<i>r</i>^2<i>h</i>.
+
+33
+00:04:18,000 --> 00:04:27,000
+Keep in mind that the radius is fixed, so to find the derivative with respect to <i>h</i>, I get π<i>r</i>^2<i>dh</i>/3.
+
+34
+00:04:27,000 --> 00:04:37,000
+Then you plug in the values given to you—<i>r</i> is 9, <i>h</i> is 0.02—and you get back that
+
+35
+00:04:37,000 --> 00:04:44,000
+the estimated error for the volume is around 1.70 cm^3.
+
+36
+00:04:46,000 --> 00:04:56,000
+On number 6, there is a 10-foot ladder, and it is falling down a wall at a rate of 0.5 ft/sec.
+
+37
+00:04:56,000 --> 00:05:03,000
+The question is what is the rate at which the bottom of that ladder is sliding out at the point
+
+38
+00:05:03,000 --> 00:05:08,000
+when it is 6 feet from the wall? That’s the picture you have over here.
+
+39
+00:05:08,000 --> 00:05:20,000
+That’s the bottom, and that’s the ladder falling down the wall. The length of the ladder is 10 feet.
+
+40
+00:05:20,000 --> 00:05:28,000
+The first point to note is that you have the Pythagorean relation—<i>x</i>[<i>t</i>]^2 + <i>y</i>[<i>t</i>]^2 = 100, in this case.
+
+41
+00:05:28,000 --> 00:05:38,000
+You take the derivative of that equation with respect to <i>t</i>. Keep in mind that you already know
+
+42
+00:05:38,000 --> 00:05:49,000
+that the value of <i>x</i> is 6 ft. The value of <i>y</i> is 8 ft by Pythagoras. <i>y</i>'[<i>t</i>] is given to you,
+
+43
+00:05:49,000 --> 00:06:01,000
+so you can plug in the values over here and work out <i>x</i>'[<i>t</i>] as 0.667, or roughly 2/3 ft/sec.
+
+44
+00:06:03,000 --> 00:06:14,000
+Okay. On to number 7, which talks about a melting ice cube. This ice cube has the volume decreasing
+
+45
+00:06:14,000 --> 00:06:20,000
+at 1 cm^3/sec. The question is to find the rate at which the sides of the cube
+
+46
+00:06:20,000 --> 00:06:29,000
+are decreasing at the point where the volume is 512 cm^3. Now of course, the volume of a cube
+
+47
+00:06:29,000 --> 00:06:42,000
+is the side cubed, so when the volume is 512, the side is 8 cm. You take a derivative of that formula
+
+48
+00:06:42,000 --> 00:06:52,000
+with respect to <i>t</i>, and then you know that <i>V</i>'[<i>t</i>] is −1 because volume is decreasing. <i>s</i> is 8.
+
+49
+00:06:52,000 --> 00:07:04,000
+You plug in the values, and you find that the sides are decreasing at the rate of −1/192 cm/sec.
+
+50
+00:07:06,000 --> 00:07:15,000
+Number 8 talks about a car that’s going north from an intersection at a certain speed, 50 mph,
+
+51
+00:07:15,000 --> 00:07:23,000
+and a truck is going west from the same intersection at 40 mph. The question is to find out
+
+52
+00:07:23,000 --> 00:07:29,000
+the rate at which the distance between these two is increasing after an hour.
+
+53
+00:07:29,000 --> 00:07:34,000
+That’s the picture you have. That’s the car going north, the truck going west
+
+54
+00:07:34,000 --> 00:07:39,000
+and that’s the distance between them. Of course, the Pythagorean theorem says that
+
+55
+00:07:39,000 --> 00:07:46,000
+the car squared plus truck squared is equal to distance squared. That’s the equation.
+
+56
+00:07:46,000 --> 00:07:55,000
+If we plug in the values, you’ll find that after an hour, the distance is √4100. Take the derivative,
+
+57
+00:07:55,000 --> 00:08:05,000
+and keep in mind that after one hour, the car has a derivative of about 50 distance and rate
+
+58
+00:08:05,000 --> 00:08:14,000
+With the truck, you have 40 for the same quantities, and the distance is 10√41.
+
+59
+00:08:14,000 --> 00:08:23,000
+If you plug in values, you get that the actual distance between them is increasing at 10√41.
+
+60
+00:08:26,000 --> 00:08:34,000
+Number 9 talks about a spherical balloon that’s being inflated at 30π cm^3/sec.
+
+61
+00:08:34,000 --> 00:08:41,000
+The question is to find the rate at which the surface area is increasing when the balloon has
+
+62
+00:08:41,000 --> 00:08:51,000
+a radius of 8 cm. Now the surface area is given by <i>S</i> = 4π<i>r</i>^2, so if you take the derivative,
+
+63
+00:08:51,000 --> 00:09:05,000
+you get <i>S</i>'[<i>t</i>] = 8π<i>r</i>[<i>t</i>]<i>r</i>'[<i>t</i>]. The problem is you need to find <i>r</i>', the derivative of <i>r</i> with respect to <i>t</i>,
+
+64
+00:09:05,000 --> 00:09:14,000
+and to do that, you use a volume formula, you find the derivative and you plug in
+
+65
+00:09:14,000 --> 00:09:23,000
+the given information for the rate of inflation of the balloon and the radius.
+
+66
+00:09:23,000 --> 00:09:31,000
+You find that the derivative for <i>r</i> is 15/128. You plug in that into the formula for
+
+67
+00:09:31,000 --> 00:09:39,000
+the derivative of the surface area, and you get back 15π/2 as the required rate.
+
+68
+00:09:42,000 --> 00:09:50,000
+Okay. Number 10 talks about an inverted conical tank that’s being filled with water
+
+69
+00:09:50,000 --> 00:10:02,000
+at a rate of 40π m^3/sec. The base of this tank has a radius of 100 m, and the height is 250 m.
+
+70
+00:10:02,000 --> 00:10:10,000
+The question is to find the rate at which the water level is increasing when the water is 70 m deep.
+
+71
+00:10:10,000 --> 00:10:17,000
+Now keep in mind that you can talk about similar triangles over here and get that the ratio
+
+72
+00:10:17,000 --> 00:10:27,000
+between radius and height is always constant. In fact, that ratio is 2/5. You can plug in
+
+73
+00:10:27,000 --> 00:10:36,000
+that ratio into the volume formula for the cone and get the volume in terms of the height and the width.
+
+74
+00:10:36,000 --> 00:10:43,000
+Then if you differentiate the equation, that tells you the relationship between the derivative
+
+75
+00:10:43,000 --> 00:10:56,000
+for the volume and the derivative for the water level. Given that <i>V</i>'[<i>t</i>] is 40 and <i>h</i> is 70,
+
+76
+00:10:56,000 --> 00:11:02,000
+what you can do is you can plug back those values and find the rate at which
+
+77
+00:11:02,000 --> 00:11:06,000
+the water level is increasing when the water is 70 m deep.
+
+78
+00:11:09,000 --> 00:11:16,000
+Okay. The remaining questions for this session are all simple, and I hope you will find that too.
+
+79
+00:11:16,000 --> 00:11:20,000
+I certainly think that they are much simpler than the earlier ones, and in each case,
+
+80
+00:11:20,000 --> 00:11:24,000
+you simply need to do a simple derivative calculation and get the answer.
+
+81
+00:11:24,000 --> 00:11:34,000
+A car’s position on a highway is given by the function over here for number 11, and the question is
+
+82
+00:11:34,000 --> 00:11:43,000
+to find the velocity function and the velocity after three hours. The velocity function is simply
+
+83
+00:11:43,000 --> 00:11:51,000
+the derivative of the position function. That’s the answer, and if you plug in the value of <i>t</i> = 3,
+
+84
+00:11:51,000 --> 00:12:00,000
+then you get back the velocity after 3 hours. Here is a plot of the position and velocity.
+
+85
+00:12:03,000 --> 00:12:12,000
+Let’s go on now to number 12, where you’re given the cost function for a company when it produces <i>x</i> units,
+
+86
+00:12:12,000 --> 00:12:19,000
+and you want the cost of making the 51st unit. That should remind you of the marginal cost,
+
+87
+00:12:19,000 --> 00:12:26,000
+which is the derivative of the cost function. Let’s work that out. Plug in 50
+
+88
+00:12:26,000 --> 00:12:34,000
+because the marginal cost when <i>x</i> is 50 is the cost of making the 51st unit. The answer is 0.28.
+
+89
+00:12:34,000 --> 00:12:40,000
+That’s approximately the cost of making the 51st unit.
+
+90
+00:12:41,000 --> 00:12:47,000
+Here are plots of the cost and the marginal cost for this company.
+
+91
+00:12:49,000 --> 00:12:56,000
+Okay. Number 13 says that the amount of charge going through a particular wire is given by
+
+92
+00:12:56,000 --> 00:13:05,000
+the equation over here. The question is to find the current going through it when the time is π/6.
+
+93
+00:13:05,000 --> 00:13:14,000
+Keep in mind that the current is simply the derivative of the charge. When <i>t</i> is π/6,
+
+94
+00:13:14,000 --> 00:13:19,000
+that’s the answer, and here are plots of the charge and the current.
+
+95
+00:13:23,000 --> 00:13:28,000
+On to problem number 14 where it says you have got a cannonball,
+
+96
+00:13:28,000 --> 00:13:35,000
+and that cannonball has got its height function given by this formula over here.
+
+97
+00:13:35,000 --> 00:13:41,000
+The question is to find the velocity at 1 second and when it hits the ground again.
+
+98
+00:13:41,000 --> 00:13:48,000
+After 1 second, the velocity is given by the derivative at that time. Now we want to find
+
+99
+00:13:48,000 --> 00:13:54,000
+when the cannonball hits the ground again. Well, that’s a question of solving the equation over here.
+
+100
+00:13:54,000 --> 00:14:05,000
+Simply put the height equal to 0. If you work it out, we get back that <i>t</i> is 3.06, roughly.
+
+101
+00:14:05,000 --> 00:14:17,000
+Then you work out the velocity at that point. That’s −30. Here’s a plot of the cannonball
+
+102
+00:14:17,000 --> 00:14:26,000
+and the velocity at any time <i>t</i>, and you can see that when <i>t</i> is given as time over here
+
+103
+00:14:26,000 --> 00:14:30,000
+when it hits the ground, then the velocity is around −30.
+
+104
+00:14:32,000 --> 00:14:38,000
+That brings me to the end of this problem session, and we’ll next talk about maxima and minima.
+
+105
+00:14:38,000 --> 00:14:46,000
+Before that, do try Quiz 4 and be ready for the next lesson. Thank you very much. I’ll stop over here.
+

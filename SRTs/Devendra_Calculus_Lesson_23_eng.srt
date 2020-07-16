@@ -1,0 +1,680 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 23 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:10,000
+The topic for this lesson is Riemann sums.
+
+3
+00:00:10,000 --> 00:00:14,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:14,000 --> 00:00:19,000
+Basically there are two fundamental aspects of calculus.
+
+5
+00:00:19,000 --> 00:00:22,000
+The first aspect is differential calculus,
+
+6
+00:00:22,000 --> 00:00:26,000
+and that’s what we’ve been talking about all the time so far.
+
+7
+00:00:26,000 --> 00:00:34,000
+Now the prime motivation over there is to find the slope of a curve at a point of the tangent line.
+
+8
+00:00:34,000 --> 00:00:40,000
+Now the second aspect of calculus is the so-called integral calculus,
+
+9
+00:00:40,000 --> 00:00:44,000
+and that is what we’ll cover from now on.
+
+10
+00:00:44,000 --> 00:00:52,000
+Now the basic motivation, the prime motivation for this part of calculus is quite simple.
+
+11
+00:00:52,000 --> 00:00:59,000
+Basically here is a plot of this function, and the problem is that
+
+12
+00:00:59,000 --> 00:01:04,000
+you’d like to find this area under the curve for the function.
+
+13
+00:01:06,000 --> 00:01:09,000
+In this lesson, what we’ll do is we’ll devise a precise way
+
+14
+00:01:09,000 --> 00:01:16,000
+of expressing this notion of area under the curve mathematically.
+
+15
+00:01:17,000 --> 00:01:23,000
+Okay. Let’s begin with some review of your earlier work.
+
+16
+00:01:23,000 --> 00:01:29,000
+If you have a rectangle, then its area is length times width.
+
+17
+00:01:30,000 --> 00:01:35,000
+On the other hand, if it were a triangle, then its area is base times height over 2.
+
+18
+00:01:35,000 --> 00:01:42,000
+But if you have a general polygon, what you’d do is you’d break it up into triangles,
+
+19
+00:01:42,000 --> 00:01:48,000
+then find the area of each one triangle and then add them all together.
+
+20
+00:01:48,000 --> 00:01:53,000
+Now the area of a circle is a bit harder because it involves the number π,
+
+21
+00:01:53,000 --> 00:01:57,000
+but that’s straightforward to work with.
+
+22
+00:01:57,000 --> 00:02:04,000
+The question now is what happens if you have a more general curve?
+
+23
+00:02:04,000 --> 00:02:10,000
+Let’s say you have this parabola, and you want to find the area under the parabola.
+
+24
+00:02:10,000 --> 00:02:12,000
+How do you work it out?
+
+25
+00:02:13,000 --> 00:02:18,000
+To motivate our discussion, let’s recall the idea of the slope at a point.
+
+26
+00:02:18,000 --> 00:02:23,000
+Let’s say if you have a differentiable function, then the slopes of
+
+27
+00:02:23,000 --> 00:02:28,000
+the secant lines at a point will eventually approach some value <i>m</i>,
+
+28
+00:02:28,000 --> 00:02:33,000
+which is the slope of the tangent at that point.
+
+29
+00:02:33,000 --> 00:02:36,000
+Here’s an example to illustrate that.
+
+30
+00:02:36,000 --> 00:02:42,000
+You have a curve <i>x</i>^2 and you have a point (1, 1) on it,
+
+31
+00:02:42,000 --> 00:02:46,000
+and you want to work out the slope at that point.
+
+32
+00:02:46,000 --> 00:02:51,000
+At the moment, the slope is 3.618 for the secant,
+
+33
+00:02:51,000 --> 00:02:55,000
+but what I’ll do now is I’ll try and bring the point <i>Q</i> closer to <i>P</i>,
+
+34
+00:02:55,000 --> 00:02:59,000
+and as I bring it closer, the value of the slope
+
+35
+00:02:59,000 --> 00:03:05,000
+approaches the correct value, which is eventually 2.
+
+36
+00:03:06,000 --> 00:03:09,000
+That’s the idea of slope at a point.
+
+37
+00:03:09,000 --> 00:03:14,000
+You take secant lines, and then you take the limit of those lines
+
+38
+00:03:14,000 --> 00:03:16,000
+as you approach the point.
+
+39
+00:03:16,000 --> 00:03:20,000
+A similar idea can be used for areas; namely, break up the areas
+
+40
+00:03:20,000 --> 00:03:27,000
+into separate rectangles, and then you add up all those rectangle areas
+
+41
+00:03:27,000 --> 00:03:31,000
+and then you get an approximate area for the region.
+
+42
+00:03:31,000 --> 00:03:36,000
+For example, if you take the same curve and you break it up
+
+43
+00:03:36,000 --> 00:03:40,000
+into four rectangles over here, then you see that the area approximately,
+
+44
+00:03:40,000 --> 00:03:43,000
+but of course a wide space tells you that
+
+45
+00:03:43,000 --> 00:03:46,000
+there is some error in the approximation.
+
+46
+00:03:46,000 --> 00:03:50,000
+Now if you take more rectangles—let’s say you take 10 rectangles—
+
+47
+00:03:50,000 --> 00:03:55,000
+you will get a better approximation, and then as you increase
+
+48
+00:03:55,000 --> 00:04:00,000
+the number of rectangles, you will get a better and better approximation, hopefully.
+
+49
+00:04:01,000 --> 00:04:06,000
+That’s the idea of area which we want to explore.
+
+50
+00:04:06,000 --> 00:04:12,000
+Let’s begin now with a parabola again and try and work with rectangles
+
+51
+00:04:12,000 --> 00:04:19,000
+which have the top-left corner at the point on the curve.
+
+52
+00:04:19,000 --> 00:04:23,000
+What you see here is that in this case, you actually have
+
+53
+00:04:23,000 --> 00:04:30,000
+an underestimation of the total area, so the answer which you get is less than the total area.
+
+54
+00:04:30,000 --> 00:04:35,000
+For example,  in this case your corners are at 0, 0.2, et cetera,
+
+55
+00:04:35,000 --> 00:04:38,000
+and you can work out the area.
+
+56
+00:04:38,000 --> 00:04:43,000
+Then you get back the answer, 0.21875.
+
+57
+00:04:43,000 --> 00:04:46,000
+Those over here are just the function values.
+
+58
+00:04:47,000 --> 00:04:52,000
+Okay. On the other hand, if you took the top-right corner for each rectangle,
+
+59
+00:04:52,000 --> 00:04:57,000
+then you can see you’re going to overestimate the area under the curve,
+
+60
+00:04:57,000 --> 00:05:02,000
+so in this case you get back the answer, 0.46875.
+
+61
+00:05:02,000 --> 00:05:10,000
+It looks like the answer would lie somewhere between 0.21875 and 0.46875.
+
+62
+00:05:10,000 --> 00:05:14,000
+That’s the conclusion from the earlier slide which I am repeating over here again.
+
+63
+00:05:15,000 --> 00:05:20,000
+What happens as you increase the number of rectangles?
+
+64
+00:05:20,000 --> 00:05:24,000
+Well, you see over here that as you have a larger and larger number
+
+65
+00:05:24,000 --> 00:05:30,000
+of rectangles, then the lower and the upper estimates become closer and closer,
+
+66
+00:05:30,000 --> 00:05:34,000
+and they are almost identical eventually.
+
+67
+00:05:35,000 --> 00:05:37,000
+The plots over here show you what’s happening over here.
+
+68
+00:05:37,000 --> 00:05:41,000
+As you have a larger number of rectangles,
+
+69
+00:05:41,000 --> 00:05:44,000
+you get a better and better approximation to the area,
+
+70
+00:05:44,000 --> 00:05:48,000
+and finally it looks like you actually get the area.
+
+71
+00:05:49,000 --> 00:05:53,000
+But that only happens when you take a limit.
+
+72
+00:05:53,000 --> 00:05:58,000
+The area will approach 1/3, but that will only actually happen if you take a limit.
+
+73
+00:05:58,000 --> 00:06:05,000
+Here’s a required limit. 1/<i>n</i> is the width of each rectangle,
+
+74
+00:06:05,000 --> 00:06:09,000
+and that’s the functional value, the height.
+
+75
+00:06:09,000 --> 00:06:14,000
+The limit over here is 1/3—that’s the upper limit—and the lower limit
+
+76
+00:06:14,000 --> 00:06:17,000
+would be to take the other end of the rectangle,
+
+77
+00:06:17,000 --> 00:06:22,000
+and then you get back 1/3 as the answer in this case as well.
+
+78
+00:06:24,000 --> 00:06:31,000
+Okay. Now to get a bit more general, I need to talk about so-called Riemann sums.
+
+79
+00:06:31,000 --> 00:06:35,000
+Now this is a fairly difficult concept, so let me go slowly.
+
+80
+00:06:35,000 --> 00:06:39,000
+Let’s say you have a general function <i>f</i>[<i>x</i>], not just a parabola,
+
+81
+00:06:39,000 --> 00:06:43,000
+and you want to work out the area under the curve between [<i>a</I>, <i>b</i>].
+
+82
+00:06:43,000 --> 00:06:47,000
+What you do is you first break it up into <i>n</i> rectangles
+
+83
+00:06:47,000 --> 00:06:51,000
+so each rectangle will have a width (<i>b</I> – <i>a</i>)/<i>n</i>.
+
+84
+00:06:52,000 --> 00:06:57,000
+This quantity is called Δ<i>x</i>. Δ means very small.
+
+85
+00:06:57,000 --> 00:07:04,000
+Now you’ve broken up your interval [<i>a</i>, <i>b</i>] into <i>n</i> smaller intervals,
+
+86
+00:07:04,000 --> 00:07:13,000
+[<i>x</i>0, <i>x</i>1], [<i>x</i>1, <i>x</i>2], et cetera, and the left endpoint is <i>a</i>, the right endpoint is <i>b</i>.
+
+87
+00:07:14,000 --> 00:07:20,000
+For each subinterval, you have the endpoints given by just adding Δ<i>x</i> every time.
+
+88
+00:07:20,000 --> 00:07:25,000
+What you see over here is the area of any one rectangle
+
+89
+00:07:25,000 --> 00:07:29,000
+will be the width of the rectangle times the height.
+
+90
+00:07:29,000 --> 00:07:32,000
+Let’s say if you work with the right-aligned rectangles,
+
+91
+00:07:32,000 --> 00:07:38,000
+then that height will be <i>f</i>[<i>xi</i>].
+
+92
+00:07:38,000 --> 00:07:44,000
+That’s the total area, the sum, but if you work out the left-aligned rectangles,
+
+93
+00:07:44,000 --> 00:07:51,000
+then you get a similar sum, but with <i>xi</i> – 1 as the point which you evaluate.
+
+94
+00:07:51,000 --> 00:07:55,000
+These sums are called Riemann sums because
+
+95
+00:07:55,000 --> 00:08:00,000
+they were discovered by the famous German mathematician Bernhard Riemann.
+
+96
+00:08:01,000 --> 00:08:04,000
+Here’s an example that shows what’s happening.
+
+97
+00:08:04,000 --> 00:08:07,000
+You have the curve Sin[<i>x</i>] + 2, and you want to see what happens
+
+98
+00:08:07,000 --> 00:08:11,000
+as you increase the number of rectangles.
+
+99
+00:08:11,000 --> 00:08:14,000
+Let’s play the animation.
+
+100
+00:08:14,000 --> 00:08:17,000
+You see that you get a better limit approximation
+
+101
+00:08:17,000 --> 00:08:20,000
+as you increase the number of rectangles.
+
+102
+00:08:20,000 --> 00:08:23,000
+But of course, things are not so simple because at some places,
+
+103
+00:08:23,000 --> 00:08:27,000
+you get a slightly smaller area, and at some others,
+
+104
+00:08:27,000 --> 00:08:29,000
+you overestimate the area.
+
+105
+00:08:32,000 --> 00:08:36,000
+Okay. Now we can make a formal definition of area.
+
+106
+00:08:36,000 --> 00:08:39,000
+The area under the curve is defined by
+
+107
+00:08:39,000 --> 00:08:47,000
+the limit of the sum of the areas of the rectangles.
+
+108
+00:08:47,000 --> 00:08:54,000
+Now that’s the case for right-aligned because you’re working with <i>f</i>[<i>xi</i>],
+
+109
+00:08:54,000 --> 00:08:59,000
+but if you want left-aligned rectangles, then you get almost the same expression,
+
+110
+00:08:59,000 --> 00:09:03,000
+but now you start at 0 rather than starting at 1.
+
+111
+00:09:03,000 --> 00:09:07,000
+The fact is that if your function <i>f</i> is continuous,
+
+112
+00:09:07,000 --> 00:09:12,000
+then both those limits will exist, and in fact, they’ll be equal.
+
+113
+00:09:12,000 --> 00:09:18,000
+You could work with those sums, or you could actually take the values
+
+114
+00:09:18,000 --> 00:09:23,000
+at any number in the subinterval for each <i>i</i>.
+
+115
+00:09:23,000 --> 00:09:27,000
+These numbers are called sample points.
+
+116
+00:09:27,000 --> 00:09:31,000
+In particular, if you have right-aligned rectangles,
+
+117
+00:09:31,000 --> 00:09:36,000
+then you have the sample points <i>xi</i>, and if you have left-aligned rectangles,
+
+118
+00:09:36,000 --> 00:09:39,000
+then you have the sample points <i>xi</i> – 1.
+
+119
+00:09:39,000 --> 00:09:42,000
+That’s the general formula for the area
+
+120
+00:09:42,000 --> 00:09:46,000
+with any sample points for each subinterval.
+
+121
+00:09:46,000 --> 00:09:49,000
+For example, here you have taken the sample points
+
+122
+00:09:49,000 --> 00:09:52,000
+to be the midpoints of each subinterval.
+
+123
+00:09:53,000 --> 00:09:56,000
+Okay. Now it’s time to work out an example,
+
+124
+00:09:56,000 --> 00:10:00,000
+so let’s try to work out the area of Sin[<i>x</i>] from 0 to <i>b</i>
+
+125
+00:10:00,000 --> 00:10:03,000
+where the number <i>b</i> lies between 0 and π.
+
+126
+00:10:03,000 --> 00:10:12,000
+Here’s a plot. Now we break up the interval into <i>n</i> subintervals.
+
+127
+00:10:12,000 --> 00:10:15,000
+We’ll work with, let’s say, right-aligned rectangles,
+
+128
+00:10:15,000 --> 00:10:21,000
+and you get the answer for the area as 1 – Cos[<i>b</i>].
+
+129
+00:10:22,000 --> 00:10:26,000
+Of course, you could then replace the <i>b</i> with π,
+
+130
+00:10:26,000 --> 00:10:31,000
+and you get back a much nicer answer, which is just 2.
+
+131
+00:10:32,000 --> 00:10:36,000
+That’s the power of the whole method; namely, it gives the exact answer
+
+132
+00:10:36,000 --> 00:10:40,000
+under this curve between, in this case, 0 and π.
+
+133
+00:10:42,000 --> 00:10:46,000
+Okay. Now a slightly more practical problem.
+
+134
+00:10:46,000 --> 00:10:50,000
+Let’s say a car moves on a highway, and you’re given the velocities
+
+135
+00:10:50,000 --> 00:10:56,000
+at different times at 10-minute intervals, and you want to work out
+
+136
+00:10:56,000 --> 00:10:59,000
+the total distance covered in 100 minutes.
+
+137
+00:10:59,000 --> 00:11:01,000
+What you do is you divide by 60 over here—
+
+138
+00:11:01,000 --> 00:11:05,000
+after all, you want to work with minutes—and you take the height,
+
+139
+00:11:05,000 --> 00:11:11,000
+so to speak, as the velocities, so you take 63, 62, 61, et cetera, from here,
+
+140
+00:11:11,000 --> 00:11:16,000
+and you get back the sum, which is just the distance covered.
+
+141
+00:11:16,000 --> 00:11:23,000
+You can also take the heights to be the velocities at the right endpoints
+
+142
+00:11:23,000 --> 00:11:29,000
+like I’ve done over here, in which case you get back the answer 108.33.
+
+143
+00:11:30,000 --> 00:11:36,000
+That’s a plot of the velocities, and we’ve worked out distance in two ways
+
+144
+00:11:36,000 --> 00:11:40,000
+using the left values and the right values.
+
+145
+00:11:40,000 --> 00:11:44,000
+But of course we could be more precise and assume that the velocity
+
+146
+00:11:44,000 --> 00:11:48,000
+is given by a certain function, in which case you could work out
+
+147
+00:11:48,000 --> 00:11:50,000
+the distance by a similar method as earlier on.
+
+148
+00:11:50,000 --> 00:11:55,000
+You take the limit of the sum, and then velocities must be then
+
+149
+00:11:55,000 --> 00:11:59,000
+found out at those values over here.
+
+150
+00:11:59,000 --> 00:12:04,000
+Then you get back the answer as 109.394 in this case.
+
+151
+00:12:06,000 --> 00:12:10,000
+That’s a plot of velocity, and the area under the curve in this case
+
+152
+00:12:10,000 --> 00:12:15,000
+will give you the distance covered in that interval of time.
+
+153
+00:12:17,000 --> 00:12:19,000
+That brings me to the end of this lesson.
+
+154
+00:12:19,000 --> 00:12:23,000
+Basically, finding area is a very practical matter.
+
+155
+00:12:23,000 --> 00:12:25,000
+You’ve done it forever, so to speak,
+
+156
+00:12:25,000 --> 00:12:28,000
+from, let’s say, middle school all the way up.
+
+157
+00:12:28,000 --> 00:12:32,000
+But to work out the area under a general curve,
+
+158
+00:12:32,000 --> 00:12:38,000
+you must divide into rectangles and then add those areas up.
+
+159
+00:12:38,000 --> 00:12:41,000
+Finally, we are doing calculus, so you must take the limit
+
+160
+00:12:41,000 --> 00:12:46,000
+as those rectangle numbers approach infinity,
+
+161
+00:12:46,000 --> 00:12:49,000
+and then you get the real area under the curve.
+
+162
+00:12:49,000 --> 00:12:53,000
+Now, these sums that you compute are called Riemann sums
+
+163
+00:12:53,000 --> 00:12:56,000
+in honor of the mathematician Riemann,
+
+164
+00:12:56,000 --> 00:13:00,000
+and these Riemann sums can also be used to work out
+
+165
+00:13:00,000 --> 00:13:05,000
+the total distance traveled when you are given only the velocity.
+
+166
+00:13:06,000 --> 00:13:09,000
+That’s the end of this lesson.
+
+167
+00:13:09,000 --> 00:13:12,000
+The next lesson will talk about Riemann sums in more detail,
+
+168
+00:13:12,000 --> 00:13:15,000
+but before doing that, there will be a problem session,
+
+169
+00:13:15,000 --> 00:13:21,000
+which you should certainly look at and understand the topic in much greater detail.
+
+170
+00:13:21,000 --> 00:13:24,000
+Thank you very much. I’ll stop over here.
+

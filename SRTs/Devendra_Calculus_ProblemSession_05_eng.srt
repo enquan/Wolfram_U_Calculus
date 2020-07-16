@@ -1,0 +1,508 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Problem Session 5 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:15,000
+The topic for this session is maxima and minima, the mean value theorem and curve sketching.
+
+3
+00:00:15,000 --> 00:00:22,000
+Let’s begin with the first problem for the session. You have the function 2<i>x</i> – <i>x</i>^2,
+
+4
+00:00:22,000 --> 00:00:27,000
+and the problem is to find the absolute maximum and minimum for this function
+
+5
+00:00:27,000 --> 00:00:34,000
+on the interval [0, 4]. What you do is you first of all work out the critical numbers
+
+6
+00:00:34,000 --> 00:00:41,000
+by setting the derivative equal to 0. There’s only one critical number at 1, so you need to test at 0;
+
+7
+00:00:41,000 --> 00:00:46,000
+the left-hand point at 1, which is a critical point; and at the right-hand point, 4.
+
+8
+00:00:46,000 --> 00:00:53,000
+When you do that, then the function values tell you that you actually have an absolute maximum at 1
+
+9
+00:00:53,000 --> 00:01:01,000
+and you have an absolute minimum at 4. Here’s a plot of the function clearly showing you
+
+10
+00:01:01,000 --> 00:01:05,000
+that you have a maximum at 1 and a minimum at 4.
+
+11
+00:01:06,000 --> 00:01:11,000
+Okay. For the second example, let’s talk about local maxima and minima
+
+12
+00:01:11,000 --> 00:01:16,000
+for this polynomial over here. To find the local maxima and minima,
+
+13
+00:01:16,000 --> 00:01:22,000
+you first work out the critical points as before. There are three of them, so what you do is
+
+14
+00:01:22,000 --> 00:01:29,000
+you examine the intervals to the left and right of each of them. At –2, the first critical point,
+
+15
+00:01:29,000 --> 00:01:35,000
+you pick a point to the left and to the right, et cetera, and work out derivatives over there.
+
+16
+00:01:35,000 --> 00:01:39,000
+You find that in the first case, the derivative goes from negative to positive, et cetera,
+
+17
+00:01:39,000 --> 00:01:47,000
+so you have a local minimum at –2 and 6 and a local maximum at 5/2.
+
+18
+00:01:48,000 --> 00:01:53,000
+Here is a plot of the function, and you can see quite clearly that
+
+19
+00:01:53,000 --> 00:02:01,000
+you do have local minima at –2 and 6, and you do have a local maximum at 5/2.
+
+20
+00:02:02,000 --> 00:02:08,000
+Now it’s much easier in general to use the second derivative test, so let’s talk about that now.
+
+21
+00:02:08,000 --> 00:02:12,000
+You have a function, and you want to work out the local maxima and minima
+
+22
+00:02:12,000 --> 00:02:21,000
+using the second derivative test. Work out the critical points. There’s just two of them, –4 and 1,
+
+23
+00:02:21,000 --> 00:02:26,000
+so then you work out the second derivatives at those points. In the first case,
+
+24
+00:02:26,000 --> 00:02:33,000
+you have a negative second derivative, so that says that you actually have a maximum at <i>x</i> = –4,
+
+25
+00:02:33,000 --> 00:02:41,000
+and you have a positive second derivative, so that says you have a local minimum at <i>x</i> = 1.
+
+26
+00:02:41,000 --> 00:02:50,000
+Here is a plot of the function showing the local maximum and the local minimum as we just found out.
+
+27
+00:02:51,000 --> 00:02:57,000
+On to number 4, which talks about the local maxima and minima for
+
+28
+00:02:57,000 --> 00:03:04,000
+the absolute value function 2 – 3<i>x</i>. Now this function of course does not have a derivative at 2/3,
+
+29
+00:03:04,000 --> 00:03:10,000
+so we need to examine that as a critical number, and apart from that,
+
+30
+00:03:10,000 --> 00:03:17,000
+we have no other points where the derivative is 0. What you do is let’s talk about (2/3, 0)
+
+31
+00:03:17,000 --> 00:03:20,000
+and check what happens to the left of it, the right of it.
+
+32
+00:03:20,000 --> 00:03:25,000
+The derivatives are negative in the first case and positive in the second case,
+
+33
+00:03:25,000 --> 00:03:32,000
+so you have a local minimum at <i>x</i> = 2/3. Here’s a plot. Of course in this case,
+
+34
+00:03:32,000 --> 00:03:35,000
+you could have guessed the answer, but it’s good to know that you can actually
+
+35
+00:03:35,000 --> 00:03:41,000
+apply the same ideas from derivatives to find the local minimum in this case.
+
+36
+00:03:42,000 --> 00:03:46,000
+Okay. On to number 5, and now we switch to the mean value theorem.
+
+37
+00:03:46,000 --> 00:03:54,000
+We have the function Sin[<i>x</I>] + <i>x</i>, and the question is how do we find the value at which
+
+38
+00:03:54,000 --> 00:04:00,000
+the tangent line actually has the same slope as the secant line joining endpoints.
+
+39
+00:04:00,000 --> 00:04:05,000
+Here’s the function. That’s the slope of the secant line joining the endpoints.
+
+40
+00:04:06,000 --> 00:04:12,000
+What you want to do is to find a point at which the derivative is equal to the slope,
+
+41
+00:04:12,000 --> 00:04:19,000
+which we just found out, and there are two of them. There’s –π/2 and π/2.
+
+42
+00:04:19,000 --> 00:04:23,000
+You work out the values at those points. You’ve got two points at which
+
+43
+00:04:23,000 --> 00:04:29,000
+the tangent line is parallel to the secant line joining the endpoints.
+
+44
+00:04:29,000 --> 00:04:32,000
+Here’s a plot that illustrates that, and you actually see that
+
+45
+00:04:32,000 --> 00:04:36,000
+you have the two values we just found out over here.
+
+46
+00:04:37,000 --> 00:04:43,000
+Okay. On number 6, the same thing, the mean value theorem. You have a function 3/(<i>x</i> – 1),
+
+47
+00:04:43,000 --> 00:04:51,000
+and you want to find out a point at which the tangent line has a slope equal to the secant slope.
+
+48
+00:04:51,000 --> 00:04:57,000
+You have the slope of the secant. You set that equal to the tangent slope,
+
+49
+00:04:57,000 --> 00:05:08,000
+and you find that that happens when <i>x</i> is √5, so the value of <i>f</i>[√5] is –1 + (3/√5).
+
+50
+00:05:08,000 --> 00:05:14,000
+Here’s a plot that shows the secant line and the tangent line
+
+51
+00:05:14,000 --> 00:05:18,000
+at the point at which the two are parallel.
+
+52
+00:05:20,000 --> 00:05:26,000
+Okay. On to number 7, which talks about the asymptotes of a rational function.
+
+53
+00:05:27,000 --> 00:05:33,000
+Now of course the vertical asymptotes occur where the denominator becomes 0.
+
+54
+00:05:33,000 --> 00:05:38,000
+You solve that equation, and you find that there are two of them.
+
+55
+00:05:38,000 --> 00:05:43,000
+Because you have the same degree for the numerator and denominator,
+
+56
+00:05:43,000 --> 00:05:47,000
+you actually will have a horizontal asymptote.
+
+57
+00:05:47,000 --> 00:05:53,000
+Let’s confirm that Limit confirms our guess of 1/2 after we got a 1 over here
+
+58
+00:05:53,000 --> 00:05:57,000
+for the coefficient and 2 over there, so the horizontal asymptote is <i>y</i> = 1/2.
+
+59
+00:05:58,000 --> 00:06:03,000
+Here’s a plot showing that you actually do have the two vertical asymptotes
+
+60
+00:06:03,000 --> 00:06:06,000
+and one horizontal asymptote.
+
+61
+00:06:07,000 --> 00:06:11,000
+Okay. Problem number 8—another problem with asymptotes.
+
+62
+00:06:11,000 --> 00:06:16,000
+Now you work out the vertical asymptotes by setting the denominator equal to 0,
+
+63
+00:06:16,000 --> 00:06:24,000
+and there are three of them. On the other hand, because the numerator degree
+
+64
+00:06:24,000 --> 00:06:29,000
+is one greater than the denominator—you’ve got a power of 4 over there and 3 over there,
+
+65
+00:06:29,000 --> 00:06:34,000
+so there will be a slant asymptote. To find the slant asymptote,
+
+66
+00:06:34,000 --> 00:06:38,000
+you actually use the polynomial coefficient with PolynomialQuotient,
+
+67
+00:06:38,000 --> 00:06:44,000
+and you get that as the expression <i>y</i> = –(11/25) + (3<i>x</i>/5).
+
+68
+00:06:44,000 --> 00:06:51,000
+Here’s a plot which confirms all the information and shows you the slant asymptote as well.
+
+69
+00:06:52,000 --> 00:06:57,000
+Okay. Let’s go on to problem number 9, which is a slightly more qualitative problem.
+
+70
+00:06:57,000 --> 00:07:03,000
+Here you’re given the graph of a derivative of a function, and the question is
+
+71
+00:07:03,000 --> 00:07:08,000
+what can you say about the original function from this information?
+
+72
+00:07:08,000 --> 00:07:13,000
+Well, you see over here that the derivative is positive over there and over there,
+
+73
+00:07:13,000 --> 00:07:22,000
+so it’s positive between (–3, 0) and (2, ∞), and it is negative on the remaining two intervals.
+
+74
+00:07:22,000 --> 00:07:30,000
+You have a local minimum near –3 and also near 2 because if you look at –3,
+
+75
+00:07:30,000 --> 00:07:38,000
+then it goes from being negative to being positive, and you have a local maximum at 0
+
+76
+00:07:38,000 --> 00:07:42,000
+because the derivative goes from being positive to being negative.
+
+77
+00:07:42,000 --> 00:07:48,000
+Finally you have a local maximum for the derivative near –2
+
+78
+00:07:48,000 --> 00:07:54,000
+and a local minimum for the derivative near 1, so you actually have inflection points there.
+
+79
+00:07:54,000 --> 00:07:59,000
+In all, you have three local minima and maxima and two inflection points.
+
+80
+00:07:59,000 --> 00:08:04,000
+Here are all the five points. The black points are the minima and maxima
+
+81
+00:08:04,000 --> 00:08:08,000
+and the blue points are the inflection points.
+
+82
+00:08:09,000 --> 00:08:14,000
+Okay. On to number 10, which talks about finding the points of inflection
+
+83
+00:08:14,000 --> 00:08:23,000
+for this function <i>x</i>Cos[<i>x</i>] between –π and π. What you do is you set the second derivative to 0
+
+84
+00:08:23,000 --> 00:08:34,000
+and solve between –π and π, and you find that the numerical values are 0, –2.28 and 2.28 roughly.
+
+85
+00:08:35,000 --> 00:08:41,000
+Then you work out the second derivatives at suitable points, and you find over here
+
+86
+00:08:41,000 --> 00:08:45,000
+that the second derivative changes sign in each case, as you see over here,
+
+87
+00:08:45,000 --> 00:08:51,000
+and so you actually do have an inflection point at all those candidates.
+
+88
+00:08:51,000 --> 00:08:59,000
+Here is a plot which confirms that you actually do have three inflection points for this function.
+
+89
+00:09:01,000 --> 00:09:05,000
+Okay. On to number 11, which is a rather simple problem.
+
+90
+00:09:05,000 --> 00:09:13,000
+The question is given the position of a particle, you want to find where the velocity is at maximum.
+
+91
+00:09:13,000 --> 00:09:20,000
+Now if the velocity has to be maximum, then the acceleration has to be 0 at that time,
+
+92
+00:09:20,000 --> 00:09:29,000
+so we set the acceleration to be 0, and you find that that happens when <i>t</i> = –2/3.
+
+93
+00:09:29,000 --> 00:09:36,000
+Now you work out the acceleration at two points over there, and you find that
+
+94
+00:09:36,000 --> 00:09:40,000
+the acceleration goes from being positive to negative at this point,
+
+95
+00:09:40,000 --> 00:09:43,000
+so you actually have a maximum over there.
+
+96
+00:09:43,000 --> 00:09:50,000
+Okay. That’s the picture you have where you are seeing the velocity being maximal.
+
+97
+00:09:51,000 --> 00:09:55,000
+Okay. On number 12, you have to compute the value of <i>x</i>
+
+98
+00:09:55,000 --> 00:10:00,000
+for which the function has a minimum at <i>x</i> = 2.
+
+99
+00:10:00,000 --> 00:10:05,000
+You’ve got a parameter <i>c</I>, so you want to find the value of that <i>c</i>.
+
+100
+00:10:05,000 --> 00:10:12,000
+You set the derivative to 0, and you find that <i>x</i> should either be –√<i>c</i> or √<i>c</i>,
+
+101
+00:10:12,000 --> 00:10:19,000
+but if you want a critical point at 2, then that √<i>c</i> better be 2, so <i>c</i> must be 4.
+
+102
+00:10:19,000 --> 00:10:25,000
+Here’s a plot that confirms that you actually have the correct behavior in this case;
+
+103
+00:10:25,000 --> 00:10:30,000
+namely, you do have a local minimum at <i>x</i> = 2.
+
+104
+00:10:31,000 --> 00:10:35,000
+Okay. On to number 13, where you’re given a table of values.
+
+105
+00:10:35,000 --> 00:10:42,000
+Now let’s say this function given to you over here is differentiable. The question is
+
+106
+00:10:42,000 --> 00:10:47,000
+what is the minimum number of times that the derivative becomes 0?
+
+107
+00:10:47,000 --> 00:10:53,000
+Well, if you look over here, then the derivative first decreases from 1 to 3.
+
+108
+00:10:53,000 --> 00:10:59,000
+It also decreases from 5 to 10, and it increases between 3 and 5.
+
+109
+00:10:59,000 --> 00:11:04,000
+The derivative must be 0 at least twice on this interval.
+
+110
+00:11:04,000 --> 00:11:06,000
+Here’s a plot which confirms that
+
+111
+00:11:06,000 --> 00:11:10,000
+you actually have two points at which the derivative is 0.
+
+112
+00:11:11,000 --> 00:11:17,000
+Okay. On to the last question, which is about computing the places on this curve
+
+113
+00:11:17,000 --> 00:11:19,000
+where you have a horizontal tangent.
+
+114
+00:11:19,000 --> 00:11:24,000
+Now of course you have an implicit function, so you must differentiate implicitly in this case.
+
+115
+00:11:24,000 --> 00:11:27,000
+You do that, work out derivatives.
+
+116
+00:11:27,000 --> 00:11:36,000
+Now if that is to be 0, then the numerator must be 0, so you must have <i>x</i>(10 + 3<i>x</i>) = 0
+
+117
+00:11:36,000 --> 00:11:44,000
+so either <i>x</i> is 0. Now if <i>x</i> is 0, then <i>y</i> too is 0 from the equation,
+
+118
+00:11:44,000 --> 00:11:50,000
+but then the derivative is not defined over there because you’re dividing by 0,
+
+119
+00:11:50,000 --> 00:11:54,000
+so that can’t happen. On the other hand, when <i>x</i> = –(10/3),
+
+120
+00:11:54,000 --> 00:11:59,000
+which  comes from this factor over here, then you can actually work out the value of <i>y</i>,
+
+121
+00:11:59,000 --> 00:12:03,000
+and you get two values, so in fact, you’ve got two points on the curve
+
+122
+00:12:03,000 --> 00:12:07,000
+at which the tangent is horizontal.
+
+123
+00:12:07,000 --> 00:12:11,000
+Here’s a picture of the curve showing you the two points at which
+
+124
+00:12:11,000 --> 00:12:14,000
+you have these horizontal tangents.
+
+125
+00:12:14,000 --> 00:12:17,000
+That brings me to the end of today’s problem session.
+
+126
+00:12:17,000 --> 00:12:19,000
+I’ll stop over here and see you next time.
+
+127
+00:12:19,000 --> 00:12:21,000
+Thank you.
+

@@ -1,0 +1,532 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Lesson 36
+
+2
+00:00:03,000 --> 00:00:07,000
+of this introduction to calculus with Wolfram U.
+
+3
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is slope fields and Euler’s method.
+
+4
+00:00:13,000 --> 00:00:17,000
+Let’s begin with a brief overview of the lesson.
+
+5
+00:00:17,000 --> 00:00:20,000
+The fact is that some differential equations
+
+6
+00:00:20,000 --> 00:00:23,000
+are very difficult to solve by hand.
+
+7
+00:00:23,000 --> 00:00:28,000
+For example, here’s a differential equation that looks quite simple,
+
+8
+00:00:28,000 --> 00:00:34,000
+<i>y</i>'[<i>x</i>] = <i>y</i>[<i>x</i>]^2 – <i>x</i>, and you want to solve it
+
+9
+00:00:34,000 --> 00:00:39,000
+with the condition that when <i>x</i> = 1, then <i>y</i> = 0.
+
+10
+00:00:39,000 --> 00:00:44,000
+Now the function DSolve can certainly solve this equation,
+
+11
+00:00:44,000 --> 00:00:46,000
+but the solution is huge
+
+12
+00:00:46,000 --> 00:00:49,000
+and involves these so-called Bessel functions,
+
+13
+00:00:49,000 --> 00:00:53,000
+which occur in the oscillations of membranes and elsewhere.
+
+14
+00:00:53,000 --> 00:00:57,000
+In such cases, it is much easier to just visualize
+
+15
+00:00:57,000 --> 00:01:01,000
+what the solution to the curve looks like for any initial value.
+
+16
+00:01:01,000 --> 00:01:05,000
+In this lesson, we’ll learn how to use slope fields
+
+17
+00:01:05,000 --> 00:01:09,000
+to see the behavior of such differential equations.
+
+18
+00:01:11,000 --> 00:01:13,000
+As an introduction to slope fields,
+
+19
+00:01:13,000 --> 00:01:18,000
+let’s consider the differential equation <i>y</I>'[<i>x</i>] = <i>f</i>[<i>x</I>, <i>y</i>].
+
+20
+00:01:18,000 --> 00:01:22,000
+If you want to find the slope field for this equation,
+
+21
+00:01:22,000 --> 00:01:24,000
+what you do is you plug in the values for <i>x</i> and <i>y</i>
+
+22
+00:01:24,000 --> 00:01:30,000
+in the function <i>f</i> and then plot the slope at that point.
+
+23
+00:01:30,000 --> 00:01:31,000
+What does that mean?
+
+24
+00:01:31,000 --> 00:01:34,000
+It means that you draw a small line segment
+
+25
+00:01:34,000 --> 00:01:40,000
+with slope close to the value you get from the expression <i>f</I>[<i>x</i>, <i>y</i>].
+
+26
+00:01:40,000 --> 00:01:44,000
+Then you get a slope field, which gives you a very general picture
+
+27
+00:01:44,000 --> 00:01:47,000
+of the solutions to the differential equation.
+
+28
+00:01:47,000 --> 00:01:49,000
+It’s not very precise, but it’s good enough.
+
+29
+00:01:49,000 --> 00:01:53,000
+Luckily we have two functions in the Wolfram Language.
+
+30
+00:01:53,000 --> 00:01:58,000
+There’s StreamPlot and VectorPlot, which can be used for this purpose.
+
+31
+00:01:58,000 --> 00:02:02,000
+For example, let’s go back to the earlier differential equation,
+
+32
+00:02:02,000 --> 00:02:10,000
+and you can use VectorPlot by saying {1, <i>f</I>[<i>x</i>, y]} over here,
+
+33
+00:02:10,000 --> 00:02:13,000
+or StreamPlot with the same kind of specification,
+
+34
+00:02:13,000 --> 00:02:16,000
+and you get back the vector field,
+
+35
+00:02:16,000 --> 00:02:20,000
+the slope field over here and the stream field over there.
+
+36
+00:02:20,000 --> 00:02:22,000
+The stream field has a solution of curves
+
+37
+00:02:22,000 --> 00:02:25,000
+instead of just the arrows like over here.
+
+38
+00:02:26,000 --> 00:02:28,000
+Now in some cases, what we really want
+
+39
+00:02:28,000 --> 00:02:32,000
+are the particular solutions to a differential equation.
+
+40
+00:02:32,000 --> 00:02:36,000
+For example, in the first case for our introduction,
+
+41
+00:02:36,000 --> 00:02:41,000
+we had the differential equation with the initial value <i>y</i>[1] = 0.
+
+42
+00:02:41,000 --> 00:02:46,000
+To find that out, you can use the StreamPoints option like over here
+
+43
+00:02:46,000 --> 00:02:50,000
+and get the particular solution curve
+
+44
+00:02:50,000 --> 00:02:55,000
+on the vector plot or on the stream plot.
+
+45
+00:02:57,000 --> 00:02:58,000
+A couple more examples.
+
+46
+00:02:58,000 --> 00:03:04,000
+Here is the vector field for <i>x</I> – <i>y</i>, the stream plot.
+
+47
+00:03:04,000 --> 00:03:07,000
+You see over here that when <i>x</i> is very large,
+
+48
+00:03:07,000 --> 00:03:11,000
+then you have a positive slope from the expression over here.
+
+49
+00:03:11,000 --> 00:03:14,000
+When <i>y</i> is very large, you have a negative slope.
+
+50
+00:03:14,000 --> 00:03:18,000
+The same thing can be worked out with VectorPlot over here
+
+51
+00:03:18,000 --> 00:03:23,000
+with the initial value <i>y</i>[0] = 0.
+
+52
+00:03:24,000 --> 00:03:27,000
+Okay. Another example.
+
+53
+00:03:27,000 --> 00:03:29,000
+Let’s take <i>f</i> to be <i>x</i> * <i>y</i>.
+
+54
+00:03:29,000 --> 00:03:32,000
+Now what happens over here is the stream plot
+
+55
+00:03:32,000 --> 00:03:35,000
+depends upon where you are.
+
+56
+00:03:35,000 --> 00:03:39,000
+If you are in the first or the third quadrant,
+
+57
+00:03:39,000 --> 00:03:41,000
+then both <i>x</i> and <i>y</i> are the same sign,
+
+58
+00:03:41,000 --> 00:03:43,000
+so you have positive slopes,
+
+59
+00:03:43,000 --> 00:03:46,000
+and just the opposite happens in the other two quadrants.
+
+60
+00:03:46,000 --> 00:03:50,000
+If you want the particular solution <i>y</I>[1] = –1,
+
+61
+00:03:50,000 --> 00:03:52,000
+you plug that over here in StreamPoints
+
+62
+00:03:52,000 --> 00:03:56,000
+and you get back the plot for that particular curve.
+
+63
+00:03:57,000 --> 00:04:02,000
+Okay. Now in practice, you might just want to estimate
+
+64
+00:04:02,000 --> 00:04:04,000
+the solution for a differential equation,
+
+65
+00:04:04,000 --> 00:04:07,000
+and that can be done with Euler’s method.
+
+66
+00:04:07,000 --> 00:04:09,000
+The idea is this.
+
+67
+00:04:09,000 --> 00:04:11,000
+Here’s the same example from the introduction,
+
+68
+00:04:11,000 --> 00:04:13,000
+and you want to find the value at 2
+
+69
+00:04:13,000 --> 00:04:17,000
+starting with the value at 1 equal to 0.
+
+70
+00:04:17,000 --> 00:04:21,000
+What you do is you start with (1, 0)
+
+71
+00:04:21,000 --> 00:04:25,000
+and plug it in the slope over here, so the slope is –1.
+
+72
+00:04:25,000 --> 00:04:30,000
+Then write down the linear approximation, which is <i>y</i> = –(<i>x</i> – 1).
+
+73
+00:04:30,000 --> 00:04:35,000
+If you plug in 2, then the approximate value is –1.
+
+74
+00:04:36,000 --> 00:04:38,000
+But of course what you could do is
+
+75
+00:04:38,000 --> 00:04:40,000
+you could go off a little bit on the tangent line,
+
+76
+00:04:40,000 --> 00:04:42,000
+then change direction,
+
+77
+00:04:42,000 --> 00:04:46,000
+and then that will give you a better approximation.
+
+78
+00:04:46,000 --> 00:04:50,000
+For example, you could go halfway from 1 to 2 up to 1.5,
+
+79
+00:04:50,000 --> 00:04:55,000
+and then you could change your direction with the new slope,
+
+80
+00:04:55,000 --> 00:04:58,000
+and you get a better approximation
+
+81
+00:04:58,000 --> 00:05:00,000
+from the linear approximation over here,
+
+82
+00:05:00,000 --> 00:05:04,000
+and you get back the solution at 2 to be –0.125.
+
+83
+00:05:06,000 --> 00:05:09,000
+Here’s the idea behind Euler’s method.
+
+84
+00:05:09,000 --> 00:05:12,000
+The idea is that when you take very short steps along tangent lines,
+
+85
+00:05:12,000 --> 00:05:15,000
+you get much better estimates.
+
+86
+00:05:15,000 --> 00:05:17,000
+Basically what you’ll do is
+
+87
+00:05:17,000 --> 00:05:19,000
+you’ll use an equation of this type over here
+
+88
+00:05:19,000 --> 00:05:24,000
+where every value of <i>y</i> depends upon the previous value.
+
+89
+00:05:24,000 --> 00:05:30,000
+Here’s a visual for the case where <i>y</i>' = <i>y</i> and <i>y</i>[0] = 1.
+
+90
+00:05:30,000 --> 00:05:34,000
+Of course in this case, the exact solution is just <i>e</I>^<i>x</i>
+
+91
+00:05:34,000 --> 00:05:37,000
+because its derivative is itself.
+
+92
+00:05:37,000 --> 00:05:41,000
+If you have only one point, then you get back just a tangent line,
+
+93
+00:05:41,000 --> 00:05:43,000
+the red line over here.
+
+94
+00:05:43,000 --> 00:05:47,000
+If you take two points, you go halfway down,
+
+95
+00:05:47,000 --> 00:05:51,000
+then you change direction and you get a better approximation.
+
+96
+00:05:51,000 --> 00:05:54,000
+Then of course you could take three points, four points, et cetera.
+
+97
+00:05:54,000 --> 00:05:57,000
+By the time we get to ten points like the green line over here,
+
+98
+00:05:57,000 --> 00:06:00,000
+then you get a really nice approximation.
+
+99
+00:06:00,000 --> 00:06:05,000
+Of course the top-most graph is the actual solution.
+
+100
+00:06:05,000 --> 00:06:09,000
+With Euler’s method, the approximation improves
+
+101
+00:06:09,000 --> 00:06:12,000
+as you take more and more points.
+
+102
+00:06:12,000 --> 00:06:16,000
+You have one point, then two points, then ten points
+
+103
+00:06:16,000 --> 00:06:20,000
+and then you get closer and closer to the solution.
+
+104
+00:06:20,000 --> 00:06:26,000
+Now Euler’s method relies on so-called recurrence relations.
+
+105
+00:06:26,000 --> 00:06:27,000
+What’s that?
+
+106
+00:06:27,000 --> 00:06:32,000
+Well, here’s the relation for Euler’s method, and what happens is
+
+107
+00:06:32,000 --> 00:06:37,000
+let’s say you want to find the value of <i>y</i>2—so <i>n</i> is 2.
+
+108
+00:06:37,000 --> 00:06:41,000
+Then that depends upon <i>y</i>1 and <i>x</i>1.
+
+109
+00:06:41,000 --> 00:06:47,000
+You need <i>x</I>1 and <I>y</i>1 to work out the value of <i>y</i>2.
+
+110
+00:06:47,000 --> 00:06:50,000
+Then you say I don’t know the value of <i>y</i>1,
+
+111
+00:06:50,000 --> 00:06:56,000
+so to find the value of <I>y</i>1, you need the value of <i>x</i>0 and <i>y</i>0.
+
+112
+00:06:56,000 --> 00:06:59,000
+But of course, those are just the initial conditions.
+
+113
+00:06:59,000 --> 00:07:03,000
+In practice, if you want to find, let’s say, <i>y</i>100,
+
+114
+00:07:03,000 --> 00:07:05,000
+you need to go around all the way to 0,
+
+115
+00:07:05,000 --> 00:07:08,000
+and that’s of course a very tiresome thing to do by hand.
+
+116
+00:07:08,000 --> 00:07:12,000
+On the other hand, it’s a perfect thing to do by computer,
+
+117
+00:07:12,000 --> 00:07:15,000
+so it’s very easy to program on a computer.
+
+118
+00:07:15,000 --> 00:07:19,000
+After a couple of lessons, we’ll talk about how to make
+
+119
+00:07:19,000 --> 00:07:23,000
+a program that calculates the points from Euler’s method.
+
+120
+00:07:25,000 --> 00:07:29,000
+That’s the end of this lesson, and the main point is
+
+121
+00:07:29,000 --> 00:07:31,000
+you can use slope fields to visualize
+
+122
+00:07:31,000 --> 00:07:34,000
+the behavior of differential equations.
+
+123
+00:07:34,000 --> 00:07:36,000
+We have two nice functions.
+
+124
+00:07:36,000 --> 00:07:41,000
+We have VectorPlot and we have StreamPlot to plot these slope fields.
+
+125
+00:07:41,000 --> 00:07:43,000
+You can use Euler’s method
+
+126
+00:07:43,000 --> 00:07:46,000
+to estimate the solution at various points,
+
+127
+00:07:46,000 --> 00:07:49,000
+and because that’s rather tedious to do,
+
+128
+00:07:49,000 --> 00:07:51,000
+we can actually program it with a computer,
+
+129
+00:07:51,000 --> 00:07:53,000
+but that you’ll learn very soon.
+
+130
+00:07:53,000 --> 00:07:57,000
+The next lesson is about separable differential equations.
+
+131
+00:07:57,000 --> 00:07:59,000
+Before we do that, do review today’s lesson.
+
+132
+00:07:59,000 --> 00:08:03,000
+It’s an important lesson for differential equations.
+
+133
+00:08:03,000 --> 00:08:06,000
+I’ll stop over here. Thank you very much.
+

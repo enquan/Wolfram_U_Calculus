@@ -1,0 +1,486 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 28 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is areas between curves.
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the topic.
+
+4
+00:00:15,000 --> 00:00:18,000
+When you calculate an integral, you’re really finding the area
+
+5
+00:00:18,000 --> 00:00:22,000
+between the curve of a function and the <i>x</i> axis.
+
+6
+00:00:22,000 --> 00:00:24,000
+For example, here’s a function,
+
+7
+00:00:24,000 --> 00:00:27,000
+and when you compute the integral for that function,
+
+8
+00:00:27,000 --> 00:00:31,000
+then what you’re really doing is to find the area under the curve.
+
+9
+00:00:31,000 --> 00:00:34,000
+In this case, it’s the area between –1 and 1,
+
+10
+00:00:34,000 --> 00:00:38,000
+which are the limits for the integral over here.
+
+11
+00:00:38,000 --> 00:00:40,000
+The question is what would happen
+
+12
+00:00:40,000 --> 00:00:43,000
+if you want to find the area between two curves?
+
+13
+00:00:43,000 --> 00:00:44,000
+This lesson will go over
+
+14
+00:00:44,000 --> 00:00:48,000
+several examples of how we can do this using Integrate.
+
+15
+00:00:49,000 --> 00:00:52,000
+Okay. Let’s take an example.
+
+16
+00:00:52,000 --> 00:00:56,000
+Let’s say <i>f</i>[<i>x</i>] = 5 and <i>g</i>[<i>x</i>] = –<i>x</i>^2 + 1.
+
+17
+00:00:56,000 --> 00:00:59,000
+Now clearly in this case, the function <i>f</i>
+
+18
+00:00:59,000 --> 00:01:04,000
+is greater than the function <i>g</i> because that’s positive
+
+19
+00:01:04,000 --> 00:01:07,000
+and that’s going to be negative for most of the time,
+
+20
+00:01:07,000 --> 00:01:08,000
+but it won’t go over 1.
+
+21
+00:01:08,000 --> 00:01:11,000
+Now when you want to work out the area between them,
+
+22
+00:01:11,000 --> 00:01:14,000
+what you do is look at the Riemann sums.
+
+23
+00:01:14,000 --> 00:01:16,000
+Now in this case, the Riemann sums will have
+
+24
+00:01:16,000 --> 00:01:20,000
+a height equal to <i>f</i> minus <i>g</i> for each strip,
+
+25
+00:01:20,000 --> 00:01:23,000
+and the width will be (<i>b</i> – <i>a</i>)/<i>n</i> where <i>b</i> and <i>a</i>
+
+26
+00:01:23,000 --> 00:01:26,000
+are the limits of the integration interval.
+
+27
+00:01:26,000 --> 00:01:31,000
+Now the Riemann sum will be the sum of the heights times the widths,
+
+28
+00:01:31,000 --> 00:01:36,000
+which is the same as the integral of <i>f</i> minus <i>g</i>.
+
+29
+00:01:36,000 --> 00:01:40,000
+Basically, if you want to find the area between the preceding curves,
+
+30
+00:01:40,000 --> 00:01:43,000
+then all you go is you work out the integral of <i>f</i> minus <i>g</i>,
+
+31
+00:01:43,000 --> 00:01:48,000
+and you get back the answer—76/3 in this case.
+
+32
+00:01:48,000 --> 00:01:50,000
+Okay. Now two questions.
+
+33
+00:01:50,000 --> 00:01:52,000
+First question: what would happen if
+
+34
+00:01:52,000 --> 00:01:55,000
+you didn’t know the limits of integration?
+
+35
+00:01:55,000 --> 00:02:00,000
+Secondly, what would happen if you had to actually work out
+
+36
+00:02:00,000 --> 00:02:01,000
+which function, greater or less.
+
+37
+00:02:01,000 --> 00:02:04,000
+But before that, let’s take a simple example.
+
+38
+00:02:04,000 --> 00:02:08,000
+Here are two functions, and you want to work out
+
+39
+00:02:08,000 --> 00:02:13,000
+the area between them with <i>x</i> = 1 on the left and <i>x</i> = 5 on the right.
+
+40
+00:02:13,000 --> 00:02:16,000
+In this case, everything is given to you, so we can work out
+
+41
+00:02:16,000 --> 00:02:20,000
+the integral of <i>f</i> minus <i>g</i> and get the answer 88.
+
+42
+00:02:20,000 --> 00:02:26,000
+Here is a plot of the area which we just computed.
+
+43
+00:02:26,000 --> 00:02:29,000
+Now back to the question which I asked earlier on.
+
+44
+00:02:29,000 --> 00:02:34,000
+First question: what happens if you’re not given any endpoints?
+
+45
+00:02:34,000 --> 00:02:37,000
+Let’s say you’ve got two functions, <i>f</i> and <i>g</i>,
+
+46
+00:02:37,000 --> 00:02:41,000
+and you want to find the area enclosed between the curves
+
+47
+00:02:41,000 --> 00:02:43,000
+given by these functions.
+
+48
+00:02:43,000 --> 00:02:45,000
+What you do then is you work out
+
+49
+00:02:45,000 --> 00:02:49,000
+the points of intersection using Solve.
+
+50
+00:02:49,000 --> 00:02:56,000
+The curves intersect at –√3 and √3.
+
+51
+00:02:56,000 --> 00:03:02,000
+Here is a plot of the curves between those limits,
+
+52
+00:03:02,000 --> 00:03:08,000
+and you can see clearly that <i>f</i> is above <i>g</i> in all cases,
+
+53
+00:03:08,000 --> 00:03:11,000
+so we can work out the integral of <i>f</i> minus <i>g</i>,
+
+54
+00:03:11,000 --> 00:03:16,000
+and you get the answer with the area enclosed between these curves.
+
+55
+00:03:17,000 --> 00:03:22,000
+On the other hand, suppose you have the functions Sin[<i>x</i>] and Cos[<i>x</I>].
+
+56
+00:03:22,000 --> 00:03:27,000
+You can see that the functions <i>f</i> and <i>g</i> are either
+
+57
+00:03:27,000 --> 00:03:30,000
+above or below each other depending upon where you are.
+
+58
+00:03:30,000 --> 00:03:35,000
+Let’s say you want to find the area between –3π/4 and 5π/4.
+
+59
+00:03:35,000 --> 00:03:38,000
+That’s roughly starting over here and ending over there.
+
+60
+00:03:38,000 --> 00:03:44,000
+Initially, the cosine function is greater than the sine function,
+
+61
+00:03:44,000 --> 00:03:47,000
+and then the sine function is greater than the cosine
+
+62
+00:03:47,000 --> 00:03:48,000
+for the rest of the interval.
+
+63
+00:03:48,000 --> 00:03:53,000
+On the first interval, –3π/4 to 5π/4, you have <i>g</i> minus <i>f</i>
+
+64
+00:03:53,000 --> 00:03:56,000
+because <i>g</i> is greater than <i>f</i>, and then you do the opposite
+
+65
+00:03:56,000 --> 00:03:59,000
+for the rest of the interval.
+
+66
+00:04:00,000 --> 00:04:03,000
+Then you add the two answers, and you get back 4√2.
+
+67
+00:04:03,000 --> 00:04:09,000
+The point is you will now need to divide the integration
+
+68
+00:04:09,000 --> 00:04:13,000
+into two parts depending upon the behavior of <i>f</i> and <i>g</i>.
+
+69
+00:04:13,000 --> 00:04:17,000
+Instead of doing that, what we do is we just call Integrate
+
+70
+00:04:17,000 --> 00:04:20,000
+with the absolute value function,
+
+71
+00:04:20,000 --> 00:04:24,000
+which will take care of all the difficulties, and you get back
+
+72
+00:04:24,000 --> 00:04:27,000
+just the same answer from Integrate.
+
+73
+00:04:27,000 --> 00:04:30,000
+Given two functions <i>f</i> and <i>g</i>,
+
+74
+00:04:30,000 --> 00:04:33,000
+if you do not know which one is greater or less,
+
+75
+00:04:33,000 --> 00:04:37,000
+then you use the absolute value function to find the area.
+
+76
+00:04:39,000 --> 00:04:43,000
+Okay. Let’s now talk about cases where you’ve got a function of <i>y</I>.
+
+77
+00:04:43,000 --> 00:04:47,000
+So <i>x</i> is given as a function of <i>y</i> in these two functions, <i>f</i> and <i>g</i>.
+
+78
+00:04:47,000 --> 00:04:52,000
+To find the area in this case, you now need <i>y</i> limits.
+
+79
+00:04:52,000 --> 00:04:56,000
+Again, you work with Riemann sums, but now you have
+
+80
+00:04:56,000 --> 00:05:00,000
+Riemann sums with widths given by Δ<i>y</i>.
+
+81
+00:05:00,000 --> 00:05:02,000
+Instead of talking about upper and below,
+
+82
+00:05:02,000 --> 00:05:08,000
+we talk about rightmost and leftmost functions.
+
+83
+00:05:08,000 --> 00:05:10,000
+In this case, if you plot the functions,
+
+84
+00:05:10,000 --> 00:05:16,000
+it is clear that the function <i>g</I> is to the right of the function <i>f</i>,
+
+85
+00:05:16,000 --> 00:05:19,000
+so the area will be given by
+
+86
+00:05:19,000 --> 00:05:24,000
+the integral of <i>g</i> minus <i>f</i> between –5 and 5.
+
+87
+00:05:25,000 --> 00:05:29,000
+Okay. Now an example where you might actually need this is
+
+88
+00:05:29,000 --> 00:05:34,000
+let’s say you’re given <i>y</i> = 3<i>x</i> + 1 and the parabola <i>y</i>^2 = <i>x</i> + 4.
+
+89
+00:05:34,000 --> 00:05:39,000
+In this case, <i>y</i> is not a function of <i>x</i>, so we try and write <i>x</i>
+
+90
+00:05:39,000 --> 00:05:42,000
+as a function of <i>y</i> by solving.
+
+91
+00:05:42,000 --> 00:05:47,000
+Set up two functions from the first solution over here
+
+92
+00:05:47,000 --> 00:05:51,000
+and the second solution over there.
+
+93
+00:05:51,000 --> 00:05:53,000
+Then you find out where they intersect.
+
+94
+00:05:55,000 --> 00:05:59,000
+Do a parametric plot, and it’s clear that
+
+95
+00:05:59,000 --> 00:06:03,000
+you actually have the function <i>f</i> to the right of <i>g</i>.
+
+96
+00:06:03,000 --> 00:06:12,000
+You do Integrate of <i>f</I> minus <i>g</i> between the limits (1 – √133)/6,
+
+97
+00:06:12,000 --> 00:06:14,000
+et cetera, and you get back the answer
+
+98
+00:06:14,000 --> 00:06:18,000
+for the area between those two curves.
+
+99
+00:06:18,000 --> 00:06:21,000
+You can either work with <i>x</I> limits or <i>y</i> limits.
+
+100
+00:06:21,000 --> 00:06:23,000
+They both work just fine.
+
+101
+00:06:25,000 --> 00:06:27,000
+It’s now time to summarize the lesson.
+
+102
+00:06:27,000 --> 00:06:29,000
+Basically, finding the area between curves
+
+103
+00:06:29,000 --> 00:06:33,000
+is really easy once you have integrals.
+
+104
+00:06:33,000 --> 00:06:36,000
+In case the function <i>f</i> is greater than the function <i>g</i>,
+
+105
+00:06:36,000 --> 00:06:39,000
+you simply do the integral of <i>f</i> minus <I>g</i>.
+
+106
+00:06:39,000 --> 00:06:41,000
+Now when you don’t have that information,
+
+107
+00:06:41,000 --> 00:06:43,000
+then what you do is you figure out
+
+108
+00:06:43,000 --> 00:06:47,000
+where the functions intersect using Solve,
+
+109
+00:06:47,000 --> 00:06:50,000
+figure out which function is above and which one is below,
+
+110
+00:06:50,000 --> 00:06:53,000
+and then you find the integral by doing
+
+111
+00:06:53,000 --> 00:06:56,000
+the integral of <i>f</I> minus <i>g</i> or <i>g</i> minus <i>f</i>,
+
+112
+00:06:56,000 --> 00:06:59,000
+or simply using the absolute value function.
+
+113
+00:06:59,000 --> 00:07:03,000
+Of course if you’re given functions of
+ <i>y</i>,
+
+114
+00:07:03,000 --> 00:07:05,000
+then you work with <i>y</i> integrals,
+
+115
+00:07:05,000 --> 00:07:08,000
+so let’s say you might do the integral of <i>f</I> minus <i>g</i>
+
+116
+00:07:08,000 --> 00:07:12,000
+in a case where you know that <i>f</I> is to the right of <i>g</i>.
+
+117
+00:07:12,000 --> 00:07:15,000
+That brings me to the end of this lesson.
+
+118
+00:07:15,000 --> 00:07:18,000
+In the next lesson, we’ll talk about volume of solids.
+
+119
+00:07:18,000 --> 00:07:21,000
+But before that, do review this topic of area between curves.
+
+120
+00:07:21,000 --> 00:07:25,000
+It’s a very important and useful part of calculus.
+
+121
+00:07:25,000 --> 00:07:28,000
+I’ll stop over here. Thank you very much.
+
+

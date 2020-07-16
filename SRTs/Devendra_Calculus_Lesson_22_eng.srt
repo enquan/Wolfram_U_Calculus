@@ -1,0 +1,564 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 22 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:11,000
+The topic for this lesson is antiderivatives.
+
+3
+00:00:11,000 --> 00:00:14,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:14,000 --> 00:00:17,000
+So far, we have been talking about derivatives of functions.
+
+5
+00:00:17,000 --> 00:00:23,000
+For example, the derivative of 3<i>x</i> with respect to <i>x</i> is just 3.
+
+6
+00:00:23,000 --> 00:00:26,000
+Now let’s say you want to go backward.
+
+7
+00:00:26,000 --> 00:00:32,000
+You want to find a function whose derivative is 3.
+
+8
+00:00:32,000 --> 00:00:39,000
+Now of course in this case, you already know that 3<i>x</i> is the answer, or it is an answer,
+
+9
+00:00:39,000 --> 00:00:44,000
+but in this lesson, we’ll go over that for many different kinds of functions.
+
+10
+00:00:44,000 --> 00:00:49,000
+This idea of going back has many applications.
+
+11
+00:00:49,000 --> 00:00:54,000
+For example, if you’re given the particle’s velocity function in a problem,
+
+12
+00:00:54,000 --> 00:00:58,000
+you could go out and work out the position of a particle.
+
+13
+00:00:58,000 --> 00:01:01,000
+That’s the main theme for today,
+
+14
+00:01:01,000 --> 00:01:08,000
+to try and go backward and figure out a function whose derivative is a given expression.
+
+15
+00:01:08,000 --> 00:01:12,000
+That’s the topic of antiderivatives.
+
+16
+00:01:12,000 --> 00:01:19,000
+The function with a given derivative <i>f</i> is called the antiderivative of <i>f</i>.
+
+17
+00:01:20,000 --> 00:01:24,000
+Now let’s take <i>f</i> equal to <i>x</i>.
+
+18
+00:01:24,000 --> 00:01:27,000
+The question is what is its antiderivative?
+
+19
+00:01:27,000 --> 00:01:32,000
+Then what you could do is you could actually use the power rule, but you do it in reverse.
+
+20
+00:01:32,000 --> 00:01:38,000
+You have <i>x</I>^2, so increase the exponent by one to get the <i>x</i>^2,
+
+21
+00:01:38,000 --> 00:01:44,000
+and then you would divide by the new exponent, so the answer is <i>x</i>^2/2.
+
+22
+00:01:44,000 --> 00:01:48,000
+But that’s only one possible answer you’ll see soon.
+
+23
+00:01:48,000 --> 00:01:52,000
+Let’s confirm with D, and you’ll see that the derivative of <i>x</i>^2/2 is indeed <i>x</i>.
+
+24
+00:01:52,000 --> 00:01:57,000
+We have found an antiderivative of <i>x</I>, and that’s <i>x</i>^2/2.
+
+25
+00:01:57,000 --> 00:02:02,000
+Here’s a plot of <i>x</i> and the antiderivative.
+
+26
+00:02:02,000 --> 00:02:10,000
+Okay. This is the function, and that’s the antiderivative we found out.
+
+27
+00:02:10,000 --> 00:02:17,000
+Now we said over here that <i>x</i>^2/2 is an antiderivative of <i>x</i>,
+
+28
+00:02:17,000 --> 00:02:24,000
+and that’s because every function has more than one antiderivative.
+
+29
+00:02:24,000 --> 00:02:30,000
+For example, in our case,  <i>x</i>^2/2 + 1 is also an antiderivative.
+
+30
+00:02:30,000 --> 00:02:34,000
+In general, if you have one antiderivative,
+
+31
+00:02:34,000 --> 00:02:39,000
+you have many more by simply adding arbitrary constants.
+
+32
+00:02:39,000 --> 00:02:47,000
+This expression over here gives you a family of antiderivatives.
+
+33
+00:02:48,000 --> 00:02:53,000
+Here’s a plot to show that for the function we just talked about, the function <i>x</i>:
+
+34
+00:02:53,000 --> 00:03:02,000
+you have <i>x</i> over here, the function, and all those curves are antiderivatives for <i>x</i>.
+
+35
+00:03:03,000 --> 00:03:11,000
+Notice that each of them is simply a vertical shift of <i>x</i>^2/2 either up or down.
+
+36
+00:03:13,000 --> 00:03:17,000
+Okay. Some rules for antiderivatives.
+
+37
+00:03:17,000 --> 00:03:23,000
+The antiderivative of a sum is the sum of the antiderivatives.
+
+38
+00:03:23,000 --> 00:03:27,000
+For example, if you want to work out the antiderivative of <i>x</i>^2 + <i>x</i>^3,
+
+39
+00:03:27,000 --> 00:03:34,000
+then you would work out the first answer, which is <i>x</i>^3/3, the second one, <i>x</i>^4/4,
+
+40
+00:03:34,000 --> 00:03:36,000
+and then you add the constant <i>c</i> and you’re done.
+
+41
+00:03:36,000 --> 00:03:40,000
+That’s the way to find the antiderivatives of a sum.
+
+42
+00:03:41,000 --> 00:03:44,000
+Next if you have a difference,
+
+43
+00:03:44,000 --> 00:03:48,000
+then you can simply work out the antiderivatives of each term
+
+44
+00:03:48,000 --> 00:03:51,000
+and then find the difference of those antiderivatives.
+
+45
+00:03:51,000 --> 00:03:53,000
+For example, if you have 5 – <i>x</i>^4,
+
+46
+00:03:53,000 --> 00:04:00,000
+then the answer is 5<i>x</i> from the 5 and <i>x</i>^5/5 from the <i>x</i>^4.
+
+47
+00:04:01,000 --> 00:04:05,000
+That’s the proof that the answer is correct.
+
+48
+00:04:05,000 --> 00:04:13,000
+These rules correspond to the sum and difference laws for differentiation.
+
+49
+00:04:13,000 --> 00:04:18,000
+We also have a constant multiple law which says that
+
+50
+00:04:18,000 --> 00:04:26,000
+if you want to work out the antiderivative of <i>kF</i>'[<i>x</i>], then the answer is <i>kF</i>[<i>x</i>] + <i>C</i>.
+
+51
+00:04:26,000 --> 00:04:30,000
+Now in just the same way, there are rules for products and quotients,
+
+52
+00:04:30,000 --> 00:04:33,000
+but they are much harder to use.
+
+53
+00:04:35,000 --> 00:04:39,000
+Okay. How about trig functions?
+
+54
+00:04:39,000 --> 00:04:42,000
+Let’s say you have the trig functions over here, the six basic ones—
+
+55
+00:04:42,000 --> 00:04:50,000
+sine, cosine, tangent, secant, cosecant and cotangent—and those are the derivatives.
+
+56
+00:04:50,000 --> 00:04:57,000
+For example, if you want to work out the antiderivative of Sec[<i>x</i>]Tan[<i>x</i>].
+
+57
+00:04:57,000 --> 00:05:03,000
+You look back over there, and the answer is Sec[<i>x</i>] from here plus the constant <i>C</i>.
+
+58
+00:05:03,000 --> 00:05:08,000
+Here is a table of all those antiderivatives.
+
+59
+00:05:08,000 --> 00:05:13,000
+The antiderivative of cosine is sine, et cetera.
+
+60
+00:05:13,000 --> 00:05:17,000
+Now of course in each case, you must put the +<i>C</i> at the end,
+
+61
+00:05:17,000 --> 00:05:20,000
+but I haven’t done that in this table.
+
+62
+00:05:22,000 --> 00:05:26,000
+Okay. As an example of how we can apply all this knowledge,
+
+63
+00:05:26,000 --> 00:05:32,000
+let’s try and find the general antiderivative of the function <i>f</i> over here.
+
+64
+00:05:32,000 --> 00:05:36,000
+You have a sum over here, so you can apply the sum rule,
+
+65
+00:05:36,000 --> 00:05:44,000
+and you see that the antiderivative of 3Sin[<i>x</i>] is –3Cos[<i>x</i>] + <i>C</i>.
+
+66
+00:05:44,000 --> 00:05:47,000
+Let’s check that. That’s correct.
+
+67
+00:05:47,000 --> 00:05:56,000
+Then what you do is you break up this over here into two terms by writing it as a difference.
+
+68
+00:05:57,000 --> 00:06:03,000
+You simply separate out the terms and then you work out the antiderivative separately,
+
+69
+00:06:03,000 --> 00:06:08,000
+so you get 4<i>x</i>^5/5 + <i>C</i> for the first term,
+
+70
+00:06:08,000 --> 00:06:18,000
+and –<i>x</i>^–1/2 has the antiderivative –<i>x</i>^1/2/(–1/2) + <i>C</i>.
+
+71
+00:06:18,000 --> 00:06:20,000
+The complete antiderivative is over here.
+
+72
+00:06:20,000 --> 00:06:23,000
+Here’s a check that each part is correct
+
+73
+00:06:23,000 --> 00:06:27,000
+so you can find the complete answer for the whole expression
+
+74
+00:06:27,000 --> 00:06:29,000
+by simply adding things together,
+
+75
+00:06:29,000 --> 00:06:33,000
+and here’s a verification that everything is correct.
+
+76
+00:06:33,000 --> 00:06:39,000
+In general, you will need to combine rules to get the answer for the full problem.
+
+77
+00:06:40,000 --> 00:06:46,000
+Okay. These antiderivatives are very useful for solving differential equations.
+
+78
+00:06:46,000 --> 00:06:51,000
+What are these? They are equations that involve derivatives.
+
+79
+00:06:51,000 --> 00:06:55,000
+Now in general, it’s pretty difficult to solve differential equations,
+
+80
+00:06:55,000 --> 00:07:00,000
+but one can solve some simple ones with what we’ve learned so far.
+
+81
+00:07:00,000 --> 00:07:09,000
+For example, if I said solve the equation <i>f</i>'[<i>x</i>] = <i>x</i>√<i>x</i> where <i>f</i>[1] = 3,
+
+82
+00:07:09,000 --> 00:07:13,000
+then what you would do is you would first work out the antiderivative over here,
+
+83
+00:07:13,000 --> 00:07:16,000
+and then we’ll apply the condition <i>f</i>[1] = 3.
+
+84
+00:07:16,000 --> 00:07:22,000
+The antiderivative in this case is 2<i>x</i>^(5/2)/5 + <i>C</i>.
+
+85
+00:07:22,000 --> 00:07:28,000
+Let’s check that. Then you want to find the value of <i>C</i>.
+
+86
+00:07:28,000 --> 00:07:34,000
+What you do is you plug in <i>x</i> = 1 in the equation—remember that <i>f</i>[1] is 3—
+
+87
+00:07:34,000 --> 00:07:40,000
+and work out the value of <i>C</i>. You have that the required solution,
+
+88
+00:07:40,000 --> 00:07:47,000
+the particular solution, is (2<i>x</i>^(5/2) + 13)/5.
+
+89
+00:07:47,000 --> 00:07:52,000
+Now of course we have a very nice function in the Wolfram Language called DSolve
+
+90
+00:07:52,000 --> 00:07:55,000
+which will do that for you automatically, but before that,
+
+91
+00:07:55,000 --> 00:07:59,000
+let’s just clear the function <i>f</i> because we defined it earlier on and call DSolve,
+
+92
+00:07:59,000 --> 00:08:03,000
+and you get back just the same answer.
+
+93
+00:08:04,000 --> 00:08:09,000
+That’s the differential equation, that’s the condition <i>f</i>[1] = 3,
+
+94
+00:08:09,000 --> 00:08:13,000
+and you simply want to solve for <i>f</i>[<i>x</i>] with variable <i>x</i>,
+
+95
+00:08:13,000 --> 00:08:17,000
+and DSolve will do that for you quite easily.
+
+96
+00:08:18,000 --> 00:08:20,000
+Okay. A slightly harder example.
+
+97
+00:08:20,000 --> 00:08:26,000
+Let’s take a second-order differential equation where you have a second derivative over here.
+
+98
+00:08:26,000 --> 00:08:34,000
+You’re given <i>f</i>'' and two conditions, <i>f</i>[0] and <i>f</i>[1].
+
+99
+00:08:34,000 --> 00:08:40,000
+What you do is you first of all work out <i>f</i>'[<i>x</i>] by one antiderivative computation,
+
+100
+00:08:40,000 --> 00:08:46,000
+and you get 4<i>x</i>^3 – 3<i>x</i>^2 – 8<i>x</i> + <i>C</i>. Let’s check that.
+
+101
+00:08:46,000 --> 00:08:50,000
+Then what you do is you start with the expression over here
+
+102
+00:08:50,000 --> 00:08:58,000
+and work out its antiderivative and you get another answer, so the answer over here.
+
+103
+00:08:59,000 --> 00:09:02,000
+Okay. Then you want to solve for <i>C</i> and <i>D</i>,
+
+104
+00:09:02,000 --> 00:09:09,000
+so you take the expression from there and you plug in the values given to you,
+
+105
+00:09:09,000 --> 00:09:14,000
+and you find the value of <i>c</i> is 5 and the value of <i>d</i> is 1.
+
+106
+00:09:14,000 --> 00:09:18,000
+You’ve worked out a particular solution as shown over here.
+
+107
+00:09:18,000 --> 00:09:22,000
+Of course, you can do all that with DSolve automatically
+
+108
+00:09:22,000 --> 00:09:26,000
+and get back the same answer as you did by hand.
+
+109
+00:09:27,000 --> 00:09:30,000
+Okay. Now an application to physics.
+
+110
+00:09:30,000 --> 00:09:35,000
+Let’s say you’re given the acceleration of a particle as 6<i>t</i>^2 – 10,
+
+111
+00:09:35,000 --> 00:09:46,000
+and you’re given that the velocity at time <i>t</i>[0] = –4 and the position at that time is 3.
+
+112
+00:09:46,000 --> 00:09:49,000
+You want to work out the position function.
+
+113
+00:09:49,000 --> 00:09:57,000
+For the first step, you work out the velocity by antidifferentiation as 2<i>t</i>^3 – 10<i>t</i> + <i>C</i>.
+
+114
+00:09:57,000 --> 00:09:59,000
+Here’s a check for that.
+
+115
+00:09:59,000 --> 00:10:05,000
+Then you work out the position function by one more antidifferentiation.
+
+116
+00:10:05,000 --> 00:10:09,000
+Here’s a check for that, and then you apply the given conditions
+
+117
+00:10:09,000 --> 00:10:16,000
+because you want to work out <i>C</i> and <i>D</i> over here. So <i>v</i>[0] = –4, <i>s</i>[0] = 3.
+
+118
+00:10:16,000 --> 00:10:24,000
+You plug in those values, and you find that you actually have <i>C</i> goes to –4 and <i>D</i> goes to 3,
+
+119
+00:10:24,000 --> 00:10:27,000
+so that’s the solution for the problem;
+
+120
+00:10:27,000 --> 00:10:37,000
+namely, that you have an expression with <i>t</i>^4/2 – 5<i>t</i>^2 – 4<i>t</i> + 3.
+
+121
+00:10:37,000 --> 00:10:43,000
+Now you can use the same method but automatically by calling DSolve,
+
+122
+00:10:43,000 --> 00:10:47,000
+and you find you get the same answer.
+
+123
+00:10:48,000 --> 00:10:51,000
+Okay. That brings me to the end of today’s lesson.
+
+124
+00:10:51,000 --> 00:11:00,000
+The main point is that the antiderivative of a function is a function <i>g</i> such that <i>g</i>'[<i>x</i>] = <i>f</i>[<i>x</i>].
+
+125
+00:11:00,000 --> 00:11:03,000
+Now these antiderivatives come in families.
+
+126
+00:11:03,000 --> 00:11:04,000
+You don’t always just get one;
+
+127
+00:11:04,000 --> 00:11:09,000
+you get lots of them, so you always add an arbitrary constant, +<i>C</i>.
+
+128
+00:11:09,000 --> 00:11:17,000
+You can find them by using the usual differentiation rules, but you need to go in reverse.
+
+129
+00:11:18,000 --> 00:11:22,000
+Now the most important application in practice
+
+130
+00:11:22,000 --> 00:11:28,000
+is to solve differential equations using these antiderivatives.
+
+131
+00:11:28,000 --> 00:11:31,000
+Given a differential equation, you can solve it,
+
+132
+00:11:31,000 --> 00:11:33,000
+but if you’re given some extra conditions,
+
+133
+00:11:33,000 --> 00:11:38,000
+you can actually work out a particular solution for that differential equation.
+
+134
+00:11:39,000 --> 00:11:44,000
+Finally these antiderivatives are really useful in physics
+
+135
+00:11:44,000 --> 00:11:48,000
+when you want to analyze the one-dimensional motion of a particle.
+
+136
+00:11:48,000 --> 00:11:53,000
+With that, we are now ready to go on into what is called integral calculus.
+
+137
+00:11:53,000 --> 00:11:57,000
+What we’ve done so far is called differential calculus.
+
+138
+00:11:57,000 --> 00:12:00,000
+In the next lesson, we’ll talk about integral calculus,
+
+139
+00:12:00,000 --> 00:12:03,000
+but before we do that, do make sure you’ve gone through today’s lesson
+
+140
+00:12:03,000 --> 00:12:07,000
+and you’re ready to take on the next topic, which is integral calculus.
+
+141
+00:12:07,000 --> 00:12:10,000
+I’ll stop over here. Thank you very much.
+

@@ -1,0 +1,520 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 30 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is volumes by cylindrical shells.
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:16,000 --> 00:00:21,000
+In the previous lesson, we learned about the disk and washer methods
+
+5
+00:00:21,000 --> 00:00:24,000
+for finding the volumes of solids.
+
+6
+00:00:24,000 --> 00:00:25,000
+As an example of the disk method,
+
+7
+00:00:25,000 --> 00:00:29,000
+let’s say you have the function <i>f</i>[<i>x</i>] = <i>x</i>^2
+
+8
+00:00:29,000 --> 00:00:34,000
+and you rotate that around the <i>x</i> axis from 1 to 4.
+
+9
+00:00:34,000 --> 00:00:36,000
+You get a solid of this type.
+
+10
+00:00:36,000 --> 00:00:41,000
+To find the volume, what you do is you break up the solid into disks,
+
+11
+00:00:41,000 --> 00:00:49,000
+and each disk then has a radius of <i>x</i>^2, the value of <i>f</i>[<i>x</i>],
+
+12
+00:00:49,000 --> 00:00:57,000
+so the area of this disk is π<i>r</i>^2 times, of course, the height,
+
+13
+00:00:57,000 --> 00:01:00,000
+which is the infinitesimal volume.
+
+14
+00:01:00,000 --> 00:01:06,000
+Then you get the integral of that giving you the volume of the solid.
+
+15
+00:01:06,000 --> 00:01:10,000
+The washer method is very simple and similar
+
+16
+00:01:10,000 --> 00:01:13,000
+because all you do is instead of working with one disk,
+
+17
+00:01:13,000 --> 00:01:18,000
+you simply subtract the volume of two disks, the outer and inner.
+
+18
+00:01:18,000 --> 00:01:22,000
+Basically it works on washers or rings or annuli
+
+19
+00:01:22,000 --> 00:01:24,000
+or whatever you call them.
+
+20
+00:01:24,000 --> 00:01:27,000
+Now a slightly harder example.
+
+21
+00:01:27,000 --> 00:01:29,000
+Suppose you have the function shown over here
+
+22
+00:01:29,000 --> 00:01:33,000
+and you want to revolve it around the <i>y</i> axis, not the <i>x</i> axis.
+
+23
+00:01:33,000 --> 00:01:39,000
+Then it’s not clear what one means by the inner and outer radii.
+
+24
+00:01:40,000 --> 00:01:42,000
+The goal of this lesson is to talk about
+
+25
+00:01:42,000 --> 00:01:45,000
+the so-called cylindrical shell method
+
+26
+00:01:45,000 --> 00:01:49,000
+which makes this example and similar examples very simple.
+
+27
+00:01:50,000 --> 00:01:53,000
+Let’s build some intuition for the method.
+
+28
+00:01:53,000 --> 00:01:55,000
+Let’s say you want to find the volume of the solid.
+
+29
+00:01:55,000 --> 00:01:58,000
+You break it into pieces, but these pieces
+
+30
+00:01:58,000 --> 00:02:01,000
+are now going to be shells rather than cross sections.
+
+31
+00:02:01,000 --> 00:02:05,000
+Because each cell looks like a cylinder,
+
+32
+00:02:05,000 --> 00:02:08,000
+it’s called the cylindrical shell method.
+
+33
+00:02:08,000 --> 00:02:10,000
+Here’s a typical cylinder.
+
+34
+00:02:10,000 --> 00:02:11,000
+It’s very thin.
+
+35
+00:02:11,000 --> 00:02:16,000
+It has an outer radius of <i>r</i>2 and an inner radius of <i>r</i>1,
+
+36
+00:02:16,000 --> 00:02:21,000
+so that is the difference in the volumes of outer and inner,
+
+37
+00:02:21,000 --> 00:02:25,000
+which will give you the volume of that thin shell.
+
+38
+00:02:25,000 --> 00:02:27,000
+If you factor it a little bit, you could rewrite it as
+
+39
+00:02:27,000 --> 00:02:31,000
+2π<i>h</i> times the average of <i>r</i>1 and <i>r</i>2
+
+40
+00:02:31,000 --> 00:02:34,000
+times the difference between <i>r</i>1 and <i>r</i>2 like over here.
+
+41
+00:02:34,000 --> 00:02:39,000
+Now because it’s very thin, you can let <i>r</i>2 approach <I>r</i>1,
+
+42
+00:02:39,000 --> 00:02:43,000
+in which case the difference over here becomes <i>dr</i>
+
+43
+00:02:43,000 --> 00:02:47,000
+and the average becomes just <i>r</i>1.
+
+44
+00:02:48,000 --> 00:02:53,000
+Now because you only have one <i>r</i> left, you might as well call it <i>r</i>.
+
+45
+00:02:53,000 --> 00:02:57,000
+The volume now becomes 2π<i>hrdr</i>.
+
+46
+00:02:57,000 --> 00:02:59,000
+The question is what’s <i>h</i>?
+
+47
+00:02:59,000 --> 00:03:06,000
+Well, <I>h</i> is the value of the function <i>f</i> as a function of <i>r</i>.
+
+48
+00:03:06,000 --> 00:03:10,000
+The height <i>h</i> becomes now <i>f</i>[<i>r</i>],
+
+49
+00:03:10,000 --> 00:03:14,000
+so you have a very nice, simple formula for the volume
+
+50
+00:03:14,000 --> 00:03:16,000
+by the method of cylindrical shells.
+
+51
+00:03:18,000 --> 00:03:20,000
+To go back to our example from the introduction,
+
+52
+00:03:20,000 --> 00:03:25,000
+you have this function, <i>f</i>[<I>x</i>] = 4<i>x</i>^3 – <I>x</i>^4.
+
+53
+00:03:25,000 --> 00:03:29,000
+You want to work out the volume, so you simply do 2π<I>r</i>
+
+54
+00:03:29,000 --> 00:03:33,000
+times the value of the function over here times <i>dr</i>.
+
+55
+00:03:33,000 --> 00:03:37,000
+You work it out with Integrate, and you get back the result.
+
+56
+00:03:38,000 --> 00:03:43,000
+Okay. Now the question is which method should you use,
+
+57
+00:03:43,000 --> 00:03:46,000
+the washer or disk method or the cylindrical shell method?
+
+58
+00:03:46,000 --> 00:03:51,000
+Let’s say here’s an example in which you have two curves,
+
+59
+00:03:51,000 --> 00:03:55,000
+<i>x</i>^2 and <i>x</i>^3, but you want to revolve it around the <i>y</i> axis.
+
+60
+00:03:55,000 --> 00:04:00,000
+With the washer method, you could rewrite things
+
+61
+00:04:00,000 --> 00:04:05,000
+as cube roots and square roots and get the answer,
+
+62
+00:04:05,000 --> 00:04:08,000
+but in this case, it’s much simpler
+
+63
+00:04:08,000 --> 00:04:11,000
+to simply work with the cylindrical shell method,
+
+64
+00:04:11,000 --> 00:04:13,000
+and you get back the same result.
+
+65
+00:04:13,000 --> 00:04:16,000
+You do get the same answer, but the question is which one to use.
+
+66
+00:04:16,000 --> 00:04:20,000
+That’s up to you, but typically, the cylindrical shell method
+
+67
+00:04:20,000 --> 00:04:23,000
+works well when the axis of the cylinder
+
+68
+00:04:23,000 --> 00:04:26,000
+is the same as the rotation axis.
+
+69
+00:04:28,000 --> 00:04:32,000
+Okay. Some minor variations.
+
+70
+00:04:32,000 --> 00:04:35,000
+Let’s say you have a function like over here,
+
+71
+00:04:35,000 --> 00:04:40,000
+and you want to rotate it around the line <i>x</i> = 6
+
+72
+00:04:40,000 --> 00:04:43,000
+rather than the <i>y</i> axis, let’s say.
+
+73
+00:04:43,000 --> 00:04:47,000
+Then what you do first of all is you find the radius.
+
+74
+00:04:47,000 --> 00:04:51,000
+Keep in mind that the radius is now going to be <i>6</i> – x
+
+75
+00:04:51,000 --> 00:04:56,000
+because you are counting from <i>x</i> = 6, so that’s the radius.
+
+76
+00:04:56,000 --> 00:05:00,000
+You have 2π times radius times function value,
+
+77
+00:05:00,000 --> 00:05:03,000
+and you get back the answer with the cylindrical shell method.
+
+78
+00:05:05,000 --> 00:05:09,000
+On the other hand, if you have a negative axis,
+
+79
+00:05:09,000 --> 00:05:13,000
+so let’s say you have <i>x</i> = –1 over here, and you have this function.
+
+80
+00:05:13,000 --> 00:05:19,000
+Now if you if you look at the radius, it’s going to be <i>x</i> + 1.
+
+81
+00:05:20,000 --> 00:05:22,000
+Your formula is slightly different.
+
+82
+00:05:22,000 --> 00:05:25,000
+You have 2π(<i>x</i> + 1)<i>f</i>[<i>x</i>]<i>dx</i>.
+
+83
+00:05:25,000 --> 00:05:30,000
+You work out the answer, and you get back the volume in this case.
+
+84
+00:05:33,000 --> 00:05:37,000
+We spoke a little earlier about comparing the two methods,
+
+85
+00:05:37,000 --> 00:05:39,000
+washer/disk and cylinder.
+
+86
+00:05:39,000 --> 00:05:40,000
+Let’s take an example
+
+87
+00:05:40,000 --> 00:05:44,000
+where the disk or washer method works a little better.
+
+88
+00:05:44,000 --> 00:05:47,000
+Let’s say you have <i>f</i>[<i>x</i>] = CubeRoot[<i>x</i>].
+
+89
+00:05:47,000 --> 00:05:50,000
+You now revolve around the <i>x</i> axis from 0 to 1.
+
+90
+00:05:51,000 --> 00:05:54,000
+If you try the cylindrical shell method, things become a bit harder
+
+91
+00:05:54,000 --> 00:06:00,000
+because now the shell height is horizontal rather than vertical.
+
+92
+00:06:01,000 --> 00:06:04,000
+If you had to apply the cylindrical shell method,
+
+93
+00:06:04,000 --> 00:06:09,000
+you would first of all rewrite the function as a function of <i>y</i>,
+
+94
+00:06:09,000 --> 00:06:15,000
+then work out the shell radius, then work out the integral.
+
+95
+00:06:16,000 --> 00:06:20,000
+But with the disk method, things are much simpler
+
+96
+00:06:20,000 --> 00:06:23,000
+because you simply have the cube root of <i>x</i> as the function,
+
+97
+00:06:23,000 --> 00:06:28,000
+so you apply π times <i>r</i>^2<i>dx</i>, integrate from 0 to 1
+
+98
+00:06:28,000 --> 00:06:31,000
+and you get back the same volume.
+
+99
+00:06:31,000 --> 00:06:35,000
+In general, both these methods—
+
+100
+00:06:35,000 --> 00:06:39,000
+the cylindrical shell method and the washer/disk method—
+
+101
+00:06:39,000 --> 00:06:43,000
+have advantages and disadvantages,
+
+102
+00:06:43,000 --> 00:06:47,000
+and you must decide which one is better suited for your problem.
+
+103
+00:06:49,000 --> 00:06:52,000
+Okay. That brings me to the end of the lesson.
+
+104
+00:06:52,000 --> 00:06:55,000
+Basically, what we’ve learned is that the cylindrical shell method
+
+105
+00:06:55,000 --> 00:07:00,000
+is another nice way of finding the volume of solids.
+
+106
+00:07:00,000 --> 00:07:05,000
+This method works by breaking up the solid into cylindrical shells.
+
+107
+00:07:05,000 --> 00:07:11,000
+Those shells are very, very thin, and the height of the shell
+
+108
+00:07:11,000 --> 00:07:15,000
+is the value of the function.
+
+109
+00:07:15,000 --> 00:07:20,000
+Sometimes you’ll find that the cylindrical shell method
+
+110
+00:07:20,000 --> 00:07:23,000
+is much easier, and it can be very cumbersome or even impossible
+
+111
+00:07:23,000 --> 00:07:26,000
+to apply the disk/washer method.
+
+112
+00:07:26,000 --> 00:07:30,000
+But other times, you might find that the disk/washer method
+
+113
+00:07:30,000 --> 00:07:34,000
+is a lot easier to understand and use, so you might prefer that.
+
+114
+00:07:36,000 --> 00:07:39,000
+Just to review the formulae for the lesson,
+
+115
+00:07:39,000 --> 00:07:43,000
+first of all if you revolve around the line <i>x</i> = <i>x</i>0
+
+116
+00:07:43,000 --> 00:07:48,000
+where <i>x</i>0 is positive, then you get <i>x</i>0 – <i>x</i> as the radius,
+
+117
+00:07:48,000 --> 00:07:52,000
+so think back to the example involving 6 – <i>x</i>.
+
+118
+00:07:52,000 --> 00:07:58,000
+On the other hand, if you have a negative or 0 value for <i>x</i>0,
+
+119
+00:07:58,000 --> 00:08:03,000
+then you’ll have <i>x</i> – <i>x</i>0 over here, so think back to the example
+
+120
+00:08:03,000 --> 00:08:08,000
+which had an <i>x</i> + 1, which really was an <i>x</i> minus –1.
+
+121
+00:08:08,000 --> 00:08:13,000
+Those two very simple formulae tell you what you need to do
+
+122
+00:08:13,000 --> 00:08:15,000
+for the cylindrical shell method,
+
+123
+00:08:15,000 --> 00:08:19,000
+and that makes it a very simple method wherever it works.
+
+124
+00:08:20,000 --> 00:08:22,000
+In the next lesson, we’ll talk about
+
+125
+00:08:22,000 --> 00:08:25,000
+the average value of a function with integration,
+
+126
+00:08:25,000 --> 00:08:28,000
+but before doing that, do review today’s lesson.
+
+127
+00:08:28,000 --> 00:08:29,000
+It’s a very important lesson.
+
+128
+00:08:29,000 --> 00:08:34,000
+It tells you how to find the volumes of very difficult-looking solids,
+
+129
+00:08:34,000 --> 00:08:37,000
+and it really shows you how powerful calculus is.
+
+130
+00:08:37,000 --> 00:08:39,000
+I’ll stop over here. Thank you very much.
+

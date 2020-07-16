@@ -1,0 +1,724 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Problem Session 7 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this session is integrals and the fundamental theorem.
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with problem 1 for the session,
+
+4
+00:00:15,000 --> 00:00:21,000
+which says compute the integral of 5<i>x</i>^3 from –2 up to 3.
+
+5
+00:00:21,000 --> 00:00:27,000
+Now the indefinite integral of 5<i>x</i>^3 is 5<i>x</i>^4/4 from the power rule,
+
+6
+00:00:27,000 --> 00:00:31,000
+and so you can use the fundamental theorem of calculus
+
+7
+00:00:31,000 --> 00:00:35,000
+to simply plug in the upper and lower limits.
+
+8
+00:00:35,000 --> 00:00:38,000
+That’s the value from the upper and lower limits,
+
+9
+00:00:38,000 --> 00:00:40,000
+and you get the answer 325/4.
+
+10
+00:00:40,000 --> 00:00:45,000
+Let’s check that with Integrate, and we do get the same result.
+
+11
+00:00:45,000 --> 00:00:50,000
+Here is a plot of the region that we just integrated.
+
+12
+00:00:51,000 --> 00:00:55,000
+On to problem number 2, which says here is a function
+
+13
+00:00:55,000 --> 00:00:59,000
+and that’s the graph of the function.
+
+14
+00:00:59,000 --> 00:01:02,000
+The question is compute the integral of this function
+
+15
+00:01:02,000 --> 00:01:05,000
+from –5 all the way up to 3.
+
+16
+00:01:05,000 --> 00:01:09,000
+Now the integral over here is the net area,
+
+17
+00:01:09,000 --> 00:01:14,000
+so it’s the sum of the positives, and then you’ve got to subtract
+
+18
+00:01:14,000 --> 00:01:16,000
+the negative areas where required.
+
+19
+00:01:16,000 --> 00:01:18,000
+There are four shapes over here.
+
+20
+00:01:18,000 --> 00:01:21,000
+There’s a triangle on the left, and that’s got a base and height
+
+21
+00:01:21,000 --> 00:01:24,000
+of 1 as you can see, so its area is 1/2.
+
+22
+00:01:24,000 --> 00:01:27,000
+You have a semicircle over here.
+
+23
+00:01:27,000 --> 00:01:31,000
+Its radius is 2, so its area is 2π.
+
+24
+00:01:31,000 --> 00:01:34,000
+There’s a quarter circle over there with radius 1,
+
+25
+00:01:34,000 --> 00:01:36,000
+so its area is π/4.
+
+26
+00:01:36,000 --> 00:01:39,000
+Then there’s a trapezoid whose heights are 1 and 2
+
+27
+00:01:39,000 --> 00:01:41,000
+and the base is 2, so the area is 3.
+
+28
+00:01:41,000 --> 00:01:46,000
+When you do an algebraic sum, so you subtract off the negative area.
+
+29
+00:01:46,000 --> 00:01:48,000
+Then the answer is 7/2 – 7π/4.
+
+30
+00:01:48,000 --> 00:01:50,000
+Let’s compare that with Integrate,
+
+31
+00:01:50,000 --> 00:01:53,000
+and we do get back just the same answer.
+
+32
+00:01:55,000 --> 00:01:59,000
+Number 3 says here is the velocity of a particle,
+
+33
+00:01:59,000 --> 00:02:03,000
+and the question is find the displacement of this particle
+
+34
+00:02:03,000 --> 00:02:05,000
+in the time interval 1 to 4.
+
+35
+00:02:06,000 --> 00:02:09,000
+We first of all work out the displacement
+
+36
+00:02:09,000 --> 00:02:11,000
+as the integral of the velocity.
+
+37
+00:02:11,000 --> 00:02:15,000
+That’s <i>t</i>^4/2 – 7<i>t</i>^3/3 + 3Sin[<i>t</i>] + <i>C</i>.
+
+38
+00:02:15,000 --> 00:02:21,000
+For example, this term over here gives you 3Sin[<i>t</i>].
+
+39
+00:02:21,000 --> 00:02:24,000
+Then you plug in the upper and the lower limits
+
+40
+00:02:24,000 --> 00:02:27,000
+and work out the answer, which is right at the end of the line.
+
+41
+00:02:27,000 --> 00:02:32,000
+Let’s check that the answer is correct through Integrate,
+
+42
+00:02:32,000 --> 00:02:37,000
+and here is a plot of the velocity function on that time interval.
+
+43
+00:02:38,000 --> 00:02:45,000
+Okay. On to number 4, which says compute the integral of √16 – <i>x</i>^2
+
+44
+00:02:45,000 --> 00:02:49,000
+from –4 to 4, but this is just the area of a semicircle
+
+45
+00:02:49,000 --> 00:02:51,000
+That’s the semicircle over here.
+
+46
+00:02:51,000 --> 00:02:53,000
+You have –4 to 4.
+
+47
+00:02:54,000 --> 00:02:58,000
+Of course if you work out the area, it’s just π<i>r</i>^2/2.
+
+48
+00:02:58,000 --> 00:03:00,000
+That’s 8π in this case.
+
+49
+00:03:00,000 --> 00:03:02,000
+Let’s check the answer with Integrate,
+
+50
+00:03:02,000 --> 00:03:04,000
+and you will get back the same result.
+
+51
+00:03:05,000 --> 00:03:11,000
+Number 5 says compute the integral of –Csc[<i>x</i>]Cot[<i>t</i>]
+
+52
+00:03:11,000 --> 00:03:13,000
+on the interval given over here.
+
+53
+00:03:13,000 --> 00:03:16,000
+Now we first of all work out the indefinite integral,
+
+54
+00:03:16,000 --> 00:03:19,000
+which is just Csc[<i>x</I>] + <i>C</i>, of course.
+
+55
+00:03:19,000 --> 00:03:21,000
+Plug in the upper and lower limits.
+
+56
+00:03:21,000 --> 00:03:23,000
+Get an answer.
+
+57
+00:03:23,000 --> 00:03:26,000
+Check that the answer is correct with Integrate.
+
+58
+00:03:26,000 --> 00:03:31,000
+Here is a plot of the region for which we have integrated.
+
+59
+00:03:33,000 --> 00:03:34,000
+Number 6.
+
+60
+00:03:34,000 --> 00:03:38,000
+You’re given the marginal profit for a product,
+
+61
+00:03:38,000 --> 00:03:42,000
+so that’s the change in profit for a unit value of <i>x</I>,
+
+62
+00:03:42,000 --> 00:03:43,000
+and you want to find the change in profit
+
+63
+00:03:43,000 --> 00:03:48,000
+when the sales increase from 64 all the way up to 81.
+
+64
+00:03:48,000 --> 00:03:51,000
+That’s just an integral like the one shown over here.
+
+65
+00:03:52,000 --> 00:03:55,000
+You first work out the indefinite integral,
+
+66
+00:03:55,000 --> 00:04:02,000
+which is 50<i>x</i> – 3√<i>x</i>^(3/2), et cetera, and then you get the answer,
+
+67
+00:04:02,000 --> 00:04:06,000
+and the answer turns out to be 416.
+
+68
+00:04:06,000 --> 00:04:10,000
+Let’s check that with Integrate, and here is a plot
+
+69
+00:04:10,000 --> 00:04:16,000
+of the marginal profit and the region being integrated.
+
+70
+00:04:17,000 --> 00:04:21,000
+Okay. The next one says compute the integral given over here.
+
+71
+00:04:21,000 --> 00:04:23,000
+There’s an absolute value, so first of all,
+
+72
+00:04:23,000 --> 00:04:25,000
+let’s plot the function.
+
+73
+00:04:25,000 --> 00:04:29,000
+You see that the function has got three triangles.
+
+74
+00:04:29,000 --> 00:04:31,000
+There’s one here, one there.
+
+75
+00:04:31,000 --> 00:04:32,000
+They are both going to have positive areas,
+
+76
+00:04:32,000 --> 00:04:35,000
+and then there’s one negative area over here.
+
+77
+00:04:35,000 --> 00:04:38,000
+The first area is just 1.
+
+78
+00:04:38,000 --> 00:04:42,000
+The second one is 2—that’s this one.
+
+79
+00:04:42,000 --> 00:04:47,000
+The third one is 9, but you need to subtract the second area,
+
+80
+00:04:47,000 --> 00:04:49,000
+and so the net area is just 8.
+
+81
+00:04:49,000 --> 00:04:51,000
+Let’s check the answer with Integrate,
+
+82
+00:04:51,000 --> 00:04:55,000
+and you do get back 8, so the answer correct.
+
+83
+00:04:56,000 --> 00:05:02,000
+Problem number 8 says compute the integral of Sin[<i>x</i>]^4Cos[<i>x</i>].
+
+84
+00:05:02,000 --> 00:05:04,000
+Now in this case, we do a little substitution.
+
+85
+00:05:04,000 --> 00:05:08,000
+We set <i>u</i> to be Sin[<i>x</i>], so <i>du</i> is Cos[<i>x</i>]<i>dx</i>.
+
+86
+00:05:08,000 --> 00:05:14,000
+That’s this part over here, so the answer is simply Sin[<i>x</i>]^5/5 + <i>C</i>.
+
+87
+00:05:14,000 --> 00:05:17,000
+Let’s check the answer through Integrate.
+
+88
+00:05:17,000 --> 00:05:20,000
+Remember that the <i>C</i> is set to 0 by Integrate.
+
+89
+00:05:20,000 --> 00:05:22,000
+There’s no <i>C</i> over here.
+
+90
+00:05:22,000 --> 00:05:27,000
+Here is a plot of the function and the indefinite integral.
+
+91
+00:05:28,000 --> 00:05:33,000
+On to number 9, which says compute the integral given over here.
+
+92
+00:05:33,000 --> 00:05:38,000
+Obviously we need to put <i>x</i>^2 – 4 as <i>u</i>.
+
+93
+00:05:38,000 --> 00:05:44,000
+When you do that, then the <i>du</i>, the differential for <i>u</i>, is 2<i>xdx</i>,
+
+94
+00:05:44,000 --> 00:05:49,000
+so with a small adjustment, you get 3<i>xdx</i> = 3<i>du</i>/2.
+
+95
+00:05:49,000 --> 00:05:54,000
+You work out the indefinite integral over here.
+
+96
+00:05:54,000 --> 00:05:56,000
+Now the point is you can either
+
+97
+00:05:56,000 --> 00:06:01,000
+work in the <i>u</i> picture or in the <i>x</i> picture.
+
+98
+00:06:01,000 --> 00:06:09,000
+If you use the <i>u</i> limits, then when <i>x</i> is 3, then <i>u</i> is 5.
+
+99
+00:06:09,000 --> 00:06:15,000
+When <i>x</i> is 7, <i>u</i> is 45 because 49 – 4 is 45.
+
+100
+00:06:15,000 --> 00:06:19,000
+You plug in those limits and you get 130√5.
+
+101
+00:06:19,000 --> 00:06:23,000
+Let’s check the answer in the <i>u</i> coordinates.
+
+102
+00:06:23,000 --> 00:06:27,000
+You could also work with the original <i>x</i> answer,
+
+103
+00:06:27,000 --> 00:06:31,000
+and you get back just the same result.
+
+104
+00:06:31,000 --> 00:06:35,000
+Here is a plot of the region integrated.
+
+105
+00:06:37,000 --> 00:06:42,000
+Okay. On to number 10, which says compute <i>f</i>'[5]
+
+106
+00:06:42,000 --> 00:06:47,000
+where <i>f</i> is given by this integral over here, this integral function.
+
+107
+00:06:48,000 --> 00:06:51,000
+If you apply the fundamental theorem,
+
+108
+00:06:51,000 --> 00:06:55,000
+then <i>f</i>' will simply be the expression inside the integral
+
+109
+00:06:55,000 --> 00:06:57,000
+with the <i>t</i> replaced with <i>x</i>.
+
+110
+00:06:57,000 --> 00:06:59,000
+Let’s check that.
+
+111
+00:07:00,000 --> 00:07:05,000
+Then you plug in the value of 5 and you get back 376.
+
+112
+00:07:05,000 --> 00:07:09,000
+Here’s a plot of the integral function
+
+113
+00:07:09,000 --> 00:07:13,000
+and its derivative on the given interval.
+
+114
+00:07:14,000 --> 00:07:16,000
+Okay. On to number 11,
+
+115
+00:07:16,000 --> 00:07:22,000
+which says you have a balloon which is losing air at a certain rate.
+
+116
+00:07:22,000 --> 00:07:24,000
+That rate is given over here.
+
+117
+00:07:24,000 --> 00:07:31,000
+You want to find the total change in air from <i>t</i> = 4 to <i>t</i> = 10.
+
+118
+00:07:31,000 --> 00:07:33,000
+That’s an integral over here.
+
+119
+00:07:34,000 --> 00:07:38,000
+We need to plot just to get an idea of what’s happening,
+
+120
+00:07:38,000 --> 00:07:42,000
+and then you set <i>u</i> to be 35<i>t</i> + 10.
+
+121
+00:07:42,000 --> 00:07:43,000
+That’s the denominator over here.
+
+122
+00:07:43,000 --> 00:07:47,000
+So <i>du</i> = 35<i>dt</i>.
+
+123
+00:07:47,000 --> 00:07:49,000
+Make a small adjustment,
+
+124
+00:07:49,000 --> 00:07:53,000
+and you work out the integral in the <i>u</i> picture.
+
+125
+00:07:53,000 --> 00:07:55,000
+Then you work out the change in air,
+
+126
+00:07:55,000 --> 00:07:58,000
+and that turns out to be 1/360.
+
+127
+00:07:58,000 --> 00:08:02,000
+Let’s check that with Integrate, and you get back the same result.
+
+128
+00:08:02,000 --> 00:08:04,000
+That’s a simple substitution
+
+129
+00:08:04,000 --> 00:08:08,000
+to get the total change in air for this balloon.
+
+130
+00:08:10,000 --> 00:08:11,000
+On to number 12,
+
+131
+00:08:11,000 --> 00:08:15,000
+which says compute the derivative of this integral.
+
+132
+00:08:15,000 --> 00:08:21,000
+Since you have a 4<i>x</i>^2 on top, you need to apply the chain rule.
+
+133
+00:08:21,000 --> 00:08:25,000
+The chain rule says that the answer is the integrand
+
+134
+00:08:25,000 --> 00:08:31,000
+with <i>t</i> replaced by <i>x</i> times 8<i>x</i>, which is the derivative of 4<i>x</i>^2.
+
+135
+00:08:31,000 --> 00:08:37,000
+Let’s check that with Integrate, and you get back the same result.
+
+136
+00:08:37,000 --> 00:08:44,000
+Then what you do is you plot the function over here,
+
+137
+00:08:44,000 --> 00:08:49,000
+and that’s a beautiful plot of that answer.
+
+138
+00:08:49,000 --> 00:08:54,000
+Okay. Number 13, which says compute the integral over here.
+
+139
+00:08:54,000 --> 00:09:01,000
+Now in this case, we set <i>u</i> to be 4 + <i>x</i>, so <i>du</i> is <i>dx</i>.
+
+140
+00:09:01,000 --> 00:09:05,000
+Now the <i>x</i> over here becomes <i>u</i> – 4.
+
+141
+00:09:05,000 --> 00:09:08,000
+We have (<i>u</i> – 4)√<i>u</i>.
+
+142
+00:09:08,000 --> 00:09:13,000
+You expand that, and you get <i>u</i>^3/2 – 4√<i>u</i>.
+
+143
+00:09:13,000 --> 00:09:19,000
+Integrate further and then replace <i>u</i> with 4 + <i>x</i>,
+
+144
+00:09:19,000 --> 00:09:22,000
+and so you get back an answer.
+
+145
+00:09:22,000 --> 00:09:26,000
+Now Integrate gives a slightly different answer,
+
+146
+00:09:26,000 --> 00:09:30,000
+so let’s check that our answer is the same as the one from Integrate.
+
+147
+00:09:30,000 --> 00:09:32,000
+That’s the Integrate answer.
+
+148
+00:09:32,000 --> 00:09:33,000
+That’s our answer.
+
+149
+00:09:33,000 --> 00:09:36,000
+Let’s check that they are the same by using Simplify,
+
+150
+00:09:36,000 --> 00:09:39,000
+and you get back True, so everything seems fine over here.
+
+151
+00:09:39,000 --> 00:09:43,000
+Let’s plot the function with Integrate over here,
+
+152
+00:09:43,000 --> 00:09:46,000
+and you get back this nice plot.
+
+153
+00:09:46,000 --> 00:09:50,000
+On to number 14, the final problem for today.
+
+154
+00:09:50,000 --> 00:09:53,000
+The question is you’re given the graph of a function,
+
+155
+00:09:53,000 --> 00:09:55,000
+which is our semicircle over here and a straight line,
+
+156
+00:09:55,000 --> 00:09:58,000
+and the question is to compute the linear approximation
+
+157
+00:09:58,000 --> 00:10:03,000
+of the integral of this function from 0 to <i>x</i> near 5.
+
+158
+00:10:03,000 --> 00:10:07,000
+Now when they say near 5, what they mean is
+
+159
+00:10:07,000 --> 00:10:11,000
+to compute the linear approximation at the point 5.
+
+160
+00:10:12,000 --> 00:10:15,000
+Remember you have a straight line approximation,
+
+161
+00:10:15,000 --> 00:10:17,000
+in this case, to compute.
+
+162
+00:10:17,000 --> 00:10:21,000
+You know that <i>x</i>0 is 5.
+
+163
+00:10:21,000 --> 00:10:25,000
+Work out the value of <i>y</i>0 from the integral,
+
+164
+00:10:25,000 --> 00:10:28,000
+and if you do that from the integral, you see that you’ve got
+
+165
+00:10:28,000 --> 00:10:31,000
+this area over here and a triangle area over there,
+
+166
+00:10:31,000 --> 00:10:35,000
+so the total area is (2π + 9)/4.
+
+167
+00:10:35,000 --> 00:10:38,000
+Now what remains is to compute the slope,
+
+168
+00:10:38,000 --> 00:10:43,000
+but the slope is just the derivative of the integral function at 5,
+
+169
+00:10:43,000 --> 00:10:46,000
+which is just the value of <i>f</i> at 5.
+
+170
+00:10:46,000 --> 00:10:49,000
+If you plug in the value of <i>f</i> at 5, which is right over here,
+
+171
+00:10:49,000 --> 00:10:53,000
+then you get back 3/2 or 1.5.
+
+172
+00:10:53,000 --> 00:10:54,000
+Okay.
+
+173
+00:10:54,000 --> 00:10:59,000
+That is the linear approximation, and if you plot it,
+
+174
+00:10:59,000 --> 00:11:04,000
+you see the linear approximation is really good near 5,
+
+175
+00:11:04,000 --> 00:11:06,000
+but not so good far away from it.
+
+176
+00:11:06,000 --> 00:11:09,000
+Linear approximations are very good approximations,
+
+177
+00:11:09,000 --> 00:11:13,000
+but they’re only good near the point at which you compute them.
+
+178
+00:11:13,000 --> 00:11:17,000
+That brings me to the end of this problem session.
+
+179
+00:11:17,000 --> 00:11:19,000
+I hope you learned all the nice ideas
+
+180
+00:11:19,000 --> 00:11:24,000
+in this topic of integrals and the fundamental theorem.
+
+181
+00:11:24,000 --> 00:11:27,000
+I’ll stop over here. Thank you very much.
+

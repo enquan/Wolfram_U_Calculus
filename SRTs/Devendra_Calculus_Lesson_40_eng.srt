@@ -1,0 +1,864 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Lesson 40
+
+2
+00:00:03,000 --> 00:00:07,000
+of this introduction to calculus with Wolfram U.
+
+3
+00:00:07,000 --> 00:00:16,000
+The topic for this lesson is part 2 of a sample calculus exam.
+
+4
+00:00:16,000 --> 00:00:18,000
+Let’s begin with a brief overview of the lesson.
+
+5
+00:00:18,000 --> 00:00:23,000
+Like I said earlier on, this is the second part of the calculus exam
+
+6
+00:00:23,000 --> 00:00:25,000
+that I’ll present now.
+
+7
+00:00:25,000 --> 00:00:29,000
+As in part 1, which we presented last time,
+
+8
+00:00:29,000 --> 00:00:32,000
+the questions over here are very similar to what you might find
+
+9
+00:00:32,000 --> 00:00:37,000
+on the AP Calculus AB exam, but of course the questions over here
+
+10
+00:00:37,000 --> 00:00:42,000
+will be somewhat more difficult than the ones in the first part.
+
+11
+00:00:42,000 --> 00:00:46,000
+In fact, there are a couple of them which are really quite involved.
+
+12
+00:00:46,000 --> 00:00:48,000
+I’ll warn you a little more at that time,
+
+13
+00:00:48,000 --> 00:00:50,000
+but do pay careful attention.
+
+14
+00:00:50,000 --> 00:00:53,000
+This is the hard part of the exam.
+
+15
+00:00:54,000 --> 00:00:58,000
+Let’s begin with question 14, where we left off last time.
+
+16
+00:00:58,000 --> 00:01:01,000
+The question is calculate the limit
+
+17
+00:01:01,000 --> 00:01:05,000
+of this expression over here at <i>h</i> = 0.
+
+18
+00:01:05,000 --> 00:01:09,000
+Now the point is that it looks like a limit, no doubt,
+
+19
+00:01:09,000 --> 00:01:11,000
+but if you look at the expression very carefully,
+
+20
+00:01:11,000 --> 00:01:14,000
+it’s really a derivative,
+
+21
+00:01:14,000 --> 00:01:19,000
+and in fact, it’s a derivative of Sec[<i>x</i>] at π/3—
+
+22
+00:01:19,000 --> 00:01:24,000
+after all, it’s like f[<i>x</I>] + <i>h</i> – f[<i>x</i>]/<i>h</i>.
+
+23
+00:01:24,000 --> 00:01:26,000
+If you work out the derivative of secant,
+
+24
+00:01:26,000 --> 00:01:28,000
+that’s secant times tangent,
+
+25
+00:01:28,000 --> 00:01:31,000
+so you would expect the answer to be 2√3.
+
+26
+00:01:31,000 --> 00:01:33,000
+Let’s check that with D.
+
+27
+00:01:33,000 --> 00:01:38,000
+You find the derivative of Sec[<i>x</I>] and plug in <i>x</i> as π/3,
+
+28
+00:01:38,000 --> 00:01:41,000
+and you do get back the expected answer.
+
+29
+00:01:41,000 --> 00:01:44,000
+Or you could use Limit and find the answer,
+
+30
+00:01:44,000 --> 00:01:47,000
+and you get back just the same result.
+
+31
+00:01:48,000 --> 00:01:54,000
+Let’s move on to question 15, which says that a disk was measured
+
+32
+00:01:54,000 --> 00:01:57,000
+to have a radius of 9 cm.
+
+33
+00:01:57,000 --> 00:02:02,000
+The error was around 0.04 cm.
+
+34
+00:02:02,000 --> 00:02:05,000
+The question is find the error in the area.
+
+35
+00:02:05,000 --> 00:02:08,000
+You’ve got two variables—you’ve got the radius and the area—
+
+36
+00:02:08,000 --> 00:02:12,000
+and they are related by <i>A</i> = π<i>r</i>^2.
+
+37
+00:02:12,000 --> 00:02:18,000
+Now if that’s the relation, then the differentials, the errors
+
+38
+00:02:18,000 --> 00:02:23,000
+are related by <i>dA</I> = 2π<i>rdr</i> by taking derivatives,
+
+39
+00:02:23,000 --> 00:02:26,000
+so what you do is you recall that from the information given to you,
+
+40
+00:02:26,000 --> 00:02:34,000
+that <i>r</i> is 9, <i>dr</i> is 0.04—that’s the error—so now the error in the area
+
+41
+00:02:34,000 --> 00:02:43,000
+would be 2π times <i>r</I> times <i>dr</i>, and so the answer is 2.26 roughly.
+
+42
+00:02:44,000 --> 00:02:52,000
+Okay. On to number 16, which says find the derivative of Log[<i>x</i>^2 – 3].
+
+43
+00:02:52,000 --> 00:02:56,000
+Now that looks like something for which you need the chain rule,
+
+44
+00:02:56,000 --> 00:03:00,000
+so what you do is you find the derivative of log,
+
+45
+00:03:00,000 --> 00:03:02,000
+which is 1/(<i>x</i>^2 – 3),
+
+46
+00:03:02,000 --> 00:03:05,000
+and then multiply by the derivative of <i>x</I>^2 – 3, which is 2<i>x</i>.
+
+47
+00:03:05,000 --> 00:03:08,000
+That’s the final answer.
+
+48
+00:03:08,000 --> 00:03:13,000
+You can check it with D, and you do get back just the same result.
+
+49
+00:03:15,000 --> 00:03:19,000
+On to number 17, which says calculate the third derivative
+
+50
+00:03:19,000 --> 00:03:26,000
+of the expression over here, 3<i>x</i>^4 – Cos[<i>x</i>] + <i>e</i>^2<i>x</i>.
+
+51
+00:03:26,000 --> 00:03:29,000
+What you do is you work out the first derivative,
+
+52
+00:03:29,000 --> 00:03:34,000
+which is 12<i>x</i>^3 from 3<i>x</I>^4, plus Sin[<i>x</i>] from the second term
+
+53
+00:03:34,000 --> 00:03:37,000
+and 2<i>e</i>^2<i>x</i> from the third term.
+
+54
+00:03:37,000 --> 00:03:45,000
+Check that with D, then start here and work out the second derivative,
+
+55
+00:03:45,000 --> 00:03:51,000
+which is Cos[<i>x</I>] from the Sin[<i>x</I>], then 36<i>x</i>^2 from the from the 12<i>x</I>^3
+
+56
+00:03:51,000 --> 00:03:55,000
+and 4<i>e</I>^2<i>x</i> from the first term over here.
+
+57
+00:03:55,000 --> 00:03:58,000
+Let’s check that with D again, the second derivative,
+
+58
+00:03:58,000 --> 00:04:01,000
+then work out the third derivative
+
+59
+00:04:01,000 --> 00:04:03,000
+as the derivative of this expression over here.
+
+60
+00:04:03,000 --> 00:04:07,000
+Then you get back –Sin[<i>x</I>] from the Cos[<i>x</i>],
+
+61
+00:04:07,000 --> 00:04:09,000
+you get back 72<i>x</i> from here
+
+62
+00:04:09,000 --> 00:04:15,000
+and you get back an 8<i>e</i>^2<i>x</i> from the first term.
+
+63
+00:04:15,000 --> 00:04:19,000
+Then you check that with D, taking the third derivative,
+
+64
+00:04:19,000 --> 00:04:21,000
+and you get back the answer.
+
+65
+00:04:23,000 --> 00:04:29,000
+Okay. On to number 18, which says that the region bounded by <i>x</i> + 2
+
+66
+00:04:29,000 --> 00:04:34,000
+and the quadratic over here is rotated around the <i>x</i> axis.
+
+67
+00:04:34,000 --> 00:04:38,000
+The question is to find the volume of the solid
+
+68
+00:04:38,000 --> 00:04:40,000
+made by this rotation.
+
+69
+00:04:40,000 --> 00:04:43,000
+Here is a plot.
+
+70
+00:04:43,000 --> 00:04:48,000
+You have a straight line and a parabola, an upward parabola,
+
+71
+00:04:48,000 --> 00:04:52,000
+and the question is where do these two intersect?
+
+72
+00:04:52,000 --> 00:04:54,000
+Well, what you do is you use Solve
+
+73
+00:04:54,000 --> 00:04:58,000
+and find out where the straight line and the curve intersect.
+
+74
+00:04:58,000 --> 00:05:00,000
+You get a lower limit and an upper limit.
+
+75
+00:05:00,000 --> 00:05:06,000
+Now if you let <i>f</i> be the first function and <i>g</i> be the second function,
+
+76
+00:05:06,000 --> 00:05:10,000
+then clearly <i>f</i> is below <i>g</i>.
+
+77
+00:05:11,000 --> 00:05:15,000
+Because you are rotating around the <i>x</i> axis,
+
+78
+00:05:15,000 --> 00:05:19,000
+you might want to use the washer method over here.
+
+79
+00:05:21,000 --> 00:05:27,000
+That tells you you must use π(<i>g</i>(<i>x</i>)^2 – f(<i>x</i>)^2)<i>dx</i> inside.
+
+80
+00:05:28,000 --> 00:05:31,000
+If you do the integral over here using Integrate,
+
+81
+00:05:31,000 --> 00:05:36,000
+you get back the final answer for the problem.
+
+82
+00:05:38,000 --> 00:05:44,000
+On to number 19, which says find the limit of this quotient over here.
+
+83
+00:05:44,000 --> 00:05:48,000
+Now as a first step, what you could do is you’re working at 0,
+
+84
+00:05:48,000 --> 00:05:52,000
+so you plug in 0 for both the numerator and the denominator,
+
+85
+00:05:52,000 --> 00:05:56,000
+and what you find is that in fact, you have a 0/0 situation.
+
+86
+00:05:56,000 --> 00:05:58,000
+That’s an indeterminacy,
+
+87
+00:05:58,000 --> 00:06:01,000
+so that should remind you of L’Hospital’s rule,
+
+88
+00:06:01,000 --> 00:06:03,000
+which says that you work out the derivatives of
+
+89
+00:06:03,000 --> 00:06:05,000
+the numerator and denominator separately,
+
+90
+00:06:05,000 --> 00:06:09,000
+plug in <i>x</i> goes to 0, and you get back 5/3,
+
+91
+00:06:09,000 --> 00:06:13,000
+which is the correct answer, as you can check with Limit.
+
+92
+00:06:13,000 --> 00:06:16,000
+Here is a plot which confirms that you indeed have
+
+93
+00:06:16,000 --> 00:06:19,000
+the correct answer for the limit.
+
+94
+00:06:21,000 --> 00:06:23,000
+On to number 20, which says to calculate
+
+95
+00:06:23,000 --> 00:06:26,000
+the integral over here from 2 to 3.
+
+96
+00:06:26,000 --> 00:06:29,000
+Now that looks like the case of the substitution rule
+
+97
+00:06:29,000 --> 00:06:34,000
+because you need to put the denominator <i>u</I> equal to <i>x</i>^2 – 1.
+
+98
+00:06:34,000 --> 00:06:38,000
+If you work out the derivative, you get <i>du</i> = 2<i>xdx</i>.
+
+99
+00:06:38,000 --> 00:06:41,000
+Then you need to change the endpoints—
+
+100
+00:06:41,000 --> 00:06:44,000
+after all, you’re going from <i>x</i> to <i>u</i>.
+
+101
+00:06:44,000 --> 00:06:50,000
+When <i>x</i> is 2, then <i>u</i> is 3.
+
+102
+00:06:50,000 --> 00:06:53,000
+When <i>x</i> is 3, then 3^2 – 1 is 8,
+
+103
+00:06:53,000 --> 00:06:56,000
+so that’s the new integral over here,
+
+104
+00:06:56,000 --> 00:07:01,000
+which turns out to be 3/2 * Log[8/3].
+
+105
+00:07:02,000 --> 00:07:04,000
+You can check the answer with Integrate,
+
+106
+00:07:04,000 --> 00:07:07,000
+and you do get back just the same result.
+
+107
+00:07:07,000 --> 00:07:13,000
+Here is a plot which shows the area which you just computed.
+
+108
+00:07:15,000 --> 00:07:22,000
+On to number 21, which says find <i>y</I>' if <i>y</i>^2 + <i>x</i> * <i>y</i> = 2.
+
+109
+00:07:22,000 --> 00:07:26,000
+The point is because you need to work with <i>y</i>^2,
+
+110
+00:07:26,000 --> 00:07:29,000
+we should use implicit differentiation.
+
+111
+00:07:29,000 --> 00:07:32,000
+What you do is you work out the derivative
+
+112
+00:07:32,000 --> 00:07:35,000
+of each term in the equation separately.
+
+113
+00:07:35,000 --> 00:07:37,000
+That’s the derivative of <i>y</i>^2,
+
+114
+00:07:37,000 --> 00:07:40,000
+and the second term over here has got
+
+115
+00:07:40,000 --> 00:07:42,000
+a derivative with the product rule,
+
+116
+00:07:42,000 --> 00:07:45,000
+and of course the right-hand side has the derivative 0.
+
+117
+00:07:45,000 --> 00:07:48,000
+You work out the derivative for each term separately,
+
+118
+00:07:48,000 --> 00:07:51,000
+so you get 2<i>ydy</i>/<i>dx</i> from here,
+
+119
+00:07:51,000 --> 00:07:55,000
+and then you try and simplify the answer.
+
+120
+00:07:55,000 --> 00:07:59,000
+You get <i>dy</i>/<i>dx</i> = –<i>y</i>(2<i>y</i> + <i>x</i>).
+
+121
+00:07:59,000 --> 00:08:02,000
+Of course you can do the same thing in the Wolfram Language,
+
+122
+00:08:02,000 --> 00:08:07,000
+and you get back the value for <i>y</I>' at the point (<i>x</i>, <i>y</i>),
+
+123
+00:08:07,000 --> 00:08:12,000
+which is –<i>y</i>[<i>x</i>]/(<i>x</I> + 2<i>y</i>[<i>x</i>]).
+
+124
+00:08:12,000 --> 00:08:16,000
+On to number 22, which says find the equation
+
+125
+00:08:16,000 --> 00:08:23,000
+of the normal to this curve at (–2, –4).
+
+126
+00:08:23,000 --> 00:08:26,000
+Now keep in mind that the normal is really
+
+127
+00:08:26,000 --> 00:08:29,000
+the perpendicular to the curve at the point,
+
+128
+00:08:29,000 --> 00:08:32,000
+so you first work out the slope at that point.
+
+129
+00:08:32,000 --> 00:08:36,000
+When I say slope, I mean the derivative,
+
+130
+00:08:36,000 --> 00:08:40,000
+and the derivative of this curve is just <i>x</i> + 3,
+
+131
+00:08:40,000 --> 00:08:44,000
+so you plug in the value for <i>x</i> and you get the slope as 1.
+
+132
+00:08:44,000 --> 00:08:46,000
+But that’s for the tangent,
+
+133
+00:08:46,000 --> 00:08:50,000
+so the normal line will have slope –1 from here.
+
+134
+00:08:50,000 --> 00:08:55,000
+You write down the equation of the normal at that point,
+
+135
+00:08:55,000 --> 00:08:59,000
+and you get the equation <i>y</i> = –<i>x</i> – 6.
+
+136
+00:08:59,000 --> 00:09:04,000
+Here is a plot which shows the given normal.
+
+137
+00:09:04,000 --> 00:09:08,000
+You have the curve over here and the normal over there.
+
+138
+00:09:10,000 --> 00:09:15,000
+Okay. On to number 23, which says for what value of <i>a</i> and <i>b</I>
+
+139
+00:09:15,000 --> 00:09:19,000
+will this function over here become differentiable?
+
+140
+00:09:21,000 --> 00:09:23,000
+Basically you have a piecewise function
+
+141
+00:09:23,000 --> 00:09:27,000
+because there are two pieces over here,
+
+142
+00:09:27,000 --> 00:09:33,000
+and they both meet at –1 provided <i>a</I> and <i>b</i> have got the right values.
+
+143
+00:09:34,000 --> 00:09:36,000
+Now you want your function to be differentiable,
+
+144
+00:09:36,000 --> 00:09:38,000
+so there are two conditions.
+
+145
+00:09:38,000 --> 00:09:42,000
+First of all, the left-hand derivative at –1
+
+146
+00:09:42,000 --> 00:09:47,000
+should equal the right-hand derivative, and secondly,
+
+147
+00:09:47,000 --> 00:09:52,000
+the left-hand limit at –1 should equal the right-hand limit.
+
+148
+00:09:52,000 --> 00:09:55,000
+Now for the first condition, if you differentiate over here,
+
+149
+00:09:55,000 --> 00:10:02,000
+you get <i>a</i> = 3<i>b</i>(–1)^2 – 4(–1),
+
+150
+00:10:02,000 --> 00:10:06,000
+and the second relation over here for the limits
+
+151
+00:10:06,000 --> 00:10:10,000
+will just be obtained by putting in <i>x</i> = –1.
+
+152
+00:10:11,000 --> 00:10:14,000
+You solve those two for <i>a</I> and <i>b</i>,
+
+153
+00:10:14,000 --> 00:10:18,000
+so that says that <i>a</i> is 11/2 and <i>b</I> is 1/2.
+
+154
+00:10:18,000 --> 00:10:21,000
+Then the function is differentiable.
+
+155
+00:10:22,000 --> 00:10:26,000
+Here is the graph of this function,
+
+156
+00:10:26,000 --> 00:10:33,000
+and you can see that it’s nice and smooth at the required point, –1.
+
+157
+00:10:35,000 --> 00:10:38,000
+On to number 24, which says a particle moves
+
+158
+00:10:38,000 --> 00:10:43,000
+according to the velocity <i>v</I>(<i>t</i>) = 4sin(<i>t</i>)cos(<i>t</i>).
+
+159
+00:10:43,000 --> 00:10:48,000
+The question is find the total distance that it travels
+
+160
+00:10:48,000 --> 00:10:52,000
+from 0 to π in seconds.
+
+161
+00:10:53,000 --> 00:10:55,000
+To do that you must work out the integral,
+
+162
+00:10:55,000 --> 00:11:00,000
+but you must ignore the sign because you want a distance,
+
+163
+00:11:00,000 --> 00:11:02,000
+so you have an absolute value over here.
+
+164
+00:11:03,000 --> 00:11:07,000
+Use the Integrate function with the absolute value,
+
+165
+00:11:07,000 --> 00:11:11,000
+and you get back the answer as 4.
+
+166
+00:11:11,000 --> 00:11:17,000
+Here’s a plot which shows the distance that you have found.
+
+167
+00:11:18,000 --> 00:11:22,000
+Of course keep in mind that the negative area, in this case,
+
+168
+00:11:22,000 --> 00:11:27,000
+was counted as positive because we want the distance traveled.
+
+169
+00:11:28,000 --> 00:11:33,000
+On to one of the most difficult questions for this exam, number 25,
+
+170
+00:11:33,000 --> 00:11:37,000
+that will occupy two slides, so do pay careful attention.
+
+171
+00:11:37,000 --> 00:11:44,000
+The question is a cylindrical can has got a volume of 216 cm^3.
+
+172
+00:11:44,000 --> 00:11:47,000
+The question is find a value for the radius
+
+173
+00:11:47,000 --> 00:11:51,000
+that will minimize the amount of material used.
+
+174
+00:11:51,000 --> 00:11:56,000
+Now if you make a can, then the material will cover the surface,
+
+175
+00:11:56,000 --> 00:11:59,000
+so you’re talking about surface area of the can.
+
+176
+00:12:00,000 --> 00:12:02,000
+Now surface area has got two parts.
+
+177
+00:12:02,000 --> 00:12:06,000
+One is the top and bottom areas, which give you 2π<i>r</i>^2,
+
+178
+00:12:06,000 --> 00:12:08,000
+and the side area, which is 2π<i>rh</I>,
+
+179
+00:12:08,000 --> 00:12:13,000
+so the total surface area is 2π<i>rh</I> + 2π<i>r</i>^2.
+
+180
+00:12:13,000 --> 00:12:17,000
+But keep in mind that you have two variables, <i>r</i> and <i>h</i>,
+
+181
+00:12:17,000 --> 00:12:19,000
+so you must eliminate one of them.
+
+182
+00:12:21,000 --> 00:12:26,000
+You know that π<i>r</I>^2<i>h</i> is 216—after all, that’s given to you over here.
+
+183
+00:12:27,000 --> 00:12:30,000
+You can solve for <i>h</i> in terms of <i>r</i>,
+
+184
+00:12:30,000 --> 00:12:36,000
+and now the surface area no longer depends upon <i>h</I>.
+
+185
+00:12:36,000 --> 00:12:38,000
+It only depends upon <i>r</I>,
+
+186
+00:12:38,000 --> 00:12:43,000
+and that is the starting point for the second part of the problem.
+
+187
+00:12:45,000 --> 00:12:49,000
+Now what we do is we start with the expression for the surface area
+
+188
+00:12:49,000 --> 00:12:53,000
+and try and minimize it with respect to <i>r</i>.
+
+189
+00:12:54,000 --> 00:12:59,000
+What you do is you take the derivative, set it equal to 0
+
+190
+00:12:59,000 --> 00:13:05,000
+and you solve, and you get back <i>r</I> as roughly 3.25
+
+191
+00:13:05,000 --> 00:13:09,000
+and exactly it is 3 times the cubed root of 4/π.
+
+192
+00:13:09,000 --> 00:13:11,000
+Now let’s check that you have a minimum,
+
+193
+00:13:11,000 --> 00:13:16,000
+so work out the second derivative at that value of <i>r</I>.
+
+194
+00:13:16,000 --> 00:13:20,000
+It looks positive, so you have a minimum.
+
+195
+00:13:20,000 --> 00:13:24,000
+Basically the can will use the least amount of material
+
+196
+00:13:24,000 --> 00:13:29,000
+when the radius is around 3.25 cm.
+
+197
+00:13:30,000 --> 00:13:35,000
+On to the final question for the exam, this sample exam.
+
+198
+00:13:35,000 --> 00:13:40,000
+You have a spherical balloon that’s losing air at a certain rate.
+
+199
+00:13:40,000 --> 00:13:44,000
+The question is find the rate at which the radius is decreasing
+
+200
+00:13:44,000 --> 00:13:48,000
+when the radius is 10 cm.
+
+201
+00:13:48,000 --> 00:13:50,000
+Now keep in mind that you actually have a relation
+
+202
+00:13:50,000 --> 00:13:56,000
+volume and radius, which is <i>V</I> = 4π<i>r</i>^3/3 for the sphere.
+
+203
+00:13:56,000 --> 00:14:00,000
+If you find the derivative, you get <i>dV</I>/<i>dt</i> from there
+
+204
+00:14:00,000 --> 00:14:03,000
+equal to 4π<i>r</I>^2 <i>dr</i>/<i>dt</i>.
+
+205
+00:14:03,000 --> 00:14:07,000
+That’s just the differential version of the relation.
+
+206
+00:14:07,000 --> 00:14:13,000
+Okay. Now you know the value of <i>dV</i>/<i>dt</i> as –2,
+
+207
+00:14:13,000 --> 00:14:19,000
+so you can work out the value of <i>dr</i>/<i>dt</i> by solving,
+
+208
+00:14:19,000 --> 00:14:23,000
+and you get back the answer as –1/200π.
+
+209
+00:14:23,000 --> 00:14:27,000
+The radius is decreasing—after all, you have a negative answer—
+
+210
+00:14:27,000 --> 00:14:32,000
+at a rate of 1/200π cm/sec.
+
+211
+00:14:33,000 --> 00:14:38,000
+Okay. That brings me to the end of this sample exam,
+
+212
+00:14:38,000 --> 00:14:41,000
+and also to the end of the course.
+
+213
+00:14:41,000 --> 00:14:44,000
+It’s been a great pleasure to teach you.
+
+214
+00:14:44,000 --> 00:14:48,000
+From here on, we wish you all the best.
+
+215
+00:14:48,000 --> 00:14:51,000
+From all of us here at Wolfram U,
+
+216
+00:14:51,000 --> 00:14:53,000
+good luck, and thank you.
+

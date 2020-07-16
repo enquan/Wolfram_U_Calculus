@@ -1,0 +1,576 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 29 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is volumes of solids.
+
+3
+00:00:11,000 --> 00:00:14,000
+Let’s begin with a brief overview of today’s lesson.
+
+4
+00:00:14,000 --> 00:00:18,000
+Thus far we’ve been talking about the area under curves,
+
+5
+00:00:18,000 --> 00:00:21,000
+and we’ve used integral calculus for doing that.
+
+6
+00:00:21,000 --> 00:00:23,000
+For example, if you work out this integral over here,
+
+7
+00:00:23,000 --> 00:00:25,000
+then what you’re really doing is
+
+8
+00:00:25,000 --> 00:00:31,000
+to work out the area under the curve <i>y</i> = <i>x</i>^2 between 2 and 3.
+
+9
+00:00:31,000 --> 00:00:34,000
+The point is that you can also use integral calculus
+
+10
+00:00:34,000 --> 00:00:38,000
+to find the volume of solids, and that would be
+
+11
+00:00:38,000 --> 00:00:40,000
+a big advancement if we could learn it.
+
+12
+00:00:40,000 --> 00:00:44,000
+Let’s look at a very simple example of a solid like over here.
+
+13
+00:00:44,000 --> 00:00:48,000
+What we can do is we can actually calculate
+
+14
+00:00:48,000 --> 00:00:51,000
+the volume of this solid or others using calculus.
+
+15
+00:00:51,000 --> 00:00:57,000
+This lesson is about one method for computing such volumes.
+
+16
+00:00:59,000 --> 00:01:03,000
+The solid that we spoke of just now was a cylinder of course,
+
+17
+00:01:03,000 --> 00:01:06,000
+and if you think of a cylinder, it can be constructed
+
+18
+00:01:06,000 --> 00:01:11,000
+by taking a plane region, and then you sweep out a volume.
+
+19
+00:01:11,000 --> 00:01:17,000
+For example, let’s say you take this disk over here
+
+20
+00:01:17,000 --> 00:01:21,000
+and you sweep out a volume up to a certain height
+
+21
+00:01:21,000 --> 00:01:24,000
+and you get a cylinder.
+
+22
+00:01:24,000 --> 00:01:28,000
+That’s a hint for finding the volume of a cylinder;
+
+23
+00:01:28,000 --> 00:01:32,000
+namely, you think of it as being composed of disks.
+
+24
+00:01:33,000 --> 00:01:36,000
+If you want to find the volume of a cylinder, what you do is
+
+25
+00:01:36,000 --> 00:01:38,000
+you take the base area
+
+26
+00:01:38,000 --> 00:01:43,000
+and then multiply it by the height to get the volume.
+
+27
+00:01:43,000 --> 00:01:46,000
+For example, here’s a disk.
+
+28
+00:01:46,000 --> 00:01:49,000
+You can work out its area,
+
+29
+00:01:49,000 --> 00:01:55,000
+and that’s a cylinder with that disk as a base and height 4,
+
+30
+00:01:55,000 --> 00:01:58,000
+and its volume is 4π.
+
+31
+00:01:58,000 --> 00:02:00,000
+Basically the volume of the cylinder is
+
+32
+00:02:00,000 --> 00:02:04,000
+the area of the base times the height, which is 4 in this case.
+
+33
+00:02:04,000 --> 00:02:05,000
+Now of course there are many more
+
+34
+00:02:05,000 --> 00:02:08,000
+shapes and solids in the Wolfram Language
+
+35
+00:02:08,000 --> 00:02:11,000
+and you can work out their volumes directly,
+
+36
+00:02:11,000 --> 00:02:13,000
+but what you might want to do is to work out
+
+37
+00:02:13,000 --> 00:02:17,000
+the volumes of even more general solids.
+
+38
+00:02:17,000 --> 00:02:19,000
+Here’s an example.
+
+39
+00:02:19,000 --> 00:02:22,000
+You have a three-dimensional region.
+
+40
+00:02:23,000 --> 00:02:25,000
+If you look at this region, you think of it
+
+41
+00:02:25,000 --> 00:02:28,000
+as being composed of square cross sections.
+
+42
+00:02:28,000 --> 00:02:32,000
+If you were to slice the region, you would see that
+
+43
+00:02:32,000 --> 00:02:37,000
+the area of each piece is 4<i>x</i>^2 because you have
+
+44
+00:02:37,000 --> 00:02:42,000
+squares with lengths and widths of 2<i>x</i>.
+
+45
+00:02:42,000 --> 00:02:46,000
+The volume of each piece would be 4<i>x</i>^2Δ<i>x</i>,
+
+46
+00:02:46,000 --> 00:02:50,000
+and then you can add them all up, so to speak,
+
+47
+00:02:50,000 --> 00:02:54,000
+and get the total volume to be the integral of 4<i>x</i>^2<i>dx</i>
+
+48
+00:02:54,000 --> 00:02:56,000
+between the right limits.
+
+49
+00:02:56,000 --> 00:02:58,000
+For example, if you want to define the limits as 1 and 3,
+
+50
+00:02:58,000 --> 00:03:00,000
+then the volume is 104/3.
+
+51
+00:03:01,000 --> 00:03:06,000
+Okay. Now let’s try and generalize that a bit more.
+
+52
+00:03:06,000 --> 00:03:11,000
+If you have a solid with cross-section area <i>A</i>[<i>x</i>],
+
+53
+00:03:11,000 --> 00:03:16,000
+then its volume is the integral from <i>a</i> to <i>b</i> of <i>A</i>(<i>x</i>)<I>dx</i>
+
+54
+00:03:16,000 --> 00:03:20,000
+where <i>a</i> and <i>b</i> are the limits within which you want to find the volume.
+
+55
+00:03:20,000 --> 00:03:23,000
+For example, if you want to find the volume of a ball
+
+56
+00:03:23,000 --> 00:03:25,000
+like over here and the radius is <i>r</i>,
+
+57
+00:03:25,000 --> 00:03:31,000
+then each cross section has got a radius of √(<i>r</i>^2 – <i>x</i>^2).
+
+58
+00:03:31,000 --> 00:03:35,000
+So the cross sections of the left end have got very small areas.
+
+59
+00:03:35,000 --> 00:03:38,000
+As you go to the middle, the area increases.
+
+60
+00:03:38,000 --> 00:03:43,000
+Basically, the area will be π(<i>r</i>^2 – <i>x</i>^2).
+
+61
+00:03:43,000 --> 00:03:47,000
+You add them all up and you get the volume of the ball,
+
+62
+00:03:47,000 --> 00:03:49,000
+which is of course (4π<i>r</i>^3)/3.
+
+63
+00:03:49,000 --> 00:03:54,000
+You can check that with Volume and get back just the same result.
+
+64
+00:03:55,000 --> 00:03:58,000
+Okay. Let’s use the same idea to talk about
+
+65
+00:03:58,000 --> 00:04:00,000
+what are called solves of revolutions.
+
+66
+00:04:00,000 --> 00:04:03,000
+Here’s a function, and what you can do is
+
+67
+00:04:03,000 --> 00:04:04,000
+you can take the graph of this function
+
+68
+00:04:04,000 --> 00:04:08,000
+and revolve it around the <i>x</i> axis, and then you get a solid.
+
+69
+00:04:08,000 --> 00:04:10,000
+Here’s how we do it.
+
+70
+00:04:10,000 --> 00:04:13,000
+You use RevolutionPlot3D, and you get this solid
+
+71
+00:04:13,000 --> 00:04:17,000
+obtained by revolving the curve about the <i>x</i> axis.
+
+72
+00:04:17,000 --> 00:04:20,000
+Of course you could also revolve it around the <i>y</i> axis
+
+73
+00:04:20,000 --> 00:04:22,000
+and get a slightly different solid.
+
+74
+00:04:22,000 --> 00:04:26,000
+The question is how do you work out the volume in these cases?
+
+75
+00:04:26,000 --> 00:04:31,000
+Okay. What you do is you can again divide the volume into disks,
+
+76
+00:04:31,000 --> 00:04:37,000
+but in this case, each cross section is a disk whose radius is <i>f</i>[<i>x</i>],
+
+77
+00:04:37,000 --> 00:04:40,000
+the value of the function <i>f</i> at <i>x</i>, so the volume will be
+
+78
+00:04:40,000 --> 00:04:45,000
+the integral from <i>a</i> to <i>b</i> of π<i>f</i>[<i>x</i>]^2<i>dx</i>.
+
+79
+00:04:45,000 --> 00:04:48,000
+Let’s say you want to find the volume from –1 to 1.
+
+80
+00:04:48,000 --> 00:04:53,000
+We get back the integral over here, which is 2π/5.
+
+81
+00:04:53,000 --> 00:04:56,000
+Just to remind you, that was the original parabola,
+
+82
+00:04:56,000 --> 00:05:02,000
+and that was the solid obtained by revolving around the <i>x</i> axis.
+
+83
+00:05:02,000 --> 00:05:07,000
+Now you might, let’s say, want to revolve it around the line <i>y</i> = 1,
+
+84
+00:05:07,000 --> 00:05:09,000
+in which case you just subtract off 1
+
+85
+00:05:09,000 --> 00:05:12,000
+because if you look at the volume over here,
+
+86
+00:05:12,000 --> 00:05:14,000
+you see that you actually have different radii
+
+87
+00:05:14,000 --> 00:05:16,000
+depending upon where you are.
+
+88
+00:05:16,000 --> 00:05:19,000
+Basically you shift down the function by one
+
+89
+00:05:19,000 --> 00:05:21,000
+to get the correct picture.
+
+90
+00:05:21,000 --> 00:05:24,000
+Then the radius of each cross section is 1 – <i>f</i>[<i>x</i>],
+
+91
+00:05:24,000 --> 00:05:29,000
+so you can work out the volume as the integral of π(1 – <i>f</i>[<i>x</i>])^2
+
+92
+00:05:29,000 --> 00:05:32,000
+between the correct limits.
+
+93
+00:05:32,000 --> 00:05:34,000
+Similarly, if you want to find, let’s say,
+
+94
+00:05:34,000 --> 00:05:39,000
+the volume obtained by revolving around the line <i>y</i> = –1,
+
+95
+00:05:39,000 --> 00:05:40,000
+then you add a 1.
+
+96
+00:05:41,000 --> 00:05:43,000
+Here’s the picture.
+
+97
+00:05:43,000 --> 00:05:47,000
+Again, work out the volume with an integral
+
+98
+00:05:47,000 --> 00:05:49,000
+and you get back the answer.
+
+99
+00:05:49,000 --> 00:05:52,000
+Basically, shift the function up by 1 in this case.
+
+100
+00:05:53,000 --> 00:05:58,000
+Now a second method for computing volumes
+
+101
+00:05:58,000 --> 00:06:00,000
+is the so-called washer method.
+
+102
+00:06:00,000 --> 00:06:02,000
+The idea is simple.
+
+103
+00:06:02,000 --> 00:06:04,000
+You have two functions, <i>f</i> and <i>g</i>,
+
+104
+00:06:04,000 --> 00:06:08,000
+and you look at the area between them
+
+105
+00:06:08,000 --> 00:06:11,000
+and then you revolve it around the <i>x</i> axis.
+
+106
+00:06:11,000 --> 00:06:15,000
+Here’s a nice demonstration of that.
+
+107
+00:06:15,000 --> 00:06:19,000
+You revolve it. It sweeps out the volume.
+
+108
+00:06:19,000 --> 00:06:25,000
+The question is how do you work out a formula for that volume?
+
+109
+00:06:27,000 --> 00:06:31,000
+What you do is you remind yourself that now each cross section
+
+110
+00:06:31,000 --> 00:06:36,000
+is like a washer because it’s got a kind of outer and inner radius.
+
+111
+00:06:36,000 --> 00:06:39,000
+That’s the area of this washer.
+
+112
+00:06:39,000 --> 00:06:43,000
+We work out the integral for the volume,
+
+113
+00:06:43,000 --> 00:06:48,000
+and that’s the method for finding the volume using the washer method.
+
+114
+00:06:48,000 --> 00:06:53,000
+But of course we might have liked to go around the <i>y</i> axis,
+
+115
+00:06:53,000 --> 00:06:55,000
+in which case we do just the opposite.
+
+116
+00:06:55,000 --> 00:06:58,000
+You write <i>f</i> and <i>g</i> as functions of <i>y</i>
+
+117
+00:06:58,000 --> 00:07:02,000
+and then do a similar integral to get back the answer.
+
+118
+00:07:04,000 --> 00:07:06,000
+That brings me to the end of the lesson.
+
+119
+00:07:06,000 --> 00:07:09,000
+The main point is that you can use integrals
+
+120
+00:07:09,000 --> 00:07:11,000
+to find the volumes of solids,
+
+121
+00:07:11,000 --> 00:07:13,000
+and that’s quite a powerful idea.
+
+122
+00:07:13,000 --> 00:07:19,000
+Let’s say if you have a cylinder, then its volume is base times height,
+
+123
+00:07:19,000 --> 00:07:22,000
+where <i>B</i> is the area of the base.
+
+124
+00:07:22,000 --> 00:07:27,000
+If you have a more general solid with the cross-sectional area <i>A</i>[<i>x</i>],
+
+125
+00:07:27,000 --> 00:07:30,000
+then you’ll compute an integral to find the volume.
+
+126
+00:07:30,000 --> 00:07:32,000
+If you have a solid of revolution
+
+127
+00:07:32,000 --> 00:07:36,000
+obtained by revolving the function around a certain line,
+
+128
+00:07:36,000 --> 00:07:39,000
+then you can compute its volume using the formula over here.
+
+129
+00:07:39,000 --> 00:07:42,000
+Typically you might just want <i>y</i> to be 0,
+
+130
+00:07:42,000 --> 00:07:44,000
+so you’re revolving around the <i>x</i> axis.
+
+131
+00:07:44,000 --> 00:07:46,000
+If you have two functions
+
+132
+00:07:46,000 --> 00:07:49,000
+and you want to revolve the area between them,
+
+133
+00:07:49,000 --> 00:07:53,000
+then you apply the washer method and apply the formula over here.
+
+134
+00:07:53,000 --> 00:07:56,000
+Of course you can repeat the same thing
+
+135
+00:07:56,000 --> 00:07:59,000
+for revolving around the line <i>x</i> = <i>x</i>0.
+
+136
+00:07:59,000 --> 00:08:04,000
+That’s the end of this lesson about the volume of solids
+
+137
+00:08:04,000 --> 00:08:08,000
+using the so-called disk method and the washer method.
+
+138
+00:08:08,000 --> 00:08:11,000
+In the next lesson, we’ll talk about another method
+
+139
+00:08:11,000 --> 00:08:13,000
+which is called the cylindrical shell method.
+
+140
+00:08:13,000 --> 00:08:18,000
+That’s a little easier in some cases, but that’s for next time.
+
+141
+00:08:18,000 --> 00:08:19,000
+Do review today’s lesson.
+
+142
+00:08:19,000 --> 00:08:21,000
+It’s quite a difficult lesson.
+
+143
+00:08:21,000 --> 00:08:22,000
+I’ll see you next time.
+
+144
+00:08:22,000 --> 00:08:25,000
+Thank you very much. I’ll stop over here.
+

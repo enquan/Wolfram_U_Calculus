@@ -1,0 +1,584 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 21 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is optimization.
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:15,000 --> 00:00:20,000
+We’ve learned how to find extreme values—maxima and minima—earlier on,
+
+5
+00:00:20,000 --> 00:00:24,000
+and those have been very useful in applications.
+
+6
+00:00:24,000 --> 00:00:27,000
+Now we’ve also learned that those derivatives in maxima and minima
+
+7
+00:00:27,000 --> 00:00:32,000
+can be used to do things like maximize profits or minimize costs,
+
+8
+00:00:32,000 --> 00:00:36,000
+so they have quite a few very practical uses.
+
+9
+00:00:36,000 --> 00:00:39,000
+This lesson will continue the approach learned earlier on
+
+10
+00:00:39,000 --> 00:00:43,000
+to solve some more optimization problems.
+
+11
+00:00:43,000 --> 00:00:46,000
+So it’s just a continuation of all the earlier work,
+
+12
+00:00:46,000 --> 00:00:51,000
+but this time around, we’ll develop a way for solving optimization problems.
+
+13
+00:00:51,000 --> 00:00:57,000
+We’ll set up a set of guidelines that should help us solve these problems in a systematic way.
+
+14
+00:00:58,000 --> 00:01:00,000
+Okay. Here are those guidelines.
+
+15
+00:01:00,000 --> 00:01:06,000
+Number one: make sure you understand the problem, perhaps by reading it more than once.
+
+16
+00:01:06,000 --> 00:01:12,000
+Next make a picture to get an idea of what you need to do in the problem.
+
+17
+00:01:13,000 --> 00:01:20,000
+Next assign a symbol like <i>M</i> to the quantity that is being maximized or minimized,
+
+18
+00:01:20,000 --> 00:01:25,000
+and of course do the same thing for all the other unknown quantities.
+
+19
+00:01:26,000 --> 00:01:36,000
+Now use all the information to set up an expression for <i>M</i> in terms of all the other variables.
+
+20
+00:01:36,000 --> 00:01:40,000
+Another difficulty is that if you have multiple symbols,
+
+21
+00:01:40,000 --> 00:01:49,000
+then you will need to find relationships so that <i>M</i> is a function of just one variable <i>x</i>.
+
+22
+00:01:49,000 --> 00:01:53,000
+After all, we’re doing single-variable calculus,
+
+23
+00:01:53,000 --> 00:01:58,000
+so you must have just one variable <i>x</I> on which <i>M</i> depends.
+
+24
+00:01:59,000 --> 00:02:02,000
+One last thing is find the domain of <i>f</i>.
+
+25
+00:02:02,000 --> 00:02:07,000
+Find out where <i>f</i> is defined because that will tell you the interval
+
+26
+00:02:07,000 --> 00:02:11,000
+on which you must find the maxima and minima.
+
+27
+00:02:12,000 --> 00:02:16,000
+For the final step, you find the absolute maximum and minimum of <i>f</i>
+
+28
+00:02:16,000 --> 00:02:20,000
+using all that you’ve learned in earlier lessons.
+
+29
+00:02:21,000 --> 00:02:24,000
+Let’s begin with an example.
+
+30
+00:02:24,000 --> 00:02:29,000
+A farmer has 3,600 feet of fencing,
+
+31
+00:02:29,000 --> 00:02:34,000
+and this farmer wants to build a rectangular field that borders a river,
+
+32
+00:02:34,000 --> 00:02:39,000
+but he doesn’t want to put any fencing on the side touching the river.
+
+33
+00:02:39,000 --> 00:02:44,000
+The question is find the dimensions of the field that maximize the area.
+
+34
+00:02:45,000 --> 00:02:48,000
+Now for the first step, let’s do an animation.
+
+35
+00:02:48,000 --> 00:02:54,000
+Here’s the area for particular values of <i>x</i> and <i>y</i>.
+
+36
+00:02:54,000 --> 00:03:01,000
+Let’s begin by starting all the way to the left over here, and let’s play the animation.
+
+37
+00:03:01,000 --> 00:03:07,000
+You see over here that initially the area increases, and then it starts to drop.
+
+38
+00:03:07,000 --> 00:03:16,000
+In other words, your configuration can neither be too thin, nor can it be too tall.
+
+39
+00:03:16,000 --> 00:03:19,000
+In fact, here’s a picture you have of the problem.
+
+40
+00:03:19,000 --> 00:03:27,000
+You have the area over here depending upon <i>x</i> and <i>y</i>, the length and the width of the field.
+
+41
+00:03:29,000 --> 00:03:33,000
+Okay. Let’s now start solving the problem.
+
+42
+00:03:33,000 --> 00:03:39,000
+The area is going to be <i>x</i> times <i>y</i>, which is the length times the width.
+
+43
+00:03:39,000 --> 00:03:43,000
+The problem is you have two variables, so you must eliminate one of them,
+
+44
+00:03:43,000 --> 00:03:53,000
+but then you know 2<i>x</i> + <i>y</i> must be the length of the fencing available—after all, <i>y</i> occurs only once.
+
+45
+00:03:53,000 --> 00:03:59,000
+Replace <i>y</i> by an expression involving <i>x</i>, and then the area depends only on one variable, <i>x</i>.
+
+46
+00:04:00,000 --> 00:04:05,000
+Now the point is that you cannot have the value of <i>x</i> exceeding 1,800
+
+47
+00:04:05,000 --> 00:04:11,000
+because otherwise the area would be less than 0 because that factor becomes negative.
+
+48
+00:04:11,000 --> 00:04:16,000
+So the domain of the function is from 0 to 1,800.
+
+49
+00:04:17,000 --> 00:04:23,000
+Then finally, let’s use the closed interval method like I’m doing over here
+
+50
+00:04:23,000 --> 00:04:33,000
+to find the critical points, and then here is the area at that value of <i>x</i>.
+
+51
+00:04:33,000 --> 00:04:36,000
+Another point is that you only have a single critical point,
+
+52
+00:04:36,000 --> 00:04:41,000
+and at the end points you have either a 0 area, which makes no sense,
+
+53
+00:04:41,000 --> 00:04:48,000
+or you have this maximum area over here, so you have a maximum at this value of <i>x</i> over here.
+
+54
+00:04:48,000 --> 00:04:55,000
+So the rectangle should be 900 feet long and 1,800 feet wide.
+
+55
+00:04:57,000 --> 00:05:02,000
+Okay. Before going on, we need to talk a little bit about absolute extreme values.
+
+56
+00:05:02,000 --> 00:05:06,000
+Earlier on, we mostly talked about local extreme values.
+
+57
+00:05:06,000 --> 00:05:13,000
+The point is that if you have a critical number <i>c</i> for a function and you find that the derivative is,
+
+58
+00:05:13,000 --> 00:05:23,000
+let’s say, positive to the left of it for all values and negative to the right of it for all values,
+
+59
+00:05:23,000 --> 00:05:29,000
+then that value is actually an absolute maximum for the function.
+
+60
+00:05:29,000 --> 00:05:35,000
+In just the same way, if you have a value <i>c</i> for which the derivative is
+
+61
+00:05:35,000 --> 00:05:43,000
+negative for all values to the left and positive for all values to the right,
+
+62
+00:05:43,000 --> 00:05:46,000
+then you have an absolute minimum.
+
+63
+00:05:46,000 --> 00:05:52,000
+That’s just a slightly more general result than the first derivative test.
+
+64
+00:05:52,000 --> 00:05:58,000
+We have tweaked that test slightly to find aboslute maxima and minima
+
+65
+00:05:58,000 --> 00:06:02,000
+instead of local maxima and minima.
+
+66
+00:06:02,000 --> 00:06:07,000
+As a very simple example, here’s <i>x</I>^2 with its derivative 2<i>x</i>.
+
+67
+00:06:07,000 --> 00:06:14,000
+You see over here that that’s the minimum, and to the left the derivative is negative,
+
+68
+00:06:14,000 --> 00:06:21,000
+and to the right it’s positive for all values, so you actually have an absolute minimum over here.
+
+69
+00:06:22,000 --> 00:06:28,000
+As an application, now let’s take up the problem of making a cylindrical can
+
+70
+00:06:28,000 --> 00:06:34,000
+that holds 1 liter of water, and you want to find the dimensions
+
+71
+00:06:34,000 --> 00:06:40,000
+that will minimize the total cost of plastic that’s used to make the can.
+
+72
+00:06:40,000 --> 00:06:43,000
+Now if you want to minimize the cost of plastic,
+
+73
+00:06:43,000 --> 00:06:49,000
+then the best way to do that is to minimize the surface area of the can.
+
+74
+00:06:49,000 --> 00:06:52,000
+Here is the can itself.
+
+75
+00:06:52,000 --> 00:06:56,000
+That’s the surface area <i>S</i>, the radius and the height.
+
+76
+00:06:57,000 --> 00:07:05,000
+The formula for the area is just the area of the two sides and the two bases,
+
+77
+00:07:05,000 --> 00:07:11,000
+so that’s the total area. Now you want to eliminate <i>h</i>, let’s say,
+
+78
+00:07:11,000 --> 00:07:14,000
+so remember that the volume π<i>r</I>^2<i>h</i> is 1,000.
+
+79
+00:07:14,000 --> 00:07:22,000
+After all, you have 1 liter of water, so <i>h</I> is 1,000/(π<i>r</i>^2).
+
+80
+00:07:22,000 --> 00:07:29,000
+Having done that, we can now write the surface area in terms of just one variable <i>r</i>,
+
+81
+00:07:29,000 --> 00:07:35,000
+and the domain is just from 0 all the way to ∞.
+
+82
+00:07:35,000 --> 00:07:40,000
+In principle, you could have any value for <i>r</i>.
+
+83
+00:07:41,000 --> 00:07:46,000
+Now the point is you cannot apply the closed interval method because the interval is infinite,
+
+84
+00:07:46,000 --> 00:07:50,000
+so what we do is we first of all work out the critical numbers.
+
+85
+00:07:50,000 --> 00:07:53,000
+There’s just one critical number, but then you note that
+
+86
+00:07:53,000 --> 00:07:58,000
+to the left of that value you have the derivative being negative,
+
+87
+00:07:58,000 --> 00:08:04,000
+and to the right you have it being positive, so actually you have an absolute minimum.
+
+88
+00:08:04,000 --> 00:08:09,000
+Okay. Now with that radius, you can work out the height using the solution above,
+
+89
+00:08:09,000 --> 00:08:17,000
+this 5.41926, and that says that the radius should be approximately 5.42
+
+90
+00:08:17,000 --> 00:08:21,000
+and the height should be approximately 10.84.
+
+91
+00:08:23,000 --> 00:08:26,000
+Okay. Now a problem about distances.
+
+92
+00:08:26,000 --> 00:08:34,000
+You want to find the point on the parabola <i>y</i>^2 = 2<i>x</i> which is closest to the point (1, 32).
+
+93
+00:08:34,000 --> 00:08:37,000
+That’s the distance formula.
+
+94
+00:08:37,000 --> 00:08:43,000
+You have √(<i>x</I> – 1)^2 + (<i>y</i> – 32)^2 for that point.
+
+95
+00:08:43,000 --> 00:08:49,000
+Because the point lies on the parabola, you have <i>x</i> = <i>y</i>^2/2 from here,
+
+96
+00:08:49,000 --> 00:08:52,000
+so you plug it back and you get a distance function.
+
+97
+00:08:52,000 --> 00:08:56,000
+Now I won’t worry about the square root sign. That doesn’t matter.
+
+98
+00:08:56,000 --> 00:09:02,000
+You work out the critical numbers, and you find that it’s just one critical number.
+
+99
+00:09:02,000 --> 00:09:05,000
+If you look at the derivative, you actually see that
+
+100
+00:09:05,000 --> 00:09:11,000
+the derivative is going to be negative to the left of 4 and positive to the right of 4,
+
+101
+00:09:11,000 --> 00:09:14,000
+so you actually have an absolute minimum.
+
+102
+00:09:14,000 --> 00:09:22,000
+The minimum value will occur when you are at (8, 4), and that’s the answer to the problem.
+
+103
+00:09:24,000 --> 00:09:27,000
+Okay. Now on to a business example.
+
+104
+00:09:27,000 --> 00:09:35,000
+Let’s say you have a store that sells 300 monitors a week at $200 each.
+
+105
+00:09:35,000 --> 00:09:42,000
+Now the store finds that for each $10 rebate, of course the sales go up,
+
+106
+00:09:42,000 --> 00:09:48,000
+so the number of monitors increases by the number 30 in a week.
+
+107
+00:09:49,000 --> 00:09:55,000
+Okay. The question is what are the demand function and the revenue function?
+
+108
+00:09:55,000 --> 00:10:03,000
+You also want to find the rebate that the store should offer to maximize its revenue.
+
+109
+00:10:03,000 --> 00:10:07,000
+The demand function is just the price per unit, so that’s given over here.
+
+110
+00:10:07,000 --> 00:10:16,000
+You have the base price 200 minus the discount that customers will get
+
+111
+00:10:16,000 --> 00:10:20,000
+depending upon how many monitors are sold.
+
+112
+00:10:20,000 --> 00:10:24,000
+The revenue function is just the total revenue.
+
+113
+00:10:24,000 --> 00:10:27,000
+That’s the number of items times the price per item.
+
+114
+00:10:27,000 --> 00:10:32,000
+To maximize revenue, you simply find its critical value, which is 450,
+
+115
+00:10:32,000 --> 00:10:38,000
+and then you can actually check quite easily that you actually have
+
+116
+00:10:38,000 --> 00:10:41,000
+an absolute maximum at this value.
+
+117
+00:10:41,000 --> 00:10:46,000
+The price at this value of <i>x</i> is 150.
+
+118
+00:10:46,000 --> 00:10:55,000
+Now the rebate should be $200, the base price, minus $150. That’s $50.
+
+119
+00:10:57,000 --> 00:11:01,000
+Okay. Now that’s all done manually, but in the Wolfram Language,
+
+120
+00:11:01,000 --> 00:11:06,000
+we have two functions, Maximize and Minimize, which can actually find
+
+121
+00:11:06,000 --> 00:11:12,000
+these absolute maxima and minima for a given range without any effort on our part.
+
+122
+00:11:12,000 --> 00:11:17,000
+For example, in the earlier case, I could use Maximize to get back
+
+123
+00:11:17,000 --> 00:11:21,000
+just the same answer for the revenue.
+
+124
+00:11:22,000 --> 00:11:28,000
+You could also specify range, and we get back the answer for that range.
+
+125
+00:11:31,000 --> 00:11:35,000
+That’s Maximize, and similarly, you could find an absolute minimum
+
+126
+00:11:35,000 --> 00:11:38,000
+by using the Minimize function.
+
+127
+00:11:38,000 --> 00:11:44,000
+Here is a function and you want to minimize it between 0 and 2π,
+
+128
+00:11:44,000 --> 00:11:47,000
+so you use Minimize and you get back an answer,
+
+129
+00:11:47,000 --> 00:11:51,000
+and here is a plot showing that that answer is actually correct.
+
+130
+00:11:51,000 --> 00:11:55,000
+That dot over here is the point at which you have a minimum.
+
+131
+00:11:57,000 --> 00:11:59,000
+Okay. That’s the end of this lesson.
+
+132
+00:11:59,000 --> 00:12:05,000
+The main point is that optimization is a very important area of applied mathematics.
+
+133
+00:12:05,000 --> 00:12:11,000
+A lot of people spend time just solving optimization problems.
+
+134
+00:12:11,000 --> 00:12:16,000
+Now to solve such problems, the first point is you must try and understand what the problem is.
+
+135
+00:12:16,000 --> 00:12:21,000
+To understand the problem, you draw a picture, et cetera,
+
+136
+00:12:21,000 --> 00:12:24,000
+and make you’ve got all of it set up right before you try and solve it.
+
+137
+00:12:25,000 --> 00:12:30,000
+Of course, if you are in business, then optimization is particularly important
+
+138
+00:12:30,000 --> 00:12:32,000
+because you want maximize the profits,
+
+139
+00:12:32,000 --> 00:12:37,000
+so you need some kind of quantitative way of maximizing profits.
+
+140
+00:12:37,000 --> 00:12:42,000
+There are two built-in functions, Maximize and Minimize,
+
+141
+00:12:42,000 --> 00:12:46,000
+which are really useful for solving such problems.
+
+142
+00:12:48,000 --> 00:12:50,000
+The next lesson will talk about antiderivatives,
+
+143
+00:12:50,000 --> 00:12:53,000
+but before you do that, do review today’s lesson.
+
+144
+00:12:53,000 --> 00:12:55,000
+It was quite a difficult lesson.
+
+145
+00:12:55,000 --> 00:13:00,000
+Make sure you understand all the steps, and then we’ll go on to antiderivatives next time.
+
+146
+00:13:00,000 --> 00:13:03,000
+Thank you very much. I’ll stop over here.
+

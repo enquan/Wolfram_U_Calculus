@@ -1,0 +1,428 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 15 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is linear approximations.
+
+3
+00:00:11,000 --> 00:00:17,000
+Let’s begin with a brief overview of this lesson. You may recall that the derivative of a function
+
+4
+00:00:17,000 --> 00:00:23,000
+is calculated by zooming in on it with some limits. Typically you take some limit as,
+
+5
+00:00:23,000 --> 00:00:31,000
+let’s say, <i>h</i>→0 or some other variable, and the point is that as you get closer and closer
+
+6
+00:00:31,000 --> 00:00:39,000
+to a desired point, then the function begins to look like its tangent line.
+
+7
+00:00:39,000 --> 00:00:48,000
+For example, here’s a function <i>f</i>[<i>x</i>] = <i>x</i>^2, and that’s the function, that’s the tangent line.
+
+8
+00:00:48,000 --> 00:00:55,000
+We can see that very close to the point (1, 1), they both look essentially identical.
+
+9
+00:00:55,000 --> 00:01:04,000
+You can use this property to approximate a function near a point with its tangent line,
+
+10
+00:01:04,000 --> 00:01:10,000
+and that’s a dramatic simplification. After all, a curve is a rather complicated object,
+
+11
+00:01:10,000 --> 00:01:17,000
+and a straight line is perhaps the simplest of geometrical objects. If you can replace a function
+
+12
+00:01:17,000 --> 00:01:23,000
+with its tangent line, that’s great, and that’s the topic of this lesson. Namely, we’d like to
+
+13
+00:01:23,000 --> 00:01:29,000
+talk about linear approximations, but we’ll also talk about so-called differentials
+
+14
+00:01:29,000 --> 00:01:32,000
+and some of their applications.
+
+15
+00:01:32,000 --> 00:01:41,000
+Let’s begin with the topic of linear approximation. You may recall that the tangent line at any point,
+
+16
+00:01:41,000 --> 00:01:50,000
+<i>x</i> = <i>a</i>, is given by an equation of that type. Now, the <i>y</i> over here is a point on the tangent line,
+
+17
+00:01:50,000 --> 00:01:56,000
+but what you could do is to replace <i>y</i> by <i>f</i>[<i>x</i>], the function itself, and then you get
+
+18
+00:01:56,000 --> 00:02:05,000
+an approximate quality whereby the value of <i>f</i> at <i>x</i> can be approximated by using its derivative
+
+19
+00:02:05,000 --> 00:02:13,000
+at the point <i>a</i>. This approximation is called the linear approximation of <i>f</i> at <i>a</i>
+
+20
+00:02:13,000 --> 00:02:23,000
+because the tangent line is being used to approximate <i>f</i>. Here’s a picture. You have the function
+
+21
+00:02:23,000 --> 00:02:29,000
+and you have tangent line, and the tangent line is now called the linearization.
+
+22
+00:02:29,000 --> 00:02:36,000
+Linear approximations are a very important tool in calculus, and as an example,
+
+23
+00:02:36,000 --> 00:02:44,000
+let’s take this function, <i>f</i>[<i>x</i>] = Sqrt[<i>x</i> + 8]. What we want to do is to approximate values of
+
+24
+00:02:44,000 --> 00:02:52,000
+the square root at 8.98 and 9.03 within this function. Obviously when <i>x</i> is 1,
+
+25
+00:02:52,000 --> 00:03:02,000
+the square root of 9 is just 3, so what we do is we work near 1, and we get back <i>f</i>'[1] is 1/6.
+
+26
+00:03:02,000 --> 00:03:12,000
+Now you set up the equation of the tangent line. Tangent is equal to 3 + (1/6)(<i>x</i> − 1),
+
+27
+00:03:12,000 --> 00:03:21,000
+and you get back the tangent expression. Now when <i>x</i> is 0.98, you are at 8.98.
+
+28
+00:03:21,000 --> 00:03:27,000
+The next one is 1.03—then you are at 9.03. You can use the tangent line to approximate
+
+29
+00:03:27,000 --> 00:03:32,000
+the values over there, and those are the square roots at those two points approximately.
+
+30
+00:03:32,000 --> 00:03:39,000
+Here’s the picture, and in the picture, you see you have the function, the linear approximation
+
+31
+00:03:39,000 --> 00:03:45,000
+and the values at the nearby points. You can see that the approximations are very, very close
+
+32
+00:03:45,000 --> 00:03:50,000
+to the original function, though of course they are not exactly the same.
+
+33
+00:03:52,000 --> 00:03:58,000
+Okay. The question now is how accurate is that approximation? Suppose you want to have
+
+34
+00:03:58,000 --> 00:04:05,000
+an accuracy of within 0.5 units. Well, here’s the equation. That’s the exact expression
+
+35
+00:04:05,000 --> 00:04:11,000
+and that’s the tangent. You want that difference to be less than 0.5. What you can do is
+
+36
+00:04:11,000 --> 00:04:19,000
+set up an equation with the reduced function and solve. Numerically, the values
+
+37
+00:04:19,000 --> 00:04:27,000
+lie between −6.3 and 14.39. As long as you stay within that range of <i>x</i>, you’ll get an approximation
+
+38
+00:04:27,000 --> 00:04:36,000
+which is correct within 0.5 units. Now, let’s say you want to increase the accuracy to be less than 0.1.
+
+39
+00:04:36,000 --> 00:04:44,000
+Then you set up the equation with 1/10 over here, and you get back the values. In this case,
+
+40
+00:04:44,000 --> 00:04:51,000
+we have a much tighter range from −3.04 to 6.2, roughly.
+
+41
+00:04:53,000 --> 00:05:01,000
+Okay. In physics, one needs this notion of linear approximation all the time.
+
+42
+00:05:01,000 --> 00:05:05,000
+For example, when one studies the pendulum and you want to talk about
+
+43
+00:05:05,000 --> 00:05:09,000
+the period of the pendulum, you start with the equation for the acceleration.
+
+44
+00:05:09,000 --> 00:05:15,000
+That’s the tangential acceleration <i>at</i> and <i>g</i> is the acceleration for gravity.
+
+45
+00:05:15,000 --> 00:05:20,000
+θ is the angle that the pendulum makes with the vertical. The point is that
+
+46
+00:05:20,000 --> 00:05:27,000
+when your rate goes to 0, then sine has got a slope of 1 because cosine of 0 is 1,
+
+47
+00:05:27,000 --> 00:05:37,000
+and the value of sine at (0, 0)—so near 0 when θ is very small, Sin[θ] is approximately equal to θ.
+
+48
+00:05:37,000 --> 00:05:44,000
+If you replace the Sin[θ] over there with the θ, then you get back a much simpler equation,
+
+49
+00:05:44,000 --> 00:05:51,000
+and that’s the one that’s used in physics textbooks at the elementary level. As you go more advanced,
+
+50
+00:05:51,000 --> 00:05:58,000
+of course you might want a better approximation. Here’s a picture of the actual acceleration,
+
+51
+00:05:58,000 --> 00:06:03,000
+the current one, and the linear approximation. Of course, you see that they are both
+
+52
+00:06:03,000 --> 00:06:07,000
+very close by as long as you do not go very far away from 0.
+
+53
+00:06:08,000 --> 00:06:17,000
+Okay. A related notion is the notion of a differential. To understand that, remember that
+
+54
+00:06:17,000 --> 00:06:26,000
+the derivative is sometimes denoted as <i>dy</i>/<i>dx</i>. Now <i>dy</i>/<i>dx</i> is the same as <i>f</i>'[<i>x</i>],
+
+55
+00:06:26,000 --> 00:06:35,000
+so if you kind of cross-multiply, then you get the equation <i>dy</i> = <i>f</i>'[<i>x</i>]<i>dx</i>.
+
+56
+00:06:35,000 --> 00:06:43,000
+These quantities <i>dx</i> and <i>dy</i> are called differentials, so they represent the change in <i>x</i>
+
+57
+00:06:43,000 --> 00:06:52,000
+and the change in <i>y</i> respectively. Of course if you’re given <i>dx</i> over here, then you can
+
+58
+00:06:52,000 --> 00:07:01,000
+work out <i>dy</i> using <i>f</i>'[<i>x</i>]. That’s like a small machine where as you put in different <i>dx</i>s over here,
+
+59
+00:07:01,000 --> 00:07:06,000
+you get different <i>dy</i>s over there. Here’s a picture. The picture is that
+
+60
+00:07:06,000 --> 00:07:13,000
+as you stay close to <i>x</i> over here, then you can use the approximation to find the change in <i>y</i>.
+
+61
+00:07:13,000 --> 00:07:21,000
+But of course that’s still approximate, so the question is how does that relate to the actual differences?
+
+62
+00:07:21,000 --> 00:07:26,000
+Here’s an example where you have a function, and the problem is to work out <i>df</i>,
+
+63
+00:07:26,000 --> 00:07:37,000
+the approximate change, and the actual change when <i>x</i> goes from 3 to 3.05. Let’s first work out
+
+64
+00:07:37,000 --> 00:07:46,000
+the exact change using subtraction. Now here is the approximate change given by <i>df</i>,
+
+65
+00:07:46,000 --> 00:07:52,000
+and you can see they are pretty close to each other. In general, that’s the equation for
+
+66
+00:07:52,000 --> 00:08:00,000
+the change in <i>f</i> when you make a small change in <i>x</i>. Here’s a picture of the function
+
+67
+00:08:00,000 --> 00:08:04,000
+and its approximation, and you can see, again, that as long as you stay close to 3,
+
+68
+00:08:04,000 --> 00:08:08,000
+the approximation is quite good.
+
+69
+00:08:09,000 --> 00:08:15,000
+Okay. The question is why are differentials important? The reason why they’re important is that
+
+70
+00:08:15,000 --> 00:08:22,000
+sometimes you may not be able to find Δ<i>f</i> that actually is <i>f</i> exactly, and then you might as well
+
+71
+00:08:22,000 --> 00:08:26,000
+use the differential because they are really quite helpful and easy to work with.
+
+72
+00:08:26,000 --> 00:08:33,000
+In fact, what we’re talking about over here is exactly the same as linear approximations.
+
+73
+00:08:33,000 --> 00:08:38,000
+Here’s the equation for a linear approximation in the differential language:
+
+74
+00:08:38,000 --> 00:08:53,000
+<i>f</i>[<i>x</i> + <i>dx</i>] is the value of <i>f</i>[<i>x</i>] + <i>f</i>'[<i>x</i>]<i>dx</i>. As an example, here is the function Sqrt[<i>x</i> + 8] again.
+
+75
+00:08:53,000 --> 00:09:08,000
+That’s the differential. You plug in the value of −0.02 for <i>dx</i>, and then you see that it’s pretty close
+
+76
+00:09:08,000 --> 00:09:16,000
+to the value of the function at 0.98. The point is that differentials are
+
+77
+00:09:16,000 --> 00:09:22,000
+just another way of talking about linear approximations.
+
+78
+00:09:23,000 --> 00:09:29,000
+Okay. One important place where they are useful is when you want to estimate errors.
+
+79
+00:09:29,000 --> 00:09:35,000
+For example, suppose that the radius of the sphere is 11 cm and you know that
+
+80
+00:09:35,000 --> 00:09:41,000
+the error in measurement is about 0.1 cm. What you want to do is to find out
+
+81
+00:09:41,000 --> 00:09:47,000
+the maximum error when you calculate the volume of the sphere.
+
+82
+00:09:47,000 --> 00:09:57,000
+Now the volume of a sphere is 4/3π<i>r</i>^3, so you differentiate that equation. Now volume prime
+
+83
+00:09:57,000 --> 00:10:08,000
+is the same as <i>dvol</i>/<i>dr</i>, so you can rewrite the equation as <i>dvol</i> = 4π^2<i>dr</i>,
+
+84
+00:10:08,000 --> 00:10:18,000
+and then because <i>r</i> is 11 and <i>dr</i> is 0.1—that’s the error—you can work out the error in the volume.
+
+85
+00:10:18,000 --> 00:10:26,000
+It turns out to be 152, approximately. Now that looks like a huge number.
+
+86
+00:10:26,000 --> 00:10:34,000
+The question is why is it so large? Well, the point is that you really need to talk about
+
+87
+00:10:34,000 --> 00:10:41,000
+the relative error over here to understand what’s happening. The relative error is the error
+
+88
+00:10:41,000 --> 00:10:50,000
+divided by the actual volume, and then that is just 0.027, so of course things look
+
+89
+00:10:50,000 --> 00:10:58,000
+much better than they did before. If you do not plug in the value of <i>r</i> over here,
+
+90
+00:10:58,000 --> 00:11:07,000
+then the relative error looks like 3<i>dr</i>/<i>r</i>, but that’s just 3 times the relative error and the radius.
+
+91
+00:11:07,000 --> 00:11:15,000
+That says that the error in the volume is three times the error in the radius,
+
+92
+00:11:15,000 --> 00:11:22,000
+provided that you talk about relative elements. Now the other way to talk about these errors
+
+93
+00:11:22,000 --> 00:11:27,000
+is to use a percentage error. The percentage error in this case
+
+94
+00:11:27,000 --> 00:11:33,000
+is 2.7 for the volume and 0.9 for the radius.
+
+95
+00:11:35,000 --> 00:11:40,000
+Okay. That brings us to the end of this lesson, and the main point is that
+
+96
+00:11:40,000 --> 00:11:48,000
+linear approximations are very important in mathematics and science. All we do
+
+97
+00:11:48,000 --> 00:11:56,000
+in such a case is replace a function by its tangent line. As long as you stay close to the point,
+
+98
+00:11:56,000 --> 00:12:03,000
+then the approximation is very close to the actual function. One place where you might find them
+
+99
+00:12:03,000 --> 00:12:07,000
+really useful is in physics, but of course they are also useful in chemistry
+
+100
+00:12:07,000 --> 00:12:15,000
+and in economics and in finance. Wherever you go, you will find the need to use linear approximations.
+
+101
+00:12:15,000 --> 00:12:21,000
+Another way of talking about these approximations is to use differentials,
+
+102
+00:12:21,000 --> 00:12:26,000
+and those are particularly useful when you want to talk about errors in measurements.
+
+103
+00:12:27,000 --> 00:12:34,000
+That brings me to the end of this lesson. In the next lesson we’ll talk about maxima and minima,
+
+104
+00:12:34,000 --> 00:12:39,000
+but before doing that, we will have a problem session to go over some examples
+
+105
+00:12:39,000 --> 00:12:45,000
+for errors and approximations, and then we’ll get back to maxima and minima.
+
+106
+00:12:45,000 --> 00:12:48,000
+I hope you’ve found this lesson useful. It’s a very important lesson.
+
+107
+00:12:48,000 --> 00:12:54,000
+Do review it and be ready for the next session. Thank you.
+

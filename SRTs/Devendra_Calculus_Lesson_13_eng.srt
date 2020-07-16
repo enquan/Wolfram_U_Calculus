@@ -1,0 +1,336 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 13 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this lesson is rates of change in the sciences.
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:16,000 --> 00:00:21,000
+Let’s say you have a particle which moves along a straight line, for example.
+
+5
+00:00:23,000 --> 00:00:32,000
+The position at time <i>t</i> is given by this function <i>s</i>[<i>t</i>] that’s <i>t</i>^3 + 2<i>t</i> – 2. Now once you have
+
+6
+00:00:32,000 --> 00:00:36,000
+the position as a function of time, what you can do is to compute the derivative,
+
+7
+00:00:36,000 --> 00:00:45,000
+and then that will give you the velocity of the particle at time <i>t</i>. Here’s velocity. That’s 3<i>t</i>^2 + 2.
+
+8
+00:00:45,000 --> 00:00:51,000
+Once you have both <i>s</i> and <i>v</i>, you can then work out their values at any time. For example,
+
+9
+00:00:51,000 --> 00:01:02,000
+at <i>t</i> = 10, the values are 1,018 and 302. Having done that, you can also plot
+
+10
+00:01:02,000 --> 00:01:08,000
+the position and velocity as a function of time over a certain period of time—in this case,
+
+11
+00:01:08,000 --> 00:01:13,000
+from 0 to 20. In this very simple example, you see that the derivative gives you
+
+12
+00:01:13,000 --> 00:01:21,000
+a nice way of approaching a problem in mechanics. What we’ll do in this lesson is
+
+13
+00:01:21,000 --> 00:01:29,000
+to explore the applications of differential calculus in the sciences in various different ways.
+
+14
+00:01:29,000 --> 00:01:36,000
+Let’s again take up an example in mechanics where you have the position being given
+
+15
+00:01:36,000 --> 00:01:41,000
+as a function of time like over here. You could work out the velocity of course
+
+16
+00:01:41,000 --> 00:01:48,000
+as the first derivative, but you could also work out the acceleration, which is the second derivative.
+
+17
+00:01:50,000 --> 00:01:53,000
+Once we have done that, we could ask questions. For example, you could ask
+
+18
+00:01:53,000 --> 00:02:03,000
+when is the particle at rest? Well, it’s at rest when the velocity is 0. You could solve that equation
+
+19
+00:02:03,000 --> 00:02:14,000
+and find out that the particle is at rest when <i>t</i> is either 2/3 or 2. Then you can plot the position,
+
+20
+00:02:14,000 --> 00:02:24,000
+the velocity and the acceleration and get their graphs. You see that the position is given by
+
+21
+00:02:24,000 --> 00:02:30,000
+the blue graph over here. The velocity is the graph over there, and it clearly intersects
+
+22
+00:02:30,000 --> 00:02:41,000
+the time axis at around 2/3 and 2. The acceleration is a linear function of time.
+
+23
+00:02:42,000 --> 00:02:47,000
+The derivative is a very powerful way of studying problems in mechanics.
+
+24
+00:02:48,000 --> 00:02:53,000
+Let’s go on to another example where let’s say you want to talk about the linear density of a rod.
+
+25
+00:02:53,000 --> 00:02:59,000
+Now if you have a rod and, let’s say, it’s got mass <i>m</i> and a certain length,
+
+26
+00:02:59,000 --> 00:03:05,000
+then the average linear density is simply the mass divided by the length.
+
+27
+00:03:05,000 --> 00:03:12,000
+But of course what could happen is that the mass of the rod depends upon how far down
+
+28
+00:03:12,000 --> 00:03:18,000
+you are on it. Let’s say the mass might be the cube root of the length, and in that case,
+
+29
+00:03:18,000 --> 00:03:27,000
+you can talk about the linear density at a given length <i>l</i>. That is given by the derivative of the mass
+
+30
+00:03:27,000 --> 00:03:37,000
+with respect to <i>l</i>. In this case, it’s 1/(3³√(<i>l</i>^2)). Then of course you can work out the linear density
+
+31
+00:03:37,000 --> 00:03:44,000
+at any given length. In this case, if the length is 10, the answer is about 0.07.
+
+32
+00:03:44,000 --> 00:03:50,000
+Then you can plot both the mass and the linear density. You see that the mass sort of has
+
+33
+00:03:50,000 --> 00:03:54,000
+constant increase, but the linear density goes down as the length increases
+
+34
+00:03:54,000 --> 00:03:58,000
+because of this expression for the derivative.
+
+35
+00:03:59,000 --> 00:04:06,000
+Okay. Let’s go on now to current. If you have, let’s say, a wire
+
+36
+00:04:06,000 --> 00:04:11,000
+and some current flows through it, then the average current is the charge that flows
+
+37
+00:04:11,000 --> 00:04:19,000
+in a certain period of time. But of course the charge itself might depend upon the time <i>t</i>
+
+38
+00:04:19,000 --> 00:04:28,000
+like over here, and then the current at any given instant will be the derivative of that charge
+
+39
+00:04:28,000 --> 00:04:36,000
+with respect to <i>t</i>. At, let’s say, one second, the current is 4 amperes. Then what you can do is
+
+40
+00:04:36,000 --> 00:04:44,000
+to plot the charge and the current and get back a plot for both these quantities.
+
+41
+00:04:46,000 --> 00:04:53,000
+Let’s go on now to chemistry. Now in chemistry, one talks about reactions—chemical reactions.
+
+42
+00:04:53,000 --> 00:04:59,000
+What happens there is that one or more reactants would undergo some process
+
+43
+00:04:59,000 --> 00:05:06,000
+and give you some products.  For example, you might have two reactants <i>A</i> and <i>B</i>
+
+44
+00:05:06,000 --> 00:05:16,000
+that give you a product <i>C</i>. One talks about the concentration of any of these in moles per liter.
+
+45
+00:05:16,000 --> 00:05:24,000
+That concentration is of course a function of time as time goes by. For example, <i>A</i> and <i>B</i> might
+
+46
+00:05:24,000 --> 00:05:35,000
+decrease in quantity and <i>C</i> might go up. In that case, the rate of reaction at an instant is given by
+
+47
+00:05:35,000 --> 00:05:41,000
+the derivative of the concentration with respect to <i>t</i>. For example, suppose that
+
+48
+00:05:41,000 --> 00:05:48,000
+the concentration of <i>C</I> is given by 3<i>t</i>/(3<i>t</i> + 1). Then the rate of reaction at any given time
+
+49
+00:05:48,000 --> 00:05:57,000
+is a derivative, so it’s 3/(1 + 3<i>t</i>)^2. Then what you can do is to plot both these quantities,
+
+50
+00:05:57,000 --> 00:06:04,000
+and you see that as time goes by, the concentration will increase, but of course
+
+51
+00:06:04,000 --> 00:06:09,000
+the rate of reaction will go down as the system approaches a steady state.
+
+52
+00:06:11,000 --> 00:06:18,000
+Okay. Let’s go on now to biology. In biology, one talks about population models.
+
+53
+00:06:18,000 --> 00:06:26,000
+For example, the population at time <i>t</i> might be given by 2<i>t</i>^3 + <i>t</i>, and in that case,
+
+54
+00:06:26,000 --> 00:06:33,000
+the growth rate for that population is the derivative of that population with respect to <i>t</i>.
+
+55
+00:06:33,000 --> 00:06:40,000
+In this case, it’s just 6<i>t</i>^2 + 1. Then of course you can plot both the population and the growth rate
+
+56
+00:06:40,000 --> 00:06:47,000
+like we’ve done over here. In practice, one might have a slightly different model.
+
+57
+00:06:47,000 --> 00:06:53,000
+For example, if you talk about the growth of bacteria, then it might happen that
+
+58
+00:06:53,000 --> 00:06:57,000
+the population doubles every minute, for example, in which case
+
+59
+00:06:57,000 --> 00:07:02,000
+you might get a formula like the initial population times 2^<i>t</i>,
+
+60
+00:07:02,000 --> 00:07:06,000
+and that’s what is called an exponential function.
+
+61
+00:07:08,000 --> 00:07:15,000
+Okay. Finally, let’s go on to economics. In economics, one talks about the cost function.
+
+62
+00:07:15,000 --> 00:07:22,000
+Let’s say a company might talk about its cost function, which is a total cost of producing <i>x</i> units.
+
+63
+00:07:22,000 --> 00:07:28,000
+Here’s a cost function in a particular case. Now if you find the derivative of the cost function,
+
+64
+00:07:28,000 --> 00:07:36,000
+then that’s what is called the marginal cost. The marginal cost, roughly speaking,
+
+65
+00:07:36,000 --> 00:07:45,000
+is the amount of money it costs to produce an extra unit. For example, you might ask
+
+66
+00:07:45,000 --> 00:07:54,000
+what is the marginal cost and the actual cost of producing the 1,001st unit?
+
+67
+00:07:54,000 --> 00:08:01,000
+That’s going to be the derivative of the cost at that value, or you could actually find it
+
+68
+00:08:01,000 --> 00:08:09,000
+by subtracting off the cost in both the cases, so 1,001 – 1,000. You see that they are very close,
+
+69
+00:08:09,000 --> 00:08:15,000
+but not quite the same. The marginal cost gives you a very good estimate of
+
+70
+00:08:15,000 --> 00:08:22,000
+the cost to produce an extra unit. Once again, you can plot everything over here,
+
+71
+00:08:22,000 --> 00:08:27,000
+the cost and the marginal cost, to get those two plots.
+
+72
+00:08:29,000 --> 00:08:37,000
+Okay. That brings me to the end of this lesson. The main point is that derivatives are used
+
+73
+00:08:37,000 --> 00:08:45,000
+universally in the sciences. If you’re a physicist, you might use them to study motion.
+
+74
+00:08:47,000 --> 00:08:53,000
+If you’re a chemist, you might use them to study reaction rates, but if you’re a biologist,
+
+75
+00:08:53,000 --> 00:08:59,000
+you might use them to study growth rates. Finally, it’s not just the natural sciences,
+
+76
+00:08:59,000 --> 00:09:05,000
+but also the social sciences. In economics, you might use derivatives to find the marginal cost.
+
+77
+00:09:05,000 --> 00:09:11,000
+Of course, there are many more uses of derivatives that we haven’t spoken about in this lesson,
+
+78
+00:09:11,000 --> 00:09:19,000
+but you will learn them as time goes by. The key point is that wherever the quantity is changing,
+
+79
+00:09:19,000 --> 00:09:28,000
+derivatives will play a key role. That brings me to the end of today’s lesson.
+
+80
+00:09:29,000 --> 00:09:36,000
+The next lesson will talk about related rates, but before we do that, please review today’s lesson,
+
+81
+00:09:36,000 --> 00:09:41,000
+go over the exercises and make sure that you understand them really well
+
+82
+00:09:41,000 --> 00:09:46,000
+because derivatives are very import in sciences, and it’s important that you understand
+
+83
+00:09:46,000 --> 00:09:51,000
+how they can be used. I’ll stop over here. I hope you have enjoyed listening.
+
+84
+00:09:51,000 --> 00:09:52,000
+Thank you.
+

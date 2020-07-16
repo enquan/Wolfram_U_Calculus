@@ -1,0 +1,388 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 19 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:14,000
+The topic for this lesson is asmyptotes. Let’s begin with a brief overview of the lesson.
+
+3
+00:00:14,000 --> 00:00:18,000
+In the past, we have learned how to calculate the limits of functions at points.
+
+4
+00:00:18,000 --> 00:00:26,000
+For example, if I said find the limit of 3<i>x</i> as <i>x</i>→2, then the answer of course is just 6.
+
+5
+00:00:26,000 --> 00:00:35,000
+But you can also take limits at positive or negative infinity. For example, if you said
+
+6
+00:00:35,000 --> 00:00:45,000
+a limit of 3<i>x</i> as <i>x</i>→∞, the answer is ∞. At –∞, just the opposite happens; you get back –∞.
+
+7
+00:00:45,000 --> 00:00:53,000
+Now the nice thing is that although you might have infinite limits, the actual answer might be finite.
+
+8
+00:00:53,000 --> 00:01:01,000
+In this case, you have the limit of 1/<i>x</i> as <i>x</i>→∞ going to 0. There are various kinds of
+
+9
+00:01:01,000 --> 00:01:09,000
+of interesting behaviors taking place at infinity, and these are so-called end behaviors of functions.
+
+10
+00:01:09,000 --> 00:01:16,000
+That’s the theme for this lesson, which will be used to sketch graphs eventually.
+
+11
+00:01:17,000 --> 00:01:22,000
+Let’s begin with some more motivation and talk about horizontal asymptotes.
+
+12
+00:01:23,000 --> 00:01:32,000
+If you look at this table over here, it’s a table for 1/<i>x</i> as <i>x</i>→∞, and you see that as <i>x</i> becomes larger,
+
+13
+00:01:32,000 --> 00:01:40,000
+the value of 1/<i>x</i> becomes smaller. As <i>x</i> approaches ∞, 1/<i>x</i> gets closer and closer to 0,
+
+14
+00:01:40,000 --> 00:01:51,000
+and hence 0 is a horizontal asymptote of 1/<i>x</i>. You can actually check that in a plot.
+
+15
+00:01:51,000 --> 00:01:57,000
+You see over here you have the graph of 1/<i>x</i>, and that’s the horizontal asymptote.
+
+16
+00:01:57,000 --> 00:02:04,000
+It’s just a horizontal line to which the plot approaches as <i>x</i>→∞.
+
+17
+00:02:04,000 --> 00:02:17,000
+Now a more formal definition. The limit of <i>f</i>[<i>x</i>] is <i>L</i> as <i>x</i>→∞ if the value if the values of <i>f</i>[<i>x</i>]
+
+18
+00:02:17,000 --> 00:02:27,000
+approach <i>L</i> as <i>x</i> becomes sufficiently large. When you add –∞, the same statement holds,
+
+19
+00:02:27,000 --> 00:02:35,000
+except that you’re now taking <i>x</i> to be sufficiently large and negative. Then a line <i>y</i> = <i>L</i>
+
+20
+00:02:35,000 --> 00:02:46,000
+is a horizontal asymptote of the curve <i>y</i> = <i>f</i>[<i>x</i>] if the limit of <i>f</i>[<i>x</i>] at ∞ or –∞ is <i>L</i>.
+
+21
+00:02:46,000 --> 00:02:58,000
+Here’s a plot for the function (<i>x</i>^2 + 1)/(<i>x</i>^2 – 1). When <i>x</i> approaches ∞ or –∞, the values of <i>y</i>
+
+22
+00:02:58,000 --> 00:03:06,000
+will approach 1. Roughly speaking, when <i>x</i> is very large, you get (<i>x</i>^2)/(<i>x</i>^2), which is 1.
+
+23
+00:03:07,000 --> 00:03:14,000
+Okay. Now let’s talk about the opposite behavior where you do not have a finite answer at ∞,
+
+24
+00:03:14,000 --> 00:03:20,000
+you have infinite limits at ∞. Here’s a very simple example which we saw earlier on as well.
+
+25
+00:03:20,000 --> 00:03:25,000
+When you take the limit of 3<i>x</i> as it approaches ∞, the answer is ∞.
+
+26
+00:03:25,000 --> 00:03:34,000
+Just the opposite happens at –∞, so the plot over here has no horizontal asymptotes.
+
+27
+00:03:35,000 --> 00:03:41,000
+Okay. Now one might talk about the laws of limits at ∞ just as before. You remember that
+
+28
+00:03:41,000 --> 00:03:47,000
+we have talked about mathematical laws that limits obey, and most of these laws
+
+29
+00:03:47,000 --> 00:03:54,000
+also apply to limits at ∞, but you must be a bit careful. The reason why you must be careful is that
+
+30
+00:03:54,000 --> 00:04:00,000
+now more than ever, you could have things which are both ∞, and when you try to cancel them,
+
+31
+00:04:00,000 --> 00:04:09,000
+you do not get back 0. Here’s an example. You have <i>x</i>^3 – <i>x</i>, and as <i>x</i>→∞, you get ∞ – ∞.
+
+32
+00:04:09,000 --> 00:04:16,000
+But that’s not 0, so you get back a False over here. But if you think of it as being ∞ * ∞,
+
+33
+00:04:16,000 --> 00:04:23,000
+then the answer really is ∞. Better still, you could think of this as being <i>x</i>^3
+
+34
+00:04:23,000 --> 00:04:29,000
+as very large compared to <i>x</i>, so the answer is ∞.
+
+35
+00:04:31,000 --> 00:04:39,000
+Okay. A very important law which you can use for limits at infinity is the following.
+
+36
+00:04:39,000 --> 00:04:47,000
+You look at the limit of (1/<i>x</i>)^<i>r</i> where <i>r</i> is some positive rational number,
+
+37
+00:04:47,000 --> 00:04:56,000
+and if you assume that <i>r</i> is positive, then this limit is always 0. Just the same thing happens at –∞.
+
+38
+00:04:56,000 --> 00:05:03,000
+You get back a 0 over there as well. For example, if you want the limit of 1/<i>x</i>^2
+
+39
+00:05:03,000 --> 00:05:11,000
+as <i>x</i> approaches either plus or minus infinity, the answer is just 0. This law is the basis of
+
+40
+00:05:11,000 --> 00:05:19,000
+lot of problem solving which we’ll see in the next few minutes. As my first example,
+
+41
+00:05:19,000 --> 00:05:27,000
+let’s take a rational function. If you want the limit at ∞, then notice that the highest power
+
+42
+00:05:27,000 --> 00:05:37,000
+in the numerator and denominator is <i>x</i>^2. You divide by that and use a function called Apart,
+
+43
+00:05:37,000 --> 00:05:42,000
+which will break apart the expressions. You see over here that as <i>x</i> approaches ∞,
+
+44
+00:05:42,000 --> 00:05:48,000
+by the previous law, both those terms give you 0, and both those terms give you 0 as well,
+
+45
+00:05:48,000 --> 00:05:56,000
+so the limit of the numerator is just 2—that’s the 2 from here—and the denominator,
+
+46
+00:05:56,000 --> 00:06:04,000
+the limit is just going to be 3. That’s the 3 from over there. To summarize, the limit of this
+
+47
+00:06:04,000 --> 00:06:11,000
+rather difficult-looking function is just 2/3 as <i>x</i>→∞.
+
+48
+00:06:12,000 --> 00:06:17,000
+Okay. That’s the rational case, and now let’s take a case where you have the combination of
+
+49
+00:06:17,000 --> 00:06:27,000
+a radical and a rational. Okay. Now that’s your function <i>f</i>[<i>x</i>], and notice that the highest power
+
+50
+00:06:27,000 --> 00:06:33,000
+is <i>x</I> because you’ve got a square root of <i>x</i>^2 roughly, so if you divide by that, then you see that
+
+51
+00:06:33,000 --> 00:06:42,000
+the numerator will have a limit of √5 as <i>x</i>→∞ and the denominator will have a limit of 2 as <i>x</i>→∞,
+
+52
+00:06:42,000 --> 00:06:48,000
+so those are the answers separately. Then if you divide them, you get the limit
+
+53
+00:06:48,000 --> 00:06:52,000
+for the entire radical rational expression.
+
+54
+00:06:54,000 --> 00:07:03,000
+Finally, let’s take a pure radical. Here is a radical function. The problem is that as <i>x</i>→∞,
+
+55
+00:07:03,000 --> 00:07:10,000
+you roughly speaking get ∞ – ∞, and you cannot define that. What we do is we work with
+
+56
+00:07:10,000 --> 00:07:17,000
+the conjugate radical and multiply <i>f</i> by it. You see over here that if we simplify it,
+
+57
+00:07:17,000 --> 00:07:26,000
+the answer is just 4. In other words, the function is simply 4/(<i>x</I> + √(<i>x</i>^2 + 4)).
+
+58
+00:07:27,000 --> 00:07:37,000
+When <i>x</i> becomes very large, the denominator is much larger than the numerator, so the answer is 0
+
+59
+00:07:37,000 --> 00:07:47,000
+for the limit. You can confirm that with a plot. You see the limit approaches 0 as <i>x</i>→∞.
+
+60
+00:07:49,000 --> 00:07:56,000
+Okay. How about compositions? Remember that if you have a composition of <i>f</i> and <i>g</i>
+
+61
+00:07:56,000 --> 00:08:05,000
+and you want to find the limit as <i>x</i>→<i>a</i>, then what you could do is take the limit inside the function <i>f</i>,
+
+62
+00:08:05,000 --> 00:08:11,000
+so to speak, provided that <i>f</i> is continuous and the limit exists. Here’s an example.
+
+63
+00:08:11,000 --> 00:08:20,000
+You have a function Cos[1/<i>x</i>]. That’s the composition. If you look at the inner limit as <i>x</i>→∞,
+
+64
+00:08:20,000 --> 00:08:32,000
+then you get back 0. Then if you take the outer limit, you’ll get back a 1 because the cosine of 0 is 1.
+
+65
+00:08:32,000 --> 00:08:43,000
+Here is a plot of the function, and you see that as <i>x</i> becomes very large, the function value approaches ∞.
+
+66
+00:08:45,000 --> 00:08:52,000
+Okay. Now in the last two slides, I’ll talk about two shortcuts for computing
+
+67
+00:08:52,000 --> 00:08:58,000
+rational function limits at infinity. There are some special tricks which are
+
+68
+00:08:58,000 --> 00:09:04,000
+well worth knowing in this area. For example, if we have a rational function
+
+69
+00:09:04,000 --> 00:09:14,000
+and the degree of the numerator is less than the degree of the denominator like over here,
+
+70
+00:09:14,000 --> 00:09:21,000
+then then whether you are at ∞ or –∞, the answer is going to be 0 because the denominator grows
+
+71
+00:09:21,000 --> 00:09:30,000
+much more rapidly than the numerator. On the other hand, if the degrees agree
+
+72
+00:09:30,000 --> 00:09:36,000
+so the degree of the numerator equals the degree of the denominator, then all that you do is
+
+73
+00:09:36,000 --> 00:09:42,000
+you look at the leading coefficients and you get back the answer 2/7 in both the cases over here.
+
+74
+00:09:43,000 --> 00:09:49,000
+We’ve covered the case of when the degree is less for the numerator than the denominator
+
+75
+00:09:49,000 --> 00:09:55,000
+and when they are both equal, but the really difficult case is when they are both
+
+76
+00:09:55,000 --> 00:10:01,000
+slightly different in the sense that the degree of the numerator is greater than
+
+77
+00:10:01,000 --> 00:10:07,000
+the degree of the denominator. Now four things can happen. First of all, you have
+
+78
+00:10:07,000 --> 00:10:15,000
+a positive expression at ∞, so you have <i>x</I>^6 roughly at ∞ and <i>x</i>^2 over here.
+
+79
+00:10:15,000 --> 00:10:24,000
+Then as you approach ∞, then both of these become ∞ because the difference
+
+80
+00:10:24,000 --> 00:10:34,000
+between the two degrees is even. If, on the other hand, you have a negative expression at infinity,
+
+81
+00:10:34,000 --> 00:10:42,000
+–2/3 roughly over here and –2/3 roughly over there, then the answer for both the limits will be –∞.
+
+82
+00:10:42,000 --> 00:10:49,000
+Now on the other hand, if you have an odd difference for the degrees
+
+83
+00:10:49,000 --> 00:10:58,000
+and the function is positive for larger values, then you see that the degree will affect the answer
+
+84
+00:10:58,000 --> 00:11:10,000
+in the sense that we have ∞ at ∞ and –∞ at –∞. After all, roughly speaking, there is <i>x</i>^9 over <i>x</i>^6.
+
+85
+00:11:10,000 --> 00:11:18,000
+That’s <i>x</i>^3, so as <i>x</i> becomes large, you get ∞, and as <i>x</i> becomes very large and negative, you get –∞.
+
+86
+00:11:19,000 --> 00:11:27,000
+Finally, if the function is negative for large values of <i>x</i>, then you see that
+
+87
+00:11:27,000 --> 00:11:33,000
+you get the opposite behavior. After all, when <i>x</i> is large, the negative sign becomes important.
+
+88
+00:11:33,000 --> 00:11:42,000
+You get –∞ over here and ∞ over here. There are four combinations: both ∞; both –∞;
+
+89
+00:11:42,000 --> 00:11:48,000
+and one of them ∞, one of them –∞; and then the other way around.
+
+90
+00:11:50,000 --> 00:11:59,000
+So that’s the end of this lesson. The main point to note is that roughly the same laws hold
+
+91
+00:11:59,000 --> 00:12:05,000
+for limits at infinity as they do at individual points, but you have to be a bit more careful.
+
+92
+00:12:05,000 --> 00:12:12,000
+There is a special rule which we saw earlier on for rational functional limits at infinity.
+
+93
+00:12:12,000 --> 00:12:20,000
+Sometimes you may need to use a bit of algebra to tackle cases where there are radicals,
+
+94
+00:12:20,000 --> 00:12:29,000
+and then multiplying by conjugates might help. In general, it’s really as easy to work at infinity
+
+95
+00:12:29,000 --> 00:12:37,000
+as it is with finite points. With what you’ve learned, the next lesson will talk about sketching curves.
+
+96
+00:12:37,000 --> 00:12:43,000
+But before you do that, do review this lesson and look at the exercises and be ready for
+
+97
+00:12:43,000 --> 00:12:49,000
+the next lesson on sketching curves. I’ll stop over here. Thank you very much.
+

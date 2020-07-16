@@ -1,0 +1,868 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 6 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:16,000
+The topic of this session is optimization, antiderivatives and Riemann sums.
+
+3
+00:00:16,000 --> 00:00:19,000
+Let’s begin with problem number 1 for the session.
+
+4
+00:00:19,000 --> 00:00:28,000
+A rectangle has its base on the <I>x</I> axis and the upper two corners lie on a parabola.
+
+5
+00:00:28,000 --> 00:00:35,000
+The question is compute the largest possible area of that rectangle.
+
+6
+00:00:35,000 --> 00:00:38,000
+Here’s a picture. Here’s the parabola and the rectangle,
+
+7
+00:00:38,000 --> 00:00:44,000
+and if you think of this portion as being <i>x</i>, then the rectangle has base 2<i>x</I>,
+
+8
+00:00:44,000 --> 00:00:49,000
+and the height is 6 – <i>x</i>^2—after all, you are on a parabola.
+
+9
+00:00:49,000 --> 00:00:54,000
+The area function is 2<i>x</I>(6 – <i>x</i>^2).
+
+10
+00:00:54,000 --> 00:00:58,000
+What you do is you compute the critical numbers
+
+11
+00:00:58,000 --> 00:01:00,000
+by setting the derivative equal to 0,
+
+12
+00:01:00,000 --> 00:01:06,000
+and you find that <i>x</i> is either √2 or –√2.
+
+13
+00:01:06,000 --> 00:01:08,000
+You work out the area at those two points.
+
+14
+00:01:08,000 --> 00:01:12,000
+That’s obviously the maximum area, 8√2,
+
+15
+00:01:12,000 --> 00:01:17,000
+and this occurs when the base is 2√2 and the height is 4.
+
+16
+00:01:17,000 --> 00:01:20,000
+All that’s clear from the information over here.
+
+17
+00:01:21,000 --> 00:01:23,000
+Okay. Number 2.
+
+18
+00:01:23,000 --> 00:01:26,000
+The question is to compute the closest point
+
+19
+00:01:26,000 --> 00:01:33,000
+on the curve <i>x</i>^2 – <i>y</i>^2 = 3 to the point (1, 2).
+
+20
+00:01:33,000 --> 00:01:38,000
+Obviously we need to use the distance formula like over here
+
+21
+00:01:38,000 --> 00:01:42,000
+and you’re computing to the point (1, 2), but the main point is that
+
+22
+00:01:42,000 --> 00:01:47,000
+you can actually minimize the square and get just the same answer.
+
+23
+00:01:47,000 --> 00:01:54,000
+Here’s the square distance, and we plug in <i>y</i> as being √(<i>x</i>^2 – 3)
+
+24
+00:01:54,000 --> 00:01:57,000
+because <i>y</i> follows the equation over here,
+
+25
+00:01:57,000 --> 00:02:02,000
+and you work out the distance function in terms of <i>x</i>.
+
+26
+00:02:03,000 --> 00:02:10,000
+Compute the critical numbers by setting the derivative equal to 0,
+
+27
+00:02:10,000 --> 00:02:14,000
+and you get back two answers.
+
+28
+00:02:14,000 --> 00:02:17,000
+You can check that. The second one is
+
+29
+00:02:17,000 --> 00:02:19,000
+the one that’s going to give you the nearest point.
+
+30
+00:02:19,000 --> 00:02:25,000
+Work out the corresponding <i>y</i> values, and then this value of <i>y</i>,
+
+31
+00:02:25,000 --> 00:02:31,000
+which is positive and paired with 2.16574, is clearly the point
+
+32
+00:02:31,000 --> 00:02:34,000
+at which you will have the minimum distance.
+
+33
+00:02:34,000 --> 00:02:39,000
+The closest point is roughly (2.16, 1.30), and here is a picture
+
+34
+00:02:39,000 --> 00:02:46,000
+showing the points on the curve and the given point.
+
+35
+00:02:48,000 --> 00:02:50,000
+Okay. Problem number 3.
+
+36
+00:02:50,000 --> 00:02:58,000
+The question is a window consists of an open rectangle topped by a semicircle,
+
+37
+00:02:58,000 --> 00:03:02,000
+and it has a perimeter of 100 cm.
+
+38
+00:03:02,000 --> 00:03:06,000
+The question is compute the radius of that semicircle
+
+39
+00:03:06,000 --> 00:03:09,000
+so that you get the maximum area.
+
+40
+00:03:10,000 --> 00:03:16,000
+Now if the radius is <i>r</i>, then the perimeter of the semicircle is π<i>r</i>.
+
+41
+00:03:17,000 --> 00:03:21,000
+On the other hand, the base of the rectangular part will obviously be
+
+42
+00:03:21,000 --> 00:03:28,000
+2<i>r</i> because it shares that side with the diameter of the circle.
+
+43
+00:03:28,000 --> 00:03:32,000
+The area function is given by the area of the semicircle
+
+44
+00:03:32,000 --> 00:03:35,000
+plus the area of the rectangular portion,
+
+45
+00:03:35,000 --> 00:03:41,000
+so that’s the base of the rectangle and that’s the height of the rectangle.
+
+46
+00:03:42,000 --> 00:03:48,000
+Okay. Now we find the critical numbers, and you find there’s just one.
+
+47
+00:03:48,000 --> 00:03:54,000
+You check that in fact you have a negative second derivative,
+
+48
+00:03:54,000 --> 00:03:59,000
+so you have a local maximum, and in fact there’s just one of them,
+
+49
+00:03:59,000 --> 00:04:05,000
+so you have an absolute maximum at radius equal to 100/(4 + π).
+
+50
+00:04:05,000 --> 00:04:08,000
+Here’s a plot which shows the same information.
+
+51
+00:04:08,000 --> 00:04:15,000
+That is the radius at which the area becomes maximum, and that’s the area.
+
+52
+00:04:16,000 --> 00:04:20,000
+Okay. On to number 4, which says that you have an open-top box
+
+53
+00:04:20,000 --> 00:04:23,000
+with a square bottom and rectangular sides,
+
+54
+00:04:23,000 --> 00:04:27,000
+and the volume has to be 456 cm^3.
+
+55
+00:04:27,000 --> 00:04:30,000
+The question is to compute the dimensions of the box
+
+56
+00:04:30,000 --> 00:04:34,000
+that will minimize the surface area.
+
+57
+00:04:34,000 --> 00:04:39,000
+If you let the side length be <i>s</i> and the height be <i>h</i>,
+
+58
+00:04:39,000 --> 00:04:46,000
+then you have just one area for the bottom, <i>s</i>^2, and 4 of them for the sides—
+
+59
+00:04:46,000 --> 00:04:49,000
+after all, the box is open-top.
+
+60
+00:04:51,000 --> 00:04:55,000
+You still need to eliminate one of the variables, so you use the fact that
+
+61
+00:04:55,000 --> 00:05:00,000
+the volume is equal to <i>s</i>^2<i>h</i>, and you solve for <i>h</i>.
+
+62
+00:05:01,000 --> 00:05:06,000
+You get get <i>h</i> in terms of <i>s</i>, and you replace that expression
+
+63
+00:05:06,000 --> 00:05:13,000
+to get a single function <i>s</i> for the surface area.
+
+64
+00:05:13,000 --> 00:05:17,000
+Okay. Now compute the critical numbers.
+
+65
+00:05:17,000 --> 00:05:19,000
+You find that it’s roughly 9.7.
+
+66
+00:05:19,000 --> 00:05:22,000
+Work out the second derivative,
+
+67
+00:05:22,000 --> 00:05:27,000
+and you do have a local minimum at that critical number.
+
+68
+00:05:28,000 --> 00:05:31,000
+Once you’ve worked out the value of <i>s</i>,
+
+69
+00:05:31,000 --> 00:05:35,000
+then you work out the value of the height using the volume,
+
+70
+00:05:35,000 --> 00:05:37,000
+and you find that the height is about 4.85.
+
+71
+00:05:37,000 --> 00:05:44,000
+The dimensions are 9.7 times 9.7 times 4.85.
+
+72
+00:05:45,000 --> 00:05:51,000
+Okay. On to number 5, which talks about a swimmer
+
+73
+00:05:51,000 --> 00:05:54,000
+who is at a point 400 meters
+
+74
+00:05:54,000 --> 00:05:58,000
+from the closest point on a straight shoreline.
+
+75
+00:05:58,000 --> 00:06:01,000
+This swimmer needs to reach a shop
+
+76
+00:06:01,000 --> 00:06:05,000
+which is located 200 meters downshore from the closest point.
+
+77
+00:06:06,000 --> 00:06:12,000
+The shop is here. Now the point is that he swims at 5 m/sec
+
+78
+00:06:12,000 --> 00:06:15,000
+and walks at 6 m/sec.
+
+79
+00:06:15,000 --> 00:06:19,000
+The question is how far from the shop should he come ashore
+
+80
+00:06:19,000 --> 00:06:23,000
+so as to arrive at the shop in the least amount of time?
+
+81
+00:06:24,000 --> 00:06:28,000
+Now obviously the Pythagorean theorem says that the third side over here
+
+82
+00:06:28,000 --> 00:06:36,000
+is √(<i>x</i>^2 + 160,000) where <i>x</i> is the distance at which he lands on the shore.
+
+83
+00:06:36,000 --> 00:06:41,000
+The time function is equal to the first distance over here
+
+84
+00:06:41,000 --> 00:06:44,000
+divided by the corresponding speed
+
+85
+00:06:44,000 --> 00:06:47,000
+plus the second distance divided by the corresponding speed,
+
+86
+00:06:47,000 --> 00:06:51,000
+so that’s the time function for the problem.
+
+87
+00:06:51,000 --> 00:06:56,000
+We compute the critical numbers, and we find there’s just one.
+
+88
+00:06:56,000 --> 00:06:59,000
+Work out the second derivative, and you find out it’s positive,
+
+89
+00:06:59,000 --> 00:07:04,000
+so in fact you have a local and absolute minimum at that critical number.
+
+90
+00:07:04,000 --> 00:07:08,000
+Now you subtract off that value, and you find that
+
+91
+00:07:08,000 --> 00:07:14,000
+the swimmer should come ashore roughly 597 m from the shop.
+
+92
+00:07:17,000 --> 00:07:21,000
+Okay. Number 6. Now we go into antiderivatives.
+
+93
+00:07:21,000 --> 00:07:28,000
+The question is find the general antiderivative of 4<i>x</i>^3 – 2<i>x</i>^2 + 7<i>x</i> + 1.
+
+94
+00:07:28,000 --> 00:07:35,000
+The answer is <i>x</i>^4 from there, from 4<i>x</i>^3, and then 2<i>x</i>^3/3 from the second term,
+
+95
+00:07:35,000 --> 00:07:39,000
+7<i>x</i>^2/2 from the third term, <i>x</i> from the fourth term
+
+96
+00:07:39,000 --> 00:07:43,000
+and plus <i>C</i> for the constant in the antiderivative.
+
+97
+00:07:43,000 --> 00:07:46,000
+Let’s check that. That’s correct.
+
+98
+00:07:46,000 --> 00:07:51,000
+If you plot the antiderivative, then of course there is a family of them,
+
+99
+00:07:51,000 --> 00:07:56,000
+so there are lots of curves over here, each of which is an antiderivative,
+
+100
+00:07:56,000 --> 00:08:00,000
+and that’s the original function given to you.
+
+101
+00:08:01,000 --> 00:08:02,000
+Okay. Number 7.
+
+102
+00:08:02,000 --> 00:08:07,000
+The question is solve the differential equation <i>y</i>' = Sin[<i>x</i>]
+
+103
+00:08:07,000 --> 00:08:10,000
+given that <i>y</i>[0] = 3.
+
+104
+00:08:10,000 --> 00:08:16,000
+Now the antiderivative of Sin[<i>x</i>] is –Cos[<i>x</i>].
+
+105
+00:08:16,000 --> 00:08:20,000
+After all, if you compute the derivative, you get back Sin[<i>x</i>],
+
+106
+00:08:20,000 --> 00:08:23,000
+and the plus <i>C</i> is just the arbitrary constant.
+
+107
+00:08:23,000 --> 00:08:27,000
+Use the fact that the value of <i>y</i> at 0 is 3
+
+108
+00:08:27,000 --> 00:08:32,000
+to find the value of <i>C</i>. <i>C</i> is 4.
+
+109
+00:08:32,000 --> 00:08:36,000
+The solution is <i>y</i> = –Cos[<i>x</i>] + 4.
+
+110
+00:08:36,000 --> 00:08:40,000
+You can check the answer with DSolveValue.
+
+111
+00:08:40,000 --> 00:08:42,000
+Here is the equation.
+
+112
+00:08:43,000 --> 00:08:48,000
+That’s the initial value given to you, that’s the unknown function
+
+113
+00:08:48,000 --> 00:08:51,000
+and that’s the independent variable.
+
+114
+00:08:51,000 --> 00:08:54,000
+DSolve says that the answer is just the same
+
+115
+00:08:54,000 --> 00:08:56,000
+as the one that we obtained earlier on by hand,
+
+116
+00:08:56,000 --> 00:09:00,000
+and here is a plot of the solution.
+
+117
+00:09:00,000 --> 00:09:07,000
+It’s vertically shifted by 4 due to the 4 term over there.
+
+118
+00:09:09,000 --> 00:09:15,000
+Okay. Number 8 talks about the velocity of a particle given in terms of <i>t</i>,
+
+119
+00:09:15,000 --> 00:09:18,000
+and the question is to compute the position of the particle
+
+120
+00:09:18,000 --> 00:09:23,000
+at <i>t</i> = 10 given that the position at <i>t</i> = 1 is 5.
+
+121
+00:09:25,000 --> 00:09:28,000
+As a first step, you work out the antiderivative.
+
+122
+00:09:28,000 --> 00:09:32,000
+This term over here gives you –1/<i>t</i>,
+
+123
+00:09:32,000 --> 00:09:38,000
+and the second term gives you –8<i>t</i>^(3/2)/3,
+
+124
+00:09:38,000 --> 00:09:42,000
+and of course the plus <i>C</i> comes from the arbitrary constant.
+
+125
+00:09:42,000 --> 00:09:44,000
+Let’s check that.
+
+126
+00:09:44,000 --> 00:09:45,000
+Looks correct.
+
+127
+00:09:46,000 --> 00:09:55,000
+Solve for <i>C</i> given the fact that when <i>t</i> is 1, the position is 5.
+
+128
+00:09:55,000 --> 00:09:58,000
+You find that <i>C</i> is 26/3.
+
+129
+00:09:58,000 --> 00:10:02,000
+That’s the expression over here of the position function,
+
+130
+00:10:02,000 --> 00:10:06,000
+so its value at 10 is given right over here as an exact number.
+
+131
+00:10:08,000 --> 00:10:14,000
+Now let’s plot both the position and velocity function over here.
+
+132
+00:10:17,000 --> 00:10:18,000
+On to number 9.
+
+133
+00:10:18,000 --> 00:10:26,000
+You have a differential equation for <i>y</i>'' that’s given to be 4Cos[<i>x</i>],
+
+134
+00:10:26,000 --> 00:10:30,000
+and you’re given the values of <i>y</i> at 0 and <i>y</i>' at 0.
+
+135
+00:10:30,000 --> 00:10:34,000
+For the first step, we find the antiderivative,
+
+136
+00:10:34,000 --> 00:10:38,000
+and we find the answer is 4Sin[<i>x</i>] + <i>C</i>.
+
+137
+00:10:38,000 --> 00:10:44,000
+Next find another antiderivative of 4Sin[<i>x</i>] + <i>C</i>,
+
+138
+00:10:44,000 --> 00:10:49,000
+and you get –4Cos[<i>x</I>] + <i>Cx</i> + <i>D</i>.
+
+139
+00:10:50,000 --> 00:10:51,000
+Check the answer.
+
+140
+00:10:51,000 --> 00:10:53,000
+That looks correct.
+
+141
+00:10:54,000 --> 00:10:59,000
+Now having found the general antiderivative, you want to work out
+
+142
+00:10:59,000 --> 00:11:00,000
+what the values of <i>C</i> and <i>D</i> are,
+
+143
+00:11:00,000 --> 00:11:06,000
+so you use the fact that <i>y</i>[0] = –1 and <i>y</i>'[0] = 1,
+
+144
+00:11:06,000 --> 00:11:08,000
+so that’s the equation over here.
+
+145
+00:11:08,000 --> 00:11:14,000
+You know that <i>y</I>'[0] is 1 and <i>y</i>[0] is –1,
+
+146
+00:11:14,000 --> 00:11:18,000
+so you find that <i>C</i> is 1 and <i>D</i> is 3.
+
+147
+00:11:18,000 --> 00:11:24,000
+You plug them back and you get –4Cos[<i>x</I>] + <i>x</i> + 3.
+
+148
+00:11:24,000 --> 00:11:30,000
+Confirm the answer with DSolveValue, and here is a plot.
+
+149
+00:11:30,000 --> 00:11:34,000
+In this case, because you have the term <i>x</i> over here,
+
+150
+00:11:34,000 --> 00:11:40,000
+the graph gets translated upwards as you progress along the <i>x</i> axis.
+
+151
+00:11:43,000 --> 00:11:44,000
+Number 10.
+
+152
+00:11:44,000 --> 00:11:49,000
+Once again you’re given <i>y</I>'' and you’re given <i>y</i> at 0
+
+153
+00:11:49,000 --> 00:11:51,000
+and, in this case, <i>y</i> at 2.
+
+154
+00:11:51,000 --> 00:11:55,000
+The question is to solve this differential equation.
+
+155
+00:11:55,000 --> 00:11:59,000
+Find the first antiderivative.
+
+156
+00:11:59,000 --> 00:12:04,000
+You get back <i>x</i>^4/2 – <i>x</i>^2/2 + <i>C</i> from each term.
+
+157
+00:12:05,000 --> 00:12:07,000
+Check the answer.
+
+158
+00:12:09,000 --> 00:12:19,000
+Find another antiderivative, and this time you get <i>x</i>^5/10 – <i>x</I>^3/6 + <i>Cx</i> + <i>D</i>.
+
+159
+00:12:20,000 --> 00:12:23,000
+Check that answer as well,
+
+160
+00:12:23,000 --> 00:12:27,000
+and then you use the conditions given to you over here.
+
+161
+00:12:27,000 --> 00:12:30,000
+<i>y</I>[0] is 3—that’s the 3—
+
+162
+00:12:30,000 --> 00:12:34,000
+and <i>y</I>[2] is 7—that’s the 7 at <i>x</i> = 2.
+
+163
+00:12:35,000 --> 00:12:37,000
+Work out <i>C</i> and <i>D</i>.
+
+164
+00:12:39,000 --> 00:12:42,000
+The solution for the problem is right over here.
+
+165
+00:12:43,000 --> 00:12:47,000
+You can check that the answer is correct with DSolveValue.
+
+166
+00:12:47,000 --> 00:12:52,000
+I did use an Expand over here to make sure it looks just the same,
+
+167
+00:12:52,000 --> 00:12:54,000
+but it is the exact same expression.
+
+168
+00:12:54,000 --> 00:13:02,000
+You have 3 + (16<i>x</I>/15) – (<i>x</i>^3/6) + (<i>x</i>^5/10).
+
+169
+00:13:04,000 --> 00:13:10,000
+Number 11, and now we are onto left-aligned rectangles.
+
+170
+00:13:10,000 --> 00:13:12,000
+We are talking about Riemann sums.
+
+171
+00:13:12,000 --> 00:13:19,000
+You want to estimate the area under this function from 4 to 7.
+
+172
+00:13:19,000 --> 00:13:22,000
+Because you have left-aligned rectangles,
+
+173
+00:13:22,000 --> 00:13:25,000
+so you have an <i>xi</i> – 1 over here—
+
+174
+00:13:25,000 --> 00:13:29,000
+and of course, each rectangle has width 3/4
+
+175
+00:13:29,000 --> 00:13:34,000
+because the total length is 3  and you are using 4 rectangles.
+
+176
+00:13:34,000 --> 00:13:38,000
+You can compute the Riemann sum over here.
+
+177
+00:13:40,000 --> 00:13:42,000
+Put in a numerical value.
+
+178
+00:13:42,000 --> 00:13:48,000
+Here is a plot of the curve and the approximate area.
+
+179
+00:13:48,000 --> 00:13:51,000
+Those white areas over here are
+
+180
+00:13:51,000 --> 00:13:56,000
+the areas which get left uncovered by the Riemann sum.
+
+181
+00:13:58,000 --> 00:14:02,000
+On to number 12, which says compute the value of <i>b</i>
+
+182
+00:14:02,000 --> 00:14:05,000
+with <i>b</i> lying between 0 and π,
+
+183
+00:14:05,000 --> 00:14:10,000
+which will make the area under Cos[<i>x</I>] from 0 to <i>b</i> equal to 1.
+
+184
+00:14:11,000 --> 00:14:13,000
+That’s the Riemann sum.
+
+185
+00:14:15,000 --> 00:14:18,000
+Compute the limit as <i>n</i>→∞,
+
+186
+00:14:18,000 --> 00:14:22,000
+because that’s the actual area, and then you want to find out
+
+187
+00:14:22,000 --> 00:14:26,000
+when Sin[<i>b</i>] is equal to 1 between 0 and π,
+
+188
+00:14:26,000 --> 00:14:29,000
+and of course the answer is just π/2.
+
+189
+00:14:30,000 --> 00:14:35,000
+Here is a plot of the region which we just spoke about.
+
+190
+00:14:38,000 --> 00:14:44,000
+Number 13 says use six right-aligned triangles to estimate the area
+
+191
+00:14:44,000 --> 00:14:48,000
+from 2 to 14 for this function over here.
+
+192
+00:14:48,000 --> 00:14:54,000
+Now because you have 6 rectangles, the width of each rectangle is 2,
+
+193
+00:14:54,000 --> 00:14:57,000
+so you work out the Riemann sum.
+
+194
+00:14:58,000 --> 00:15:03,000
+You go in steps of 2 starting from 2, and the 2 over here is
+
+195
+00:15:03,000 --> 00:15:05,000
+the width of each rectangle.
+
+196
+00:15:05,000 --> 00:15:07,000
+Compute the Riemann sum,
+
+197
+00:15:07,000 --> 00:15:13,000
+and then here is a plot of the region and the rectangles.
+
+198
+00:15:16,000 --> 00:15:22,000
+Number 14, which talks about a racecar which speeds up
+
+199
+00:15:22,000 --> 00:15:25,000
+in the first 10 seconds of a race.
+
+200
+00:15:26,000 --> 00:15:29,000
+You have the first 10 seconds over here,
+
+201
+00:15:29,000 --> 00:15:33,000
+the speed in miles per hour over there, and the question is
+
+202
+00:15:33,000 --> 00:15:35,000
+to find the lower and upper estimates
+
+203
+00:15:35,000 --> 00:15:39,000
+for the distance traveled by the racecar in the first 10 seconds.
+
+204
+00:15:39,000 --> 00:15:42,000
+To find the lower estimate, what you do is
+
+205
+00:15:42,000 --> 00:15:47,000
+you start at the beginning of each 1-second interval in the computation.
+
+206
+00:15:47,000 --> 00:15:53,000
+You have 0, 2.3, et cetera, and you times that by 1 second.
+
+207
+00:15:55,000 --> 00:15:57,000
+The answer is 0.184.
+
+208
+00:15:58,000 --> 00:16:00,000
+Then you do the same thing for the upper estimate,
+
+209
+00:16:00,000 --> 00:16:06,000
+but this time you take the right endpoints—2.3, 9.3, et cetera—
+
+210
+00:16:06,000 --> 00:16:09,000
+and you get back 0.249.
+
+211
+00:16:10,000 --> 00:16:17,000
+So the racecar traveled between 0.1845 and 0.249
+
+212
+00:16:17,000 --> 00:16:19,000
+in the first 10 seconds of the race.
+
+213
+00:16:19,000 --> 00:16:24,000
+That’s roughly between 972 feet and 1,320 feet.
+
+214
+00:16:25,000 --> 00:16:29,000
+That brings me to the end of this problem session.
+
+215
+00:16:29,000 --> 00:16:32,000
+I hope you have had a better understanding of the topic
+
+216
+00:16:32,000 --> 00:16:33,000
+with these problems.
+
+217
+00:16:33,000 --> 00:16:36,000
+I’ll stop over here. Thank you very much.
+

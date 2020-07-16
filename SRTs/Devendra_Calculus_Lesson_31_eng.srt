@@ -1,0 +1,488 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 31 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this lesson is average value of a function.
+
+3
+00:00:12,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:15,000 --> 00:00:17,000
+Let’s say you have a list of numbers like over here,
+
+5
+00:00:17,000 --> 00:00:20,000
+and you want to work out their average value.
+
+6
+00:00:20,000 --> 00:00:23,000
+Of course what you do is just add the numbers
+
+7
+00:00:23,000 --> 00:00:25,000
+and then divide by the number of numbers,
+
+8
+00:00:25,000 --> 00:00:28,000
+which is 10 in this case, and you get back the answer.
+
+9
+00:00:28,000 --> 00:00:31,000
+You also have a function called Mean in the Wolfram Language
+
+10
+00:00:31,000 --> 00:00:33,000
+which does just the same thing for you,
+
+11
+00:00:33,000 --> 00:00:35,000
+and you get back the same answer.
+
+12
+00:00:35,000 --> 00:00:38,000
+Now let’s say instead of a list of values,
+
+13
+00:00:38,000 --> 00:00:41,000
+you had a function like the one shown over here.
+
+14
+00:00:42,000 --> 00:00:44,000
+Here’s a plot of the function.
+
+15
+00:00:44,000 --> 00:00:47,000
+The question is can we work out
+
+16
+00:00:47,000 --> 00:00:51,000
+the average value of such a function?
+
+17
+00:00:51,000 --> 00:00:54,000
+The answer is yes.
+
+18
+00:00:54,000 --> 00:00:55,000
+Here’s some intuition.
+
+19
+00:00:55,000 --> 00:00:59,000
+Let’s say your function runs from <i>a</i> to <i>b</i>.
+
+20
+00:01:01,000 --> 00:01:04,000
+You break the interval into <i>n</i> subintervals,
+
+21
+00:01:04,000 --> 00:01:07,000
+take a sample point for each subinterval
+
+22
+00:01:07,000 --> 00:01:10,000
+and then work out the average value like over here.
+
+23
+00:01:11,000 --> 00:01:14,000
+Now we want to rewrite it as a Riemann sum,
+
+24
+00:01:14,000 --> 00:01:18,000
+so the <i>n</i> over here can be thought of as being related to Δ<i>x</i>,
+
+25
+00:01:18,000 --> 00:01:20,000
+the length of each subinterval.
+
+26
+00:01:20,000 --> 00:01:26,000
+So  Δ<i>x</i> is (<i>b</i> – <i>a</i>)/<i>n</i>, and hence <i>n</I> is (<i>b</i> – <i>a</i>)/Δ<i>x</i>.
+
+27
+00:01:26,000 --> 00:01:30,000
+You can rewrite the average in a slightly different form
+
+28
+00:01:30,000 --> 00:01:34,000
+in which it’s clear that if you now let <i>n</I> go to ∞
+
+29
+00:01:34,000 --> 00:01:37,000
+so you’ve got very small subintervals,
+
+30
+00:01:37,000 --> 00:01:40,000
+then what you get back is the integral
+
+31
+00:01:40,000 --> 00:01:43,000
+divided by the length of the interval.
+
+32
+00:01:43,000 --> 00:01:46,000
+That’s the average value of a function.
+
+33
+00:01:46,000 --> 00:01:50,000
+It’s the integral of the function over an interval
+
+34
+00:01:50,000 --> 00:01:53,000
+divided by the length of the interval.
+
+35
+00:01:53,000 --> 00:01:57,000
+Let’s say in our example, if you want to work out the average value,
+
+36
+00:01:57,000 --> 00:02:01,000
+you simply find the integral from 0 to 5 and then divide by 5,
+
+37
+00:02:01,000 --> 00:02:03,000
+and you get back the answer.
+
+38
+00:02:04,000 --> 00:02:07,000
+Okay. Now a much deeper fact is
+
+39
+00:02:07,000 --> 00:02:10,000
+something called the mean value theorem, which says that
+
+40
+00:02:10,000 --> 00:02:13,000
+if you have a continuous function on an interval,
+
+41
+00:02:13,000 --> 00:02:17,000
+then there is at least one number <i>c</i> in that interval
+
+42
+00:02:17,000 --> 00:02:23,000
+such that the value of the function is equal to the average value.
+
+43
+00:02:23,000 --> 00:02:27,000
+That should remind you of the mean value theorem for derivatives,
+
+44
+00:02:27,000 --> 00:02:29,000
+which was the same thing,
+
+45
+00:02:29,000 --> 00:02:35,000
+but now for integrals over intervals and areas rather than slopes.
+
+46
+00:02:35,000 --> 00:02:38,000
+If you multiply both sides by <i>b</i> – <i>a</i>,
+
+47
+00:02:38,000 --> 00:02:43,000
+what you get on the left-hand side is just the area of a rectangle
+
+48
+00:02:43,000 --> 00:02:46,000
+with height <i>f</i>(<i>c</i>) and length <i>b</i> – <i>a</i>,
+
+49
+00:02:46,000 --> 00:02:48,000
+and the right-hand side is the integral.
+
+50
+00:02:48,000 --> 00:02:52,000
+Here is a visual interpretation of the whole thing.
+
+51
+00:02:52,000 --> 00:02:54,000
+Let’s say that this is your curve,
+
+52
+00:02:54,000 --> 00:03:00,000
+and now you have the area under the curve, and that’s the rectangle.
+
+53
+00:03:00,000 --> 00:03:04,000
+Now there’s a bit of area that’s common over here,
+
+54
+00:03:04,000 --> 00:03:07,000
+and then a bit over here which only belongs to the rectangle
+
+55
+00:03:07,000 --> 00:03:09,000
+and a bit that only belongs to the curve,
+
+56
+00:03:09,000 --> 00:03:13,000
+and what we’re saying over here is that the area of this rectangle
+
+57
+00:03:13,000 --> 00:03:16,000
+is equal to the area under the curve.
+
+58
+00:03:16,000 --> 00:03:18,000
+That’s quite a remarkable theorem.
+
+59
+00:03:18,000 --> 00:03:22,000
+It’s very deep and shows you how powerful calculus is.
+
+60
+00:03:22,000 --> 00:03:24,000
+We’re able to reduce the area under a curve
+
+61
+00:03:24,000 --> 00:03:26,000
+to the area of a rectangle,
+
+62
+00:03:26,000 --> 00:03:30,000
+which is the simplest thing one might think about in areas.
+
+63
+00:03:32,000 --> 00:03:35,000
+Okay. As an application, here’s a function,
+
+64
+00:03:35,000 --> 00:03:39,000
+and you want to find a value in the interval –2 to 3
+
+65
+00:03:39,000 --> 00:03:42,000
+such that the function value is equal to
+
+66
+00:03:42,000 --> 00:03:44,000
+the average value over that interval.
+
+67
+00:03:44,000 --> 00:03:47,000
+Now because the function is continuous, it’s a polynomial,
+
+68
+00:03:47,000 --> 00:03:50,000
+so you can certainly apply the theorem, the mean value theorem.
+
+69
+00:03:50,000 --> 00:03:52,000
+Let’s say you want to do that.
+
+70
+00:03:52,000 --> 00:03:58,000
+You solve the equation <i>f</i>[<i>c</i>] equal to the average value,
+
+71
+00:03:58,000 --> 00:04:02,000
+and when you do that, you get back an answer.
+
+72
+00:04:02,000 --> 00:04:06,000
+Here’s a plot which shows the point at which
+
+73
+00:04:06,000 --> 00:04:09,000
+the average value is actually retained.
+
+74
+00:04:10,000 --> 00:04:13,000
+That’s the mean value theorem in action.
+
+75
+00:04:13,000 --> 00:04:16,000
+But the main point is that sometimes you can get
+
+76
+00:04:16,000 --> 00:04:21,000
+more than one point at which the average value is retained.
+
+77
+00:04:21,000 --> 00:04:22,000
+Here’s an example.
+
+78
+00:04:22,000 --> 00:04:24,000
+You have a function.
+
+79
+00:04:24,000 --> 00:04:27,000
+You try and work out the average value, and then work out
+
+80
+00:04:27,000 --> 00:04:31,000
+the point at which you want to check whether
+
+81
+00:04:31,000 --> 00:04:35,000
+the average value equals the function value.
+
+82
+00:04:35,000 --> 00:04:38,000
+You get two points now, and here’s a picture which says
+
+83
+00:04:38,000 --> 00:04:40,000
+that you really have two points at which
+
+84
+00:04:40,000 --> 00:04:43,000
+the average value is attained.
+
+85
+00:04:45,000 --> 00:04:47,000
+As an application of these ideas,
+
+86
+00:04:47,000 --> 00:04:51,000
+here’s a temperature for a city <i>t</i> hours after noon.
+
+87
+00:04:51,000 --> 00:04:56,000
+You plot the temperate from 1pm to 3am,
+
+88
+00:04:56,000 --> 00:05:00,000
+and the question is, is there a time at which the temperature
+
+89
+00:05:00,000 --> 00:05:03,000
+equals the average temperature?
+
+90
+00:05:03,000 --> 00:05:04,000
+The answer is yes.
+
+91
+00:05:04,000 --> 00:05:10,000
+Just solve the equation and you get back that <i>c</i> is about 8.57.
+
+92
+00:05:10,000 --> 00:05:16,000
+That’s in hours, so that means at around 8:34pm,
+
+93
+00:05:16,000 --> 00:05:18,000
+the temperature will be equal to the average temperature
+
+94
+00:05:18,000 --> 00:05:20,000
+over the time period.
+
+95
+00:05:21,000 --> 00:05:25,000
+As another application, let’s look at a car on a highway.
+
+96
+00:05:25,000 --> 00:05:28,000
+Here is the velocity of the car, and you want to find
+
+97
+00:05:28,000 --> 00:05:32,000
+the average velocity over the time period.
+
+98
+00:05:32,000 --> 00:05:35,000
+What you do is you simply integrate
+
+99
+00:05:35,000 --> 00:05:37,000
+and divide by the time interval.
+
+100
+00:05:37,000 --> 00:05:41,000
+Here’s a plot which shows clearly that
+
+101
+00:05:41,000 --> 00:05:46,000
+the average value is attained at two different points,
+
+102
+00:05:46,000 --> 00:05:52,000
+so the average velocity is attained twice in the interval.
+
+103
+00:05:52,000 --> 00:05:55,000
+That brings me to the end of this lesson,
+
+104
+00:05:55,000 --> 00:05:58,000
+but the main point for today is that with integration,
+
+105
+00:05:58,000 --> 00:06:03,000
+you can find the average value of a function over an interval.
+
+106
+00:06:04,000 --> 00:06:07,000
+That average value is given by the integral
+
+107
+00:06:07,000 --> 00:06:11,000
+divided by the length of the interval.
+
+108
+00:06:11,000 --> 00:06:13,000
+The mean value theorem is a very powerful theorem
+
+109
+00:06:13,000 --> 00:06:16,000
+which says that if you have a continuous function,
+
+110
+00:06:16,000 --> 00:06:19,000
+then it takes on its average value at least once—
+
+111
+00:06:19,000 --> 00:06:23,000
+could be more than once, but at least once—in the interval.
+
+112
+00:06:23,000 --> 00:06:26,000
+Of course once you have this very powerful theorem,
+
+113
+00:06:26,000 --> 00:06:29,000
+you could apply it to temperatures or velocities
+
+114
+00:06:29,000 --> 00:06:33,000
+or all kinds of other fillable phenomena.
+
+115
+00:06:33,000 --> 00:06:35,000
+You have the mean value theorem, which tells you that
+
+116
+00:06:35,000 --> 00:06:39,000
+the area under the curve is equal to the area of a certain rectangle.
+
+117
+00:06:39,000 --> 00:06:43,000
+That’s a very powerful theorem for calculus.
+
+118
+00:06:45,000 --> 00:06:48,000
+In the next lesson we’ll talk about approximate values of integrals,
+
+119
+00:06:48,000 --> 00:06:51,000
+but for now, do review this lesson,
+
+120
+00:06:51,000 --> 00:06:53,000
+go over the idea for the mean value
+
+121
+00:06:53,000 --> 00:06:56,000
+and I’ll see you next time.
+
+122
+00:06:56,000 --> 00:06:58,000
+Thank you very much. I’ll stop over here.
+

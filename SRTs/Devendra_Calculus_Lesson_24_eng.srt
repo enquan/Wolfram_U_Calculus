@@ -1,0 +1,612 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 24 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic of this lesson is the definite integral.
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:16,000 --> 00:00:20,000
+In the previous lesson, we talked about the Riemann sum
+
+5
+00:00:20,000 --> 00:00:26,000
+and the limit of said sum for a function <i>f</I>[<i>x</i>].
+
+6
+00:00:26,000 --> 00:00:30,000
+Usually we picked <i>f</i> to be positive, and if we did that,
+
+7
+00:00:30,000 --> 00:00:32,000
+then one could interpret the sum as being
+
+8
+00:00:32,000 --> 00:00:37,000
+the area under the curve corresponding to <i>f</i>.
+
+9
+00:00:37,000 --> 00:00:40,000
+But there is a slight problem to this approach
+
+10
+00:00:40,000 --> 00:00:45,000
+because the Riemann sum has lots of practical applications,
+
+11
+00:00:45,000 --> 00:00:49,000
+such as finding the area under the velocity curve.
+
+12
+00:00:49,000 --> 00:00:51,000
+Here’s an example.
+
+13
+00:00:51,000 --> 00:00:54,000
+That’s the velocity of a particle, let’s say.
+
+14
+00:00:54,000 --> 00:00:56,000
+Here’s a plot.
+
+15
+00:00:56,000 --> 00:01:00,000
+Then the area under this curve can be interpreted as
+
+16
+00:01:00,000 --> 00:01:04,000
+the total distance traveled by the particle,
+
+17
+00:01:04,000 --> 00:01:08,000
+in this case from 0 to 5 seconds, let’s say.
+
+18
+00:01:08,000 --> 00:01:13,000
+Now the question is what happens if <i>f</i> is negative?
+
+19
+00:01:13,000 --> 00:01:16,000
+After all, the velocity of a particle can be
+
+20
+00:01:16,000 --> 00:01:20,000
+either positive or negative depending upon the direction.
+
+21
+00:01:20,000 --> 00:01:24,000
+That’s the question that we want to answer in this lesson,
+
+22
+00:01:24,000 --> 00:01:29,000
+and then we will talk about some properties of the Riemann sum.
+
+23
+00:01:31,000 --> 00:01:33,000
+Let’s begin with a definition.
+
+24
+00:01:33,000 --> 00:01:36,000
+Because we use Riemann sums so often,
+
+25
+00:01:36,000 --> 00:01:38,000
+we have given it a special name in mathematics.
+
+26
+00:01:38,000 --> 00:01:42,000
+It’s called the definite integral.
+
+27
+00:01:42,000 --> 00:01:44,000
+In fact, there is also a special notation
+
+28
+00:01:44,000 --> 00:01:47,000
+for that rather cumbersome Riemann sum.
+
+29
+00:01:47,000 --> 00:01:53,000
+It’s just called integral from <i>a</i> to <i>b</i> <i>f</i>(<i>x</I>)<i>d</i>(<i>x</i>).
+
+30
+00:01:53,000 --> 00:01:59,000
+That over there, that elongated S, is the definite integral sign
+
+31
+00:01:59,000 --> 00:02:03,000
+with <i>a</i> and <i>b</i>, the limits, at both the ends.
+
+32
+00:02:04,000 --> 00:02:06,000
+The S over here, like I said,
+
+33
+00:02:06,000 --> 00:02:10,000
+is just the elongated S standing for “sum”.
+
+34
+00:02:11,000 --> 00:02:17,000
+When you find the area under a function curve from <i>a</i> to <i>b</i>,
+
+35
+00:02:17,000 --> 00:02:21,000
+we’ll say that we are integrating the function from <i>a</i> to <i>b</i>.
+
+36
+00:02:22,000 --> 00:02:24,000
+Luckily the Wolfram Language has
+
+37
+00:02:24,000 --> 00:02:29,000
+a very nice built-in function that integrates these functions,
+
+38
+00:02:29,000 --> 00:02:31,000
+and it’s called Integrate.
+
+39
+00:02:31,000 --> 00:02:33,000
+Integrate is the function that you’d use
+
+40
+00:02:33,000 --> 00:02:36,000
+to compute these definite integrals.
+
+41
+00:02:36,000 --> 00:02:41,000
+For example, let’s look at <i>f</i>[<i>x</i>] = <i>x</i>^2, and you want to integrate,
+
+42
+00:02:41,000 --> 00:02:43,000
+let’s say, from 0 to 1.
+
+43
+00:02:43,000 --> 00:02:46,000
+Here’s a Riemann sum and the limit, and you get back the answer 1/3.
+
+44
+00:02:46,000 --> 00:02:48,000
+But you could just as well use
+
+45
+00:02:48,000 --> 00:02:51,000
+the Integrate symbol that’s over here.
+
+46
+00:02:51,000 --> 00:02:53,000
+You integrate from 0 to 1 for <i>x</i>^2,
+
+47
+00:02:53,000 --> 00:02:56,000
+and you get back just the same answer, 1/3.
+
+48
+00:02:57,000 --> 00:02:59,000
+Integrate is the function to use
+
+49
+00:02:59,000 --> 00:03:03,000
+when you want to do definite integration.
+
+50
+00:03:05,000 --> 00:03:09,000
+Now, the point is that not every function is integrable.
+
+51
+00:03:09,000 --> 00:03:12,000
+Not every function can be integrated, and that’s because
+
+52
+00:03:12,000 --> 00:03:17,000
+the limit in the Riemann sum may not converge to a finite value.
+
+53
+00:03:17,000 --> 00:03:19,000
+Here’s an example.
+
+54
+00:03:19,000 --> 00:03:23,000
+You have <i>f</i>[<i>x</i>] = 1/<i>x</i> and you’re trying to find the integral.
+
+55
+00:03:23,000 --> 00:03:27,000
+Notice over here I’m using the full text over here for Integrate
+
+56
+00:03:27,000 --> 00:03:32,000
+rather than the symbol, and it says over here that this integral
+
+57
+00:03:32,000 --> 00:03:35,000
+does not converge on 0 to 1, and that’s because
+
+58
+00:03:35,000 --> 00:03:41,000
+the graph shows that in fact you have an ∞ near 0
+
+59
+00:03:41,000 --> 00:03:45,000
+because 1/<i>x</i> becomes infinite as you approach 0 from the right.
+
+60
+00:03:45,000 --> 00:03:48,000
+Luckily in this lesson, we’ll talk about
+
+61
+00:03:48,000 --> 00:03:52,000
+functions which can be integrated as long as you’re careful.
+
+62
+00:03:52,000 --> 00:03:57,000
+In general, one has the property that a function is integrable
+
+63
+00:03:57,000 --> 00:04:01,000
+if it is continuous—no breaks in the graph—
+
+64
+00:04:01,000 --> 00:04:06,000
+or it has only a finite number of jump discontinuities.
+
+65
+00:04:06,000 --> 00:04:08,000
+In this case, the point is you actually have
+
+66
+00:04:08,000 --> 00:04:12,000
+an infinite discontinuity at 0, and that’s a real problem.
+
+67
+00:04:14,000 --> 00:04:19,000
+Okay. Let’s go on now to talking about functions which have
+
+68
+00:04:19,000 --> 00:04:22,000
+a negative function value.
+
+69
+00:04:22,000 --> 00:04:26,000
+For example, you have the function <i>f</i>[<i>x</i>] = –<i>x</i>,
+
+70
+00:04:26,000 --> 00:04:28,000
+and you want find its area.
+
+71
+00:04:28,000 --> 00:04:30,000
+Well the point is because it’s negative,
+
+72
+00:04:30,000 --> 00:04:34,000
+what you do is you find the area from 0 to 1
+
+73
+00:04:34,000 --> 00:04:37,000
+as if it’s a normal triangle that’s 1/2,
+
+74
+00:04:37,000 --> 00:04:41,000
+and then you get the minus sign, and you get the answer, –1/2.
+
+75
+00:04:41,000 --> 00:04:44,000
+if you use integrate, you get back just the same result,
+
+76
+00:04:44,000 --> 00:04:47,000
+–1/2, for this integral.
+
+77
+00:04:49,000 --> 00:04:53,000
+Okay. Next point over here is what happens if you have a function
+
+78
+00:04:53,000 --> 00:04:56,000
+which is both positive and negative.
+
+79
+00:04:57,000 --> 00:04:59,000
+Let’s take a sine function.
+
+80
+00:04:59,000 --> 00:05:02,000
+Now we see what happens over here is that the function is
+
+81
+00:05:02,000 --> 00:05:05,000
+sometimes positive and sometimes negative.
+
+82
+00:05:05,000 --> 00:05:10,000
+It’s positive from 0 to π, and then negative from π to 2π.
+
+83
+00:05:10,000 --> 00:05:12,000
+In this case, what you’ll do is you’ll add
+
+84
+00:05:12,000 --> 00:05:15,000
+all the areas above the <i>x</i> axis
+
+85
+00:05:15,000 --> 00:05:19,000
+and then you subtract the sum of the areas below the <i>x</i> axis,
+
+86
+00:05:19,000 --> 00:05:21,000
+and you get back the net area.
+
+87
+00:05:21,000 --> 00:05:24,000
+Now in this case, of course, we have a positive area
+
+88
+00:05:24,000 --> 00:05:27,000
+and a negative area, and the net area is 0.
+
+89
+00:05:27,000 --> 00:05:29,000
+Let’s check that over here with Integrate,
+
+90
+00:05:29,000 --> 00:05:33,000
+and you do get back the answer is 0 for this area.
+
+91
+00:05:34,000 --> 00:05:38,000
+Okay. On to some properties of definite integrals.
+
+92
+00:05:38,000 --> 00:05:42,000
+If you work out the integral from <i>a</i> to <i>b</i> of a function,
+
+93
+00:05:42,000 --> 00:05:47,000
+then that’s the negative of the area from <i>b</i> to <i>a</i>.
+
+94
+00:05:47,000 --> 00:05:51,000
+For example, if you work out the integral of <i>x</i>^2 from 1 to 0,
+
+95
+00:05:51,000 --> 00:05:55,000
+that’s the negative of the area from 0 to 1,
+
+96
+00:05:55,000 --> 00:06:00,000
+so you have a –1/3 over here and 1/3 over there.
+
+97
+00:06:01,000 --> 00:06:04,000
+In particular, if <i>a</i> = <i>b</i>, then you have
+
+98
+00:06:04,000 --> 00:06:08,000
+something which is negative itself, so the area in this case
+
+99
+00:06:08,000 --> 00:06:10,000
+is just 0, and that makes sense
+
+100
+00:06:10,000 --> 00:06:14,000
+because there’s no area between <i>a</i> and <i>a</i> to compute.
+
+101
+00:06:15,000 --> 00:06:20,000
+In our particular case, if you take the integral of <i>f</i> from 1 to 1,
+
+102
+00:06:20,000 --> 00:06:23,000
+then you get back 0 as expected.
+
+103
+00:06:25,000 --> 00:06:27,000
+Okay. Properties two.
+
+104
+00:06:28,000 --> 00:06:30,000
+You see over here that if you have a constant function
+
+105
+00:06:30,000 --> 00:06:33,000
+and you find the integral from <i>a</i> to <i>b</i>,
+
+106
+00:06:33,000 --> 00:06:37,000
+then you just get back the constant value times (<i>b</i> – <i>a</i>).
+
+107
+00:06:39,000 --> 00:06:42,000
+If you have a sum of functions, then the integral is
+
+108
+00:06:42,000 --> 00:06:46,000
+the sum of <i>f</i> integral and the <i>g</i> integral.
+
+109
+00:06:46,000 --> 00:06:50,000
+For a difference, the integral of <i>f</i> – <i>g</i>
+
+110
+00:06:50,000 --> 00:06:54,000
+is the integral of <i>f</i> minus the integral of <i>g</i>.
+
+111
+00:06:54,000 --> 00:06:58,000
+Finally, you can always pull out constants
+
+112
+00:06:58,000 --> 00:07:02,000
+from inside integral signs and save yourself some computation.
+
+113
+00:07:02,000 --> 00:07:06,000
+For the first property, for example, if you want to find
+
+114
+00:07:06,000 --> 00:07:12,000
+the area from, let’s say, 1 to 5 for the function
+
+115
+00:07:12,000 --> 00:07:16,000
+with constant height 5, then the answer is just going to be 20.
+
+116
+00:07:16,000 --> 00:07:22,000
+After all, you have 5 times 4, which is equal to 20.
+
+117
+00:07:24,000 --> 00:07:27,000
+Okay. The final set of properties is that
+
+118
+00:07:27,000 --> 00:07:30,000
+if you have three points <i>a</i>, <i>b</I> and <i>c</i>
+
+119
+00:07:30,000 --> 00:07:33,000
+and you want to work out the area from <i>a</i> to <i>c</i>,
+
+120
+00:07:33,000 --> 00:07:35,000
+you work out the integral from <i>a</I> to <i>b</i> and then <i>b</i> to <i>c</i>,
+
+121
+00:07:35,000 --> 00:07:38,000
+and you get back the area from <i>a</i> to <i>c</i>.
+
+122
+00:07:38,000 --> 00:07:42,000
+Now obviously if a function is non-negative,
+
+123
+00:07:42,000 --> 00:07:46,000
+then the area also will be non-negative,
+
+124
+00:07:46,000 --> 00:07:52,000
+and if <i>f</i> is larger than <i>g</i>, then the integral of of <i>f</i>
+
+125
+00:07:52,000 --> 00:07:55,000
+will be larger than the integral of <i>g</i>.
+
+126
+00:07:55,000 --> 00:07:59,000
+One last point: if <i>f</i> is kind of sandwiched between
+
+127
+00:07:59,000 --> 00:08:03,000
+the limits <i>m</i> and the capital <i>M</i> over here,
+
+128
+00:08:03,000 --> 00:08:08,000
+then the area for <i>f</i> will be sandwiched between the area
+
+129
+00:08:08,000 --> 00:08:13,000
+for a rectangle with sides <i>m</i>(<i>b</i> – <i>a</i>)
+
+130
+00:08:13,000 --> 00:08:17,000
+and a larger rectangle with sides <i>M</i>(<i>b</i> – <i>a</i>).
+
+131
+00:08:17,000 --> 00:08:19,000
+Here’s a picture.
+
+132
+00:08:19,000 --> 00:08:23,000
+That’s the function <i>f</i>, and the area under <i>f</i>
+
+133
+00:08:23,000 --> 00:08:28,000
+is sandwiched between the areas of those two rectangles.
+
+134
+00:08:30,000 --> 00:08:32,000
+That brings me to the end of this lesson.
+
+135
+00:08:32,000 --> 00:08:36,000
+To summarize, we have given a new name to Riemann sums.
+
+136
+00:08:36,000 --> 00:08:40,000
+You now call them definite integrals.
+
+137
+00:08:40,000 --> 00:08:45,000
+These definite integrals have many nice special properties
+
+138
+00:08:45,000 --> 00:08:47,000
+which makes them easy to compute.
+
+139
+00:08:48,000 --> 00:08:51,000
+The nice thing about the definite integral is it can handle
+
+140
+00:08:51,000 --> 00:08:55,000
+functions with both positive values and negative values,
+
+141
+00:08:55,000 --> 00:08:57,000
+and then you might get answers which are positive
+
+142
+00:08:57,000 --> 00:09:00,000
+or negative or even 0.
+
+143
+00:09:01,000 --> 00:09:04,000
+We have a very nice function in the Wolfram Language
+
+144
+00:09:04,000 --> 00:09:06,000
+which does the work for you.
+
+145
+00:09:06,000 --> 00:09:08,000
+It’s called Integrate, and that is
+
+146
+00:09:08,000 --> 00:09:12,000
+a very popular, well-used function in the language.
+
+147
+00:09:13,000 --> 00:09:15,000
+In the next lesson we’ll talk about
+
+148
+00:09:15,000 --> 00:09:17,000
+the so-called fundamental theorem of calculus,
+
+149
+00:09:17,000 --> 00:09:21,000
+which connects the two branches of calculus,
+
+150
+00:09:21,000 --> 00:09:24,000
+integral calculus and differential calculus, together.
+
+151
+00:09:24,000 --> 00:09:29,000
+But before we do that, do review this lesson, go over the exercises
+
+152
+00:09:29,000 --> 00:09:32,000
+and be ready for the fundamental theorem of calculus.
+
+153
+00:09:32,000 --> 00:09:35,000
+Thank you very much. I’ll stop over here.
+

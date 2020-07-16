@@ -1,0 +1,794 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Hello, and welcome to Problem Session 10
+
+2
+00:00:03,000 --> 00:00:07,000
+of this introduction to calculus with Wolfram U.
+
+3
+00:00:07,000 --> 00:00:10,000
+The topic for this session is L’Hospital’s rule
+
+4
+00:00:10,000 --> 00:00:13,000
+and differential equations.
+
+5
+00:00:13,000 --> 00:00:18,000
+Let’s begin with problem 1 for the session.
+
+6
+00:00:18,000 --> 00:00:25,000
+The question is find the limit of Sin[5<i>x</i>]/Sin[7<i>x</i>] as <i>x</i> approaches 0.
+
+7
+00:00:25,000 --> 00:00:30,000
+Now if you simply plug in 0 over here, you get 0/0,
+
+8
+00:00:30,000 --> 00:00:33,000
+so that’s an indeterminate form,
+
+9
+00:00:33,000 --> 00:00:36,000
+which means you should try and apply L’Hospital’s rule.
+
+10
+00:00:36,000 --> 00:00:41,000
+You find the derivative of the numerator and denominator,
+
+11
+00:00:41,000 --> 00:00:44,000
+and you plug in <i>x</i> as 0.
+
+12
+00:00:44,000 --> 00:00:49,000
+You get back 5/7, which happens to be the correct answer in this case.
+
+13
+00:00:49,000 --> 00:00:53,000
+Here is a plot of the function near 0
+
+14
+00:00:53,000 --> 00:00:57,000
+that shows the limit value as well.
+
+15
+00:00:58,000 --> 00:01:03,000
+On to number 2, which says find the limit as <i>x</i> approaches ∞
+
+16
+00:01:03,000 --> 00:01:06,000
+of <i>x</i>^2/Log[<i>x</i>].
+
+17
+00:01:06,000 --> 00:01:10,000
+If you again plug in ∞, you get ∞/∞.
+
+18
+00:01:10,000 --> 00:01:15,000
+That’s indeterminate, so you find the derivatives of the numerator
+
+19
+00:01:15,000 --> 00:01:20,000
+and denominator and plug in ∞, and now you get ∞,
+
+20
+00:01:20,000 --> 00:01:24,000
+which is the correct answer, as seen from Limit.
+
+21
+00:01:24,000 --> 00:01:26,000
+Here’s a plot that shows that
+
+22
+00:01:26,000 --> 00:01:31,000
+the function does approach ∞ as <i>x</i> approaches ∞.
+
+23
+00:01:33,000 --> 00:01:35,000
+On to number 3, which says find the limit
+
+24
+00:01:35,000 --> 00:01:41,000
+as <i>x</i> approaches ∞ of √(2<i>x</i>)<i>e</i>^–<i>x</i>.
+
+25
+00:01:41,000 --> 00:01:48,000
+If you plug in ∞, you get ∞ * 0 because <i>e</i>^–∞ is 0.
+
+26
+00:01:48,000 --> 00:01:52,000
+Let’s rewrite that as √2<i>x</i>/<i>e</i>^<i>x</i>.
+
+27
+00:01:52,000 --> 00:01:53,000
+That’s the quotient.
+
+28
+00:01:53,000 --> 00:01:58,000
+Then you find the derivatives of the numerator and denominator
+
+29
+00:01:58,000 --> 00:02:01,000
+and plug in ∞, and you get back 0,
+
+30
+00:02:01,000 --> 00:02:04,000
+which is the correct answer, as seen from Limit.
+
+31
+00:02:04,000 --> 00:02:08,000
+Here’s the plot that shows what happens to the function
+
+32
+00:02:08,000 --> 00:02:11,000
+as you approach ∞.
+
+33
+00:02:13,000 --> 00:02:18,000
+On to number 4, which says find the limit of 1/(<i>x</i> – Cot[<i>x</i>])
+
+34
+00:02:18,000 --> 00:02:22,000
+as <i>x</i> approaches 0 from the right.
+
+35
+00:02:22,000 --> 00:02:25,000
+Now if you simply plug in 0, you get back ∞ – ∞.
+
+36
+00:02:25,000 --> 00:02:30,000
+As we’ve done earlier in the lesson, we simply rewrite the expression
+
+37
+00:02:30,000 --> 00:02:35,000
+by taking a common denominator—<i>x</i>Sin[<i>x</i>] in this case—
+
+38
+00:02:35,000 --> 00:02:37,000
+and you get back the expression over here.
+
+39
+00:02:37,000 --> 00:02:42,000
+Then you work out the derivatives of the numerator and denominator,
+
+40
+00:02:42,000 --> 00:02:48,000
+but again there’s a problem because you get back 0/0 if you plug in
+
+41
+00:02:48,000 --> 00:02:51,000
+because you have 0 * Sin[0],
+
+42
+00:02:51,000 --> 00:02:54,000
+and you have another 0 over there and a 0 over there.
+
+43
+00:02:54,000 --> 00:02:59,000
+So you apply L’Hospital again, and then you get back the answer 0,
+
+44
+00:02:59,000 --> 00:03:02,000
+which happens to be the correct limit in this case.
+
+45
+00:03:02,000 --> 00:03:07,000
+Here’s a plot of the function which shows the limit is indeed 0
+
+46
+00:03:07,000 --> 00:03:09,000
+as you approach 0 from the right.
+
+47
+00:03:11,000 --> 00:03:17,000
+Okay. On to number 5, which says find the limit of <i>x</i>^<i>x</i>^2
+
+48
+00:03:17,000 --> 00:03:20,000
+as <i>x</i> approaches 0 from the right.
+
+49
+00:03:20,000 --> 00:03:23,000
+If you simply plug in 0, you get 0^0,
+
+50
+00:03:23,000 --> 00:03:26,000
+so that means you must take logarithms.
+
+51
+00:03:26,000 --> 00:03:30,000
+If you do that, you get back <i>x</i>^2 * Log[<i>x</i>].
+
+52
+00:03:30,000 --> 00:03:36,000
+Plug in 0 and you get 0 * –∞ because the logarithm of 0 is –∞.
+
+53
+00:03:36,000 --> 00:03:41,000
+But then you rewrite that as Log[<i>x</i>]/<i>x</i>^–2,
+
+54
+00:03:41,000 --> 00:03:44,000
+and now you can apply L’Hospital.
+
+55
+00:03:44,000 --> 00:03:47,000
+You get back 0, but that’s 0 for Log[<i>y</i>],
+
+56
+00:03:47,000 --> 00:03:50,000
+so the limit itself must be 1.
+
+57
+00:03:50,000 --> 00:03:55,000
+You can check the answer from Limit itself, and you get back 1.
+
+58
+00:03:55,000 --> 00:03:57,000
+Here is a plot of the function,
+
+59
+00:03:57,000 --> 00:04:02,000
+which clearly shows that it approaches 1  as you approach 0.
+
+60
+00:04:02,000 --> 00:04:06,000
+Okay. On to number 6, which says compute the limit
+
+61
+00:04:06,000 --> 00:04:12,000
+as <i>x</i> approaches 0 from the right-hand side of (1/<i>x</i>)^<i>x</i>.
+
+62
+00:04:12,000 --> 00:04:18,000
+If you simply plug in 0, you get ∞^0, and so you apply logarithms.
+
+63
+00:04:18,000 --> 00:04:25,000
+You get <i>y</i> = (1/<i>x</i>)^<i>x</i>, giving you log(<i>y</i>) = log((1/<i>x</i>)^<i>x</i>).
+
+64
+00:04:25,000 --> 00:04:30,000
+Then apply the law of logarithms to get <i>x</i>Log[1/<i>x</i>].
+
+65
+00:04:30,000 --> 00:04:32,000
+That’s –<i>x</i>Log[<i>x</i>].
+
+66
+00:04:32,000 --> 00:04:37,000
+Now if you plug in 0, you get 0 * ∞ at 0.
+
+67
+00:04:37,000 --> 00:04:42,000
+You write the expression and then you plug in 0 again.
+
+68
+00:04:42,000 --> 00:04:46,000
+You get ∞/∞, so apply L’Hospital’s rule.
+
+69
+00:04:46,000 --> 00:04:50,000
+You get back 0, but that’s the value for log(<i>y</i>),
+
+70
+00:04:50,000 --> 00:04:53,000
+so the actual answer for the limit is 1.
+
+71
+00:04:53,000 --> 00:05:01,000
+You plug in that value, 1, and try Limit again, and you get back 1.
+
+72
+00:05:01,000 --> 00:05:04,000
+Here’s a plot around 0 which says
+
+73
+00:05:04,000 --> 00:05:08,000
+that the limit is indeed equal to 1.
+
+74
+00:05:08,000 --> 00:05:13,000
+Okay. On to number 7, which says find the limit as <i>x</i> approaches π/2
+
+75
+00:05:13,000 --> 00:05:17,000
+from the left of Sin[<i>x</i>]^Sec[<I>x</i>].
+
+76
+00:05:17,000 --> 00:05:21,000
+Now if you want to plug in π/2, you get 1^∞
+
+77
+00:05:21,000 --> 00:05:25,000
+because that’s 1 over here and ∞ over there, so apply a logarithm.
+
+78
+00:05:25,000 --> 00:05:30,000
+You get log(<i>y</i>) = log(sin^sec(<i>x</i>)(<i>x</i>)).
+
+79
+00:05:30,000 --> 00:05:34,000
+That’s secant times Log[Sin[<i>x</i>]].
+
+80
+00:05:34,000 --> 00:05:39,000
+Plug in ∞, π/2 and you get ∞ * 0.
+
+81
+00:05:41,000 --> 00:05:46,000
+Rewrite the expression as Log[Sin[<i>x</i>]]/Cos[<i>x</i>].
+
+82
+00:05:46,000 --> 00:05:47,000
+Plug in π/2.
+
+83
+00:05:47,000 --> 00:05:52,000
+You get 0/0, so you can apply L’Hospital’s rule and you get back 0,
+
+84
+00:05:52,000 --> 00:05:58,000
+but that’s the limit for log(<i>y</i>), so the actual limit is 1.
+
+85
+00:05:58,000 --> 00:06:02,000
+You can confirm the answer with Limit, and you do get back 1.
+
+86
+00:06:02,000 --> 00:06:06,000
+Here’s a plot of the function around π/2,
+
+87
+00:06:06,000 --> 00:06:09,000
+which actually shows the limit is equal to 1.
+
+88
+00:06:10,000 --> 00:06:14,000
+On to number 8, which says use Euler’s method,
+
+89
+00:06:14,000 --> 00:06:19,000
+the approximation method, with size 0.05
+
+90
+00:06:19,000 --> 00:06:21,000
+to find the approximate solution
+
+91
+00:06:21,000 --> 00:06:29,000
+of this differential equation over here at 0.1 given that <i>y</i>[0] = 1.
+
+92
+00:06:29,000 --> 00:06:32,000
+That’s the right-hand side.
+
+93
+00:06:32,000 --> 00:06:36,000
+You want to find the value at 0.05 first
+
+94
+00:06:36,000 --> 00:06:38,000
+because you’re going in steps of 0.05,
+
+95
+00:06:38,000 --> 00:06:43,000
+so you start with the initial value plus the step size
+
+96
+00:06:43,000 --> 00:06:49,000
+times the initial value of <i>f</i>, and you get back 0.95.
+
+97
+00:06:49,000 --> 00:06:53,000
+Then you plug in 0.1.
+
+98
+00:06:53,000 --> 00:06:55,000
+You start from the earlier value
+
+99
+00:06:55,000 --> 00:07:00,000
+and you add 0.05 times <i>f</i>[0.05] times value,
+
+100
+00:07:00,000 --> 00:07:04,000
+the earlier value, and you get back 0.899625.
+
+101
+00:07:05,000 --> 00:07:09,000
+NDSolveValue, which is a much more accurate function,
+
+102
+00:07:09,000 --> 00:07:12,000
+gives you a slightly different value,
+
+103
+00:07:12,000 --> 00:07:16,000
+but we can see that the answer is still quite correct,
+
+104
+00:07:16,000 --> 00:07:21,000
+and NDSolveValue simply improves the estimate by about 0.001.
+
+105
+00:07:22,000 --> 00:07:28,000
+On to number 9, which says use Euler’s method with step size 0.05
+
+106
+00:07:28,000 --> 00:07:30,000
+to find the value at 2.15
+
+107
+00:07:30,000 --> 00:07:35,000
+of this differential equation given that <i>y</i>[2] = 3.
+
+108
+00:07:35,000 --> 00:07:37,000
+That’s the right-hand side.
+
+109
+00:07:38,000 --> 00:07:40,000
+You first of all work out the value at 2.05.
+
+110
+00:07:41,000 --> 00:07:45,000
+You start with 3 plus the step size
+
+111
+00:07:45,000 --> 00:07:50,000
+times the value at 2 itself for the slope, and you get back 3.
+
+112
+00:07:50,000 --> 00:07:53,000
+Now start at this value over here,
+
+113
+00:07:53,000 --> 00:07:58,000
+and then you get the next value at 2.1.
+
+114
+00:07:59,000 --> 00:08:03,000
+Repeat the same procedure, and you get the value at 2.15.
+
+115
+00:08:04,000 --> 00:08:09,000
+You look at NDSolveValue and you get a pretty close answer,
+
+116
+00:08:09,000 --> 00:08:13,000
+which differs from it by around 0.033.
+
+117
+00:08:14,000 --> 00:08:16,000
+On to number 10, which
+ says
+
+118
+00:08:16,000 --> 00:08:18,000
+which of the following slope fields over here
+
+119
+00:08:18,000 --> 00:08:23,000
+is the field for <i>y</i>' = 2<i>x</i> – <i>y</i>?
+
+120
+00:08:23,000 --> 00:08:26,000
+Now what you do is you try and experiment at some points.
+
+121
+00:08:26,000 --> 00:08:28,000
+Suppose you have (0, 0).
+
+122
+00:08:28,000 --> 00:08:33,000
+You plug back over there and get 0 – 0 is 0, so the slope should be 0.
+
+123
+00:08:33,000 --> 00:08:39,000
+But now if you look at B, the slope at (0, 0) is clearly positive,
+
+124
+00:08:39,000 --> 00:08:40,000
+so B is out.
+
+125
+00:08:40,000 --> 00:08:42,000
+B cannot be the answer.
+
+126
+00:08:42,000 --> 00:08:45,000
+Then you go, let’s say, at (1, –1).
+
+127
+00:08:45,000 --> 00:08:50,000
+Plug in the values, so you get 2 – (–1).
+
+128
+00:08:50,000 --> 00:08:53,000
+That’s 3, so the slope should be positive.
+
+129
+00:08:53,000 --> 00:08:59,000
+But you see that for A at (1, –1), the slope is actually 0,
+
+130
+00:08:59,000 --> 00:09:02,000
+so A is out as well.
+
+131
+00:09:02,000 --> 00:09:04,000
+Now go to (1, 0).
+
+132
+00:09:04,000 --> 00:09:09,000
+The slope should again be positive, but if you look at D,
+
+133
+00:09:09,000 --> 00:09:14,000
+then at (1, 0)—that’s right over here—the slope is negative,
+
+134
+00:09:14,000 --> 00:09:16,000
+so D is out as well.
+
+135
+00:09:16,000 --> 00:09:21,000
+B doesn’t work, A doesn’t work, D doesn’t work,
+
+136
+00:09:21,000 --> 00:09:23,000
+so the correct answer is C.
+
+137
+00:09:23,000 --> 00:09:26,000
+You can actually check that with StreamPlot,
+
+138
+00:09:26,000 --> 00:09:29,000
+and you do see that the correct answer is C.
+
+139
+00:09:31,000 --> 00:09:36,000
+On to number 11, which says which of these, A, B, C or D,
+
+140
+00:09:36,000 --> 00:09:40,000
+is the slope field for <i>y</i>' = <i>y</i>^2.
+
+141
+00:09:40,000 --> 00:09:44,000
+Now if you plug in (0, 0), you get the answer 0 over here,
+
+142
+00:09:44,000 --> 00:09:48,000
+but at C, you see that there’s actually no slope
+
+143
+00:09:48,000 --> 00:09:52,000
+defined over here at (0, 0), so C is out.
+
+144
+00:09:52,000 --> 00:09:54,000
+C could not be the right answer.
+
+145
+00:09:54,000 --> 00:09:58,000
+For (1, 1), the slope would be positive again,
+
+146
+00:09:58,000 --> 00:10:02,000
+but if you look at D, at (1, 1)—that’s right over here—
+
+147
+00:10:02,000 --> 00:10:05,000
+the slope is negative, so D is out.
+
+148
+00:10:05,000 --> 00:10:10,000
+Then you look at (0, –1), another trial point.
+
+149
+00:10:10,000 --> 00:10:14,000
+If you plug back over there, <i>y</i>^2 is positive.
+
+150
+00:10:14,000 --> 00:10:20,000
+The slope should be positive, but for A at (0, –1)—
+
+151
+00:10:20,000 --> 00:10:23,000
+so (0, –1) is here—the slope is actually negative,
+
+152
+00:10:23,000 --> 00:10:25,000
+so A is out as well.
+
+153
+00:10:25,000 --> 00:10:26,000
+C doesn’t work.
+
+154
+00:10:26,000 --> 00:10:27,000
+D doesn’t work.
+
+155
+00:10:27,000 --> 00:10:28,000
+A doesn’t work.
+
+156
+00:10:28,000 --> 00:10:30,000
+The correct answer is B,
+
+157
+00:10:30,000 --> 00:10:33,000
+and you can confirm the answer with StreamPlot.
+
+158
+00:10:33,000 --> 00:10:35,000
+The correct answer is B.
+
+159
+00:10:35,000 --> 00:10:37,000
+You can see over here the match
+
+160
+00:10:37,000 --> 00:10:41,000
+between B over here and the StreamPlot over there.
+
+161
+00:10:42,000 --> 00:10:43,000
+On to number 12,
+
+162
+00:10:43,000 --> 00:10:47,000
+and now we’re talking about separable differential equations.
+
+163
+00:10:47,000 --> 00:10:51,000
+Here’s a differential equation, <i>y</i>' = <i>x</i>^4<i>y</i>^2.
+
+164
+00:10:51,000 --> 00:10:55,000
+You can separate it with two functions, <i>f</i> and <i>g</i>.
+
+165
+00:10:56,000 --> 00:11:01,000
+Then you rearrange, and you get back the equation over here.
+
+166
+00:11:01,000 --> 00:11:04,000
+Integrate both the sides.
+
+167
+00:11:04,000 --> 00:11:10,000
+Now if you solve for <I>y</i>, you get –5/(<i>x</i>^5 + 5<i>C</i>),
+
+168
+00:11:10,000 --> 00:11:12,000
+but that’s just a constant,
+
+169
+00:11:12,000 --> 00:11:15,000
+so you can check the answer with DSolveValue,
+
+170
+00:11:15,000 --> 00:11:19,000
+and you do get back the same result.
+
+171
+00:11:21,000 --> 00:11:27,000
+On to number 13, which says find the solution of <i>y</i>' = Sec[<i>x</i>]^2<i>y</i>
+
+172
+00:11:27,000 --> 00:11:29,000
+given that <i>y</i>[0] = 2.
+
+173
+00:11:29,000 --> 00:11:32,000
+Now you can separate this problem over here
+
+174
+00:11:32,000 --> 00:11:35,000
+because you have Sec[<i>x</i>]^2 over here times <i>y</i> over there.
+
+175
+00:11:35,000 --> 00:11:43,000
+You rearrange, integrate and then you solve for <i>y</i>,
+
+176
+00:11:43,000 --> 00:11:47,000
+so <i>y</i> = <i>Ce</i>^Tan[<i>x</i>].
+
+177
+00:11:47,000 --> 00:11:54,000
+Plug in the initial conditions so when <i>x</i> is 0, <i>y</i> is given to be 2.
+
+178
+00:11:54,000 --> 00:12:01,000
+That says that <i>C</i> is 2 from here, so the solution is <i>y</i> = <i>e</i>^Tan[<i>x</i>].
+
+179
+00:12:01,000 --> 00:12:04,000
+You can check the answer with DSolveValue,
+
+180
+00:12:04,000 --> 00:12:06,000
+and you do get back the same result.
+
+181
+00:12:08,000 --> 00:12:14,000
+On to number 14, which says find the solution of <i>y</i>' = <i>e</i>^(3<i>x</I> – <i>y</i>)
+
+182
+00:12:14,000 --> 00:12:17,000
+given that <i>y</i>[0] = 0.
+
+183
+00:12:17,000 --> 00:12:19,000
+Now in this case, to separate, what you do is
+
+184
+00:12:19,000 --> 00:12:27,000
+you break up the exponential into two parts as <i>e</i>^3<i>x</i> * <i>e</i>^–<i>y</i>.
+
+185
+00:12:27,000 --> 00:12:29,000
+You have two parts for the exponential.
+
+186
+00:12:29,000 --> 00:12:32,000
+You’ve got <i>f</i>[<i>x</i>] and <i>g</i>[<i>y</i>].
+
+187
+00:12:32,000 --> 00:12:35,000
+You can rearrange the equation like over here,
+
+188
+00:12:35,000 --> 00:12:37,000
+and then you can integrate.
+
+189
+00:12:38,000 --> 00:12:44,000
+You see over here that <i>y</i> must be log(<i>C</i> + (<i>e</i>^3<i>x</i>/3)).
+
+190
+00:12:44,000 --> 00:12:49,000
+We still need to find <i>C</i>, but keep in mind that <i>y</i>[0] is 0,
+
+191
+00:12:49,000 --> 00:12:51,000
+so when you plug in those values,
+
+192
+00:12:51,000 --> 00:12:58,000
+you’ll find that C is equal to 2/3 because the logarithm of 1 is 0,
+
+193
+00:12:58,000 --> 00:13:03,000
+so <i>C</i> + 1/3 = 0, so <i>C</i> must be 2/3.
+
+194
+00:13:03,000 --> 00:13:06,000
+That’s the solution from hand calculation,
+
+195
+00:13:06,000 --> 00:13:09,000
+and I can check the answer with DSolveValue,
+
+196
+00:13:09,000 --> 00:13:12,000
+and you do get back just the same result.
+
+197
+00:13:12,000 --> 00:13:15,000
+That brings me to the end of this problem session.
+
+198
+00:13:15,000 --> 00:13:17,000
+Thank you very much.
+
+

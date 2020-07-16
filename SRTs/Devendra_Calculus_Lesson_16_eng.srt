@@ -1,0 +1,488 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 16 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic for this lesson is maxima and minima.
+
+3
+00:00:11,000 --> 00:00:19,000
+Let’s begin with a brief overview of the lesson. Many mathematical problems involve
+
+4
+00:00:19,000 --> 00:00:23,000
+getting the best solution for a task. In fact, people use mathematics when they really do want
+
+5
+00:00:23,000 --> 00:00:31,000
+the best solution for a task. There’s a word for best solution. It’s usually called optimal solution,
+
+6
+00:00:31,000 --> 00:00:37,000
+and the whole process of getting such a solution is called optimization.
+
+7
+00:00:38,000 --> 00:00:46,000
+Okay. As an example of optimization, let’s take this function <i>f</i>[<i>x</i>] and plot it.
+
+8
+00:00:46,000 --> 00:00:59,000
+The plot is a downward-opening parabola, and the highest value of this plot is clearly at (0, 3).
+
+9
+00:00:59,000 --> 00:01:09,000
+In this case, our notion of best or optimal is the highest value. Typically, one wants to talk about
+
+10
+00:01:09,000 --> 00:01:17,000
+maxima and minima in various problems. The goal of this lesson is to develop a process
+
+11
+00:01:17,000 --> 00:01:24,000
+for finding maxima or minima for different problems using derivatives.
+
+12
+00:01:26,000 --> 00:01:33,000
+Various people use optimization in different ways. For example, if you run a business,
+
+13
+00:01:33,000 --> 00:01:40,000
+then clearly what you want to do is to maximize your profit and minimize your cost.
+
+14
+00:01:40,000 --> 00:01:49,000
+Even a plant knows that it must grow in such a way that it obtains the maximum amount of sunlight.
+
+15
+00:01:49,000 --> 00:01:59,000
+A GPS system is designed to get you to a destination in either the shortest amount of time or distance.
+
+16
+00:01:59,000 --> 00:02:08,000
+In general, you have optimization problems which involve either finding the maximum or the minimum.
+
+17
+00:02:08,000 --> 00:02:18,000
+Differential calculus is really an excellent tool for solving these optimization problems.
+
+18
+00:02:18,000 --> 00:02:25,000
+In fact, that’s how the subject arose in the works of Fermat and other mathematicians.
+
+19
+00:02:26,000 --> 00:02:32,000
+Let’s now go ahead and talk about the notion of an absolute maximum or minimum.
+
+20
+00:02:32,000 --> 00:02:42,000
+A value <i>f</i>[<i>c</i>] is an absolute maximum of a function if its value is greater than or equal to
+
+21
+00:02:42,000 --> 00:02:48,000
+every other value for the values in a certain set D where D is called the domain.
+
+22
+00:02:48,000 --> 00:02:56,000
+When I say maximum and I say absolute maximum, I mean the very greatest value of a function.
+
+23
+00:02:56,000 --> 00:03:05,000
+Similarly, if one says absolute minimum, you mean the least value of a function on a certain set D.
+
+24
+00:03:05,000 --> 00:03:14,000
+For example, if we take the sine function, clearly its maximum is over here at π/2
+
+25
+00:03:14,000 --> 00:03:21,000
+where it’s got a value of 1, and its minimum is at 3π/2 where it’s got the value −1.
+
+26
+00:03:21,000 --> 00:03:29,000
+Another term used for absolute maximum and minimum is global maximum and minimum.
+
+27
+00:03:29,000 --> 00:03:34,000
+When you say absolute, it means the same thing as global.
+
+28
+00:03:35,000 --> 00:03:44,000
+Okay. Together, these maxima and minima are sometimes called the extreme values of the function.
+
+29
+00:03:44,000 --> 00:03:52,000
+In this case, we’re lucky. We had an absolute maximum and an absolute minimum.
+
+30
+00:03:52,000 --> 00:04:00,000
+But in general, the best that you can hope for are so-called local maxima and minima.
+
+31
+00:04:00,000 --> 00:04:05,000
+For example, here is a function, a cubic function, and you can see quite clearly that
+
+32
+00:04:05,000 --> 00:04:11,000
+this graph has got local maxima and minima. That’s the local maximum over here,
+
+33
+00:04:11,000 --> 00:04:15,000
+and that’s the local minimum over there, but if you go far away enough, the values will
+
+34
+00:04:15,000 --> 00:04:25,000
+go up or go down dramatically. The idea of a local maximum is that you have a value <i>f</i>[<i>c</i>]
+
+35
+00:04:25,000 --> 00:04:33,000
+which is more than other values for <i>x</i> near <i>c</i>, and similarly for local minima.
+
+36
+00:04:33,000 --> 00:04:39,000
+Near depends upon the function of course, but that’s a nice way about talking about maxima and minima—
+
+37
+00:04:39,000 --> 00:04:46,000
+by using the local definition rather than the global definition. In the case over here,
+
+38
+00:04:46,000 --> 00:04:51,000
+there is a local maximum at that point and a local minimum at that point.
+
+39
+00:04:51,000 --> 00:04:57,000
+We’ll see that quite shortly. Of course, if you have an absolute maximum,
+
+40
+00:04:57,000 --> 00:05:06,000
+that’s clearly a local maximum, and if you have an absolute minimum, that’s clearly a local minimum.
+
+41
+00:05:06,000 --> 00:05:12,000
+The fact that you have absolute maxima and minima is very special knowledge—
+
+42
+00:05:12,000 --> 00:05:16,000
+much better than having local maxima or minima.
+
+43
+00:05:17,000 --> 00:05:24,000
+Okay. Things could go wrong or be different in some cases. For example, if you have
+
+44
+00:05:24,000 --> 00:05:32,000
+the constant function like over here, the constant function 5, then clearly every real number is
+
+45
+00:05:32,000 --> 00:05:40,000
+an absolute maximum and minimum. On the other hand, if you have the cubic function over here,
+
+46
+00:05:40,000 --> 00:05:47,000
+then you have neither an absolute or local maximum or minimum everywhere.
+
+47
+00:05:47,000 --> 00:05:54,000
+These are very special cases which are worth remembering as we talk about maxima and minima.
+
+48
+00:05:54,000 --> 00:06:01,000
+Namely, you could have situations in which you have everything being optimal or nothing being optimal.
+
+49
+00:06:02,000 --> 00:06:08,000
+Okay. Now the question is how do we find these extreme values, but even if we’re talking about that,
+
+50
+00:06:08,000 --> 00:06:14,000
+we need to figure out some conditions under which one can guarantee that they’re extreme values.
+
+51
+00:06:14,000 --> 00:06:21,000
+This is what’s called the extreme value theorem. What that does is it gives you conditions
+
+52
+00:06:21,000 --> 00:06:26,000
+for when a function is guaranteed to have extreme values. It says that if you have a function
+
+53
+00:06:26,000 --> 00:06:31,000
+on a closed interval and that function is continuous—so you have a continuous function
+
+54
+00:06:31,000 --> 00:06:38,000
+on a closed interval [<i>a</i>, <i>b</i>]—then that function will attain an absolute maximum
+
+55
+00:06:38,000 --> 00:06:43,000
+and an absolute minimum at some numbers <i>c</i> and <i>d</i> on the interval. As long as you have
+
+56
+00:06:43,000 --> 00:06:50,000
+a continuous function and a closed interval, you are fine. For example, I have these three plots over here,
+
+57
+00:06:50,000 --> 00:07:00,000
+and the black dots will indicate that that side of the interval is closed, and the white dots
+
+58
+00:07:00,000 --> 00:07:05,000
+or the blank dots will indicate that you have an interval side which is not closed.
+
+59
+00:07:05,000 --> 00:07:11,000
+In the first example, you see you’ve got two black dots, so that’s a closed interval,
+
+60
+00:07:11,000 --> 00:07:15,000
+and clearly you have a continuous function. There are no breaks in the graph.
+
+61
+00:07:15,000 --> 00:07:21,000
+You have an absolute minimum over here and an absolute maximum over there.
+
+62
+00:07:21,000 --> 00:07:27,000
+That’s the first example. It attains an absolute maximum and minimum on the interval.
+
+63
+00:07:28,000 --> 00:07:33,000
+On the other hand, the second example is not in the scope of the discussion today
+
+64
+00:07:33,000 --> 00:07:38,000
+because you have over here a function which is not continuous. You can see over here that
+
+65
+00:07:38,000 --> 00:07:43,000
+there’s a sort of break in the graph. The theorem does not apply and you do not need to worry about
+
+66
+00:07:43,000 --> 00:07:47,000
+whether there are absolute maxima or minima, but of course in this case,
+
+67
+00:07:47,000 --> 00:07:52,000
+you actually do not have them because the function seems to go off to minus infinity over here
+
+68
+00:07:52,000 --> 00:07:58,000
+and plus infinity over there. The last example is again not quite relevant
+
+69
+00:07:58,000 --> 00:08:04,000
+because here you have an open interval. Because the interval is not closed, or is open,
+
+70
+00:08:04,000 --> 00:08:09,000
+therefore you cannot guarantee anything from the extreme value theorem. But in fact in this case,
+
+71
+00:08:09,000 --> 00:08:17,000
+there is neither an absolute maximum or minimum precisely because of the issue of missing endpoints.
+
+72
+00:08:19,000 --> 00:08:24,000
+Okay. The question now is how do we actually find these extreme values.
+
+73
+00:08:24,000 --> 00:08:31,000
+The best tool we have for this is Fermat’s theorem given by Pierre de Fermat a long time ago.
+
+74
+00:08:31,000 --> 00:08:41,000
+What that does is it lets us find local maxima and minima. What it says is if <i>f</i> has
+
+75
+00:08:41,000 --> 00:08:49,000
+a local maximum or minimum, then its derivative at that point must be 0. For example,
+
+76
+00:08:49,000 --> 00:08:56,000
+if you look at the earlier function, then the claim is that it’s got local maxima and minima
+
+77
+00:08:56,000 --> 00:09:01,000
+over here and there, and you can check that with the derivatives at those points. They are both 0,
+
+78
+00:09:01,000 --> 00:09:08,000
+so Fermat’s theorem will say that that’s the condition to be satisfied for local maxima and minima.
+
+79
+00:09:12,000 --> 00:09:18,000
+Okay. There are a few things to remember about Fermat’s theorem. The converse is not true,
+
+80
+00:09:18,000 --> 00:09:23,000
+and it’s not true in a few ways. For example, we have a function over here, a cubed function,
+
+81
+00:09:23,000 --> 00:09:27,000
+and clearly you have a horizontal tangent over here. The derivative is 0,
+
+82
+00:09:27,000 --> 00:09:35,000
+and yet there are no maxima or minima. The theorem mainly says that if you have
+
+83
+00:09:35,000 --> 00:09:41,000
+a maximum or minimum, then the derivative must be 0. The other example is
+
+84
+00:09:41,000 --> 00:09:46,000
+the absolute value function where you do have a minimum, but then the derivative does not exist
+
+85
+00:09:46,000 --> 00:09:56,000
+at that point. Fermat’s theorem must be used with caution, but it is in fact a very powerful theorem.
+
+86
+00:09:57,000 --> 00:10:01,000
+Fermat’s theorem is really talking about what are called critical numbers.
+
+87
+00:10:01,000 --> 00:10:07,000
+When you want to look for maxima and minima, you need to look for what are called critical numbers.
+
+88
+00:10:07,000 --> 00:10:13,000
+What’s a critical number? Well, a critical number is a number where either you have a 0 derivative
+
+89
+00:10:13,000 --> 00:10:23,000
+or the derivative does not exist. For example, the cube root function has a critical point
+
+90
+00:10:23,000 --> 00:10:27,000
+over here because the derivative is not defined there.
+
+91
+00:10:27,000 --> 00:10:35,000
+Of course, the local maxima and minima are good places to look for critical points.
+
+92
+00:10:37,000 --> 00:10:46,000
+With all that information, we are now ready to put together a method for finding absolute maxima and minima.
+
+93
+00:10:46,000 --> 00:10:55,000
+That’s what is called the closed interval method. What it says is to find the absolute maximum
+
+94
+00:10:55,000 --> 00:11:00,000
+and minimum of a continuous function on a closed interval, you first of all find out
+
+95
+00:11:00,000 --> 00:11:07,000
+the critical numbers, find out the values of the function at those critical numbers,
+
+96
+00:11:07,000 --> 00:11:16,000
+then you work out the value at the endpoints and then the largest of all those values
+
+97
+00:11:16,000 --> 00:11:24,000
+is the absolute maximum and the smallest value will be the absolute minimum.
+
+98
+00:11:25,000 --> 00:11:33,000
+As an example, here’s a cubic function. We find the derivative, set it equal to 0 and figure out
+
+99
+00:11:33,000 --> 00:11:44,000
+that 1 is a critical point. Add that 1 to the list 0 and 2. You’ve got to look at 0, 1 and 2.
+
+100
+00:11:44,000 --> 00:11:48,000
+0 and 2 are the endpoints of the interval, 1 is a critical point, and you find that
+
+101
+00:11:48,000 --> 00:11:55,000
+the minimum value occurs at −1 and the maximum value occurs at 2.
+
+102
+00:11:55,000 --> 00:12:02,000
+You have an absolute maximum at (2, 2) and you have an absolute minimum at (−1, 1).
+
+103
+00:12:02,000 --> 00:12:08,000
+We have two very nice functions called Maximize and Minimize which will do that
+
+104
+00:12:08,000 --> 00:12:13,000
+automatically for you, and there you are. It says that the maximum is at (2, 2)
+
+105
+00:12:13,000 --> 00:12:20,000
+and the minimum is at (−1, 1), just as we learned earlier on. But the closed interval method
+
+106
+00:12:20,000 --> 00:12:27,000
+is the basic tool for finding maxima and minima on a closed interval.
+
+107
+00:12:27,000 --> 00:12:35,000
+As an application, let’s take this example. We have the cost function for a business,
+
+108
+00:12:35,000 --> 00:12:42,000
+and the question is to find the number of units <i>x</i> that minimize the cost. What you do is
+
+109
+00:12:42,000 --> 00:12:49,000
+you find the critical points. There’s just one over here. It’s about 6,790.
+
+110
+00:12:49,000 --> 00:12:58,000
+You plug in the critical point and the endpoints over here. Then what you do is you work out
+
+111
+00:12:58,000 --> 00:13:05,000
+the values at those points, and you find out that you need to produce around 6,790 units
+
+112
+00:13:05,000 --> 00:13:13,000
+to minimize the cost. Here’s a plot for the problem, and you can see quite clearly that
+
+113
+00:13:13,000 --> 00:13:22,000
+you actually do have a minimum somewhere around 7,000. That’s the end of this lesson.
+
+114
+00:13:22,000 --> 00:13:30,000
+Let’s summarize. We certainly realize that optimization is a crucial component of our lives
+
+115
+00:13:30,000 --> 00:13:37,000
+from day to day. Different people will use it in different ways. For example, businesses will want
+
+116
+00:13:37,000 --> 00:13:43,000
+to make the most money with the least amount of cost, while drivers might want to reduce
+
+117
+00:13:43,000 --> 00:13:51,000
+the time that they take to go from one place to another. The basic tool in this area is Fermat’s theorem,
+
+118
+00:13:51,000 --> 00:14:00,000
+which lets us find the critical numbers for a function. The closed interval method is
+
+119
+00:14:00,000 --> 00:14:10,000
+a complete method for finding the absolute maxima and minima. That’s the end of this lesson.
+
+120
+00:14:10,000 --> 00:14:15,000
+The next lesson will talk about the mean value theorem, a very important theorem in calculus.
+
+121
+00:14:15,000 --> 00:14:21,000
+But before we do that, please do review today’s lesson, look at the exercises and make sure that
+
+122
+00:14:21,000 --> 00:14:26,000
+you’re ready for the next lesson on the mean value theorem. Thank you very much. I’ll stop over here.
+

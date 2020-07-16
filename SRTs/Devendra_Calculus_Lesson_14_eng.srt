@@ -1,0 +1,360 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 14 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:10,000
+The topic for this lesson is related rates.
+
+3
+00:00:10,000 --> 00:00:16,000
+Let’s begin with a brief overview of the lesson. In most problems, there will be
+
+4
+00:00:16,000 --> 00:00:21,000
+more than one thing that is changing in relation to something else. For example,
+
+5
+00:00:21,000 --> 00:00:27,000
+you might have—of course time varies, but then two other things vary with time.
+
+6
+00:00:27,000 --> 00:00:35,000
+As a good instance of that, let’s talk about a ladder that’s falling along a side of a wall.
+
+7
+00:00:35,000 --> 00:00:43,000
+That’s the ladder. It’s falling along the wall, and there are two things that are changing:
+
+8
+00:00:43,000 --> 00:00:53,000
+there’s the height of the ladder from the top and the distance from the base of the ladder
+
+9
+00:00:53,000 --> 00:00:58,000
+to the base of the wall. Both of these are changing as the ladder falls.
+
+10
+00:00:58,000 --> 00:01:05,000
+Of course, the rate at which the height is dropping and the rate at which
+
+11
+00:01:05,000 --> 00:01:15,000
+the distance is increasing are related. That’s the theme for today’s lesson: related rates problems.
+
+12
+00:01:16,000 --> 00:01:22,000
+Let’s begin with an example, and that’s exactly the one we talked about earlier on of the falling ladder,
+
+13
+00:01:22,000 --> 00:01:29,000
+but now we’ve got numbers in it. We have a ladder that’s 5 feet long, and it’s resting initially
+
+14
+00:01:29,000 --> 00:01:36,000
+against a wall, and then it starts to slide down. Let’s say it slides down away from the wall
+
+15
+00:01:36,000 --> 00:01:48,000
+at a rate of 0.5 ft/s and the bottom of the ladder is 4 feet away from the wall at a certain point.
+
+16
+00:01:48,000 --> 00:01:56,000
+The question is how fast is the ladder sliding down at that time instant? The first step
+
+17
+00:01:56,000 --> 00:02:02,000
+in this case is to assign variables to whatever is changing in the problem. There are two things
+
+18
+00:02:02,000 --> 00:02:07,000
+that are changing. There is the height—<i>y</i>, let’s say—and the distance <i>x</i>.
+
+19
+00:02:08,000 --> 00:02:14,000
+Next I draw a picture of what’s happening. The picture is over here.
+
+20
+00:02:14,000 --> 00:02:22,000
+That’s the distance of the base, that’s the height and that’s the actual ladder over here.
+
+21
+00:02:22,000 --> 00:02:29,000
+Okay. Now to find a relationship between <i>x</i>, <i>y</i> and 5 over here, you recall
+
+22
+00:02:29,000 --> 00:02:37,000
+the Pythagorean theorem from geometry, and that says that <i>x</i>^2 + <i>y</i>^2 = 5^2.
+
+23
+00:02:37,000 --> 00:02:45,000
+That’s the relationship that we require between <i>x</i> and <i>y</i>. Now because we want to find the rates,
+
+24
+00:02:45,000 --> 00:02:55,000
+we differentiate that relation with respect to <i>t</i>. What you get back is 2<i>x</i>[<i>t</i>]<i>x</i>'[<i>t</i>] + 2<i>y</i>[<i>t</i>]<i>y</i>'[<i>t</i>] = 0.
+
+25
+00:02:55,000 --> 00:03:04,000
+Now keep in mind that <i>x</i> is 4 at that point, <i>x</i>' is 0.5, so you get back an equation which is
+
+26
+00:03:04,000 --> 00:03:11,000
+simpler than the earlier one, but it still ignored <i>y</i>’s. Then you recall the Pythagorean theorem,
+
+27
+00:03:11,000 --> 00:03:22,000
+and that lets you find <i>y</i> as being 3. Once we’ve got <i>y</i>, we can plug that back in over here
+
+28
+00:03:22,000 --> 00:03:35,000
+to the earlier equation—that’s this one—and you get back the rate of change of <i>y</i> as being −0.666667.
+
+29
+00:03:35,000 --> 00:03:43,000
+The ladder is sliding down the wall at a rate of 0.67 ft/sec approximately. The question is
+
+30
+00:03:43,000 --> 00:03:52,000
+why is that sign negative? Well, it’s negative because the top of the ladder is actually going down.
+
+31
+00:03:53,000 --> 00:04:01,000
+Having solved that one problem, let’s set up a general strategy for solving such problems.
+
+32
+00:04:01,000 --> 00:04:07,000
+First, always try to understand the problem. Make sure you know what you are asked to do.
+
+33
+00:04:07,000 --> 00:04:15,000
+Next, assign symbols to all variables—<i>x</i>, <i>y</i>, et cetera—in the problem.
+
+34
+00:04:16,000 --> 00:04:22,000
+Now to help yourself understand the problem better, draw a picture. It doesn’t have to be very elegant,
+
+35
+00:04:22,000 --> 00:04:29,000
+but it should be just enough for you to understand what you need to do. Next, the creative part:
+
+36
+00:04:29,000 --> 00:04:36,000
+find an equation that relates all the variables in the problem. Usually something from geometry
+
+37
+00:04:36,000 --> 00:04:45,000
+is going to help you to do that. Next differentiate the equation with respect to time using the chain rule.
+
+38
+00:04:45,000 --> 00:04:52,000
+That’s the key rule for today’s lesson. Now you already know a few variables,
+
+39
+00:04:52,000 --> 00:04:59,000
+but you need to find any remaining unknown variables before you proceed. Once you have done that,
+
+40
+00:04:59,000 --> 00:05:05,000
+then you substitute all the information that you’ve found out and solve for the true
+
+41
+00:05:05,000 --> 00:05:12,000
+unknown quantity in the problem. That’s the general strategy for this lesson.
+
+42
+00:05:12,000 --> 00:05:18,000
+Let’s try and apply it to a few more problems. Here you have a spherical balloon
+
+43
+00:05:18,000 --> 00:05:25,000
+that’s being filled at a rate of 50 cm^3/sec. The question is find the rate at which
+
+44
+00:05:25,000 --> 00:05:34,000
+the radius is increasing when the diameter is 25 cm. Now in this case, the volume and the radius
+
+45
+00:05:34,000 --> 00:05:41,000
+are both functions of time. Here’s a picture. It has the radius and the volume as being
+
+46
+00:05:41,000 --> 00:05:52,000
+the variables for the problem. Next, you know from geometry that the volume of a sphere is (4/3)π<i>r</i>^3,
+
+47
+00:05:52,000 --> 00:06:01,000
+so that’s the relation. Next you differentiate that relation, and you get back an equation
+
+48
+00:06:01,000 --> 00:06:12,000
+relating <i>v</I>', <i>r</i> and <i>r</i>'. Of course you need to find what <i>r</i> is at that time <i>t</i>, but you know the diameter
+
+49
+00:06:12,000 --> 00:06:20,000
+is twice the radius and the diameter is 25, so the radius at that time is 12.5.
+
+50
+00:06:20,000 --> 00:06:25,000
+You plug back all the information that’s known to you, and you find that
+
+51
+00:06:25,000 --> 00:06:35,000
+the radius is increasing at roughly 0.025 cm/sec.
+
+52
+00:06:36,000 --> 00:06:44,000
+For the third problem, let’s talk about a watchdog. There is a cat that is walking down a street
+
+53
+00:06:44,000 --> 00:06:53,000
+at 3 feet per second. Now, a dog is sitting and sees this cat and stays focused on it.
+
+54
+00:06:53,000 --> 00:06:59,000
+It doesn’t actually move, but then the dog is known to be 6 feet from the street
+
+55
+00:06:59,000 --> 00:07:10,000
+and the cat is 8 feet from that point. The question is how fast is the dog’s head turning?
+
+56
+00:07:10,000 --> 00:07:19,000
+There are two things that are changing: the dog’s head is turning and the cat is moving away.
+
+57
+00:07:21,000 --> 00:07:24,000
+The question is what do you do over here? Well, you first draw a picture.
+
+58
+00:07:24,000 --> 00:07:33,000
+That’s the angle of turning of the dog’s head, that’s the distance traveled by the cat down the street
+
+59
+00:07:33,000 --> 00:07:40,000
+and this distance over here is given to us to be 6 feet. Now in this case
+
+60
+00:07:40,000 --> 00:07:48,000
+we have a right-angle triangle, so we can use the tangent of θ as the function <i>x</i>[<i>t</i>]/6.
+
+61
+00:07:48,000 --> 00:07:54,000
+Once we have the relation over here, then you can differentiate it and you find that
+
+62
+00:07:54,000 --> 00:08:02,000
+you have another relation for θ' now, but now you need to know what the secant of θ is.
+
+63
+00:08:02,000 --> 00:08:08,000
+Well, the point is that you have the Pythagorean theorem, so you use that to work out
+
+64
+00:08:08,000 --> 00:08:16,000
+the hypotenuse of the triangle at that time. It turns out to be 10. Use that to find the secant
+
+65
+00:08:16,000 --> 00:08:20,000
+like we’ve done over here. Once we’ve done that, you can plug in all the values
+
+66
+00:08:20,000 --> 00:08:27,000
+and work out the rate at which the dog’s head is turning.
+
+67
+00:08:27,000 --> 00:08:35,000
+The dog’s head is rotating at 9/50 radians/sec or about 10.313 degrees/sec.
+
+68
+00:08:37,000 --> 00:08:44,000
+Okay. On to the final problem for the lesson. Oil is being poured into an inverted cone
+
+69
+00:08:44,000 --> 00:08:55,000
+at a rate of 3 m^3/sec. That’s the rate of change of the volume. Given that the cone’s height is 10 m
+
+70
+00:08:55,000 --> 00:09:02,000
+and the radius is 5 m, the question is find the rate at which the oil level is rising
+
+71
+00:09:02,000 --> 00:09:14,000
+when the oil is 5 m deep. You’ve got two variables over here: the volume and the height.
+
+72
+00:09:14,000 --> 00:09:20,000
+That’s the picture for the problem. Now, you know from geometry that the volume of a cone
+
+73
+00:09:20,000 --> 00:09:26,000
+is given by (1/3)π<i>r</i>^2<i>h</i>, so that’s the equation for the problem.
+
+74
+00:09:26,000 --> 00:09:37,000
+Notice that you in fact have <i>v</i>, <i>h</i> and <i>r</i>, and in fact you want to work only with <i>v</i> and <i>h</i>,
+
+75
+00:09:37,000 --> 00:09:43,000
+so we need to do a bit more work. Recall that when you studied similar triangles,
+
+76
+00:09:43,000 --> 00:09:49,000
+then you could find a relationship between the base and height. In this case,
+
+77
+00:09:49,000 --> 00:09:57,000
+the radius is going to be half the height in the oil tank because by similarity,
+
+78
+00:09:57,000 --> 00:10:04,000
+any cone in the tank has a radius equal to half the height because you have the initial ones
+
+79
+00:10:04,000 --> 00:10:10,000
+and the same ratio. Here’s the volume equation with that relationship.
+
+80
+00:10:10,000 --> 00:10:26,000
+You differentiate it and plug in values, and you find that oil level is rising at 12/25π m/s.
+
+81
+00:10:27,000 --> 00:10:32,000
+Okay. That brings me to the end of the lesson, but our main objective over here
+
+82
+00:10:32,000 --> 00:10:40,000
+was to solve problems which involved related rates. What we did was we set up
+
+83
+00:10:40,000 --> 00:10:48,000
+a general strategy for these problems. Then we solved a few of them, but in each case,
+
+84
+00:10:48,000 --> 00:10:55,000
+what you need to do is to use the given information and then apply some geometry
+
+85
+00:10:55,000 --> 00:11:06,000
+typically to get the equations required for the problem. That’s the end of this topic.
+
+86
+00:11:06,000 --> 00:11:11,000
+In the next lesson, we’ll talk about linear approximations, but before we do that,
+
+87
+00:11:11,000 --> 00:11:17,000
+do review this lesson. This was a pretty advanced application of calculus.
+
+88
+00:11:17,000 --> 00:11:22,000
+It’s just that we now know calculus so well that we can apply things quite easily,
+
+89
+00:11:22,000 --> 00:11:27,000
+but do review this lesson, look at the exercises and you should be ready for the next one
+
+90
+00:11:27,000 --> 00:11:31,000
+on linear approximations. I’ll stop over here. Thank you.
+

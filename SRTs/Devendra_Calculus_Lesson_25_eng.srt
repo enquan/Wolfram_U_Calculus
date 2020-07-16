@@ -1,0 +1,612 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 25 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:13,000
+The topic for this lesson is the fundamental theorem of calculus.
+
+3
+00:00:14,000 --> 00:00:17,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:17,000 --> 00:00:21,000
+So far in this course, we have talked about differential calculus
+
+5
+00:00:21,000 --> 00:00:24,000
+and a bit of integral calculus.
+
+6
+00:00:25,000 --> 00:00:30,000
+Now originally, differential calculus arose in the problem of
+
+7
+00:00:30,000 --> 00:00:33,000
+finding the tangent line to a curve like you see over here—
+
+8
+00:00:33,000 --> 00:00:37,000
+a sine curve, and you want a tangent line at a point—
+
+9
+00:00:37,000 --> 00:00:40,000
+and that’s what differential calculus tries to do.
+
+10
+00:00:40,000 --> 00:00:44,000
+It tries to find the slope of that line at a point.
+
+11
+00:00:44,000 --> 00:00:49,000
+Now integral calculus, on the other hand, solves the problem
+
+12
+00:00:49,000 --> 00:00:52,000
+of finding the area under the curve for a function.
+
+13
+00:00:52,000 --> 00:00:56,000
+If you look at a sine function, then it tries to find
+
+14
+00:00:56,000 --> 00:01:00,000
+the area under this curve between the two limits over here.
+
+15
+00:01:00,000 --> 00:01:04,000
+Now what the fundamental theorem of calculus does is
+
+16
+00:01:04,000 --> 00:01:07,000
+it ties these two ideas together.
+
+17
+00:01:08,000 --> 00:01:11,000
+In this lesson, what we’ll do is to go over
+
+18
+00:01:11,000 --> 00:01:13,000
+this very important theorem.
+
+19
+00:01:13,000 --> 00:01:19,000
+In fact, by far, this is the most basic fact of calculus
+
+20
+00:01:19,000 --> 00:01:23,000
+that you really should know in order to apply it in practice.
+
+21
+00:01:23,000 --> 00:01:27,000
+Okay. Let’s begin with the idea of an integral function.
+
+22
+00:01:27,000 --> 00:01:30,000
+Here I’m defining a function of <i>x</i>
+
+23
+00:01:30,000 --> 00:01:35,000
+which is given by the integral of <i>t</i> from 0 to <i>x</i>.
+
+24
+00:01:37,000 --> 00:01:41,000
+Basically what it does it is takes the function <i>g</i>[<i>t</i>] = <i>t</i>
+
+25
+00:01:41,000 --> 00:01:44,000
+and integrates from 0 to <i>x</i>.
+
+26
+00:01:44,000 --> 00:01:49,000
+Obviously if <i>x</i> is 0, then the value is 0
+
+27
+00:01:49,000 --> 00:01:53,000
+because you’re integrating from 0 to 0, so you get back 0.
+
+28
+00:01:53,000 --> 00:02:00,000
+In general, it calculates the area under the curve from 0 to <i>x</i>.
+
+29
+00:02:00,000 --> 00:02:03,000
+That’s the integral function <i>f</i>[<i>x</i>],
+
+30
+00:02:03,000 --> 00:02:08,000
+and here is a graph of the function and <i>x</i>.
+
+31
+00:02:08,000 --> 00:02:11,000
+What we notice is that as <i>x</i> increases,
+
+32
+00:02:11,000 --> 00:02:14,000
+the value of this function also increases
+
+33
+00:02:14,000 --> 00:02:18,000
+because the upper limit over here increases.
+
+34
+00:02:18,000 --> 00:02:23,000
+The integral function is increasing because the area increases,
+
+35
+00:02:23,000 --> 00:02:26,000
+in this case, as x increases.
+
+36
+00:02:26,000 --> 00:02:31,000
+Now the point is that there is actually an explicit formula
+
+37
+00:02:31,000 --> 00:02:34,000
+for this integral function.
+
+38
+00:02:34,000 --> 00:02:38,000
+What we do is we begin with the integral from 0 to <i>x</i>
+
+39
+00:02:38,000 --> 00:02:44,000
+and break it up into <i>n</i> parts, and then we set up the Riemann sum.
+
+40
+00:02:44,000 --> 00:02:48,000
+In this case, the Riemann sum is going to be <i>g</i>(<i>xi</i>)—
+
+41
+00:02:48,000 --> 00:02:53,000
+those are sample points—times the width of each subinterval.
+
+42
+00:02:53,000 --> 00:02:56,000
+Then you sum them all up and take a limit,
+
+43
+00:02:56,000 --> 00:02:59,000
+and what you get back is <i>x</i>^2/2.
+
+44
+00:02:59,000 --> 00:03:05,000
+But then you remind yourself that the antiderivative of <i>g</I>[<i>t</i>]
+
+45
+00:03:05,000 --> 00:03:09,000
+is also <i>t</i>^2/2 plus some constant.
+
+46
+00:03:09,000 --> 00:03:11,000
+Here’s a check for that.
+
+47
+00:03:11,000 --> 00:03:15,000
+It looks like the integral function for <i>g</i>[<i>t</i>]
+
+48
+00:03:15,000 --> 00:03:19,000
+is actually an antiderivative of <i>g</i>[<i>t</i>].
+
+49
+00:03:19,000 --> 00:03:21,000
+Now that looks very surprising,
+
+50
+00:03:21,000 --> 00:03:25,000
+so what we’ll do is we’ll try and go a bit deeper
+
+51
+00:03:25,000 --> 00:03:29,000
+and develop some intuition for why that might be the case.
+
+52
+00:03:29,000 --> 00:03:33,000
+Let’s begin over here with the integral function again
+
+53
+00:03:33,000 --> 00:03:40,000
+and think of the difference at two points, <i>f</i>[<i>x</i> + <i>h</i>] and <i>f</i>[<i>x</i>]—
+
+54
+00:03:40,000 --> 00:03:44,000
+two close-by points with <i>h</i> being very small.
+
+55
+00:03:44,000 --> 00:03:47,000
+Now that difference over here would just be
+
+56
+00:03:47,000 --> 00:03:52,000
+the area of a tiny strip because <i>h</i> is very small.
+
+57
+00:03:53,000 --> 00:03:55,000
+Here’s a picture.
+
+58
+00:03:55,000 --> 00:04:01,000
+The area of that strip is simply the width times the height,
+
+59
+00:04:01,000 --> 00:04:05,000
+which is just the <i>g</i>[<i>x</i>], so the area is <i>h</i> * <i>g</i>[<i>x</i>].
+
+60
+00:04:05,000 --> 00:04:11,000
+But then that is <i>f</i>[<i>x</i> + <i>h</i>] – <i>f</i>[<i>x</i>], so if you divide,
+
+61
+00:04:11,000 --> 00:04:13,000
+then you get back this relation over here.
+
+62
+00:04:13,000 --> 00:04:19,000
+As <i>h</i> goes to 0, that says that <i>f</i>'[<i>x</i>] = <i>g</i>[<i>x</i>].
+
+63
+00:04:19,000 --> 00:04:25,000
+In other words, <I>f</I>[<i>x</i>] is an antiderivative of <i>g</i>[<i>x</i>].
+
+64
+00:04:25,000 --> 00:04:30,000
+It is this remarkable fact which is summarized
+
+65
+00:04:30,000 --> 00:04:32,000
+in the fundamental theorem of calculus.
+
+66
+00:04:32,000 --> 00:04:34,000
+There are two versions.
+
+67
+00:04:34,000 --> 00:04:36,000
+That’s version 1 over here.
+
+68
+00:04:36,000 --> 00:04:40,000
+It says that if you have a continuous function <i>g</i>
+
+69
+00:04:40,000 --> 00:04:45,000
+and you define <i>f</i> to be an integral from 0 to <i>x</i>—
+
+70
+00:04:45,000 --> 00:04:49,000
+from <i>a</i> to <I>x</i>, in this case—then what you get back
+
+71
+00:04:49,000 --> 00:04:54,000
+is a function, an integral function, and this integral function
+
+72
+00:04:54,000 --> 00:04:58,000
+is actually an antiderivative of <i>g</i>.
+
+73
+00:04:58,000 --> 00:05:03,000
+In other words, <i>f</I>'[<i>x</i>] is equal to <i>g</i>[<i>x</i>].
+
+74
+00:05:05,000 --> 00:05:07,000
+Let’s try and understand that a bit more
+
+75
+00:05:07,000 --> 00:05:08,000
+by looking at some examples.
+
+76
+00:05:08,000 --> 00:05:13,000
+Let’s say you have the function <i>f</i>[<i>x</i>] given by the integral
+
+77
+00:05:13,000 --> 00:05:19,000
+from 0 to <i>x</i> for Sin(√1 + <I>t</i>^2)<i>dt</i> and you integrate it.
+
+78
+00:05:19,000 --> 00:05:23,000
+Then you just get back Sin(√1 + <i>x</i>^2).
+
+79
+00:05:23,000 --> 00:05:25,000
+Here’s a check; namely, if we take
+
+80
+00:05:25,000 --> 00:05:27,000
+the derivative of the integral function,
+
+81
+00:05:27,000 --> 00:05:31,000
+you will get back just the original function.
+
+82
+00:05:31,000 --> 00:05:33,000
+That’s the summary over here which says that
+
+83
+00:05:33,000 --> 00:05:37,000
+if you take a function, integrate it and then differentiate it,
+
+84
+00:05:37,000 --> 00:05:40,000
+you get back the original function.
+
+85
+00:05:40,000 --> 00:05:44,000
+Now the problem is the upper limit itself
+
+86
+00:05:44,000 --> 00:05:46,000
+might depend on <I>x</i> in some complicated way.
+
+87
+00:05:46,000 --> 00:05:48,000
+In that case, you must apply the chain rule.
+
+88
+00:05:48,000 --> 00:05:51,000
+Let’s say <i>g</i>[<i>x</i>] is the integral 0 to <i>x</i>^2
+
+89
+00:05:51,000 --> 00:05:53,000
+of the same function.
+
+90
+00:05:53,000 --> 00:05:57,000
+Then if you differentiate that with respect to <i>x</i>,
+
+91
+00:05:57,000 --> 00:05:59,000
+you will need to account for the <i>x</i>^2,
+
+92
+00:05:59,000 --> 00:06:02,000
+so you get back a factor of 2<i>x</i> over here.
+
+93
+00:06:02,000 --> 00:06:03,000
+Let’s check that.
+
+94
+00:06:03,000 --> 00:06:09,000
+You get back 2<i>x</i>Sin(√1 + <i>x</i>^4).
+
+95
+00:06:10,000 --> 00:06:16,000
+Okay. Let’s now go on to talking about why these integral functions
+
+96
+00:06:16,000 --> 00:06:18,000
+are useful at all.
+
+97
+00:06:18,000 --> 00:06:21,000
+There is a function called the Fresnel function
+
+98
+00:06:21,000 --> 00:06:25,000
+which really quite useful in optics and highway design.
+
+99
+00:06:25,000 --> 00:06:28,000
+After all, if you design a highway or you design, let’s say,
+
+100
+00:06:28,000 --> 00:06:30,000
+a very long line, you need to worry about the turns,
+
+101
+00:06:30,000 --> 00:06:33,000
+and that’s where this Fresnel function comes in.
+
+102
+00:06:33,000 --> 00:06:36,000
+It’s the integral function of a sine function.
+
+103
+00:06:36,000 --> 00:06:39,000
+We have this in the Wolfram Language.
+
+104
+00:06:39,000 --> 00:06:41,000
+It’s called FresnelS.
+
+105
+00:06:41,000 --> 00:06:45,000
+That’s FresnelS and its derivative on the same plot.
+
+106
+00:06:45,000 --> 00:06:50,000
+The blue plot is the Fresnel function and the orange plot is
+
+107
+00:06:50,000 --> 00:06:53,000
+its derivative, which is just the sine function over here.
+
+108
+00:06:53,000 --> 00:06:57,000
+Another very useful function is the error function,
+
+109
+00:06:57,000 --> 00:07:00,000
+which is also an integral function,
+
+110
+00:07:00,000 --> 00:07:03,000
+and that’s used in statistics and probability.
+
+111
+00:07:03,000 --> 00:07:07,000
+Here is the error function with its derivative.
+
+112
+00:07:07,000 --> 00:07:09,000
+You have the error function, which is blue,
+
+113
+00:07:09,000 --> 00:07:11,000
+over here, and the derivative.
+
+114
+00:07:11,000 --> 00:07:13,000
+It’s just a normal probability curve.
+
+115
+00:07:13,000 --> 00:07:16,000
+What happens is as you approach very large values,
+
+116
+00:07:16,000 --> 00:07:20,000
+the probability of everything being covered is almost 1,
+
+117
+00:07:20,000 --> 00:07:24,000
+so that’s why the values over here are almost 1.
+
+118
+00:07:26,000 --> 00:07:29,000
+Okay. Now there is another more useful version
+
+119
+00:07:29,000 --> 00:07:33,000
+of the fundamental theorem, and that’s version 2,
+
+120
+00:07:33,000 --> 00:07:36,000
+which says that suppose you have a function <i>f</i>
+
+121
+00:07:36,000 --> 00:07:41,000
+and you find an antiderivative of that function by some means.
+
+122
+00:07:41,000 --> 00:07:45,000
+Then the value of the integral from <i>a</I> to <i>b</i> of this function <i>f</i>
+
+123
+00:07:45,000 --> 00:07:51,000
+is the antidervative at <i>b</i> minus the antiderivative at <i>a</i>.
+
+124
+00:07:51,000 --> 00:07:55,000
+In other words, the integral of an antiderivative
+
+125
+00:07:55,000 --> 00:07:58,000
+can be found quite easily by simply working out
+
+126
+00:07:58,000 --> 00:08:02,000
+the difference between the values at the upper and the lower limits.
+
+127
+00:08:02,000 --> 00:08:06,000
+That says that differentiation and integration
+
+128
+00:08:06,000 --> 00:08:09,000
+are actually the inverse processes of each other.
+
+129
+00:08:09,000 --> 00:08:11,000
+That’s quite a remarkable fact.
+
+130
+00:08:11,000 --> 00:08:13,000
+For example, if you’re asked to find
+
+131
+00:08:13,000 --> 00:08:16,000
+the integral of <i>x</i>^2 from 1 to 4,
+
+132
+00:08:16,000 --> 00:08:20,000
+then you first work out the antiderivative, which is <i>x</i>^3/3.
+
+133
+00:08:20,000 --> 00:08:22,000
+Then you plug in the upper and lower limits,
+
+134
+00:08:22,000 --> 00:08:27,000
+so you get 4^3/3 – 1^3/3, and the answer 21.
+
+135
+00:08:27,000 --> 00:08:33,000
+You can check that with Integrate and get back just the same result.
+
+136
+00:08:34,000 --> 00:08:37,000
+That brings me to the end of this lesson,
+
+137
+00:08:37,000 --> 00:08:41,000
+but the main point is that the fundamental theorem of calculus
+
+138
+00:08:41,000 --> 00:08:44,000
+is one of the most important theorems in calculus
+
+139
+00:08:44,000 --> 00:08:50,000
+because it says that differentiation and integration
+
+140
+00:08:50,000 --> 00:08:55,000
+are the inverse processes of each other.
+
+141
+00:08:55,000 --> 00:09:00,000
+In fact, its real utility is to compute integrals
+
+142
+00:09:00,000 --> 00:09:03,000
+by using antiderivatives
+
+143
+00:09:03,000 --> 00:09:08,000
+Basically, using the antiderivatives is much easier
+
+144
+00:09:08,000 --> 00:09:10,000
+than using Riemann sums.
+
+145
+00:09:10,000 --> 00:09:12,000
+Instead of calculating Riemann sums,
+
+146
+00:09:12,000 --> 00:09:14,000
+you would calculate antiderivatives.
+
+147
+00:09:16,000 --> 00:09:18,000
+The next lesson will talk about indefinite integrals.
+
+148
+00:09:18,000 --> 00:09:20,000
+But before that, do review this lesson over here
+
+149
+00:09:20,000 --> 00:09:25,000
+because we have covered one of the most important theorems in calculus,
+
+150
+00:09:25,000 --> 00:09:27,000
+and that’s going to be used all the time.
+
+151
+00:09:27,000 --> 00:09:29,000
+Let’s stop over here.
+
+152
+00:09:29,000 --> 00:09:30,000
+Thank you very much,
+
+153
+00:09:30,000 --> 00:09:33,000
+and I hope you have learned a lot in this lesson.
+

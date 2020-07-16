@@ -1,0 +1,616 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 8 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:12,000
+The topic for this session is area between curves and volume.
+
+3
+00:00:12,000 --> 00:00:15,000
+The first few problems are about areas,
+
+4
+00:00:15,000 --> 00:00:18,000
+and the next few problems are about volumes.
+
+5
+00:00:18,000 --> 00:00:20,000
+Let’s begin with problem number 1,
+
+6
+00:00:20,000 --> 00:00:25,000
+which says compute the area between the curves <i>f</i> and <i>g</i>
+
+7
+00:00:25,000 --> 00:00:33,000
+given by <i>x</i>^2 – 2 and <i>x</i>^3 + <i>x</i> + 7 between the limits –1 and 3 for <i>x</i>.
+
+8
+00:00:33,000 --> 00:00:36,000
+Here is a plot of the functions,
+
+9
+00:00:36,000 --> 00:00:39,000
+and it’s clear that the orange line is above,
+
+10
+00:00:39,000 --> 00:00:44,000
+but that corresponds to <i>g</i>, so <I>g</I> is greater than <i>f</i> in the region.
+
+11
+00:00:44,000 --> 00:00:49,000
+The area would be the integral of <i>g</i> minus <i>f</i> from –1 to 3.
+
+12
+00:00:49,000 --> 00:00:54,000
+Simplify a bit, and that is the answer for the area.
+
+13
+00:00:54,000 --> 00:00:59,000
+Problem number 2 says find the area
+
+14
+00:00:59,000 --> 00:01:02,000
+enclosed by these two curves over here.
+
+15
+00:01:02,000 --> 00:01:06,000
+Again the functions are given to you,
+
+16
+00:01:06,000 --> 00:01:07,000
+but you’re not given the points of intersection,
+
+17
+00:01:07,000 --> 00:01:10,000
+so let’s find them with Solve.
+
+18
+00:01:10,000 --> 00:01:13,000
+Those are the intersection points.
+
+19
+00:01:13,000 --> 00:01:17,000
+Next you plot to get a geometrical picture,
+
+20
+00:01:17,000 --> 00:01:23,000
+and it’s clear now that the –<i>x</i>^2 – 2 is the one that’s dominating,
+
+21
+00:01:23,000 --> 00:01:28,000
+so <i>f</i> is greater than <i>g</i>, so you must do <i>f</i> minus <i>g</i> in the integral.
+
+22
+00:01:28,000 --> 00:01:30,000
+You do that for the given limits,
+
+23
+00:01:30,000 --> 00:01:33,000
+and then you get the answer for the integral.
+
+24
+00:01:35,000 --> 00:01:38,000
+Problem number 3 is the same kind of thing,
+
+25
+00:01:38,000 --> 00:01:41,000
+but now with <i>x</i> in terms of <i>y</i>.
+
+26
+00:01:41,000 --> 00:01:45,000
+You’ve got two functions of <i>y</i>, 2<I>y</i> + 4 and <i>y</i>^3 – <i>y</i>,
+
+27
+00:01:45,000 --> 00:01:48,000
+between the limits –2 and 2.
+
+28
+00:01:48,000 --> 00:01:52,000
+You need to use ParametricPlot to get the correct picture,
+
+29
+00:01:52,000 --> 00:01:57,000
+and when you do that, it’s clear that <i>f</i> is greater than <i>g</i>
+
+30
+00:01:57,000 --> 00:02:01,000
+because <i>f</i> is to the right of <I>g</i>.
+
+31
+00:02:01,000 --> 00:02:05,000
+You work out <i>f</i> minus <i>g</i> between the limits,
+
+32
+00:02:05,000 --> 00:02:08,000
+and here is the answer for the integral.
+
+33
+00:02:10,000 --> 00:02:14,000
+Problem number 4 is about two functions of <i>y</i>,
+
+34
+00:02:14,000 --> 00:02:17,000
+but again this time you’re not given the points of intersection,
+
+35
+00:02:17,000 --> 00:02:19,000
+so you want to find the area enclosed between them.
+
+36
+00:02:19,000 --> 00:02:22,000
+You use the Solve function to find where they intersect.
+
+37
+00:02:22,000 --> 00:02:26,000
+Here is a parametric plot showing you what happens,
+
+38
+00:02:26,000 --> 00:02:30,000
+and it’s clear that <i>g</i> this time is greater than <i>f</i>,
+
+39
+00:02:30,000 --> 00:02:35,000
+so you do <i>g</I> minus <i>f</i> and compute the integral,
+
+40
+00:02:35,000 --> 00:02:39,000
+and you get back the answer for the area between those two curves.
+
+41
+00:02:41,000 --> 00:02:44,000
+Number 5. Now we’re on to volumes.
+
+42
+00:02:44,000 --> 00:02:48,000
+You’re given a solid with hexagonal cross sections,
+
+43
+00:02:48,000 --> 00:02:52,000
+and you’re told that the area of those cross sections
+
+44
+00:02:52,000 --> 00:02:54,000
+is given by 6√3<i>x</i>^2.
+
+45
+00:02:54,000 --> 00:02:58,000
+The question is to find the volume of the solid from 0 to 5.
+
+46
+00:02:58,000 --> 00:03:02,000
+Here’s a plot, but it doesn’t really matter what the details are;
+
+47
+00:03:02,000 --> 00:03:04,000
+the main point is you have a formula for the volume
+
+48
+00:03:04,000 --> 00:03:08,000
+as the integral from <i>a</i> to <i>b</I> of the area.
+
+49
+00:03:08,000 --> 00:03:12,000
+In this case, you have 0 to 5 of the area,
+
+50
+00:03:12,000 --> 00:03:15,000
+and that’s easy to compute,
+
+51
+00:03:15,000 --> 00:03:19,000
+so you get back the volume in this example.
+
+52
+00:03:21,000 --> 00:03:25,000
+On to number 6, where you’re asked to find the volume
+
+53
+00:03:25,000 --> 00:03:27,000
+of this rather difficult-looking solid
+
+54
+00:03:27,000 --> 00:03:31,000
+which has a base which is a semicircle.
+
+55
+00:03:31,000 --> 00:03:33,000
+You can see it over here.
+
+56
+00:03:34,000 --> 00:03:38,000
+You want to compute the volume for this solid
+
+57
+00:03:38,000 --> 00:03:43,000
+when the cross sections are equilateral triangles.
+
+58
+00:03:43,000 --> 00:03:45,000
+Now that’s the difficult part.
+
+59
+00:03:45,000 --> 00:03:49,000
+How do you compute the area of each cross section?
+
+60
+00:03:49,000 --> 00:03:53,000
+Well, the area for an equilateral triangle is <i>x</i>^2(√3/4),
+
+61
+00:03:53,000 --> 00:04:00,000
+but <i>x</i> in this case is just the semicircle function over here,
+
+62
+00:04:00,000 --> 00:04:03,000
+so the area is (36 – <i>x</i>^2)(√3/4).
+
+63
+00:04:03,000 --> 00:04:05,000
+Work out the limits, but those are the limits
+
+64
+00:04:05,000 --> 00:04:10,000
+where the semicircle cuts the <I>x</i> axis, which are –6 and 6,
+
+65
+00:04:10,000 --> 00:04:12,000
+so that’s the area to compute.
+
+66
+00:04:12,000 --> 00:04:15,000
+Work it out and you get the required volume.
+
+67
+00:04:17,000 --> 00:04:22,000
+Okay. On to number 7, which says compute the volume of the solid
+
+68
+00:04:22,000 --> 00:04:24,000
+which is created when the region bounded by
+
+69
+00:04:24,000 --> 00:04:29,000
+this function and the <i>x</i> axis is revolved around the <i>x</i> axis.
+
+70
+00:04:29,000 --> 00:04:34,000
+That’s the plot of the solid, and the point over here is that
+
+71
+00:04:34,000 --> 00:04:39,000
+you have a semicircle of radius 2, so the endpoints of the integral
+
+72
+00:04:39,000 --> 00:04:40,000
+will be –2 and 2 because that’s where
+
+73
+00:04:40,000 --> 00:04:43,000
+the semicircle intersects the <i>x</i> axis.
+
+74
+00:04:43,000 --> 00:04:48,000
+Now apply the disk method, so you chop the solid up into small disks,
+
+75
+00:04:48,000 --> 00:04:54,000
+and each disk has the √(4 – <i>x</I>^2) as the radius, so it’s π<i>r</i>^2.
+
+76
+00:04:54,000 --> 00:04:59,000
+Work out the volume with the disk method, and that’s the answer.
+
+77
+00:04:59,000 --> 00:05:03,000
+Now of course in this simple case, you have a ball with a radius 2,
+
+78
+00:05:03,000 --> 00:05:07,000
+so its volume is 4(<i>r</i>^3)π/3.
+
+79
+00:05:07,000 --> 00:05:09,000
+That’s just the same result that we got
+
+80
+00:05:09,000 --> 00:05:12,000
+a little while ago using Integrate.
+
+81
+00:05:13,000 --> 00:05:18,000
+On to number 8, which says find the volume of the solid created
+
+82
+00:05:18,000 --> 00:05:20,000
+between this function over here
+
+83
+00:05:20,000 --> 00:05:25,000
+and the <i>x</i> axis-bounded rotate from –π to π.
+
+84
+00:05:25,000 --> 00:05:28,000
+Okay. Again over here use the disk method.
+
+85
+00:05:28,000 --> 00:05:32,000
+When you use the disk method, you see that each cross section
+
+86
+00:05:32,000 --> 00:05:35,000
+has got radius (<i>x</i>Sin[<i>x</i>])^2,
+
+87
+00:05:35,000 --> 00:05:39,000
+so you work out the volume with the disk method in this case.
+
+88
+00:05:41,000 --> 00:05:47,000
+Okay. On to a similar kind of calculation, but now for <i>y</i> functions.
+
+89
+00:05:47,000 --> 00:05:52,000
+You have a region that’s bounded by 2<i>y</I>^2 on the <i>y</i> axis,
+
+90
+00:05:52,000 --> 00:05:59,000
+and you want to work out the volume of the solid from <i>y</i> = 1 to <i>y</i> = 3.
+
+91
+00:05:59,000 --> 00:06:02,000
+That’s the picture of the solid.
+
+92
+00:06:02,000 --> 00:06:06,000
+Apply the disk method, but this time the radius is 2<i>y</i>^2.
+
+93
+00:06:06,000 --> 00:06:09,000
+Use the formula for the disk method,
+
+94
+00:06:09,000 --> 00:06:11,000
+and you get back the volume.
+
+95
+00:06:12,000 --> 00:06:17,000
+Okay. On to number 10, which says compute the volume of the solid
+
+96
+00:06:17,000 --> 00:06:21,000
+created when the region bounded by 2<i>x</i> and (<i>x</i>^2)/3
+
+97
+00:06:21,000 --> 00:06:27,000
+from <i>x</I> = 0 to <i>x</i> = 6 is revolved around the <i>x</i> axis.
+
+98
+00:06:27,000 --> 00:06:29,000
+Now there are two functions over here.
+
+99
+00:06:29,000 --> 00:06:32,000
+When you plot over here, you see you’ve got a region
+
+100
+00:06:32,000 --> 00:06:34,000
+bounded by two functions,
+
+101
+00:06:34,000 --> 00:06:38,000
+and that’s a good case to apply the washer method to.
+
+102
+00:06:38,000 --> 00:06:39,000
+We apply the washer method.
+
+103
+00:06:39,000 --> 00:06:42,000
+The outer radius is 2<i>x</i> from here.
+
+104
+00:06:42,000 --> 00:06:44,000
+The inner radius is (<i>x</i>^2)/3.
+
+105
+00:06:44,000 --> 00:06:50,000
+You simply apply a difference of the radii square over here,
+
+106
+00:06:50,000 --> 00:06:53,000
+so you get π times the outer radius squared
+
+107
+00:06:53,000 --> 00:06:56,000
+minus the inner radius squared and work out the volume
+
+108
+00:06:56,000 --> 00:06:58,000
+with the washer method.
+
+109
+00:07:00,000 --> 00:07:05,000
+On to number 11, which talks about find the volume created
+
+110
+00:07:05,000 --> 00:07:10,000
+when the region bounded by (<i>y</i>^4)/8 and 2<i>y</i>^2 from those two limits
+
+111
+00:07:10,000 --> 00:07:12,000
+is revolved around the <i>y</i> axis.
+
+112
+00:07:12,000 --> 00:07:13,000
+Here’s a plot.
+
+113
+00:07:13,000 --> 00:07:16,000
+Once again, what you need to do is to apply the washer method
+
+114
+00:07:16,000 --> 00:07:18,000
+because you’ve got two functions.
+
+115
+00:07:18,000 --> 00:07:21,000
+Apply the washer method, compute the volume
+
+116
+00:07:21,000 --> 00:07:25,000
+by doing π times the difference of the squares of the radii,
+
+117
+00:07:25,000 --> 00:07:29,000
+and that gives the answer for the volume.
+
+118
+00:07:30,000 --> 00:07:35,000
+Okay. On to number 12, and that’s about computing the volume
+
+119
+00:07:35,000 --> 00:07:39,000
+of the solid created when the region bounded by this function
+
+120
+00:07:39,000 --> 00:07:42,000
+and the <i>x</i> axis and the lines given over here
+
+121
+00:07:42,000 --> 00:07:44,000
+is revolved around the <i>y</i> axis.
+
+122
+00:07:44,000 --> 00:07:46,000
+Now the point here is the <i>y</i> axis,
+
+123
+00:07:46,000 --> 00:07:50,000
+so you need to apply the cylindrical shell method.
+
+124
+00:07:50,000 --> 00:07:53,000
+Okay. That’s the solid over here.
+
+125
+00:07:53,000 --> 00:07:55,000
+You break it up into small cylinders, and keep in mind that
+
+126
+00:07:55,000 --> 00:07:59,000
+for a cylinder method, you have to have 2π<i>rh</i>
+
+127
+00:07:59,000 --> 00:08:02,000
+where <i>h</i> is the function definition.
+
+128
+00:08:02,000 --> 00:08:04,000
+So you do that and you get the volume back,
+
+129
+00:08:04,000 --> 00:08:07,000
+but this time using the cylindrical shell method
+
+130
+00:08:07,000 --> 00:08:11,000
+because you are revolving around the <i>y</i> axis, not the <I>x</i> axis.
+
+131
+00:08:13,000 --> 00:08:17,000
+Number 13 says find the volume of the solid created
+
+132
+00:08:17,000 --> 00:08:20,000
+when the region bounded by this, the <i>y</i> axis
+
+133
+00:08:20,000 --> 00:08:24,000
+and the two values given over here is revolved around the <i>x</i> axis.
+
+134
+00:08:24,000 --> 00:08:30,000
+Once again, that’s the plot, but apply the cylindrical shell method
+
+135
+00:08:30,000 --> 00:08:35,000
+because you have revolving around the <i>x</i> rather than the <i>y</i> axis.
+
+136
+00:08:35,000 --> 00:08:43,000
+You do 2π<i>rh</i> where <i>r</i> is <i>y</i> and <i>h</i> is the function expression.
+
+137
+00:08:44,000 --> 00:08:47,000
+Apply that and you get back the volume
+
+138
+00:08:47,000 --> 00:08:49,000
+using the cylindrical shell method.
+
+139
+00:08:51,000 --> 00:08:53,000
+Finally, on to number 14.
+
+140
+00:08:53,000 --> 00:08:57,000
+That says compute the volume of the solid created
+
+141
+00:08:57,000 --> 00:09:01,000
+when the region bounded by –<i>x</i>^2 + 2 and the <i>x</i> axis
+
+142
+00:09:01,000 --> 00:09:04,000
+is revolved around the line <i>y</i> = 4.
+
+143
+00:09:04,000 --> 00:09:06,000
+If you think about it, we’ll apply the disk method,
+
+144
+00:09:06,000 --> 00:09:09,000
+but this time the radii will be obtained
+
+145
+00:09:09,000 --> 00:09:14,000
+by subtracting the function value from 4
+
+146
+00:09:14,000 --> 00:09:19,000
+because 4 is the line around which you are rotating, <i>y</i> = 4.
+
+147
+00:09:19,000 --> 00:09:25,000
+Then you work out the endpoints, get the integral over here.
+
+148
+00:09:25,000 --> 00:09:29,000
+That’s π<i>r</i>^2<i>dx</i>.
+
+149
+00:09:29,000 --> 00:09:31,000
+Put in the limits, and you get back
+
+150
+00:09:31,000 --> 00:09:34,000
+the answer for the volume in the disk method.
+
+151
+00:09:35,000 --> 00:09:38,000
+That brings me to the end of this problem session.
+
+152
+00:09:38,000 --> 00:09:42,000
+I hope you have learned these very important ideas,
+
+153
+00:09:42,000 --> 00:09:44,000
+and I’ll see you next time.
+
+154
+00:09:44,000 --> 00:09:45,000
+Thank you.
+

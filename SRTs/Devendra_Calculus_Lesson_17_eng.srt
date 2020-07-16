@@ -1,0 +1,424 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 17 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this lesson is the mean value theorem.
+
+3
+00:00:12,000 --> 00:00:18,000
+Let’s begin with a brief overview of the lesson. The mean value theorem, roughly speaking,
+
+4
+00:00:18,000 --> 00:00:27,000
+relates to the slope of an interval with the instantaneous slope of some point in that interval.
+
+5
+00:00:27,000 --> 00:00:32,000
+Now let’s look at that a little bit more in detail. Here you’ve got a curve,
+
+6
+00:00:32,000 --> 00:00:40,000
+and I joined the two endpoints over here by a secant. What the theorem is saying is that
+
+7
+00:00:40,000 --> 00:00:49,000
+the slope of this interval over here is somehow related to the slope of this tangent at some point.
+
+8
+00:00:49,000 --> 00:00:57,000
+That’s what the theorem is about, about the slopes of intervals and the slopes of tangents.
+
+9
+00:00:57,000 --> 00:01:02,000
+The goal of this lesson is to first of all understand the mean value theorem
+
+10
+00:01:02,000 --> 00:01:08,000
+and then give a few applications of the theorem. We’ll begin with
+
+11
+00:01:08,000 --> 00:01:14,000
+a special case of the theorem called Rolle’s theorem.
+
+12
+00:01:14,000 --> 00:01:20,000
+As a motivation for Rolle’s theorem, let’s look at the function <i>f</i>[<i>x</i>] = <i>x</i>^2.
+
+13
+00:01:21,000 --> 00:01:29,000
+Here is a plot of the function as a parabola. Notice that the value of the function
+
+14
+00:01:29,000 --> 00:01:40,000
+at the two endpoints −2 and 2 is the same, and the slope at 0, the derivative, is 0.
+
+15
+00:01:40,000 --> 00:01:49,000
+That’s the hint for Rolle’s theorem, that the slope is 0 at the top, and you also have a tangent,
+
+16
+00:01:49,000 --> 00:01:57,000
+so to speak, at which the slope is 0. Now a more formal statement of Rolle’s theorem,
+
+17
+00:01:57,000 --> 00:02:03,000
+which was proved by Michel Rolle. What it says is that if you have a function
+
+18
+00:02:03,000 --> 00:02:12,000
+that satisfies three hypotheses—first of all, it is continuous on a certain closed interval;
+
+19
+00:02:12,000 --> 00:02:22,000
+it is differentiable on an open interval; and the value of the function at the left endpoint
+
+20
+00:02:22,000 --> 00:02:28,000
+is the same as the value at the right endpoint—then there is a number <i>c</i>
+
+21
+00:02:28,000 --> 00:02:36,000
+in the interval at which the derivative becomes 0. The previous function we talked about in fact
+
+22
+00:02:36,000 --> 00:02:41,000
+satisfies all the three hypotheses. After all, you do have a continuous function,
+
+23
+00:02:41,000 --> 00:02:46,000
+it’s differentiable and the values at both the end points are the same.
+
+24
+00:02:46,000 --> 00:02:53,000
+Here’s a plot which just confirms the theorem and says that the slope of this secant line
+
+25
+00:02:53,000 --> 00:02:58,000
+is the same as the slope of that tangent over there, which is 0.
+
+26
+00:03:00,000 --> 00:03:04,000
+Okay. Now on to the problems with Rolle’s theorem and how you apply it.
+
+27
+00:03:04,000 --> 00:03:17,000
+First of all, let’s look at 1/<i>x</i>^2 on the interval (−1, 1). Notice that it has a discontinuity at 0,
+
+28
+00:03:17,000 --> 00:03:21,000
+so of course it’s not differentiable over there as well.
+
+29
+00:03:21,000 --> 00:03:30,000
+The values at the endpoints are certainly equal; however, it does not satisfy all the hypotheses
+
+30
+00:03:30,000 --> 00:03:34,000
+of Rolle’s theorem, and hence we cannot guarantee that there is any number in this range
+
+31
+00:03:34,000 --> 00:03:41,000
+at which the slope is 0. In fact, we confirm that using Solve, and we check that the derivative
+
+32
+00:03:41,000 --> 00:03:44,000
+is never 0 in this interval.
+
+33
+00:03:45,000 --> 00:03:52,000
+As another issue with the theorem, let’s look at the absolute value function between −1 and 1.
+
+34
+00:03:52,000 --> 00:04:02,000
+Clearly that is continuous, but it is not differentiable at <i>x</i> = 0. There’s a corner at <i>x</i> = 0.
+
+35
+00:04:02,000 --> 00:04:09,000
+The value of the function at both endpoints is the same, but since it does not satisfy
+
+36
+00:04:09,000 --> 00:04:14,000
+all the hypotheses of Rolle’s theorem—therefore you cannot guarantee that there is a number
+
+37
+00:04:14,000 --> 00:04:22,000
+at which the slope is 0. Once again, you can use Solve to confirm that there is no such value.
+
+38
+00:04:22,000 --> 00:04:29,000
+That’s the derivative of the absolute value function on the interval, and it’s never 0 on that interval.
+
+39
+00:04:31,000 --> 00:04:37,000
+Okay. Now on to the mean value theorem and some motivation. In the earlier example,
+
+40
+00:04:37,000 --> 00:04:50,000
+we said that the secant line between −2 and 2 and the tangent line at 0 had the same slope.
+
+41
+00:04:50,000 --> 00:04:53,000
+Now the whole situation over here is very symmetrical, so what we’ll do is we’ll make it
+
+42
+00:04:53,000 --> 00:05:00,000
+slightly less symmetrical by looking at the interval [−0.5, 1]. That’s the interval over here.
+
+43
+00:05:00,000 --> 00:05:11,000
+Now we notice that the secant line at <i>x</i> = −0.5 and <i>x</i> = 1, the line joining those two points,
+
+44
+00:05:11,000 --> 00:05:21,000
+has got a slope 1/2. We can calculate that. The same thing happens at <i>x</i> = 1/4—namely, the tangent line
+
+45
+00:05:21,000 --> 00:05:29,000
+at that point has a slope of 1/2. The mean value theorem is just a modification,
+
+46
+00:05:29,000 --> 00:05:39,000
+a more general version of Rolle’s theorem. Here is a formal statement of the theorem which says that
+
+47
+00:05:39,000 --> 00:05:48,000
+suppose you have a function <i>f</i> that is continuous on a closed interval, differentiable on
+
+48
+00:05:48,000 --> 00:05:56,000
+the open interval in that case. Then there is a number <i>c</i> in the interval at which
+
+49
+00:05:56,000 --> 00:06:06,000
+the slope of the tangent line equals the slope of the secant line joining the endpoints.
+
+50
+00:06:06,000 --> 00:06:17,000
+More formally, <i>f</i>'(<i>c</i>) = (<i>f</i>(<i>b</i>) − <i>f</i>(<i>a</i>))/(<i>b</i> − <i>a</i>). Sometimes it’s easier to cross-multiply and get
+
+51
+00:06:17,000 --> 00:06:23,000
+the same equation in a slightly different form like is done over here. Now of course,
+
+52
+00:06:23,000 --> 00:06:30,000
+Rolle’s theorem follows from the mean value theorem because if you set <i>f</i>[<i>b</i>] equal to <i>f</i>[<i>a</i>],
+
+53
+00:06:30,000 --> 00:06:35,000
+then you have <i>f</i>'[<i>c</i>] equal to 0 at the point <i>c</i>.
+
+54
+00:06:35,000 --> 00:06:41,000
+That’s the Rolle’s theorem for the sine function on the interval [0, π].
+
+55
+00:06:42,000 --> 00:06:47,000
+There are some issues with the mean value theorem I have interpreted.
+
+56
+00:06:47,000 --> 00:06:52,000
+For example, we could have more than one <i>c</i>, which satisfies the theorem. Here you have a curve
+
+57
+00:06:52,000 --> 00:07:02,000
+in which that’s the secant line and those two tangents have the same slope as the secant line.
+
+58
+00:07:02,000 --> 00:07:11,000
+In fact, if you have a constant function like <i>f</i>[<i>x</i>] = 5, then the slope is 0 everywhere.
+
+59
+00:07:11,000 --> 00:07:18,000
+Here’s the constant function 5, and if you plot the function derivative, you see that
+
+60
+00:07:18,000 --> 00:07:25,000
+the theorem is satisfied everywhere. You have some exceptions with the mean value theorem
+
+61
+00:07:25,000 --> 00:07:31,000
+when you have either more than one value, or you might even have infinitely many values
+
+62
+00:07:31,000 --> 00:07:37,000
+because if the slope happens to be 0, then the function must be constant.
+
+63
+00:07:39,000 --> 00:07:45,000
+Okay. With that, some applications. For the first application, let’s look at the function <i>x</i>^3 − 8<i>x</i>
+
+64
+00:07:45,000 --> 00:07:54,000
+on the interval 0 to 4, and you want to find a <i>c</i> in the range which has a tangent line
+
+65
+00:07:54,000 --> 00:08:00,000
+parallel to the secant line to the endpoints. For the first step, you know that the mean value theorem
+
+66
+00:08:00,000 --> 00:08:07,000
+is certainly applicable because you have a polynomial function. You solve for <i>c</i> or <i>x</i>
+
+67
+00:08:07,000 --> 00:08:15,000
+like this equation, and the value of <i>c</i> or <i>x</i> is the value of 4/√3. At that value of <i>x</i>,
+
+68
+00:08:15,000 --> 00:08:23,000
+we actually have a tangent line that is parallel to the secant line through the two endpoints.
+
+69
+00:08:23,000 --> 00:08:29,000
+Now let’s check that with the tangent line and a plot of the curve and tangent,
+
+70
+00:08:29,000 --> 00:08:36,000
+and you can see that the secant line over here has the same slope as the tangent line over there.
+
+71
+00:08:38,000 --> 00:08:43,000
+Okay. As another example of the mean value theorem, let’s talk about a function <i>f</i>
+
+72
+00:08:43,000 --> 00:08:51,000
+whose value at 0 is 4 and whose derivative is bounded above by 6, and the question is how large
+
+73
+00:08:51,000 --> 00:09:01,000
+can the value of <i>f</i> at 3 possibly be? Because <i>f</i> is differentiable, therefore clearly it is continuous,
+
+74
+00:09:01,000 --> 00:09:08,000
+and so what we’ll do is we’ll apply the mean value theorem on the interval [0, 3].
+
+75
+00:09:08,000 --> 00:09:16,000
+The mean value theorem says that you have the equation <i>f</i>(3) − <i>f</i>(0) is the value of the derivative
+
+76
+00:09:16,000 --> 00:09:27,000
+at that point <i>c</i> times (3 − 0). You have a <i>c</i> with that property. Because you have <i>f</i>' less than
+
+77
+00:09:27,000 --> 00:09:37,000
+or equal to 6, therefore you set up the equation, which is <i>f</i>'[<i>c</i>], to be at most 6 and solve it for <i>f</i>[<i>3</i>],
+
+78
+00:09:37,000 --> 00:09:42,000
+and you find that the value of <i>f</i>[3] can be at the most 22.
+
+79
+00:09:44,000 --> 00:09:55,000
+Okay. As another example, let’s try and show that this polynomial, <i>x</i>^3 + 8<i>x</i> − 2, has exactly one root.
+
+80
+00:09:55,000 --> 00:10:01,000
+Because the function is continuous, you can apply the intermediate value theorem to try and show
+
+81
+00:10:01,000 --> 00:10:12,000
+that a root exists. The point is that the value of <i>f</i> at 0 is negative and the value at 1 is positive,
+
+82
+00:10:12,000 --> 00:10:18,000
+so the function must take every value between those two values, so at some point or the other,
+
+83
+00:10:18,000 --> 00:10:24,000
+it must become 0, so you certainly have a root in the interval 0 to 1.
+
+84
+00:10:24,000 --> 00:10:31,000
+Now let’s suppose there are two roots, <i>a</I> and <i>b</i>. Then the mean value theorem would say
+
+85
+00:10:31,000 --> 00:10:38,000
+that you actually have a slope of 0 between them, and hence you have a point <i>c</i>
+
+86
+00:10:38,000 --> 00:10:46,000
+for which the slope is 0 as well. Then if we look at the derivative, it’s 3<i>x</i>^2 + 8,
+
+87
+00:10:46,000 --> 00:10:51,000
+which can never be 0, so it’s clear that you only have one root,
+
+88
+00:10:51,000 --> 00:10:55,000
+but let’s just plot the function and make sure. You see over here that the function
+
+89
+00:10:55,000 --> 00:10:59,000
+becomes zero somewhere to the right of 0, but then never again.
+
+90
+00:11:01,000 --> 00:11:07,000
+Now as an amusing application of the mean value theorem, let’s talk about speed limits.
+
+91
+00:11:07,000 --> 00:11:11,000
+Suppose you’ve got two points, <i>A</i> and <i>B</i>, on a road, and they are 90 miles apart.
+
+92
+00:11:11,000 --> 00:11:18,000
+You start from point <i>A</i> at noon. Suppose you don’t take any breaks in your journey,
+
+93
+00:11:18,000 --> 00:11:25,000
+and you get to the point <i>B</i> at 1 o’clock. Now, the speed limit in that area says that
+
+94
+00:11:25,000 --> 00:11:31,000
+you cannot exceed 80 miles per hour. The question is should you receive a speeding ticket or not?
+
+95
+00:11:31,000 --> 00:11:40,000
+Well, here’s the average speed for the whole trip. It’s 90. If you apply the mean value theorem,
+
+96
+00:11:40,000 --> 00:11:46,000
+at some point, you must surely have crossed the speed limit of 80 miles per hour,
+
+97
+00:11:46,000 --> 00:11:51,000
+so certainly you should receive a speeding ticket, and it’s going to cost you some money.
+
+98
+00:11:54,000 --> 00:12:01,000
+Okay. Let’s summarize the lesson for today. We saw that the mean value theorem relates
+
+99
+00:12:01,000 --> 00:12:09,000
+the average slope of an interval with the instantaneous slope in the interval. Basically it says that
+
+100
+00:12:09,000 --> 00:12:13,000
+you’ve got a point at which the average slope is the same as the instantaneous slope.
+
+101
+00:12:15,000 --> 00:12:19,000
+Of course this theorem is a very useful theorem. We saw some applications,
+
+102
+00:12:19,000 --> 00:12:25,000
+but in the next lesson, we’ll see even more where we’ll talk about the graphs of functions.
+
+103
+00:12:25,000 --> 00:12:30,000
+That’s really a very interesting geometrical problem which gets solved nicely
+
+104
+00:12:30,000 --> 00:12:35,000
+with the use of the mean value theorem and other properties of derivatives.
+
+105
+00:12:35,000 --> 00:12:39,000
+But before we do that, do look over today’s lesson, do review the exercises
+
+106
+00:12:39,000 --> 00:12:44,000
+and be ready for the lesson on graphs of functions. I’ll stop over here. Thank you.
+

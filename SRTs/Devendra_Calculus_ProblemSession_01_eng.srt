@@ -1,0 +1,380 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Problem Session 1 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:14,000
+Our topic for today is limits and functions. Now before I go on, I just want to say that
+
+3
+00:00:14,000 --> 00:00:20,000
+we’ll have several problem sessions, and the idea would be to try and solve problems,
+
+4
+00:00:20,000 --> 00:00:25,000
+but also to review the concepts done in the last few lessons. We will talk about limits,
+
+5
+00:00:25,000 --> 00:00:31,000
+which is kind of a fundamental topic for calculus, and also we’ll talk about functions,
+
+6
+00:00:31,000 --> 00:00:37,000
+which were talked about early on in the course. Let’s begin with problem number 1.
+
+7
+00:00:37,000 --> 00:00:45,000
+You want to find a limit of <i>x</i>^2 + 2 as <i>x</i> approaches 5. Now this is just a polynomial,
+
+8
+00:00:45,000 --> 00:00:54,000
+so you can plug in <i>x</i> = 5. 5^2 + 2 = 27, and you can check the answer with Limit.
+
+9
+00:00:54,000 --> 00:00:59,000
+The answer is 27. Finally, you can do a plot and make sure that
+
+10
+00:00:59,000 --> 00:01:03,000
+the value actually looks like it is 27. That’s a 27 over there.
+
+11
+00:01:05,000 --> 00:01:12,000
+On problem 2, you want to find the limit of Sin[2<i>x</i> − 1] as <i>x</i> approaches π/6.
+
+12
+00:01:12,000 --> 00:01:16,000
+Now just as a review and also to check things carefully, let’s first look at
+
+13
+00:01:16,000 --> 00:01:26,000
+the left-hand limit from below, and the answer is √3/2 − 1. You get the same answer for
+
+14
+00:01:26,000 --> 00:01:32,000
+the right-hand limit, and in fact Limit tells you that the answer is exactly what we got early on.
+
+15
+00:01:32,000 --> 00:01:41,000
+Here’s a plot, and the numerical answer is around −0.2.
+
+16
+00:01:42,000 --> 00:01:49,000
+Okay. Problem number 3. You want to find the limit of the Log[<i>x</i>] to the base 2 minus <i>e</i>^5<i>x</i>,
+
+17
+00:01:49,000 --> 00:01:56,000
+and if you work it out with the left-hand limit, you get the answer 3 − <i>e</i>^40.
+
+18
+00:01:56,000 --> 00:02:04,000
+That’s a large negative number. You get the same answer with the right-hand limit.
+
+19
+00:02:04,000 --> 00:02:09,000
+Notice I’m using FullSimplify to make it a little simpler. You get the same answer with Limit,
+
+20
+00:02:09,000 --> 00:02:16,000
+so that’s the answer for the limit. The numerical value is about 10^17 with a negative sign.
+
+21
+00:02:17,000 --> 00:02:21,000
+You can check the answer on the plot, and there it is.
+
+22
+00:02:21,000 --> 00:02:26,000
+The answer is about −2.35, to be more precise, times 10^17.
+
+23
+00:02:28,000 --> 00:02:35,000
+Okay. Now we go on to an example where things go wrong. You want to find the limit of 3/<i>x</i>
+
+24
+00:02:35,000 --> 00:02:39,000
+as <i>x</i> approaches 0, and clearly there’s a problem because when <i>x</i> is 0,
+
+25
+00:02:39,000 --> 00:02:46,000
+then the denominator becomes 0. If you find the left-hand limit, the answer is −∞.
+
+26
+00:02:47,000 --> 00:02:56,000
+The right-hand limit is ∞, so clearly the limit does not exist, and the answer is actually indeterminate.
+
+27
+00:02:57,000 --> 00:03:05,000
+Here’s a plot which shows that indeed the function approaches ∞ as you go to 0 from the right
+
+28
+00:03:05,000 --> 00:03:09,000
+and −∞ when you go to 0 from the left, so that’s the answer.
+
+29
+00:03:09,000 --> 00:03:14,000
+The answer of the limit is just indeterminate; it does not exist.
+
+30
+00:03:15,000 --> 00:03:22,000
+Okay. Number 5. Now we have a rational function. The problem over here is that if you look at
+
+31
+00:03:22,000 --> 00:03:30,000
+the denominator over here, it’s <i>x</i>^2 − 7<i>x</i> + 10, but at 2, the denominator is 0,
+
+32
+00:03:30,000 --> 00:03:35,000
+so we cannot apply the quotient law for limits directly. What you should do first
+
+33
+00:03:35,000 --> 00:03:42,000
+is to simplify the function—in this case, factor it. Simplify will do that for you,
+
+34
+00:03:42,000 --> 00:03:50,000
+and then when you plug in the value <i>x</i> = 2, you get back the answer −1, and that’s exactly the limit
+
+35
+00:03:50,000 --> 00:03:57,000
+for the function at 2. Namely, it’s −1. You can check the answer with the plot,
+
+36
+00:03:57,000 --> 00:04:03,000
+and you do get the answer −1 with the plot as well. For rational functions,
+
+37
+00:04:03,000 --> 00:04:08,000
+you may need to do a bit of simplification before you actually find the limit.
+
+38
+00:04:10,000 --> 00:04:17,000
+Problem number 6. You are given a rational function, but this time things are a bit simpler
+
+39
+00:04:17,000 --> 00:04:23,000
+because the numerator has limit 17 on plugging in, the denominator has 20 on plugging in
+
+40
+00:04:23,000 --> 00:04:29,000
+and you can therefore use a quotient law to get the limit by simple division.
+
+41
+00:04:29,000 --> 00:04:34,000
+Here’s the answer from Limit, which is exactly the same. You can plot the function,
+
+42
+00:04:34,000 --> 00:04:38,000
+and it does look like that’s the correct answer.
+
+43
+00:04:41,000 --> 00:04:47,000
+Okay. Now Let’s go on to talking about things that are more complicated. You want to find
+
+44
+00:04:47,000 --> 00:04:55,000
+the left-hand limit of <i>x</i> over its absolute value when <i>x</i> approaches 0 from the left-hand side.
+
+45
+00:04:55,000 --> 00:05:02,000
+Now when <i>x</i> is negative, of course, that over here is negative <i>x</i>. You would expect that
+
+46
+00:05:02,000 --> 00:05:10,000
+the answer is −1. You can confirm the answer with Limit. You get −1.
+
+47
+00:05:10,000 --> 00:05:15,000
+You can check the answer over here, and the answer is indeed −1.
+
+48
+00:05:15,000 --> 00:05:20,000
+If you approach from the left the answer is −1, and from the right it is 1.
+
+49
+00:05:23,000 --> 00:05:32,000
+Question number 8. You want to find the limit of <i>x</i> * <i>e</i>^1/(<i>x</i> − 4) when <i>x</i> approaches 4 from the right.
+
+50
+00:05:32,000 --> 00:05:39,000
+Now what happens over there is when <i>x</i> is slightly larger than 4, that’s a very small positive number,
+
+51
+00:05:39,000 --> 00:05:44,000
+so you get a very large number over here. That’s what the table tells you:
+
+52
+00:05:44,000 --> 00:05:49,000
+that the answer’s probably going to be ∞. Those are very, very large numbers.
+
+53
+00:05:49,000 --> 00:05:59,000
+You can confirm the answer with Limit and get ∞. This right-hand limit is actually ∞,
+
+54
+00:05:59,000 --> 00:06:06,000
+and you can check the answer with a plot. Indeed it is ∞.
+
+55
+00:06:08,000 --> 00:06:15,000
+Okay. Moving on now, let’s take piecewise limits. Here you have got a piecewise function,
+
+56
+00:06:15,000 --> 00:06:22,000
+but it’s only different at a single point, so that’s not going to affect the limit.
+
+57
+00:06:22,000 --> 00:06:27,000
+Here’s the function in Mathematica form, the Wolfram Language form,
+
+58
+00:06:27,000 --> 00:06:35,000
+and the left-hand limit is 4. If we just plug in the values, the right-hand limit is also 4,
+
+59
+00:06:35,000 --> 00:06:43,000
+and together, the limit is again 4. For a piecewise function, there is no difficulty
+
+60
+00:06:43,000 --> 00:06:50,000
+if it’s only different at a single point, and the plot confirms that. Surely the value
+
+61
+00:06:50,000 --> 00:06:57,000
+is different at 2 itself, but around 2, near 2, there is a nice, smooth behavior.
+
+62
+00:07:00,000 --> 00:07:06,000
+Okay. Things go slightly wrong in the next example because now we have got a piecewise function
+
+63
+00:07:06,000 --> 00:07:19,000
+with two large pieces. If you are at −3, then on the left you use that expression over there to get −8;
+
+64
+00:07:19,000 --> 00:07:27,000
+on the right, use the second expression and you get 6. You’ve got a left-hand limit of −8,
+
+65
+00:07:27,000 --> 00:07:34,000
+a right-hand limit of 6, and together they tell you that the limit does not exist.
+
+66
+00:07:36,000 --> 00:07:43,000
+We can confirm that with a plot. You have two pieces, but at the point of interest, they actually have
+
+67
+00:07:43,000 --> 00:07:50,000
+a very different limit from the right and from the left, so the answer is indeterminate.
+
+68
+00:07:52,000 --> 00:07:58,000
+Okay. Now the last few questions are about domains and ranges of our functions.
+
+69
+00:07:58,000 --> 00:08:03,000
+The question is to find the domain of this function. Well, it’s very simple because
+
+70
+00:08:03,000 --> 00:08:08,000
+the Cos function is defined everywhere, 2<i>x</i> is defined everywhere,
+
+71
+00:08:08,000 --> 00:08:14,000
+so together they give you the function domain as being everything, the whole real line.
+
+72
+00:08:14,000 --> 00:08:21,000
+FunctionDomain says True, which means that the function is defined everywhere. If you plot it,
+
+73
+00:08:21,000 --> 00:08:28,000
+then indeed there is no problem at all. This function has domain equal to the set of real numbers.
+
+74
+00:08:31,000 --> 00:08:36,000
+Going a step further, let’s try and find the domain of (<i>x</i>^2 − 2)/(<i>x</i>^2 − 4),
+
+75
+00:08:36,000 --> 00:08:46,000
+and clearly the problem is only when the denominator is 0. Now <i>x</i>^2 − 4 is 0 when <i>x</i> is either 2 or −2.
+
+76
+00:08:46,000 --> 00:08:55,000
+You can check that with Factor or with Solve. The only problematic points are 2 and −2,
+
+77
+00:08:55,000 --> 00:09:04,000
+so it looks like the domain is either to the left of 2 or between −2 and 2 or between 2 and ∞.
+
+78
+00:09:04,000 --> 00:09:12,000
+You can check that function domain, which says that the domain is either <i>x</i> less than −2,
+
+79
+00:09:12,000 --> 00:09:19,000
+or <i>x</i> lying between −2 and 2, or <i>x</i> to the right of 2. Here’s a plot,
+
+80
+00:09:19,000 --> 00:09:27,000
+and quite clearly there are three pieces: one to the left of −2, one between −2 and 2
+
+81
+00:09:27,000 --> 00:09:29,000
+and one to the right of 2.
+
+82
+00:09:33,000 --> 00:09:39,000
+Okay. Now on to ranges. The question is compute the range of <i>x</i>^3. Well, <i>x</i>^3 is an odd polynomial,
+
+83
+00:09:39,000 --> 00:09:47,000
+so its range is all real numbers. You can confirm that with the function Range, which says True.
+
+84
+00:09:47,000 --> 00:09:53,000
+The plot says that in fact you can cover everything below and above,
+
+85
+00:09:53,000 --> 00:09:57,000
+so the range is all real the numbers.
+
+86
+00:09:58,000 --> 00:10:07,000
+On to the last problem, which is to do the range of Sec[<i>x</i>]. Now because secant is the reciprocal of cosine
+
+87
+00:10:07,000 --> 00:10:14,000
+and because cosine goes between 1 and −1—here’s a plot to confirm that—
+
+88
+00:10:14,000 --> 00:10:23,000
+then clearly the range of secant must be to the left of −1, the right of 1 and of course we can have
+
+89
+00:10:23,000 --> 00:10:32,000
+both the values over here included. The function range is either <i>y</i> less than or equal to −1
+
+90
+00:10:32,000 --> 00:10:41,000
+or <i>y</i> greater than or equal to 1. Here’s a plot which confirms that, and you leave out
+
+91
+00:10:41,000 --> 00:10:46,000
+everything between −1 and 1 on the <i>y</i> axis, and the rest are all okay.
+
+92
+00:10:48,000 --> 00:10:54,000
+This brings me to the end of today’s problem session. I hope you have had a nice review for concepts.
+
+93
+00:10:54,000 --> 00:11:03,000
+Next time, in Lesson 6, we go on to continuity, but before that, do try the short quiz, Quiz 1,
+
+94
+00:11:03,000 --> 00:11:07,000
+which deals with the first few lessons. Review what you’ve learned so far,
+
+95
+00:11:07,000 --> 00:11:14,000
+and next time we’ll go on to continuity in Lesson 6. Thank you.
+

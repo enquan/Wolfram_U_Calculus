@@ -1,0 +1,564 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Hello, and welcome to Lesson 34 of this introduction to calculus with Wolfram U.
+
+2
+00:00:07,000 --> 00:00:12,000
+The topic for this lesson is logarithmic functions.
+
+3
+00:00:12,000 --> 00:00:16,000
+Let’s begin with a brief overview of the subject.
+
+4
+00:00:16,000 --> 00:00:19,000
+In the last lesson, we talked about exponential functions
+
+5
+00:00:19,000 --> 00:00:21,000
+like this one, 2^<i>x</i>.
+
+6
+00:00:21,000 --> 00:00:23,000
+Here is a plot of the function.
+
+7
+00:00:23,000 --> 00:00:30,000
+The question is suppose we want to solve the equation 2^<i>x</i> = 5.
+
+8
+00:00:30,000 --> 00:00:35,000
+The problem here is that 5 is not a power of 2 in any obvious way,
+
+9
+00:00:35,000 --> 00:00:39,000
+so we give it to Solve, and then Solve comes back and tells us
+
+10
+00:00:39,000 --> 00:00:43,000
+that <i>x</i> is Log[5]/Log[2].
+
+11
+00:00:43,000 --> 00:00:47,000
+That’s the answer given by Solve, and really speaking,
+
+12
+00:00:47,000 --> 00:00:50,000
+it’s the logarithm of 5 to the base 2.
+
+13
+00:00:50,000 --> 00:00:54,000
+That’s an example of a logarithm.
+
+14
+00:00:54,000 --> 00:00:58,000
+This lesson will talk about these logarithmic functions
+
+15
+00:00:58,000 --> 00:01:02,000
+in more detail and some of their properties.
+
+16
+00:01:02,000 --> 00:01:08,000
+Basically,  a logarithm is an inverse function
+
+17
+00:01:08,000 --> 00:01:13,000
+because it is the inverse of an exponential function <i>a</i>^<i>x</i>.
+
+18
+00:01:13,000 --> 00:01:17,000
+You can think of it as having the property that
+
+19
+00:01:17,000 --> 00:01:21,000
+<i>a</i> raised to the logarithm of <i>x</I> to the base <i>a</i> is <i>x</i>,
+
+20
+00:01:21,000 --> 00:01:25,000
+and so is the logarithm of <i>a</i>^<i>x</i> in the base <i>a</i>.
+
+21
+00:01:25,000 --> 00:01:30,000
+The number <i>a</i> is the base of the logarithm.
+
+22
+00:01:31,000 --> 00:01:35,000
+Now we have a function called Log in the Wolfram Language
+
+23
+00:01:35,000 --> 00:01:37,000
+which does these calculations.
+
+24
+00:01:37,000 --> 00:01:44,000
+The log of 27 to the base 3 is 3 because because 3^3 is 27,
+
+25
+00:01:44,000 --> 00:01:48,000
+and the logarithm of 1/4^–2 is –2.
+
+26
+00:01:48,000 --> 00:01:55,000
+Keep in mind that the default base for Log is <i>e</i>,
+
+27
+00:01:55,000 --> 00:01:58,000
+so the logarithm of <i>e</i>^2 is just 2.
+
+28
+00:01:58,000 --> 00:02:04,000
+That’s the natural logarithm which is implemented
+
+29
+00:02:04,000 --> 00:02:07,000
+in the Wolfram Language with base <i>e</I>.
+
+30
+00:02:09,000 --> 00:02:13,000
+Next let’s take the graph of a logarithm function.
+
+31
+00:02:13,000 --> 00:02:16,000
+Here’s the graph, and you’ll notice that it’s defined
+
+32
+00:02:16,000 --> 00:02:24,000
+only for positive <i>x</i>, and the range is all the way from –∞ up to ∞.
+
+33
+00:02:24,000 --> 00:02:30,000
+The function domain for the logarithm is just the positive numbers,
+
+34
+00:02:30,000 --> 00:02:34,000
+and the range is all the real numbers.
+
+35
+00:02:35,000 --> 00:02:39,000
+Now if you look at the limits when <i>x</I> approaches ∞,
+
+36
+00:02:39,000 --> 00:02:43,000
+then you see that the answer is ∞, and when it approaches 0,
+
+37
+00:02:43,000 --> 00:02:46,000
+the answer is –∞.
+
+38
+00:02:46,000 --> 00:02:53,000
+Of course the graph intersects the <i>x</i> axis at <i>x</i> = 1.
+
+39
+00:02:55,000 --> 00:02:58,000
+Okay. Next let’s take an example
+
+40
+00:02:58,000 --> 00:03:01,000
+where you have a base which is less than 1.
+
+41
+00:03:01,000 --> 00:03:03,000
+Now the opposite happens.
+
+42
+00:03:03,000 --> 00:03:06,000
+You have a function which is still defined on positive numbers,
+
+43
+00:03:06,000 --> 00:03:12,000
+but it shoots up to ∞ at 0 and goes down to –∞ on the other side.
+
+44
+00:03:12,000 --> 00:03:15,000
+Domain and range is just the same as before,
+
+45
+00:03:15,000 --> 00:03:18,000
+but now the limits are the opposite,
+
+46
+00:03:18,000 --> 00:03:21,000
+so when you approach ∞, you get –∞.
+
+47
+00:03:21,000 --> 00:03:24,000
+When you approach 0, you get ∞.
+
+48
+00:03:24,000 --> 00:03:29,000
+That’s the behavior of a logarithm whose base is less than 1.
+
+49
+00:03:29,000 --> 00:03:36,000
+Finally, the plot has the same <i>x</i> intercept at <i>x</i> = 1.
+
+50
+00:03:38,000 --> 00:03:42,000
+Now the point is that when you have inverse functions,
+
+51
+00:03:42,000 --> 00:03:48,000
+then their graphs are reflections of each other in the line <i>y</I> = <i>x</i>.
+
+52
+00:03:48,000 --> 00:03:53,000
+For example, if you take E^<i>x</I> and Log[<i>x</i>],
+
+53
+00:03:53,000 --> 00:03:57,000
+then they are inverse functions, and if you look at their graphs,
+
+54
+00:03:57,000 --> 00:04:01,000
+then they are reflections of each other in the line <i>y</i> = <i>x</i>.
+
+55
+00:04:01,000 --> 00:04:04,000
+Just the same happens if you take <i>e</I>^–<i>x</i>,
+
+56
+00:04:04,000 --> 00:04:06,000
+and you see that again you have a reflection,
+
+57
+00:04:06,000 --> 00:04:08,000
+but that’s slightly harder to see.
+
+58
+00:04:08,000 --> 00:04:13,000
+The red plot is reflected in the line <i>y</I> = <i>x</i> to give you the blue plot.
+
+59
+00:04:14,000 --> 00:04:17,000
+Now of course there are lots of properties
+
+60
+00:04:17,000 --> 00:04:19,000
+of the exponential function,
+
+61
+00:04:19,000 --> 00:04:22,000
+and in just the same way, you have properties of the logarithm.
+
+62
+00:04:22,000 --> 00:04:28,000
+So Log[<i>x</I> * <i>y</i>] is Log[<i>x</i>] + Log[<i>y</i>].
+
+63
+00:04:28,000 --> 00:04:35,000
+But if you have quotients like <i>x</I>/<i>y</i>, then they turn into differences.
+
+64
+00:04:36,000 --> 00:04:41,000
+Finally if you have powers, then they turn into multiplication.
+
+65
+00:04:41,000 --> 00:04:44,000
+The log of <i>x</i>^<i>b</i> is <i>b</i> times the log of <i>x</i>.
+
+66
+00:04:46,000 --> 00:04:49,000
+The point is that logarithms are really useful
+
+67
+00:04:49,000 --> 00:04:52,000
+because they convert multiplication to addition,
+
+68
+00:04:52,000 --> 00:04:54,000
+they convert division to subtraction
+
+69
+00:04:54,000 --> 00:04:57,000
+and they convert powers to multiplication.
+
+70
+00:04:59,000 --> 00:05:03,000
+Now an important rule is the change of base
+
+71
+00:05:03,000 --> 00:05:06,000
+where if you have a base <i>x</i>, you can change to base <i>a</i>
+
+72
+00:05:06,000 --> 00:05:08,000
+by this kind of a quotient.
+
+73
+00:05:08,000 --> 00:05:11,000
+The logarithm <i>y</i> to the base <i>x</i> is
+
+74
+00:05:11,000 --> 00:05:13,000
+the logarithm of <i>y</i> to the base <i>a</i>
+
+75
+00:05:13,000 --> 00:05:16,000
+divided by the logarithm of <i>x</i> to the base <i>a</i>.
+
+76
+00:05:16,000 --> 00:05:20,000
+Okay. For example, when you get back this answer from Solve,
+
+77
+00:05:20,000 --> 00:05:26,000
+then that really is the logarithm of 5 to the base 2.
+
+78
+00:05:28,000 --> 00:05:30,000
+Okay. At long last, we can talk about
+
+79
+00:05:30,000 --> 00:05:32,000
+the derivatives and integrals of logarithms.
+
+80
+00:05:32,000 --> 00:05:35,000
+The derivative for Log[<i>x</i>] is just 1/<i>x</i>.
+
+81
+00:05:35,000 --> 00:05:38,000
+That’s a very nice property, very surprising.
+
+82
+00:05:38,000 --> 00:05:43,000
+But the fact is that logarithms grow more slowly than polynomials.
+
+83
+00:05:43,000 --> 00:05:47,000
+Because you have a change of base formula,
+
+84
+00:05:47,000 --> 00:05:49,000
+you can work out the derivative of
+
+85
+00:05:49,000 --> 00:05:53,000
+the logarithm of <i>x</i> to the base <i>a</i> as 1/(<i>x</i>Log[<i>a</i>]).
+
+86
+00:05:53,000 --> 00:05:55,000
+You can apply the chain rule
+
+87
+00:05:55,000 --> 00:05:58,000
+and work out more complicated derivatives.
+
+88
+00:05:58,000 --> 00:06:03,000
+Here is a plot of the logarithm and its derivative.
+
+89
+00:06:03,000 --> 00:06:08,000
+Notice that the logarithm function is only defined for positive <i>x</i>
+
+90
+00:06:08,000 --> 00:06:11,000
+whereas its derivative is defined for all <i>x</i>,
+
+91
+00:06:11,000 --> 00:06:15,000
+and that’s an issue which we’ll come back to later in the lesson.
+
+92
+00:06:16,000 --> 00:06:18,000
+How about the integral of log?
+
+93
+00:06:18,000 --> 00:06:22,000
+Well, the integral of log is <i>x</i>Log[<i>x</i>] – <i>x</i>,
+
+94
+00:06:22,000 --> 00:06:25,000
+and that’s a bit hard to prove,
+
+95
+00:06:25,000 --> 00:06:28,000
+but you can check the answer by doing a derivative,
+
+96
+00:06:28,000 --> 00:06:30,000
+and you get back the usual function.
+
+97
+00:06:30,000 --> 00:06:39,000
+The integral of the natural logarithm is <i>x</i>Log[<i>x</i>] – <i>x</i>.
+
+98
+00:06:40,000 --> 00:06:43,000
+Here is a plot of the integral.
+
+99
+00:06:44,000 --> 00:06:47,000
+Okay. Now an important application.
+
+100
+00:06:47,000 --> 00:06:54,000
+The integral of 1/<i>x</i> is possible to compute, but for that,
+
+101
+00:06:54,000 --> 00:06:56,000
+you need to worry about the fact that the logarithm function
+
+102
+00:06:56,000 --> 00:07:01,000
+is only defined for positive <i>x</i> whereas 1/<i>x</i> is defined for all <i>x</i>.
+
+103
+00:07:01,000 --> 00:07:04,000
+To work out that difficulty, what we’ll do is we’ll introduce
+
+104
+00:07:04,000 --> 00:07:07,000
+a logarithm of the absolute value of <i>x</i>.
+
+105
+00:07:07,000 --> 00:07:13,000
+Now that’s nicely defined for all numbers, except of course for 0.
+
+106
+00:07:13,000 --> 00:07:17,000
+Once you have done that, then you can see that the integral of 1/<i>x</i>
+
+107
+00:07:17,000 --> 00:07:21,000
+is the logarithm of the absolute value of <i>x</i>,
+
+108
+00:07:21,000 --> 00:07:23,000
+but in the Wolfram Language, the Log function
+
+109
+00:07:23,000 --> 00:07:26,000
+can handle both positive and negative numbers.
+
+110
+00:07:26,000 --> 00:07:33,000
+For example, the Log[–2] is the Log[2] plus a complex number.
+
+111
+00:07:33,000 --> 00:07:41,000
+So in the Wolfram Language, the integral of 1/<i>x</i> is just Log[<i>x</i>].
+
+112
+00:07:41,000 --> 00:07:47,000
+But in fact, one could write it as Log[|<i>x</i>|] + <i>C</i>.
+
+113
+00:07:49,000 --> 00:07:52,000
+Okay. Finally, let’s talk about an application.
+
+114
+00:07:52,000 --> 00:07:55,000
+Here is an exponential decay function.
+
+115
+00:07:55,000 --> 00:08:01,000
+The <i>n</i> over here is a quantity at time <i>t</i> = 0, and the question is
+
+116
+00:08:01,000 --> 00:08:05,000
+how long would it take for the function
+
+117
+00:08:05,000 --> 00:08:08,000
+to reach half of its initial value?
+
+118
+00:08:08,000 --> 00:08:12,000
+Well, to do that, we solve the equation and get back an answer,
+
+119
+00:08:12,000 --> 00:08:16,000
+and this answer is called the half-life of the function.
+
+120
+00:08:16,000 --> 00:08:19,000
+The λ is called the decay constant.
+
+121
+00:08:19,000 --> 00:08:21,000
+It tells you how fast it decays.
+
+122
+00:08:21,000 --> 00:08:26,000
+1/λ is called the mean lifetime of the function.
+
+123
+00:08:26,000 --> 00:08:28,000
+Often when you do such calculations,
+
+124
+00:08:28,000 --> 00:08:31,000
+you will need to know the logarithm of 2.
+
+125
+00:08:31,000 --> 00:08:34,000
+The numerical value is approximately 0.693,
+
+126
+00:08:34,000 --> 00:08:37,000
+and that’s well worth memorizing.
+
+127
+00:08:38,000 --> 00:08:40,000
+With that, we come to the end of this lesson,
+
+128
+00:08:40,000 --> 00:08:44,000
+the main point being that logarithms are very useful
+
+129
+00:08:44,000 --> 00:08:48,000
+in solving exponential equations of this type.
+
+130
+00:08:48,000 --> 00:08:51,000
+Just like you have properties of exponentials,
+
+131
+00:08:51,000 --> 00:08:55,000
+you also have properties of logarithms.
+
+132
+00:08:55,000 --> 00:09:00,000
+The derivative of a logarithm of <i>x</i> is 1/<i>x</i>.
+
+133
+00:09:00,000 --> 00:09:03,000
+The integral is a lot harder.
+
+134
+00:09:03,000 --> 00:09:07,000
+It is <i>x</i>Log[<i>x</i>] – <i>x</i> + <i>C</i>.
+
+135
+00:09:07,000 --> 00:09:13,000
+The integral of 1/<i>x</I> is Log[|<i>x</i>|] + <i>C</i>.
+
+136
+00:09:13,000 --> 00:09:16,000
+Of course, you can use logarithms
+
+137
+00:09:16,000 --> 00:09:19,000
+to find the half-life of a function.
+
+138
+00:09:19,000 --> 00:09:23,000
+That’s a brief introduction to logarithms—
+
+139
+00:09:23,000 --> 00:09:26,000
+enough for us to now start talking about
+
+140
+00:09:26,000 --> 00:09:29,000
+the so-called L’Hospital’s rule, which we’ll do next time.
+
+141
+00:09:29,000 --> 00:09:32,000
+I’ll stop over here. Thank you very much.
+

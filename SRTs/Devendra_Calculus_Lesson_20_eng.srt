@@ -1,0 +1,484 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Hello, and welcome to Lesson 20 of this introduction to calculus with Wolfram U.
+
+2
+00:00:06,000 --> 00:00:11,000
+The topic of this lesson is curve sketching.
+
+3
+00:00:11,000 --> 00:00:15,000
+Let’s begin with a brief overview of the lesson.
+
+4
+00:00:15,000 --> 00:00:21,000
+Suppose you have a function <i>f</i> like the one shown over here, <i>x</i>^2/(<i>x</i>^2 – 4).
+
+5
+00:00:21,000 --> 00:00:26,000
+Then you can do several things. For example, you can work out the zeros of the function
+
+6
+00:00:26,000 --> 00:00:33,000
+simply by solving for <i>f</I>[<i>x</i>] = 0, and you find that they’re 0 at 0.
+
+7
+00:00:33,000 --> 00:00:39,000
+Or you could work out the vertical asymptotes simply by finding out whether
+
+8
+00:00:39,000 --> 00:00:48,000
+the denominator <i>x</i>^2 – 4 is 0. Then we get the answer either –2 or 2.
+
+9
+00:00:49,000 --> 00:00:57,000
+Or you could work out the horizontal asymptotes by using the limit and letting <i>x</i> go to either ∞ or –∞,
+
+10
+00:00:57,000 --> 00:01:02,000
+and you find that you actually have horizontal aymptotes, only at 1.
+
+11
+00:01:02,000 --> 00:01:10,000
+Okay. Now with all that information, you can plot by hand or, like I’ve done over here,
+
+12
+00:01:10,000 --> 00:01:15,000
+just use the Plot function to get back the same plot showing all the information.
+
+13
+00:01:15,000 --> 00:01:24,000
+For example, there’s a 0 at 0, et cetera. The goal of this lesson is to help you to sketch functions
+
+14
+00:01:24,000 --> 00:01:32,000
+using derivatives and then perhaps use the Plot function to confirm that all your ideas are correct.
+
+15
+00:01:33,000 --> 00:01:41,000
+Okay. As a set of guidelines that you’ll require for today’s lesson, let’s make a list of things.
+
+16
+00:01:41,000 --> 00:01:47,000
+First of all, when you want to sketch a function, you should find the domain of the function.
+
+17
+00:01:47,000 --> 00:01:53,000
+Where is the function defined? Next find the <i>x</i> and the <i>y</i> intercepts.
+
+18
+00:01:53,000 --> 00:02:03,000
+Where does it meet the <i>x</i> and <i>y</i> axes? Next, is the function even? Is it odd? Is it periodic?
+
+19
+00:02:03,000 --> 00:02:07,000
+If it’s any one of these, then of course everything becomes much simpler.
+
+20
+00:02:07,000 --> 00:02:14,000
+Now does the function have either a vertical or horizontal asymptote,
+
+21
+00:02:14,000 --> 00:02:18,000
+or perhaps even a slant asymptote? I haven’t told you what a slant asymptote is,
+
+22
+00:02:18,000 --> 00:02:25,000
+but let’s take that for granted for now. Okay. Next find out the intervals where the function
+
+23
+00:02:25,000 --> 00:02:31,000
+either increases or decreases, and to do that, you could actually use the first derivative
+
+24
+00:02:31,000 --> 00:02:36,000
+of the function and then apply the increasing or decreasing test.
+
+25
+00:02:37,000 --> 00:02:43,000
+Next find the local maxima and minima, for which of course you will first find the critical numbers
+
+26
+00:02:43,000 --> 00:02:49,000
+and then use either the first derivative test or the second derivative test.
+
+27
+00:02:51,000 --> 00:02:56,000
+Next you’ll want to check the concavity of the function, and for that you’ll use
+
+28
+00:02:56,000 --> 00:03:03,000
+the second derivative of the function. Then if the second derivative is positive,
+
+29
+00:03:03,000 --> 00:03:12,000
+then you have a concave upward graph, and if it’s negative, then you have a concave downward graph.
+
+30
+00:03:13,000 --> 00:03:18,000
+Finally you might want to find the inflection points, and those are the points at which
+
+31
+00:03:18,000 --> 00:03:25,000
+either the second derivative is 0 and switches signs, or in some cases
+
+32
+00:03:25,000 --> 00:03:30,000
+it might not even be easy to calculate. With all that information,
+
+33
+00:03:30,000 --> 00:03:35,000
+you can then sketch your curve by hand, or as we’ll do over here, use the Plot function.
+
+34
+00:03:37,000 --> 00:03:42,000
+Okay. Let’s take an example now. Here is a rational function very similar to
+
+35
+00:03:42,000 --> 00:03:49,000
+the one we took earlier on: 3<i>x</i>^2/(<i>x</i>^2 – 4). Now of course this function is defined everywhere
+
+36
+00:03:49,000 --> 00:03:57,000
+except at –2 and 2, so the domain is those three pieces over here right up to –2,
+
+37
+00:03:57,000 --> 00:04:04,000
+then between –2 and 2, and then all the way from 2 to ∞, but not including either –2 or 2.
+
+38
+00:04:04,000 --> 00:04:11,000
+To find the intercepts, you solve <i>f</i>[<i>x</i>] = 0 and also find the value of <i>f</i>[0], and you find that
+
+39
+00:04:11,000 --> 00:04:21,000
+those are the <i>x</i> and <i>y</i> intercepts. Next we can check that the function is even simply by
+
+40
+00:04:21,000 --> 00:04:30,000
+equality testing over here, so <i>f</i>[–<i>x</i>] is the same as <i>f</i>[<i>x</i>]. That’s clear from the function itself.
+
+41
+00:04:30,000 --> 00:04:36,000
+We have an <i>x</i>^2, so that’s an even function. Next we can work out the vertical asymptotes
+
+42
+00:04:36,000 --> 00:04:47,000
+at –2 and 2, and you can check that there’s a horizontal asymptote at <i>y</i> = 3.
+
+43
+00:04:47,000 --> 00:04:54,000
+Having done that, we go on to the problem of finding out the critical points.
+
+44
+00:04:54,000 --> 00:05:01,000
+Critical points are the points at which <i>f</i>'[<i>x</i>] is 0. You have one critical point, and the function is
+
+45
+00:05:01,000 --> 00:05:08,000
+not defined at 2 and –2, so in all, you have three critical points. What you do is you test
+
+46
+00:05:08,000 --> 00:05:17,000
+the derivative on each part of the real line depending upon those. You take one point to the left of –2,
+
+47
+00:05:17,000 --> 00:05:23,000
+one point between –2 and 0, et cetera, and you find that you actually have
+
+48
+00:05:23,000 --> 00:05:25,000
+some positive and negative signs.
+
+49
+00:05:25,000 --> 00:05:34,000
+That says that the function is increasing on (–∞, 2) and (–2, 0) because those derivatives
+
+50
+00:05:34,000 --> 00:05:39,000
+are positive, and it’s decreasing on the other two parts over there because the first derivative
+
+51
+00:05:39,000 --> 00:05:45,000
+is negative. Now the question is are there any local maxima or minima?
+
+52
+00:05:45,000 --> 00:05:50,000
+Well, if you work out the second derivative at 0, then the answer is negative, so you do have
+
+53
+00:05:50,000 --> 00:06:01,000
+a local maximum at 0. The function has no inflection points, as you can check for solving <i>f</i>''[<i>x</i>] = 0,
+
+54
+00:06:01,000 --> 00:06:10,000
+and then you can also check that it is concave upward between (–∞, 2) and (2, ∞)
+
+55
+00:06:10,000 --> 00:06:16,000
+and concave downward between the two values. That’s the information about
+
+56
+00:06:16,000 --> 00:06:24,000
+inflection points and the concavity. Finally you can put that all together and get a nice plot
+
+57
+00:06:24,000 --> 00:06:30,000
+of a function which shows all the information that we gathered earlier on.
+
+58
+00:06:32,000 --> 00:06:37,000
+Okay. A second example. Let’s take a slightly harder function which is trigonometric.
+
+59
+00:06:37,000 --> 00:06:42,000
+You’ve got Sin[<i>x</i>]/(2 + Cos[<i>x</i>]). Now that’s never problematic because
+
+60
+00:06:42,000 --> 00:06:49,000
+the denominator never becomes 0, so the domain is all the real numbers. The question is
+
+61
+00:06:49,000 --> 00:06:54,000
+what are the intercepts? Well, you solve for <i>f</I> equal to 0 and find the value at <i>f</i>[0],
+
+62
+00:06:54,000 --> 00:07:03,000
+and you get back that in fact, it’s going to be multiples of π for the <i>x</i> intercepts
+
+63
+00:07:03,000 --> 00:07:09,000
+because that’s where the sine function is 0, and the <i>y</i> intercept is just at 0.
+
+64
+00:07:10,000 --> 00:07:18,000
+Okay. That conditional expression over here is telling you the condition for there to be an <i>x</i> intercept.
+
+65
+00:07:18,000 --> 00:07:26,000
+Next the function is certainly odd and periodic because the sine function is odd.
+
+66
+00:07:26,000 --> 00:07:32,000
+Because it’s periodic, you can afford to look at the interval  [0, 2π],
+
+67
+00:07:32,000 --> 00:07:38,000
+and that’s quite an equality. The function has no vertical asymptotes
+
+68
+00:07:38,000 --> 00:07:44,000
+because the denominator is never problematic, and there are horizontal asymptotes
+
+69
+00:07:44,000 --> 00:07:49,000
+at no points because the limits don’t even exist; they are intervals.
+
+70
+00:07:52,000 --> 00:07:58,000
+Okay. Now the question is what are the critical points? Well, if you check between 0 and 2π,
+
+71
+00:07:58,000 --> 00:08:05,000
+you find two critical points, and then if you take sample points, then you find out that
+
+72
+00:08:05,000 --> 00:08:12,000
+in fact your have an increasing behavior between (0, 2π/3) and (4π/3, 2π)
+
+73
+00:08:12,000 --> 00:08:19,000
+and decreasing between those two values. That’s the information about the first derivative,
+
+74
+00:08:19,000 --> 00:08:27,000
+and that’s going to tell you that you have a local maximum at 2π/3 and a local minimum at 4π/3.
+
+75
+00:08:27,000 --> 00:08:32,000
+You can check that with the second derivative. You have a negative second derivative at
+
+76
+00:08:32,000 --> 00:08:37,000
+the first point and a positive second derivative at the second point, so you have a local maximum
+
+77
+00:08:37,000 --> 00:08:45,000
+in the first case and a local minimum in the second case. Finally you can check there are
+
+78
+00:08:45,000 --> 00:08:53,000
+inflection points at 0, π and 2π by solving for the second derivative equal to 0.
+
+79
+00:08:54,000 --> 00:08:59,000
+Now the concavity test can be applied, and you see that you actually have
+
+80
+00:08:59,000 --> 00:09:05,000
+a concave upward behavior on (π, 2π) and a concave downward behavior on (0, π).
+
+81
+00:09:07,000 --> 00:09:16,000
+Now we can put that all together and get this plot of the function, which shows all the earlier information.
+
+82
+00:09:18,000 --> 00:09:23,000
+Now I haven’t really spoken about slant asymptotes in the course earlier on,
+
+83
+00:09:23,000 --> 00:09:31,000
+but let’s define a slant asymptote. A slant asymptote is a line such that the limit of <i>f</i>
+
+84
+00:09:31,000 --> 00:09:38,000
+approaches <i>mx</i> + <i>b</i> where <i>mx</i> + <i>b</i> is the right-hand side for the line.
+
+85
+00:09:38,000 --> 00:09:43,000
+Basically the graph of the function approaches that straight line, but that straight line
+
+86
+00:09:43,000 --> 00:09:52,000
+may not be vertical or horizontal. Okay. Now the question is how do you find the slant asymptotes?
+
+87
+00:09:52,000 --> 00:09:58,000
+Luckily if you have a rational function, then slant asymptotes can occur only when
+
+88
+00:09:58,000 --> 00:10:03,000
+the degree of the numerator is one more than the degree of the denominator.
+
+89
+00:10:03,000 --> 00:10:09,000
+In that case, you can simply use polynomial long division. You can work out the quotient.
+
+90
+00:10:09,000 --> 00:10:15,000
+For example, over here you have the function (<i>x</i>^2 + 1)/<i>x</i>. Then if you find the quotient,
+
+91
+00:10:15,000 --> 00:10:22,000
+the answer is just <i>x</i>, so <i>y</i> = <i>x</i> is a slant asymptote. You can check that with the plot,
+
+92
+00:10:22,000 --> 00:10:27,000
+and you see that you have a slant asymptote at <i>y</i> = <i>x</i> over here.
+
+93
+00:10:29,000 --> 00:10:34,000
+With that information, we can now take up a slant asymptote problem
+
+94
+00:10:34,000 --> 00:10:41,000
+and try and draft the function 2<i>x</i>^3/(<i>x</i>^2 + 2). The function is defined everywhere;
+
+95
+00:10:41,000 --> 00:10:47,000
+no problem at all. The denominator is never zero, so the domain is all the real numbers.
+
+96
+00:10:48,000 --> 00:10:55,000
+The <i>x</i> and the <i>y</i> intercepts are both at 0. That’s easy to show. It’s certainly an odd function.
+
+97
+00:10:55,000 --> 00:10:59,000
+It’s an odd function because we have an <i>x</i>^3 over there.
+
+98
+00:11:00,000 --> 00:11:07,000
+There are no vertical or horizontal asymptotes, but you do have a slant asymptote
+
+99
+00:11:07,000 --> 00:11:11,000
+that you can work out by division, and you see over here that actually
+
+100
+00:11:11,000 --> 00:11:18,000
+the function does approach 2<i>x</i> as <i>x</i>→∞, so that is a slant asymptote for this example.
+
+101
+00:11:21,000 --> 00:11:27,000
+Okay. Now the question is when is the first derivative 0? You put 0 in; you are at 0.
+
+102
+00:11:28,000 --> 00:11:36,000
+You can check that. If you take sample points at –1 and 1, then you have an increasing function
+
+103
+00:11:36,000 --> 00:11:43,000
+between (–∞, 0) and (0, ∞). The first derivative test tells you that there are
+
+104
+00:11:43,000 --> 00:11:48,000
+no local maxima or minima. The second derivative test doesn’t tell you anything
+
+105
+00:11:48,000 --> 00:11:55,000
+because the second derivative of 0 is 0. It looks like there might be some inflection points,
+
+106
+00:11:55,000 --> 00:12:02,000
+and sure enough, there are three inflection points over here: at 0, √6 and –√6.
+
+107
+00:12:02,000 --> 00:12:10,000
+You can check that it’s concave upward on two intervals and concave downward on two others.
+
+108
+00:12:10,000 --> 00:12:16,000
+You have a positive derivative over here and you have a positive derivative over there
+
+109
+00:12:16,000 --> 00:12:22,000
+for the second derivative. In that case, you have a concave upward behavior,
+
+110
+00:12:22,000 --> 00:12:28,000
+and the reverse happens in the other two cases. With all that information,
+
+111
+00:12:28,000 --> 00:12:37,000
+one can plot this rather complicated function, and that is the plot showing the asymptote <i>y</i> = 2<i>x</i>.
+
+112
+00:12:38,000 --> 00:12:43,000
+Okay. That brings me to the end of this lesson. What we’ve learned is that we can use
+
+113
+00:12:43,000 --> 00:12:49,000
+many of the properties that we’ve learned earlier on to sketch the graph of the function.
+
+114
+00:12:49,000 --> 00:12:56,000
+For example, the intercepts will determine where the function is 0 or where it crosses the <i>y</i> axis.
+
+115
+00:12:56,000 --> 00:13:00,000
+Of course to find the asymptotes, you would just use the limit function.
+
+116
+00:13:01,000 --> 00:13:07,000
+To find local maxima and minima, you would use the first and second derivatives,
+
+117
+00:13:07,000 --> 00:13:14,000
+and you can also find inflection points and intervals of increase or decrease.
+
+118
+00:13:14,000 --> 00:13:20,000
+All of that information together will let you get a nice sketch of your function.
+
+119
+00:13:22,000 --> 00:13:26,000
+In the next lesson we’ll be talking about optimization problems, but before we do that,
+
+120
+00:13:26,000 --> 00:13:32,000
+do practice curve sketching—it’s an important topic—and be ready for the next lesson.
+
+121
+00:13:32,000 --> 00:13:35,000
+Thank you very much. I’ll stop over here.
+
