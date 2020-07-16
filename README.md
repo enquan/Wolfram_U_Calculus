@@ -9,3 +9,7 @@ https://www.wolfram.com/wolfram-u/introduction-to-calculus/what-is-calculus.html
 一些规范，供参考
 
 https://cloud.tencent.com/developer/article/1358658
+
+一个辅助工具
+
+https://github.com/suifengtec/subtitle-translator
