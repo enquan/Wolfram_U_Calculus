@@ -10,6 +10,8 @@ https://www.wolfram.com/wolfram-u/introduction-to-calculus/what-is-calculus.html
 
 https://cloud.tencent.com/developer/article/1358658
 
-一个辅助工具
+<del>一个辅助工具</del>
 
-https://github.com/suifengtec/subtitle-translator
+<del>https://github.com/suifengtec/subtitle-translator</del>
+
+翻译质量很差，不建议用。
